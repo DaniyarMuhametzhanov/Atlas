@@ -312,7 +312,7 @@ const reliefBuf = Buffer.from(String(L.RELIEF).split(',')[1], 'base64');
 writeFile(path.join(ASSETS_SRC, 'relief-bluemarble.jpg'), reliefBuf);
 const reliefSize = imageSize(reliefBuf);
 
-// ---------- 10. Модуль ART (запасные SVG-картинки) — это код: перенесён вручную в src/booklet/art/art.ts ----------
+// ---------- 10. Модуль ART (запасные SVG-картинки) — это код: перенесён вручную в src/booklet/art/scenes.ts ----------
 
 // ---------- 11. Источники наборов данных ----------
 // Если этап 6 уже сделал крупные фото и подключил выбранные — сохраняем это при повторном извлечении

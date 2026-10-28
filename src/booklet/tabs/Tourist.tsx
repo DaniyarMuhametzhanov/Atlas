@@ -7,7 +7,7 @@ import natureTypes from '../../../content/places/nature-types.json';
 import wonderKinds from '../../../content/places/wonder-kinds.json';
 import { useStore } from '../../store/store';
 import { Art } from '../art/Art';
-import { sightMotif } from '../art/art';
+import { sightMotif } from '../art/scenes';
 import { ClimateCharts } from '../charts/ClimateCharts';
 import { AsOf, Bullets, Section, Soon } from '../parts';
 import s from './tabs.module.css';

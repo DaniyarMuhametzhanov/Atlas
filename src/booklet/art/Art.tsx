@@ -1,5 +1,5 @@
 import { useMemo } from 'react';
-import { scene } from './art';
+import { scene } from './scenes';
 import s from './Art.module.css';
 
 /** Запасная картинка вместо фото: пейзаж (land) и силуэт (motif); seed делает рисунок узнаваемым и неизменным */
