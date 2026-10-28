@@ -6,7 +6,7 @@
   "capital": "Хараре",
   "tagline": "Страна каменного города",
   "fame": "Великий Зимбабве",
-  "updated": "legacy-v1",
+  "updated": "2026-10",
   "icon": {
     "motif": "ruins savanna"
   },
@@ -26,7 +26,12 @@
         "text": "Независимость."
       }
     ],
-    "funFact": "Название страны означает «каменные дома»."
+    "funFact": "Название страны означает «каменные дома».",
+    "facts": {
+      "area": 390757,
+      "population": 17000000,
+      "gdpPerCapita": 3000
+    }
   },
   "tourist": {
     "sights": [
@@ -48,13 +53,168 @@
     "danger": {
       "level": 2,
       "text": "Безопасно.",
-      "asOf": "не указано (старая версия)"
+      "asOf": "октябрь 2026 — общая оценка атласа; перед поездкой проверьте рекомендации МИД"
+    },
+    "practical": {
+      "currency": "ZiG (Zimbabwe Gold) и доллар США (оба законные)",
+      "rateHint": "Доллар США — основная валюта расчётов; курс ZiG меняется",
+      "languages": [
+        "английский, шона, ндебеле и ещё 13 (всего 16 официальных)"
+      ],
+      "plugs": "Тип G",
+      "voltage": "230 В, 50 Гц Check out all plug types used around the world Learn more Type B Learn more Type C Learn more Type D Learn more Type E Learn more Type F Learn more Type G Learn more Type H Learn more Type I Learn more Type J Learn more Type K Learn more Type L Learn more Type M Learn more Type N Learn more Type O Learn more Type A 2026 WorldStandards. Close Menu Electricity Plug socket types Types A B Type C Type D Type E Type F Type G Type H Type I Type J Type K Type L Type M Type N Type O Universal wall sockets Plug, socket voltage by country World map showing the spread of plug types History of domestic electricity Why isn’t there a universal standard electric plug? Why isn't there a standard voltage around the world? Useful information for travellers Three-phase electric power Cars Electric vehicle charging connector types North American Charging Standard (Tesla) Type 1 CCS 1 Type 2 CCS 2 CHAdeMO GB/T (alternating current) GB/T (direct current) ChaoJi World map showing the spread of EV charging connector types EV connector inlet by country Why do some countries drive on the left and others on the right? List of left- right-driving countries Trivia about driving on the left What if Britain gave up driving on the left? Oval car stickers Other The world's scripts and alphabets Internet country domains list Contact English Español Français Nederlands {\"prerender\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_matches\":[\"/wp-*.php\",\"/wp-admin/*\",\"/wp-content/uploads/*\",\"/wp-content/*\",\"/wp-content/plugins/*\",\"/wp-content/themes/salient-child/*\",\"/wp-content/themes/salient/*\",\"/*\\\\?(.+)\"]}},{\"not\":{\"selector_matches\":\"a[rel~=\\\"nofollow\\\"]\"}},{\"not\":{\"selector_matches\":\".no-prerender, .no-prerender a\"}},{\"not\":{\"selector_matches\":\".no-prefetch, .no-prefetch a\"}}]},\"eagerness\":\"moderate\"}]} window.wpbCustomElement = 1; var nectarLove = {\"ajaxurl\":\"https://www.worldstandards.eu/wp-admin/admin-ajax.php\",\"postID\":\"37\",\"rooturl\":\"https://www.worldstandards.eu\",\"disqusComments\":\"false\",\"loveNonce\":\"24d5c9d4ac\",\"mapApiKey\":\"\"}; var nectarOptions = {\"delay_js\":\"false\",\"smooth_scroll\":\"false\",\"smooth_scroll_strength\":\"50\",\"quick_search\":\"false\",\"react_compat\":\"disabled\",\"header_entrance\":\"false\",\"body_border_func\":\"default\",\"disable_box_roll_mobile\":\"off\",\"body_border_mobile\":\"0\",\"dropdown_hover_intent\":\"default\",\"simplify_ocm_mobile\":\"0\",\"mobile_header_format\":\"default\",\"ocm_btn_position\":\"default\",\"left_header_dropdown_func\":\"default\",\"ajax_add_to_cart\":\"0\",\"ocm_remove_ext_menu_items\":\"remove_images\",\"woo_product_filter_toggle\":\"0\",\"woo_sidebar_toggles\":\"true\",\"woo_sticky_sidebar\":\"0\",\"woo_minimal_product_hover\":\"default\",\"woo_minimal_product_effect\":\"default\",\"woo_related_upsell_carousel\":\"false\",\"woo_product_variable_select\":\"default\",\"woo_using_cart_addons\":\"false\",\"view_transitions_effect\":\"\"}; var nectar_front_i18n = {\"menu\":\"Menu\",\"next\":\"Next\",\"previous\":\"Previous\",\"close\":\"Close\",\"slide_of\":\"Slide %1$s of %2$s\",\"slide\":\"slide\"}; //# sourceURL=nectar-frontend-js-extra var smushLazyLoadOptions = {\"autoResizingEnabled\":false,\"autoResizeOptions\":{\"precision\":5,\"skipAutoWidth\":true,\"cdnBaseURL\":\"\"}}; //# sourceURL=smush-lazy-load-js-before var DT_TP = {}; jQuery(($)=>{ var DT_language={\"en_US\":{}}; DT_TP['1'] = new DataTable('#tablepress-1',{language:DT_language['en_US'],order:[],orderClasses:false,paging:false,scrollX:true}); }); //# sourceURL=tablepress-datatables-js-after (function() { 'use strict'; var parentSelector = '.menu-item.wpml-ls-current-language.menu-item-has-children'; function toggleSubmenu(link, forceClose) { var isExpanded = link.getAttribute('aria-expanded') === 'true'; if (forceClose || isExpanded) { link.setAttribute('aria-expanded', 'false'); } else { link.setAttribute('aria-expanded', 'true'); } } function handleKeydown(e) { var key = e.key || e.keyCode; if (key === 'Enter' || key === ' ' || key === 13 || key === 32) { e.preventDefault(); toggleSubmenu(this); } else if (key === 'Escape' || key === 'Esc' || key === 27) { if (this.getAttribute('aria-expanded') === 'true') { e.preventDefault(); toggleSubmenu(this, true); } } } function handleBlur(e) { var link = this; var parent = link.closest(parentSelector); if (!parent) return; setTimeout(function() { if (!parent.contains(document.activeElement)) { toggleSubmenu(link, true); } }, 100); } function init() { var parents = document.querySelectorAll(parentSelector); for (var i = 0; i",
+      "timezone": "UTC+2",
+      "visaKZ": "Виза по прибытии или электронная до 1 месяца.",
+      "visaRU": "Виза по прибытии или электронная до 1 месяца.",
+      "bestSeason": "Апрель–октябрь — сухой сезон.",
+      "asOf": "октябрь 2026 · визы и правила въезда меняются — перед поездкой проверьте на сайте посольства или МИД",
+      "phrases": [
+        {
+          "ru": "Здравствуйте",
+          "local": "Mhoro / Hello",
+          "say": "мхоро / хэлоу"
+        },
+        {
+          "ru": "Спасибо",
+          "local": "Ndatenda",
+          "say": "ндатенда"
+        },
+        {
+          "ru": "Сколько это стоит?",
+          "local": "Imarii?",
+          "say": "имарии?"
+        },
+        {
+          "ru": "Извините",
+          "local": "Ndine urombo",
+          "say": "ндине уромбо"
+        },
+        {
+          "ru": "До свидания",
+          "local": "Sarai zvakanaka",
+          "say": "сарай звакунака"
+        }
+      ]
+    },
+    "climate": [
+      {
+        "month": 1,
+        "tMin": 16,
+        "tMax": 26,
+        "rainMm": 191
+      },
+      {
+        "month": 2,
+        "tMin": 16,
+        "tMax": 26,
+        "rainMm": 176
+      },
+      {
+        "month": 3,
+        "tMin": 15,
+        "tMax": 26,
+        "rainMm": 99
+      },
+      {
+        "month": 4,
+        "tMin": 13,
+        "tMax": 26,
+        "rainMm": 37
+      },
+      {
+        "month": 5,
+        "tMin": 9,
+        "tMax": 24,
+        "rainMm": 7
+      },
+      {
+        "month": 6,
+        "tMin": 7,
+        "tMax": 22,
+        "rainMm": 2
+      },
+      {
+        "month": 7,
+        "tMin": 7,
+        "tMax": 22,
+        "rainMm": 2
+      },
+      {
+        "month": 8,
+        "tMin": 9,
+        "tMax": 24,
+        "rainMm": 3
+      },
+      {
+        "month": 9,
+        "tMin": 12,
+        "tMax": 28,
+        "rainMm": 7
+      },
+      {
+        "month": 10,
+        "tMin": 15,
+        "tMax": 29,
+        "rainMm": 40
+      },
+      {
+        "month": 11,
+        "tMin": 16,
+        "tMax": 28,
+        "rainMm": 93
+      },
+      {
+        "month": 12,
+        "tMin": 16,
+        "tMax": 26,
+        "rainMm": 183
+      }
+    ],
+    "food": [
+      {
+        "name": "Садза",
+        "text": "Кукурузная каша."
+      },
+      {
+        "name": "Мопане",
+        "text": "Жареные гусеницы."
+      },
+      {
+        "name": "Нязи",
+        "text": "Мясо на углях."
+      },
+      {
+        "name": "Мазоэ",
+        "text": "Апельсиновый напиток."
+      }
+    ],
+    "etiquette": {
+      "do": [
+        "Здоровайтесь со всеми и спрашивайте, как дела, — это важнее, чем сразу переходить к делу",
+        "Подавайте и берите вещи правой рукой",
+        "Спрашивайте разрешения, прежде чем фотографировать людей"
+      ],
+      "dont": [
+        "Не обсуждайте политику и президента с незнакомыми",
+        "Не фотографируйте госучреждения",
+        "Не пейте воду из-под крана"
+      ]
     }
   },
   "politics": {
     "system": "Президентская республика.",
     "mood": "Экономические трудности, недоверие к выборам.",
-    "techInfra": "Платина, табак."
+    "techInfra": "Платина, табак.",
+    "leaders": "Президент — Эммерсон Мнангагва (с 2017 года).",
+    "asOf": "октябрь 2026",
+    "economy": "Табак, золото, платина, литий; инфляция и смена валют — постоянные проблемы.",
+    "freedom": [
+      {
+        "source": "Freedom House",
+        "score": "25 из 100 — «несвободная»",
+        "year": 2026
+      }
+    ]
   },
   "culture": {
     "character": "Образованные, вежливые.",
@@ -62,12 +222,156 @@
       "Хлопки при приветствии",
       "Садза — каша",
       "Каменная скульптура шона"
+    ],
+    "ethnic": [
+      {
+        "group": "Африканцы (в основном шона и ндебеле)",
+        "percent": 99.6
+      }
+    ],
+    "ethnicSource": "перепись населения Зимбабве 2022 года (по данным ЦРУ World Factbook)",
+    "languages": [
+      "английский, шона, ндебеле и ещё 13 (всего 16 официальных)"
+    ],
+    "religions": [
+      {
+        "name": "Апостольские церкви",
+        "percent": 40.3
+      },
+      {
+        "name": "Пятидесятники",
+        "percent": 17
+      },
+      {
+        "name": "Протестантизм",
+        "percent": 13.8
+      },
+      {
+        "name": "Католицизм",
+        "percent": 6.4
+      },
+      {
+        "name": "Не исповедуют религию",
+        "percent": 8.3
+      }
+    ],
+    "holidays": [
+      {
+        "date": "18 апреля",
+        "name": "День независимости",
+        "text": "Независимость в 1980 году."
+      },
+      {
+        "date": "Август",
+        "name": "Дни героев и обороны",
+        "text": "Память о борьбе за независимость."
+      },
+      {
+        "date": "22 декабря",
+        "name": "День единства",
+        "text": "Соглашение ЗАНУ и ЗАПУ в 1987 году."
+      }
+    ],
+    "people": [
+      {
+        "name": "Роберт Мугабе",
+        "who": "первый лидер страны (1980–2017)"
+      },
+      {
+        "name": "Кирсти Ковентри",
+        "who": "олимпийская чемпионка по плаванию, с 2025 года — президент МОК"
+      },
+      {
+        "name": "Цици Дангарембга",
+        "who": "писательница"
+      }
     ]
   },
   "relations": {
-    "neighbors": "Хорошие связи с соседями, сложные с Западом."
+    "neighbors": "Хорошие связи с соседями, сложные с Западом.",
+    "asOf": "октябрь 2026",
+    "internal": "В 1983–1987 годах в Матабелеленде армия убила около 20 тысяч ндебеле («Гукурахунди»). Земельная реформа 2000-х годов, когда изымались фермы белых, привела к краху сельского хозяйства и гиперинфляции.",
+    "world": [
+      {
+        "country": "ZAF",
+        "status": "дружба",
+        "text": "Миллионы зимбабвийцев работают в ЮАР."
+      },
+      {
+        "country": "CHN",
+        "status": "дружба",
+        "text": "Инвестиции в литий."
+      },
+      {
+        "country": "GBR",
+        "status": "напряжённость",
+        "text": "Бывшая метрополия, санкции."
+      },
+      {
+        "country": "RUS",
+        "status": "дружба",
+        "text": "Политическая поддержка."
+      },
+      {
+        "country": "ZMB",
+        "status": "дружба",
+        "text": "Общий водопад Виктория."
+      }
+    ]
   },
   "photos": {
     "cover": "great-zimbabwe"
-  }
+  },
+  "stereotypes": {
+    "about": [
+      {
+        "myth": "«Зимбабве — только гиперинфляция»",
+        "reality": "Здесь руины Большого Зимбабве (ЮНЕСКО), водопад Виктория и Мана-Пулс."
+      },
+      {
+        "myth": "«Зимбабве — бедная деревня»",
+        "reality": "Здесь один из самых высоких уровней грамотности в Африке."
+      }
+    ],
+    "held": [
+      {
+        "myth": "«Мы победили колониализм»",
+        "reality": "Гордость за освободительную войну."
+      },
+      {
+        "myth": "«Санкции разорили нас»",
+        "reality": "Позиция правительства."
+      }
+    ]
+  },
+  "sources": [
+    {
+      "title": "Площадь, этнический состав, религии — ЦРУ World Factbook",
+      "url": "https://www.cia.gov/the-world-factbook/countries/zimbabwe/"
+    },
+    {
+      "title": "Население и ВВП на человека (в долларах США) — Всемирный банк",
+      "url": "https://data.worldbank.org/country/ZWE"
+    },
+    {
+      "title": "Индекс свободы — Freedom House, Freedom in the World 2026",
+      "url": "https://freedomhouse.org/countries/freedom-world/scores"
+    },
+    {
+      "title": "Курс валюты на 28.10.2026 — ExchangeRate-API",
+      "url": "https://open.er-api.com/v6/latest/USD"
+    },
+    {
+      "title": "Визы — сводные таблицы Википедии «Визовые требования для граждан Казахстана» и «…граждан России» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
+    },
+    {
+      "title": "Климат столицы — средние многолетние значения метеостанции «Harare (1961–1990, extremes 1897–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Harare"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+    }
+  ]
 }
