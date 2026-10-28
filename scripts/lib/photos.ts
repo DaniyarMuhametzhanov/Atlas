@@ -87,7 +87,8 @@ export function applyPicks(sources: Sources): number {
 /** Переносит из старого sources.json то, что сделал этап 6 (крупные файлы, размеры), в новый */
 export function keepBuilt(fresh: PhotoSource[], old: PhotoSource[]): PhotoSource[] {
   const byId = new Map(old.map((p) => [p.id, p]));
-  return fresh.map((p) => {
+  const freshIds = new Set(fresh.map((p) => p.id));
+  const mapped = fresh.map((p) => {
     const o = byId.get(p.id);
     if (!o) return p;
     const size = o.w && o.h ? { w: o.w, h: o.h } : {};
@@ -95,4 +96,7 @@ export function keepBuilt(fresh: PhotoSource[], old: PhotoSource[]): PhotoSource
     const built = Object.values(o.files).some((f) => !f.startsWith('img/legacy/'));
     return built ? { ...p, sizes: o.sizes, files: o.files, ...(o.avif ? { avif: o.avif } : {}), ...size } : { ...p, ...size };
   });
+  // фото, добавленные выбором владельца (их нет в старом атласе), со всеми сделанными файлами
+  const added = old.filter((o) => !freshIds.has(o.id) && Object.keys(o.files).length > 0);
+  return [...mapped, ...added];
 }

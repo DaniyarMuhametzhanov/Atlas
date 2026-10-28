@@ -84,6 +84,7 @@ export const Country = z.object({
   culture: z.object({
     ethnic: z.array(z.object({ group: Text, percent: z.number().min(0).max(100) })).optional(),
     ethnicSource: z.string().optional(), // перепись и её год
+    ethnicMulti: z.boolean().optional(), // можно было назвать несколько народов — сумма больше 100%
     languages: z.array(Text).optional(),
     religions: z.array(z.object({ name: Text, percent: z.number().optional() })).optional(),
     character: Text,
@@ -116,6 +117,9 @@ export const Country = z.object({
     .optional(),
 
   photos: z.object({ cover: PhotoId.optional(), gallery: z.array(PhotoId).optional() }),
+
+  // откуда взяты цифры и факты буклета (этап 8)
+  sources: z.array(z.object({ title: Text, url: z.string().url().optional() })).optional(),
 });
 export type Country = z.infer<typeof Country>;
 

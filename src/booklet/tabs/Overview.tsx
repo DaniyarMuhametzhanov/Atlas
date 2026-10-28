@@ -9,6 +9,12 @@ import s from './tabs.module.css';
 const num = (n: number) => n.toLocaleString('ru-RU');
 /** 20 300 000 → «20,3 млн» */
 const people = (n: number) => (n >= 1e6 ? `${(n / 1e6).toLocaleString('ru-RU', { maximumFractionDigits: 1 })} млн` : num(n));
+const MONTHS = ['январь', 'февраль', 'март', 'апрель', 'май', 'июнь', 'июль', 'август', 'сентябрь', 'октябрь', 'ноябрь', 'декабрь'];
+/** «2026-10» → «октябрь 2026» */
+const monthYear = (ym: string) => {
+  const [y, m] = ym.split('-').map(Number);
+  return MONTHS[m - 1] ? `${MONTHS[m - 1]} ${y}` : ym;
+};
 
 export function Overview({ c }: { c: Country }) {
   const f = c.overview.facts;
@@ -63,6 +69,17 @@ export function Overview({ c }: { c: Country }) {
         </Section>
       )}
       {near === null && !f ? <Soon title="Соседи по карте" what="загружаются…" /> : null}
+      {c.sources?.length ? (
+        <Section title="Источники" note={<>Данные проверены: {monthYear(c.updated)}.</>}>
+          <ul className={s.sources}>
+            {c.sources.map((x) => (
+              <li key={x.title}>
+                {x.url ? <a href={x.url} target="_blank" rel="noopener noreferrer">{x.title}</a> : x.title}
+              </li>
+            ))}
+          </ul>
+        </Section>
+      ) : null}
     </>
   );
 }

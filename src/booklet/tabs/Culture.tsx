@@ -9,7 +9,7 @@ export function Culture({ c }: { c: Country }) {
     <>
       {k.ethnic?.length ? (
         <Section title="Этнический состав">
-          <EthnicBar groups={k.ethnic} source={k.ethnicSource} />
+          <EthnicBar groups={k.ethnic} source={k.ethnicSource} multi={k.ethnicMulti} />
         </Section>
       ) : (
         <Soon title="Этнический состав" what="доли народов по данным переписи (с годом)." />

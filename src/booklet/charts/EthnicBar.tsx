@@ -5,12 +5,13 @@ import s from './charts.module.css';
 type Group = { group: string; percent: number };
 const MAX = 7;
 
-export function EthnicBar({ groups, source }: { groups: Group[]; source?: string }) {
+export function EthnicBar({ groups, source, multi }: { groups: Group[]; source?: string; multi?: boolean }) {
   const sorted = [...groups].sort((a, b) => b.percent - a.percent);
   const shown = sorted.slice(0, sorted.length > MAX + 1 ? MAX : MAX + 1);
   const rest = sorted.slice(shown.length).reduce((n, g) => n + g.percent, 0);
   const total = sorted.reduce((n, g) => n + g.percent, 0);
-  const other = Math.max(rest, 100 - total > 0.05 ? 100 - total : 0);
+  // если можно было назвать несколько народов, «Другие» не досчитываем: сумма и так больше 100%
+  const other = multi ? rest : Math.max(rest, 100 - total > 0.05 ? 100 - total : 0);
   const rows = other > 0 ? [...shown, { group: 'Другие', percent: Math.round(other * 10) / 10 }] : shown;
   const color = (i: number, g: Group) => (g.group === 'Другие' ? 'var(--muted)' : `var(--series-${i + 1})`);
 
@@ -30,6 +31,7 @@ export function EthnicBar({ groups, source }: { groups: Group[]; source?: string
           </li>
         ))}
       </ul>
+      {multi ? <figcaption>Люди могли назвать несколько народов, поэтому сумма больше 100%.</figcaption> : null}
       {source ? <figcaption>Источник: {source}</figcaption> : null}
     </figure>
   );

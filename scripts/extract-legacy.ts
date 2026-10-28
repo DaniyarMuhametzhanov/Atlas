@@ -119,6 +119,34 @@ function check<T>(schema: z.ZodType<T>, value: unknown, where: string): T {
   return value as T;
 }
 
+// Тексты этапа 8 лежат в content/enrich/<КОД>.json — это «источник правды» для новых полей.
+// Папку extract не чистит и не перезаписывает, а накладывает поверх данных из старого атласа:
+// объекты сливаются по полям, массивы заменяются целиком. Сжатая запись климата
+// {tMin:[12], tMax:[12], rain:[12]} разворачивается в 12 строк по месяцам.
+const ENRICH = path.join(CONTENT, 'enrich');
+const enrichUsed = new Set<string>();
+type Json = Record<string, unknown>;
+const isObj = (v: unknown): v is Json => typeof v === 'object' && v !== null && !Array.isArray(v);
+function deepMerge(base: Json, over: Json): Json {
+  const out: Json = { ...base };
+  for (const [k, v] of Object.entries(over)) out[k] = isObj(v) && isObj(base[k]) ? deepMerge(base[k] as Json, v) : v;
+  return out;
+}
+function applyEnrich(country: Json, code: string): Json {
+  const file = path.join(ENRICH, `${code}.json`);
+  if (!fs.existsSync(file)) return country;
+  enrichUsed.add(code);
+  const over = JSON.parse(fs.readFileSync(file, 'utf8')) as Json;
+  const tourist = over.tourist as Json | undefined;
+  const cl = tourist?.climate as { tMin?: number[]; tMax?: number[]; rain?: number[] } | undefined;
+  if (tourist && cl && !Array.isArray(cl)) {
+    const { tMin, tMax, rain } = cl;
+    if (!tMin || !tMax || !rain || [tMin, tMax, rain].some((a) => a.length !== 12)) problems.push(`enrich ${code}: климат — нужны три списка по 12 чисел`);
+    else tourist.climate = tMin.map((t, i) => ({ month: i + 1, tMin: t, tMax: tMax[i], rainMm: rain[i] }));
+  }
+  return deepMerge(country, over);
+}
+
 // Чистим старый результат, чтобы не осталось «осиротевших» файлов
 // content/history целиком не трогаем: там справочник машины времени (build-history.ts) и новые буклеты
 for (const dir of ['countries', 'history/legacy', 'places', 'epochs']) fs.rmSync(path.join(CONTENT, dir), { recursive: true, force: true });
@@ -260,10 +288,13 @@ for (const [key, c] of Object.entries(L.C as Record<string, any>)) {
     relations: { neighbors: x.rel },
     photos: cover ? { cover } : {},
   };
-  writeJson(path.join(CONTENT, `countries/${code}.json`), check(Country, country, `страна ${code}`));
+  const merged = applyEnrich(country, code);
+  writeJson(path.join(CONTENT, `countries/${code}.json`), check(Country, merged, `страна ${code}`));
   countryIndex.push({ id: code, name: c.n, nameEn: key, region: c.r, capital: c.cap });
   countryCount.total++;
 }
+if (fs.existsSync(ENRICH))
+  for (const f of fs.readdirSync(ENRICH)) if (!enrichUsed.has(f.replace(/\.json$/, ''))) problems.push(`enrich/${f}: нет такой страны`);
 countryIndex.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
 writeJson(path.join(CONTENT, 'countries-index.json'), countryIndex);
 
