@@ -10867,6 +10867,25 @@
       },
       "w": 1600,
       "h": 1200
+    },
+    {
+      "id": "table-mountain-rabich",
+      "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2821",
+      "author": "Dietmar Rabich",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2821.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/table-mountain-rabich-480.webp",
+        "1200": "img/table-mountain-rabich-1200.webp",
+        "1600": "img/table-mountain-rabich-1600.webp"
+      },
+      "w": 1600,
+      "h": 1067
     }
   ]
 }

@@ -51,7 +51,9 @@ export function applyPicks(sources: Sources): number {
   if (!fs.existsSync(PICKS)) return 0;
   const picks = readJson<Pick[]>(PICKS);
   for (const p of picks) {
-    if (!sources.photos.some((x) => x.id === p.id)) {
+    const same = sources.photos.find((x) => x.id === p.id);
+    if (same && same.url !== p.url) throw new Error(`Имя фото «${p.id}» уже занято другим файлом (${same.url}) — выберите другое`);
+    if (!same) {
       // файлов пока нет — их сделает build-images.ts; до этого фото в sources.json есть, но без файлов не показывается
       sources.photos.push({ id: p.id, title: p.title, author: p.author, license: p.license, url: p.url, sizes: [], files: {} });
     }
