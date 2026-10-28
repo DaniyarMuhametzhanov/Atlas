@@ -140,8 +140,11 @@ export const PhotoSource = z.object({
   author: Text,
   license: Text,
   url: z.string().url(),
-  sizes: z.array(z.number().int().positive()).min(1),
-  files: z.record(z.string(), z.string()), // ширина → путь в public/
+  sizes: z.array(z.number().int().positive()), // пусто — фото выбрано, но файлы ещё не сделаны (build-images.ts)
+  files: z.record(z.string(), z.string()), // ширина → путь в public/ (WebP; у старых фото JPEG или WebP)
+  avif: z.record(z.string(), z.string()).optional(), // ширина → путь к AVIF той же ширины
+  w: z.number().int().positive().optional(), // размер самого большого файла в пикселях
+  h: z.number().int().positive().optional(),
 });
 export type PhotoSource = z.infer<typeof PhotoSource>;
 

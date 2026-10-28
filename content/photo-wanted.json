@@ -1,0 +1,14 @@
+[
+  { "target": "cover:GNQ", "label": "Экваториальная Гвинея — обложка", "query": "Malabo Bioko Equatorial Guinea" },
+  { "target": "cover:ZAF", "label": "ЮАР — обложка", "query": "Cape Town Table Mountain view" },
+  { "target": "cover:HND", "label": "Гондурас — обложка", "query": "Copan Ruinas Honduras" },
+  { "target": "place:kaz-ozero-balkhash", "label": "Озеро Балхаш", "query": "Lake Balkhash" },
+  { "target": "place:zaf-stolovaya-gora", "label": "Столовая гора", "query": "Table Mountain Cape Town" },
+  { "target": "place:aut-vysokiy-tauern", "label": "Высокий Тауэрн", "query": "Hohe Tauern National Park" },
+  { "target": "sight:MYS:Пещеры Бату", "label": "Пещеры Бату", "query": "Batu Caves" },
+  { "target": "sight:GNQ:Малабо", "label": "Малабо", "query": "Malabo cathedral" },
+  { "target": "sight:HND:Копан", "label": "Копан", "query": "Copan archaeological site stela" },
+  { "target": "find:Библия Гутенберга", "label": "Находка: Библия Гутенберга", "query": "Gutenberg Bible" },
+  { "target": "find:Полёт Гагарина", "label": "Находка: полёт Гагарина", "query": "Vostok 1 capsule" },
+  { "target": "find:Смартфон", "label": "Находка: смартфон", "query": "smartphone" }
+]

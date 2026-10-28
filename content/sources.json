@@ -49,7 +49,9 @@
       ],
       "files": {
         "560": "img/legacy/eiffel-tower-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "neuschwanstein-castle",
@@ -64,7 +66,9 @@
       "files": {
         "224": "img/legacy/neuschwanstein-castle-thumb.webp",
         "560": "img/legacy/neuschwanstein-castle-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "big-ben-westminster",
@@ -77,7 +81,9 @@
       ],
       "files": {
         "560": "img/legacy/big-ben-westminster-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "cliffs-of-moher",
@@ -92,7 +98,9 @@
       "files": {
         "224": "img/legacy/cliffs-of-moher-thumb.webp",
         "560": "img/legacy/cliffs-of-moher-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "strokkur-eruption",
@@ -107,7 +115,9 @@
       "files": {
         "224": "img/legacy/strokkur-eruption-thumb.webp",
         "560": "img/legacy/strokkur-eruption-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "geirangerfjord",
@@ -122,7 +132,9 @@
       "files": {
         "224": "img/legacy/geirangerfjord-thumb.webp",
         "560": "img/legacy/geirangerfjord-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "vasa-ship-museum",
@@ -137,7 +149,9 @@
       "files": {
         "224": "img/legacy/vasa-ship-museum-thumb.webp",
         "560": "img/legacy/vasa-ship-museum-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "suomenlinna",
@@ -152,7 +166,9 @@
       "files": {
         "224": "img/legacy/suomenlinna-thumb.webp",
         "560": "img/legacy/suomenlinna-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kronborg",
@@ -167,7 +183,9 @@
       "files": {
         "224": "img/legacy/kronborg-thumb.webp",
         "560": "img/legacy/kronborg-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kinderdijk-windmills",
@@ -182,7 +200,9 @@
       "files": {
         "224": "img/legacy/kinderdijk-windmills-thumb.webp",
         "560": "img/legacy/kinderdijk-windmills-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "bruges-canal-rozenhoedkaai",
@@ -197,7 +217,9 @@
       "files": {
         "224": "img/legacy/bruges-canal-rozenhoedkaai-thumb.webp",
         "560": "img/legacy/bruges-canal-rozenhoedkaai-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "bock-casemates",
@@ -212,7 +234,9 @@
       "files": {
         "224": "img/legacy/bock-casemates-thumb.webp",
         "560": "img/legacy/bock-casemates-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "matterhorn",
@@ -227,7 +251,9 @@
       "files": {
         "224": "img/legacy/matterhorn-thumb.webp",
         "560": "img/legacy/matterhorn-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "schonbrunn-palace",
@@ -242,7 +268,9 @@
       "files": {
         "224": "img/legacy/schonbrunn-palace-thumb.webp",
         "560": "img/legacy/schonbrunn-palace-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "colosseum-rome",
@@ -257,7 +285,9 @@
       "files": {
         "224": "img/legacy/colosseum-rome-thumb.webp",
         "560": "img/legacy/colosseum-rome-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "alhambra",
@@ -272,7 +302,9 @@
       "files": {
         "224": "img/legacy/alhambra-thumb.webp",
         "560": "img/legacy/alhambra-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "belem-tower",
@@ -287,7 +319,9 @@
       "files": {
         "224": "img/legacy/belem-tower-thumb.webp",
         "560": "img/legacy/belem-tower-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "parthenon-acropolis",
@@ -302,7 +336,9 @@
       "files": {
         "224": "img/legacy/parthenon-acropolis-thumb.webp",
         "560": "img/legacy/parthenon-acropolis-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "krakow-main-square",
@@ -317,7 +353,9 @@
       "files": {
         "224": "img/legacy/krakow-main-square-thumb.webp",
         "560": "img/legacy/krakow-main-square-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "prague-castle",
@@ -332,7 +370,9 @@
       "files": {
         "224": "img/legacy/prague-castle-thumb.webp",
         "560": "img/legacy/prague-castle-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "spis-castle",
@@ -347,7 +387,9 @@
       "files": {
         "224": "img/legacy/spis-castle-thumb.webp",
         "560": "img/legacy/spis-castle-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "bran-castle",
@@ -362,7 +404,9 @@
       "files": {
         "224": "img/legacy/bran-castle-thumb.webp",
         "560": "img/legacy/bran-castle-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "rila-monastery",
@@ -377,7 +421,9 @@
       "files": {
         "224": "img/legacy/rila-monastery-thumb.jpg",
         "560": "img/legacy/rila-monastery-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "belgrade-fortress",
@@ -392,7 +438,9 @@
       "files": {
         "224": "img/legacy/belgrade-fortress-thumb.webp",
         "560": "img/legacy/belgrade-fortress-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "dubrovnik-walls",
@@ -407,7 +455,9 @@
       "files": {
         "224": "img/legacy/dubrovnik-walls-thumb.webp",
         "560": "img/legacy/dubrovnik-walls-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "lake-bled",
@@ -422,7 +472,9 @@
       "files": {
         "224": "img/legacy/lake-bled-thumb.webp",
         "560": "img/legacy/lake-bled-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "stari-most-mostar",
@@ -437,7 +489,9 @@
       "files": {
         "224": "img/legacy/stari-most-mostar-thumb.webp",
         "560": "img/legacy/stari-most-mostar-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kotor-old-town-bay",
@@ -452,7 +506,9 @@
       "files": {
         "224": "img/legacy/kotor-old-town-bay-thumb.webp",
         "560": "img/legacy/kotor-old-town-bay-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "berat-albania-houses",
@@ -467,7 +523,9 @@
       "files": {
         "224": "img/legacy/berat-albania-houses-thumb.webp",
         "560": "img/legacy/berat-albania-houses-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "church-of-st-john-at-kaneo",
@@ -482,7 +540,9 @@
       "files": {
         "224": "img/legacy/church-of-st-john-at-kaneo-thumb.webp",
         "560": "img/legacy/church-of-st-john-at-kaneo-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "visoki-decani",
@@ -495,7 +555,9 @@
       ],
       "files": {
         "560": "img/legacy/visoki-decani-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "tallinn-old-town",
@@ -510,7 +572,9 @@
       "files": {
         "224": "img/legacy/tallinn-old-town-thumb.webp",
         "560": "img/legacy/tallinn-old-town-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "house-of-the-blackheads-riga",
@@ -525,7 +589,9 @@
       "files": {
         "224": "img/legacy/house-of-the-blackheads-riga-thumb.webp",
         "560": "img/legacy/house-of-the-blackheads-riga-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "mir-castle",
@@ -540,7 +606,9 @@
       "files": {
         "224": "img/legacy/mir-castle-thumb.webp",
         "560": "img/legacy/mir-castle-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "saint-sophia-cathedral-kyiv",
@@ -555,7 +623,9 @@
       "files": {
         "224": "img/legacy/saint-sophia-cathedral-kyiv-thumb.webp",
         "560": "img/legacy/saint-sophia-cathedral-kyiv-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "orheiul-vechi",
@@ -570,7 +640,9 @@
       "files": {
         "224": "img/legacy/orheiul-vechi-thumb.webp",
         "560": "img/legacy/orheiul-vechi-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "saint-basil-s-cathedral-red-square",
@@ -585,7 +657,9 @@
       "files": {
         "224": "img/legacy/saint-basil-s-cathedral-red-square-thumb.webp",
         "560": "img/legacy/saint-basil-s-cathedral-red-square-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kourion-theatre",
@@ -598,7 +672,9 @@
       ],
       "files": {
         "560": "img/legacy/kourion-theatre-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "lala-mustafa-pasha-mosque-famagusta",
@@ -613,7 +689,9 @@
       "files": {
         "224": "img/legacy/lala-mustafa-pasha-mosque-famagusta-thumb.webp",
         "560": "img/legacy/lala-mustafa-pasha-mosque-famagusta-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "hagia-sophia",
@@ -628,7 +706,9 @@
       "files": {
         "224": "img/legacy/hagia-sophia-thumb.webp",
         "560": "img/legacy/hagia-sophia-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "gergeti-trinity-church",
@@ -641,7 +721,9 @@
       ],
       "files": {
         "560": "img/legacy/gergeti-trinity-church-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "khor-virap-ararat",
@@ -654,7 +736,9 @@
       ],
       "files": {
         "560": "img/legacy/khor-virap-ararat-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "maiden-tower-baku",
@@ -669,7 +753,9 @@
       "files": {
         "224": "img/legacy/maiden-tower-baku-thumb.webp",
         "560": "img/legacy/maiden-tower-baku-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "naqsh-e-jahan-square",
@@ -684,7 +770,9 @@
       "files": {
         "224": "img/legacy/naqsh-e-jahan-square-thumb.webp",
         "560": "img/legacy/naqsh-e-jahan-square-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "ziggurat-of-ur",
@@ -699,7 +787,9 @@
       "files": {
         "224": "img/legacy/ziggurat-of-ur-thumb.webp",
         "560": "img/legacy/ziggurat-of-ur-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "palmyra-colonnade",
@@ -714,7 +804,9 @@
       "files": {
         "224": "img/legacy/palmyra-colonnade-thumb.webp",
         "560": "img/legacy/palmyra-colonnade-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "temple-of-bacchus-baalbek",
@@ -729,7 +821,9 @@
       "files": {
         "224": "img/legacy/temple-of-bacchus-baalbek-thumb.webp",
         "560": "img/legacy/temple-of-bacchus-baalbek-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "western-wall",
@@ -744,7 +838,9 @@
       "files": {
         "224": "img/legacy/western-wall-thumb.webp",
         "560": "img/legacy/western-wall-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "church-of-the-nativity",
@@ -759,7 +855,9 @@
       "files": {
         "224": "img/legacy/church-of-the-nativity-thumb.webp",
         "560": "img/legacy/church-of-the-nativity-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "al-khazneh-petra",
@@ -774,7 +872,9 @@
       "files": {
         "224": "img/legacy/al-khazneh-petra-thumb.webp",
         "560": "img/legacy/al-khazneh-petra-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "masjid-al-haram",
@@ -789,7 +889,9 @@
       "files": {
         "224": "img/legacy/masjid-al-haram-thumb.webp",
         "560": "img/legacy/masjid-al-haram-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "shibam",
@@ -804,7 +906,9 @@
       "files": {
         "224": "img/legacy/shibam-thumb.webp",
         "560": "img/legacy/shibam-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "nakhal-fort",
@@ -819,7 +923,9 @@
       "files": {
         "224": "img/legacy/nakhal-fort-thumb.webp",
         "560": "img/legacy/nakhal-fort-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "burj-khalifa",
@@ -832,7 +938,9 @@
       ],
       "files": {
         "560": "img/legacy/burj-khalifa-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "doha-skyline",
@@ -845,7 +953,9 @@
       ],
       "files": {
         "560": "img/legacy/doha-skyline-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kuwait-towers",
@@ -860,7 +970,9 @@
       "files": {
         "224": "img/legacy/kuwait-towers-thumb.webp",
         "560": "img/legacy/kuwait-towers-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kazakh-yurt-steppe",
@@ -873,7 +985,9 @@
       ],
       "files": {
         "560": "img/legacy/kazakh-yurt-steppe-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "registan",
@@ -888,7 +1002,9 @@
       "files": {
         "224": "img/legacy/registan-thumb.webp",
         "560": "img/legacy/registan-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "merv-sultan-sanjar-mausoleum",
@@ -903,7 +1019,9 @@
       "files": {
         "224": "img/legacy/merv-sultan-sanjar-mausoleum-thumb.webp",
         "560": "img/legacy/merv-sultan-sanjar-mausoleum-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "yurt-song-kul",
@@ -916,7 +1034,9 @@
       ],
       "files": {
         "560": "img/legacy/yurt-song-kul-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "pamir-highway",
@@ -929,7 +1049,9 @@
       ],
       "files": {
         "560": "img/legacy/pamir-highway-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "minaret-of-jam",
@@ -944,7 +1066,9 @@
       "files": {
         "224": "img/legacy/minaret-of-jam-thumb.webp",
         "560": "img/legacy/minaret-of-jam-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "badshahi-mosque",
@@ -959,7 +1083,9 @@
       "files": {
         "224": "img/legacy/badshahi-mosque-thumb.webp",
         "560": "img/legacy/badshahi-mosque-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "taj-mahal",
@@ -974,7 +1100,9 @@
       "files": {
         "224": "img/legacy/taj-mahal-thumb.webp",
         "560": "img/legacy/taj-mahal-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "boudhanath",
@@ -987,7 +1115,9 @@
       ],
       "files": {
         "560": "img/legacy/boudhanath-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "paro-taktsang",
@@ -1002,7 +1132,9 @@
       "files": {
         "224": "img/legacy/paro-taktsang-thumb.webp",
         "560": "img/legacy/paro-taktsang-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "sundarbans-mangrove",
@@ -1017,7 +1149,9 @@
       "files": {
         "224": "img/legacy/sundarbans-mangrove-thumb.webp",
         "560": "img/legacy/sundarbans-mangrove-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "luang-prabang-wat-xieng-thong",
@@ -1032,7 +1166,9 @@
       "files": {
         "224": "img/legacy/luang-prabang-wat-xieng-thong-thumb.webp",
         "560": "img/legacy/luang-prabang-wat-xieng-thong-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "ha-long-bay",
@@ -1047,7 +1183,9 @@
       "files": {
         "224": "img/legacy/ha-long-bay-thumb.webp",
         "560": "img/legacy/ha-long-bay-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "petronas-towers",
@@ -1060,7 +1198,9 @@
       ],
       "files": {
         "560": "img/legacy/petronas-towers-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "omar-ali-saifuddien-mosque",
@@ -1073,7 +1213,9 @@
       ],
       "files": {
         "560": "img/legacy/omar-ali-saifuddien-mosque-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "borobudur",
@@ -1088,7 +1230,9 @@
       "files": {
         "224": "img/legacy/borobudur-thumb.webp",
         "560": "img/legacy/borobudur-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "banaue-rice-terraces",
@@ -1103,7 +1247,9 @@
       "files": {
         "224": "img/legacy/banaue-rice-terraces-thumb.webp",
         "560": "img/legacy/banaue-rice-terraces-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "cristo-rei-of-dili",
@@ -1116,7 +1262,9 @@
       ],
       "files": {
         "560": "img/legacy/cristo-rei-of-dili-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "great-wall-of-china-mutianyu",
@@ -1131,7 +1279,9 @@
       "files": {
         "224": "img/legacy/great-wall-of-china-mutianyu-thumb.webp",
         "560": "img/legacy/great-wall-of-china-mutianyu-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "taipei-101",
@@ -1144,7 +1294,9 @@
       ],
       "files": {
         "560": "img/legacy/taipei-101-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "mongolian-ger-steppe",
@@ -1157,7 +1309,9 @@
       ],
       "files": {
         "560": "img/legacy/mongolian-ger-steppe-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "gyeongbokgung",
@@ -1172,7 +1326,9 @@
       "files": {
         "224": "img/legacy/gyeongbokgung-thumb.webp",
         "560": "img/legacy/gyeongbokgung-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "mount-fuji-chureito-pagoda",
@@ -1185,7 +1341,9 @@
       ],
       "files": {
         "560": "img/legacy/mount-fuji-chureito-pagoda-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "giza-pyramids",
@@ -1200,7 +1358,9 @@
       "files": {
         "224": "img/legacy/giza-pyramids-thumb.webp",
         "560": "img/legacy/giza-pyramids-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "leptis-magna",
@@ -1215,7 +1375,9 @@
       "files": {
         "224": "img/legacy/leptis-magna-thumb.webp",
         "560": "img/legacy/leptis-magna-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "amphitheatre-of-el-jem",
@@ -1230,7 +1392,9 @@
       "files": {
         "224": "img/legacy/amphitheatre-of-el-jem-thumb.webp",
         "560": "img/legacy/amphitheatre-of-el-jem-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "tassili-n-ajjer",
@@ -1245,7 +1409,9 @@
       "files": {
         "224": "img/legacy/tassili-n-ajjer-thumb.webp",
         "560": "img/legacy/tassili-n-ajjer-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "chefchaouen",
@@ -1258,7 +1424,9 @@
       ],
       "files": {
         "560": "img/legacy/chefchaouen-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "western-sahara-desert",
@@ -1271,7 +1439,9 @@
       ],
       "files": {
         "560": "img/legacy/western-sahara-desert-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "chinguetti-mosque",
@@ -1286,7 +1456,9 @@
       "files": {
         "224": "img/legacy/chinguetti-mosque-thumb.webp",
         "560": "img/legacy/chinguetti-mosque-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "great-mosque-of-djenne",
@@ -1301,7 +1473,9 @@
       "files": {
         "224": "img/legacy/great-mosque-of-djenne-thumb.webp",
         "560": "img/legacy/great-mosque-of-djenne-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "grand-mosque-of-agadez",
@@ -1316,7 +1490,9 @@
       "files": {
         "224": "img/legacy/grand-mosque-of-agadez-thumb.webp",
         "560": "img/legacy/grand-mosque-of-agadez-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "ennedi-arch",
@@ -1331,7 +1507,9 @@
       "files": {
         "224": "img/legacy/ennedi-arch-thumb.webp",
         "560": "img/legacy/ennedi-arch-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "white-nile-juba",
@@ -1346,7 +1524,9 @@
       "files": {
         "224": "img/legacy/white-nile-juba-thumb.webp",
         "560": "img/legacy/white-nile-juba-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "fiat-tagliero-asmara",
@@ -1361,7 +1541,9 @@
       "files": {
         "224": "img/legacy/fiat-tagliero-asmara-thumb.webp",
         "560": "img/legacy/fiat-tagliero-asmara-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "church-of-st-george-lalibela",
@@ -1376,7 +1558,9 @@
       "files": {
         "224": "img/legacy/church-of-st-george-lalibela-thumb.webp",
         "560": "img/legacy/church-of-st-george-lalibela-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "lake-assal-djibouti",
@@ -1391,7 +1575,9 @@
       "files": {
         "224": "img/legacy/lake-assal-djibouti-thumb.webp",
         "560": "img/legacy/lake-assal-djibouti-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "laas-geel",
@@ -1406,7 +1592,9 @@
       "files": {
         "224": "img/legacy/laas-geel-thumb.webp",
         "560": "img/legacy/laas-geel-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "laas-geel-cave-paintings",
@@ -1421,7 +1609,9 @@
       "files": {
         "224": "img/legacy/laas-geel-cave-paintings-thumb.webp",
         "560": "img/legacy/laas-geel-cave-paintings-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "maasai-mara",
@@ -1434,7 +1624,9 @@
       ],
       "files": {
         "560": "img/legacy/maasai-mara-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "volcanoes-national-park-rwanda",
@@ -1447,7 +1639,9 @@
       ],
       "files": {
         "560": "img/legacy/volcanoes-national-park-rwanda-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "burundi-drummers",
@@ -1462,7 +1656,9 @@
       "files": {
         "224": "img/legacy/burundi-drummers-thumb.webp",
         "560": "img/legacy/burundi-drummers-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kilimanjaro",
@@ -1477,7 +1673,9 @@
       "files": {
         "224": "img/legacy/kilimanjaro-thumb.webp",
         "560": "img/legacy/kilimanjaro-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "congo-river",
@@ -1492,7 +1690,9 @@
       "files": {
         "224": "img/legacy/congo-river-thumb.webp",
         "560": "img/legacy/congo-river-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "basilique-sainte-anne-brazzaville",
@@ -1507,7 +1707,9 @@
       "files": {
         "224": "img/legacy/basilique-sainte-anne-brazzaville-thumb.webp",
         "560": "img/legacy/basilique-sainte-anne-brazzaville-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "lope-national-park",
@@ -1522,7 +1724,9 @@
       "files": {
         "224": "img/legacy/lope-national-park-thumb.webp",
         "560": "img/legacy/lope-national-park-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "foumban-palace",
@@ -1537,7 +1741,9 @@
       "files": {
         "224": "img/legacy/foumban-palace-thumb.webp",
         "560": "img/legacy/foumban-palace-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "dzanga-sangha-forest-elephants",
@@ -1552,7 +1758,9 @@
       "files": {
         "224": "img/legacy/dzanga-sangha-forest-elephants-thumb.webp",
         "560": "img/legacy/dzanga-sangha-forest-elephants-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "zuma-rock",
@@ -1567,7 +1775,9 @@
       "files": {
         "224": "img/legacy/zuma-rock-thumb.webp",
         "560": "img/legacy/zuma-rock-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "ganvie",
@@ -1580,7 +1790,9 @@
       ],
       "files": {
         "560": "img/legacy/ganvie-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "koutammakou",
@@ -1595,7 +1807,9 @@
       "files": {
         "224": "img/legacy/koutammakou-thumb.webp",
         "560": "img/legacy/koutammakou-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "cape-coast-castle",
@@ -1610,7 +1824,9 @@
       "files": {
         "224": "img/legacy/cape-coast-castle-thumb.webp",
         "560": "img/legacy/cape-coast-castle-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "basilica-of-our-lady-of-peace-yamoussoukro",
@@ -1625,7 +1841,9 @@
       "files": {
         "224": "img/legacy/basilica-of-our-lady-of-peace-yamoussoukro-thumb.webp",
         "560": "img/legacy/basilica-of-our-lady-of-peace-yamoussoukro-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "grand-mosque-of-bobo-dioulasso",
@@ -1638,7 +1856,9 @@
       ],
       "files": {
         "560": "img/legacy/grand-mosque-of-bobo-dioulasso-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "bunce-island",
@@ -1653,7 +1873,9 @@
       "files": {
         "224": "img/legacy/bunce-island-thumb.webp",
         "560": "img/legacy/bunce-island-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "fouta-djallon",
@@ -1668,7 +1890,9 @@
       "files": {
         "224": "img/legacy/fouta-djallon-thumb.webp",
         "560": "img/legacy/fouta-djallon-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "bijagos",
@@ -1683,7 +1907,9 @@
       "files": {
         "224": "img/legacy/bijagos-thumb.webp",
         "560": "img/legacy/bijagos-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "goree-house-of-slaves",
@@ -1698,7 +1924,9 @@
       "files": {
         "224": "img/legacy/goree-house-of-slaves-thumb.webp",
         "560": "img/legacy/goree-house-of-slaves-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kunta-kinteh-island",
@@ -1713,7 +1941,9 @@
       "files": {
         "224": "img/legacy/kunta-kinteh-island-thumb.webp",
         "560": "img/legacy/kunta-kinteh-island-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kalandula-falls",
@@ -1726,7 +1956,9 @@
       ],
       "files": {
         "560": "img/legacy/kalandula-falls-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "lake-malawi",
@@ -1741,7 +1973,9 @@
       "files": {
         "224": "img/legacy/lake-malawi-thumb.webp",
         "560": "img/legacy/lake-malawi-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "island-of-mozambique",
@@ -1756,7 +1990,9 @@
       "files": {
         "224": "img/legacy/island-of-mozambique-thumb.webp",
         "560": "img/legacy/island-of-mozambique-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "great-zimbabwe",
@@ -1771,7 +2007,9 @@
       "files": {
         "224": "img/legacy/great-zimbabwe-thumb.webp",
         "560": "img/legacy/great-zimbabwe-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "okavango-delta",
@@ -1786,7 +2024,9 @@
       "files": {
         "224": "img/legacy/okavango-delta-thumb.webp",
         "560": "img/legacy/okavango-delta-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "deadvlei",
@@ -1801,7 +2041,9 @@
       "files": {
         "224": "img/legacy/deadvlei-thumb.webp",
         "560": "img/legacy/deadvlei-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "maletsunyane-falls",
@@ -1816,7 +2058,9 @@
       "files": {
         "224": "img/legacy/maletsunyane-falls-thumb.webp",
         "560": "img/legacy/maletsunyane-falls-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "ezulwini-valley",
@@ -1831,7 +2075,9 @@
       "files": {
         "224": "img/legacy/ezulwini-valley-thumb.webp",
         "560": "img/legacy/ezulwini-valley-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "avenue-of-the-baobabs",
@@ -1846,7 +2092,9 @@
       "files": {
         "224": "img/legacy/avenue-of-the-baobabs-thumb.webp",
         "560": "img/legacy/avenue-of-the-baobabs-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "moraine-lake",
@@ -1861,7 +2109,9 @@
       "files": {
         "224": "img/legacy/moraine-lake-thumb.webp",
         "560": "img/legacy/moraine-lake-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "manhattan-skyline",
@@ -1874,7 +2124,9 @@
       ],
       "files": {
         "560": "img/legacy/manhattan-skyline-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "ilulissat-icefjord",
@@ -1889,7 +2141,9 @@
       "files": {
         "224": "img/legacy/ilulissat-icefjord-thumb.webp",
         "560": "img/legacy/ilulissat-icefjord-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "el-castillo-chichen-itza",
@@ -1904,7 +2158,9 @@
       "files": {
         "224": "img/legacy/el-castillo-chichen-itza-thumb.webp",
         "560": "img/legacy/el-castillo-chichen-itza-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "tikal-temple",
@@ -1919,7 +2175,9 @@
       "files": {
         "224": "img/legacy/tikal-temple-thumb.webp",
         "560": "img/legacy/tikal-temple-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "great-blue-hole",
@@ -1934,7 +2192,9 @@
       "files": {
         "224": "img/legacy/great-blue-hole-thumb.webp",
         "560": "img/legacy/great-blue-hole-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "santa-ana-volcano",
@@ -1947,7 +2207,9 @@
       ],
       "files": {
         "560": "img/legacy/santa-ana-volcano-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "granada-nicaragua-cathedral",
@@ -1962,7 +2224,9 @@
       "files": {
         "224": "img/legacy/granada-nicaragua-cathedral-thumb.webp",
         "560": "img/legacy/granada-nicaragua-cathedral-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "arenal-volcano",
@@ -1977,7 +2241,9 @@
       "files": {
         "224": "img/legacy/arenal-volcano-thumb.webp",
         "560": "img/legacy/arenal-volcano-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "miraflores-locks",
@@ -1992,7 +2258,9 @@
       "files": {
         "224": "img/legacy/miraflores-locks-thumb.webp",
         "560": "img/legacy/miraflores-locks-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "old-havana",
@@ -2007,7 +2275,9 @@
       "files": {
         "224": "img/legacy/old-havana-thumb.webp",
         "560": "img/legacy/old-havana-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "nassau-bahamas-fort-fincastle",
@@ -2022,7 +2292,9 @@
       "files": {
         "224": "img/legacy/nassau-bahamas-fort-fincastle-thumb.webp",
         "560": "img/legacy/nassau-bahamas-fort-fincastle-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "citadelle-laferriere",
@@ -2037,7 +2309,9 @@
       "files": {
         "224": "img/legacy/citadelle-laferriere-thumb.webp",
         "560": "img/legacy/citadelle-laferriere-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "cathedral-of-santa-maria-la-menor-santo-domingo",
@@ -2052,7 +2326,9 @@
       "files": {
         "224": "img/legacy/cathedral-of-santa-maria-la-menor-santo-domingo-thumb.webp",
         "560": "img/legacy/cathedral-of-santa-maria-la-menor-santo-domingo-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "dunn-s-river-falls",
@@ -2065,7 +2341,9 @@
       ],
       "files": {
         "560": "img/legacy/dunn-s-river-falls-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "castillo-san-felipe-del-morro",
@@ -2080,7 +2358,9 @@
       "files": {
         "224": "img/legacy/castillo-san-felipe-del-morro-thumb.webp",
         "560": "img/legacy/castillo-san-felipe-del-morro-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "maracas-bay",
@@ -2093,7 +2373,9 @@
       ],
       "files": {
         "560": "img/legacy/maracas-bay-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "cartagena-colombia-old-town",
@@ -2108,7 +2390,9 @@
       "files": {
         "224": "img/legacy/cartagena-colombia-old-town-thumb.webp",
         "560": "img/legacy/cartagena-colombia-old-town-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "angel-falls",
@@ -2123,7 +2407,9 @@
       "files": {
         "224": "img/legacy/angel-falls-thumb.webp",
         "560": "img/legacy/angel-falls-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kaieteur-falls",
@@ -2138,7 +2424,9 @@
       "files": {
         "224": "img/legacy/kaieteur-falls-thumb.webp",
         "560": "img/legacy/kaieteur-falls-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "paramaribo-cathedral",
@@ -2153,7 +2441,9 @@
       "files": {
         "224": "img/legacy/paramaribo-cathedral-thumb.webp",
         "560": "img/legacy/paramaribo-cathedral-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "galapagos-giant-tortoise",
@@ -2168,7 +2458,9 @@
       "files": {
         "224": "img/legacy/galapagos-giant-tortoise-thumb.webp",
         "560": "img/legacy/galapagos-giant-tortoise-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "machu-picchu",
@@ -2183,7 +2475,9 @@
       "files": {
         "224": "img/legacy/machu-picchu-thumb.webp",
         "560": "img/legacy/machu-picchu-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "iguazu-falls",
@@ -2198,7 +2492,9 @@
       "files": {
         "224": "img/legacy/iguazu-falls-thumb.webp",
         "560": "img/legacy/iguazu-falls-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "salar-de-uyuni",
@@ -2213,7 +2509,9 @@
       "files": {
         "224": "img/legacy/salar-de-uyuni-thumb.webp",
         "560": "img/legacy/salar-de-uyuni-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "jesuit-mission-of-trinidad-paraguay",
@@ -2228,7 +2526,9 @@
       "files": {
         "224": "img/legacy/jesuit-mission-of-trinidad-paraguay-thumb.webp",
         "560": "img/legacy/jesuit-mission-of-trinidad-paraguay-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "moai-easter-island-ahu-tongariki",
@@ -2243,7 +2543,9 @@
       "files": {
         "224": "img/legacy/moai-easter-island-ahu-tongariki-thumb.webp",
         "560": "img/legacy/moai-easter-island-ahu-tongariki-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "perito-moreno-glacier",
@@ -2258,7 +2560,9 @@
       "files": {
         "224": "img/legacy/perito-moreno-glacier-thumb.webp",
         "560": "img/legacy/perito-moreno-glacier-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "colonia-del-sacramento-street",
@@ -2273,7 +2577,9 @@
       "files": {
         "224": "img/legacy/colonia-del-sacramento-street-thumb.webp",
         "560": "img/legacy/colonia-del-sacramento-street-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "stanley-falkland-islands",
@@ -2288,7 +2594,9 @@
       "files": {
         "224": "img/legacy/stanley-falkland-islands-thumb.webp",
         "560": "img/legacy/stanley-falkland-islands-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "uluru",
@@ -2303,7 +2611,9 @@
       "files": {
         "224": "img/legacy/uluru-thumb.webp",
         "560": "img/legacy/uluru-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "milford-sound",
@@ -2318,7 +2628,9 @@
       "files": {
         "224": "img/legacy/milford-sound-thumb.webp",
         "560": "img/legacy/milford-sound-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "papua-new-guinea-sing-sing",
@@ -2331,7 +2643,9 @@
       ],
       "files": {
         "560": "img/legacy/papua-new-guinea-sing-sing-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "fiji-beach",
@@ -2344,7 +2658,9 @@
       ],
       "files": {
         "560": "img/legacy/fiji-beach-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "mount-yasur",
@@ -2359,7 +2675,9 @@
       "files": {
         "224": "img/legacy/mount-yasur-thumb.webp",
         "560": "img/legacy/mount-yasur-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "new-caledonia-lagoon",
@@ -2374,7 +2692,9 @@
       "files": {
         "224": "img/legacy/new-caledonia-lagoon-thumb.webp",
         "560": "img/legacy/new-caledonia-lagoon-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kerguelen-islands",
@@ -2389,7 +2709,9 @@
       "files": {
         "224": "img/legacy/kerguelen-islands-thumb.webp",
         "560": "img/legacy/kerguelen-islands-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "antarctica-iceberg-penguins",
@@ -2404,7 +2726,9 @@
       "files": {
         "224": "img/legacy/antarctica-iceberg-penguins-thumb.webp",
         "560": "img/legacy/antarctica-iceberg-penguins-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "lake-baikal-ice",
@@ -2417,7 +2741,9 @@
       ],
       "files": {
         "224": "img/legacy/lake-baikal-ice-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "valley-of-geysers-kamchatka",
@@ -2430,7 +2756,9 @@
       ],
       "files": {
         "224": "img/legacy/valley-of-geysers-kamchatka-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "aurora-troms",
@@ -2443,7 +2771,9 @@
       ],
       "files": {
         "224": "img/legacy/aurora-troms-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jokulsarlon",
@@ -2456,7 +2786,9 @@
       ],
       "files": {
         "224": "img/legacy/jokulsarlon-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "aurora-borealis-lapland-finland",
@@ -2469,7 +2801,9 @@
       ],
       "files": {
         "224": "img/legacy/aurora-borealis-lapland-finland-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "abisko-aurora",
@@ -2482,7 +2816,9 @@
       ],
       "files": {
         "224": "img/legacy/abisko-aurora-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mont-blanc-massif",
@@ -2495,7 +2831,9 @@
       ],
       "files": {
         "224": "img/legacy/mont-blanc-massif-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lavender-field-provence",
@@ -2508,7 +2846,9 @@
       ],
       "files": {
         "224": "img/legacy/lavender-field-provence-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tre-cime-di-lavaredo",
@@ -2521,7 +2861,9 @@
       ],
       "files": {
         "224": "img/legacy/tre-cime-di-lavaredo-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "positano-amalfi-coast",
@@ -2534,7 +2876,9 @@
       ],
       "files": {
         "224": "img/legacy/positano-amalfi-coast-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "teide",
@@ -2547,7 +2891,9 @@
       ],
       "files": {
         "224": "img/legacy/teide-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "glencoe-scotland",
@@ -2560,7 +2906,9 @@
       ],
       "files": {
         "224": "img/legacy/glencoe-scotland-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "white-cliffs-of-dover",
@@ -2573,7 +2921,9 @@
       ],
       "files": {
         "224": "img/legacy/white-cliffs-of-dover-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "ring-of-kerry",
@@ -2586,7 +2936,9 @@
       ],
       "files": {
         "224": "img/legacy/ring-of-kerry-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "giant-s-causeway",
@@ -2599,7 +2951,9 @@
       ],
       "files": {
         "224": "img/legacy/giant-s-causeway-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "plitvice-lakes",
@@ -2612,7 +2966,9 @@
       ],
       "files": {
         "224": "img/legacy/plitvice-lakes-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "postojna-cave",
@@ -2625,7 +2981,9 @@
       ],
       "files": {
         "224": "img/legacy/postojna-cave-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bay-of-kotor",
@@ -2638,7 +2996,9 @@
       ],
       "files": {
         "224": "img/legacy/bay-of-kotor-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "santorini-caldera-oia",
@@ -2651,7 +3011,9 @@
       ],
       "files": {
         "224": "img/legacy/santorini-caldera-oia-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "meteora",
@@ -2664,7 +3026,9 @@
       ],
       "files": {
         "224": "img/legacy/meteora-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cappadocia-balloons",
@@ -2677,7 +3041,9 @@
       ],
       "files": {
         "224": "img/legacy/cappadocia-balloons-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pamukkale-travertines",
@@ -2690,7 +3056,9 @@
       ],
       "files": {
         "224": "img/legacy/pamukkale-travertines-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "gergeti-trinity-church-kazbek",
@@ -2703,7 +3071,9 @@
       ],
       "files": {
         "224": "img/legacy/gergeti-trinity-church-kazbek-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "black-forest-germany",
@@ -2716,7 +3086,9 @@
       ],
       "files": {
         "224": "img/legacy/black-forest-germany-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hallstatt",
@@ -2729,7 +3101,9 @@
       ],
       "files": {
         "224": "img/legacy/hallstatt-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "danube-delta",
@@ -2742,7 +3116,9 @@
       ],
       "files": {
         "224": "img/legacy/danube-delta-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "morskie-oko",
@@ -2755,7 +3131,9 @@
       ],
       "files": {
         "224": "img/legacy/morskie-oko-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hoverla-carpathians",
@@ -2768,7 +3146,9 @@
       ],
       "files": {
         "224": "img/legacy/hoverla-carpathians-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bia-owieza-forest-bison",
@@ -2781,7 +3161,9 @@
       ],
       "files": {
         "224": "img/legacy/bia-owieza-forest-bison-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "m-ns-klint",
@@ -2794,7 +3176,9 @@
       ],
       "files": {
         "224": "img/legacy/m-ns-klint-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tulip-fields-netherlands",
@@ -2807,7 +3191,9 @@
       ],
       "files": {
         "224": "img/legacy/tulip-fields-netherlands-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "seven-rila-lakes",
@@ -2820,7 +3206,9 @@
       ],
       "files": {
         "224": "img/legacy/seven-rila-lakes-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "charyn-canyon",
@@ -2833,7 +3221,9 @@
       ],
       "files": {
         "224": "img/legacy/charyn-canyon-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kolsai-lakes",
@@ -2846,7 +3236,9 @@
       ],
       "files": {
         "224": "img/legacy/kolsai-lakes-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "issyk-kul",
@@ -2859,7 +3251,9 @@
       ],
       "files": {
         "224": "img/legacy/issyk-kul-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pamir-mountains",
@@ -2872,7 +3266,9 @@
       ],
       "files": {
         "224": "img/legacy/pamir-mountains-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "aral-sea-ship-graveyard-moynaq",
@@ -2885,7 +3281,9 @@
       ],
       "files": {
         "224": "img/legacy/aral-sea-ship-graveyard-moynaq-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "darvaza-gas-crater",
@@ -2898,7 +3296,9 @@
       ],
       "files": {
         "224": "img/legacy/darvaza-gas-crater-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "khongoryn-els",
@@ -2911,7 +3311,9 @@
       ],
       "files": {
         "224": "img/legacy/khongoryn-els-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "zhangjiajie",
@@ -2924,7 +3326,9 @@
       ],
       "files": {
         "224": "img/legacy/zhangjiajie-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "zhangye-danxia",
@@ -2937,7 +3341,9 @@
       ],
       "files": {
         "224": "img/legacy/zhangye-danxia-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mount-everest",
@@ -2950,7 +3356,9 @@
       ],
       "files": {
         "224": "img/legacy/mount-everest-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pangong-tso",
@@ -2963,7 +3371,9 @@
       ],
       "files": {
         "224": "img/legacy/pangong-tso-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kerala-backwaters-houseboat",
@@ -2976,7 +3386,9 @@
       ],
       "files": {
         "224": "img/legacy/kerala-backwaters-houseboat-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "k2-mountain",
@@ -2989,7 +3401,9 @@
       ],
       "files": {
         "224": "img/legacy/k2-mountain-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jomolhari",
@@ -3002,7 +3416,9 @@
       ],
       "files": {
         "224": "img/legacy/jomolhari-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "nine-arch-bridge-ella",
@@ -3015,7 +3431,9 @@
       ],
       "files": {
         "224": "img/legacy/nine-arch-bridge-ella-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mount-fuji",
@@ -3028,7 +3446,9 @@
       ],
       "files": {
         "224": "img/legacy/mount-fuji-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cherry-blossoms-kyoto",
@@ -3041,7 +3461,9 @@
       ],
       "files": {
         "224": "img/legacy/cherry-blossoms-kyoto-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "seongsan-ilchulbong",
@@ -3054,7 +3476,9 @@
       ],
       "files": {
         "224": "img/legacy/seongsan-ilchulbong-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hang-son-oong",
@@ -3067,7 +3491,9 @@
       ],
       "files": {
         "224": "img/legacy/hang-son-oong-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "phi-phi-islands",
@@ -3080,7 +3506,9 @@
       ],
       "files": {
         "224": "img/legacy/phi-phi-islands-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "el-nido-palawan",
@@ -3093,7 +3521,9 @@
       ],
       "files": {
         "224": "img/legacy/el-nido-palawan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mount-bromo",
@@ -3106,7 +3536,9 @@
       ],
       "files": {
         "224": "img/legacy/mount-bromo-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "raja-ampat",
@@ -3119,7 +3551,9 @@
       ],
       "files": {
         "224": "img/legacy/raja-ampat-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "komodo-dragon",
@@ -3132,7 +3566,9 @@
       ],
       "files": {
         "224": "img/legacy/komodo-dragon-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kuang-si-falls",
@@ -3145,7 +3581,9 @@
       ],
       "files": {
         "224": "img/legacy/kuang-si-falls-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tonle-sap-floating-village",
@@ -3158,7 +3596,9 @@
       ],
       "files": {
         "224": "img/legacy/tonle-sap-floating-village-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "dasht-e-lut",
@@ -3171,7 +3611,9 @@
       ],
       "files": {
         "224": "img/legacy/dasht-e-lut-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "dead-sea-salt",
@@ -3184,7 +3626,9 @@
       ],
       "files": {
         "224": "img/legacy/dead-sea-salt-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "wadi-rum",
@@ -3197,7 +3641,9 @@
       ],
       "files": {
         "224": "img/legacy/wadi-rum-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "makhtesh-ramon",
@@ -3210,7 +3656,9 @@
       ],
       "files": {
         "224": "img/legacy/makhtesh-ramon-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "wadi-shab",
@@ -3223,7 +3671,9 @@
       ],
       "files": {
         "224": "img/legacy/wadi-shab-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "rub-al-khali-dunes",
@@ -3236,7 +3686,9 @@
       ],
       "files": {
         "224": "img/legacy/rub-al-khali-dunes-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "edge-of-the-world-riyadh",
@@ -3249,7 +3701,9 @@
       ],
       "files": {
         "224": "img/legacy/edge-of-the-world-riyadh-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "dragon-s-blood-tree-socotra",
@@ -3262,7 +3716,9 @@
       ],
       "files": {
         "224": "img/legacy/dragon-s-blood-tree-socotra-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cedars-of-god",
@@ -3275,7 +3731,9 @@
       ],
       "files": {
         "224": "img/legacy/cedars-of-god-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mud-volcano-gobustan",
@@ -3288,7 +3746,9 @@
       ],
       "files": {
         "224": "img/legacy/mud-volcano-gobustan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "sevanavank",
@@ -3301,7 +3761,9 @@
       ],
       "files": {
         "224": "img/legacy/sevanavank-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "band-e-amir",
@@ -3314,7 +3776,9 @@
       ],
       "files": {
         "224": "img/legacy/band-e-amir-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "red-sea-coral-reef",
@@ -3327,7 +3791,9 @@
       ],
       "files": {
         "224": "img/legacy/red-sea-coral-reef-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "white-desert-egypt",
@@ -3340,7 +3806,9 @@
       ],
       "files": {
         "224": "img/legacy/white-desert-egypt-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "erg-chebbi",
@@ -3353,7 +3821,9 @@
       ],
       "files": {
         "224": "img/legacy/erg-chebbi-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "toubkal",
@@ -3366,7 +3836,9 @@
       ],
       "files": {
         "224": "img/legacy/toubkal-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "chott-el-djerid",
@@ -3379,7 +3851,9 @@
       ],
       "files": {
         "224": "img/legacy/chott-el-djerid-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tadrart-acacus-arch",
@@ -3392,7 +3866,9 @@
       ],
       "files": {
         "224": "img/legacy/tadrart-acacus-arch-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "richat-structure",
@@ -3405,7 +3881,9 @@
       ],
       "files": {
         "224": "img/legacy/richat-structure-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "dallol-hydrothermal",
@@ -3418,7 +3896,9 @@
       ],
       "files": {
         "224": "img/legacy/dallol-hydrothermal-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "simien-mountains-gelada",
@@ -3431,7 +3911,9 @@
       ],
       "files": {
         "224": "img/legacy/simien-mountains-gelada-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "maasai-mara-wildebeest-migration",
@@ -3444,7 +3926,9 @@
       ],
       "files": {
         "224": "img/legacy/maasai-mara-wildebeest-migration-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lake-nakuru-flamingos",
@@ -3457,7 +3941,9 @@
       ],
       "files": {
         "224": "img/legacy/lake-nakuru-flamingos-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "serengeti",
@@ -3470,7 +3956,9 @@
       ],
       "files": {
         "224": "img/legacy/serengeti-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "virunga-mountains",
@@ -3483,7 +3971,9 @@
       ],
       "files": {
         "224": "img/legacy/virunga-mountains-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "nyiragongo-lava-lake",
@@ -3496,7 +3986,9 @@
       ],
       "files": {
         "224": "img/legacy/nyiragongo-lava-lake-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hwange-elephants",
@@ -3509,7 +4001,9 @@
       ],
       "files": {
         "224": "img/legacy/hwange-elephants-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "makgadikgadi-pan",
@@ -3522,7 +4016,9 @@
       ],
       "files": {
         "224": "img/legacy/makgadikgadi-pan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "etosha-waterhole",
@@ -3535,7 +4031,9 @@
       ],
       "files": {
         "224": "img/legacy/etosha-waterhole-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "drakensberg-amphitheatre",
@@ -3548,7 +4046,9 @@
       ],
       "files": {
         "224": "img/legacy/drakensberg-amphitheatre-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kruger-national-park",
@@ -3561,7 +4061,9 @@
       ],
       "files": {
         "224": "img/legacy/kruger-national-park-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tsingy-de-bemaraha",
@@ -3574,7 +4076,9 @@
       ],
       "files": {
         "224": "img/legacy/tsingy-de-bemaraha-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bazaruto",
@@ -3587,7 +4091,9 @@
       ],
       "files": {
         "224": "img/legacy/bazaruto-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lake-retba",
@@ -3600,7 +4106,9 @@
       ],
       "files": {
         "224": "img/legacy/lake-retba-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mount-cameroon",
@@ -3613,7 +4121,9 @@
       ],
       "files": {
         "224": "img/legacy/mount-cameroon-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bandiagara-escarpment",
@@ -3626,7 +4136,9 @@
       ],
       "files": {
         "224": "img/legacy/bandiagara-escarpment-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "grand-canyon-mather-point",
@@ -3639,7 +4151,9 @@
       ],
       "files": {
         "224": "img/legacy/grand-canyon-mather-point-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tenere-desert",
@@ -3652,7 +4166,9 @@
       ],
       "files": {
         "224": "img/legacy/tenere-desert-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "grand-prismatic-spring",
@@ -3665,7 +4181,9 @@
       ],
       "files": {
         "224": "img/legacy/grand-prismatic-spring-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "general-sherman-tree",
@@ -3678,7 +4196,9 @@
       ],
       "files": {
         "224": "img/legacy/general-sherman-tree-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "aurora-alaska",
@@ -3691,7 +4211,9 @@
       ],
       "files": {
         "224": "img/legacy/aurora-alaska-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "aurora-yukon",
@@ -3704,7 +4226,9 @@
       ],
       "files": {
         "224": "img/legacy/aurora-yukon-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "niagara-falls",
@@ -3717,7 +4241,9 @@
       ],
       "files": {
         "224": "img/legacy/niagara-falls-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cenote-ik-kil",
@@ -3730,7 +4256,9 @@
       ],
       "files": {
         "224": "img/legacy/cenote-ik-kil-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lake-atitlan",
@@ -3743,7 +4271,9 @@
       ],
       "files": {
         "224": "img/legacy/lake-atitlan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "vinales-valley",
@@ -3756,7 +4286,9 @@
       ],
       "files": {
         "224": "img/legacy/vinales-valley-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "exuma-bahamas",
@@ -3769,7 +4301,9 @@
       ],
       "files": {
         "224": "img/legacy/exuma-bahamas-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mount-roraima",
@@ -3782,7 +4316,9 @@
       ],
       "files": {
         "224": "img/legacy/mount-roraima-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cano-cristales",
@@ -3795,7 +4331,9 @@
       ],
       "files": {
         "224": "img/legacy/cano-cristales-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "galapagos-marine-iguana",
@@ -3808,7 +4346,9 @@
       ],
       "files": {
         "224": "img/legacy/galapagos-marine-iguana-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "vinicunca",
@@ -3821,7 +4361,9 @@
       ],
       "files": {
         "224": "img/legacy/vinicunca-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "amazon-rainforest-peru",
@@ -3834,7 +4376,9 @@
       ],
       "files": {
         "224": "img/legacy/amazon-rainforest-peru-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "amazon-rainforest",
@@ -3847,7 +4391,9 @@
       ],
       "files": {
         "224": "img/legacy/amazon-rainforest-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lencois-maranhenses",
@@ -3860,7 +4406,9 @@
       ],
       "files": {
         "224": "img/legacy/lencois-maranhenses-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "copper-canyon-mexico",
@@ -3873,7 +4421,9 @@
       ],
       "files": {
         "224": "img/legacy/copper-canyon-mexico-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "torres-del-paine",
@@ -3886,7 +4436,9 @@
       ],
       "files": {
         "224": "img/legacy/torres-del-paine-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "valle-de-la-luna-atacama",
@@ -3899,7 +4451,9 @@
       ],
       "files": {
         "224": "img/legacy/valle-de-la-luna-atacama-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "great-barrier-reef",
@@ -3912,7 +4466,9 @@
       ],
       "files": {
         "224": "img/legacy/great-barrier-reef-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "fitz-roy",
@@ -3925,7 +4481,9 @@
       ],
       "files": {
         "224": "img/legacy/fitz-roy-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "twelve-apostles-victoria",
@@ -3938,7 +4496,9 @@
       ],
       "files": {
         "224": "img/legacy/twelve-apostles-victoria-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "buddhas-of-bamiyan-cliff",
@@ -3951,7 +4511,9 @@
       ],
       "files": {
         "224": "img/legacy/buddhas-of-bamiyan-cliff-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pohutu-geyser",
@@ -3964,7 +4526,9 @@
       ],
       "files": {
         "224": "img/legacy/pohutu-geyser-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "fiji-coral-reef",
@@ -3977,7 +4541,9 @@
       ],
       "files": {
         "224": "img/legacy/fiji-coral-reef-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "butrint-theatre",
@@ -3990,7 +4556,9 @@
       ],
       "files": {
         "224": "img/legacy/butrint-theatre-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "timgad-arch",
@@ -4003,7 +4571,9 @@
       ],
       "files": {
         "224": "img/legacy/timgad-arch-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mbanza-kongo",
@@ -4016,7 +4586,9 @@
       ],
       "files": {
         "224": "img/legacy/mbanza-kongo-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "antarctic-research-station",
@@ -4029,7 +4601,9 @@
       ],
       "files": {
         "224": "img/legacy/antarctic-research-station-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "etchmiadzin-cathedral",
@@ -4042,7 +4616,9 @@
       ],
       "files": {
         "224": "img/legacy/etchmiadzin-cathedral-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kakadu-rock-art-ubirr",
@@ -4055,7 +4631,9 @@
       ],
       "files": {
         "224": "img/legacy/kakadu-rock-art-ubirr-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cueva-de-las-manos",
@@ -4068,7 +4646,9 @@
       ],
       "files": {
         "224": "img/legacy/cueva-de-las-manos-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "geghard-monastery",
@@ -4081,7 +4661,9 @@
       ],
       "files": {
         "224": "img/legacy/geghard-monastery-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "gobustan-petroglyphs",
@@ -4094,7 +4676,9 @@
       ],
       "files": {
         "224": "img/legacy/gobustan-petroglyphs-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "salzburg-old-town-hohensalzburg",
@@ -4107,7 +4691,9 @@
       ],
       "files": {
         "224": "img/legacy/salzburg-old-town-hohensalzburg-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "grand-place-brussels",
@@ -4120,7 +4706,9 @@
       ],
       "files": {
         "224": "img/legacy/grand-place-brussels-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "brest-fortress-memorial",
@@ -4133,7 +4721,9 @@
       ],
       "files": {
         "224": "img/legacy/brest-fortress-memorial-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "door-of-no-return-ouidah",
@@ -4146,7 +4736,9 @@
       ],
       "files": {
         "224": "img/legacy/door-of-no-return-ouidah-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "royal-palaces-of-abomey",
@@ -4159,7 +4751,9 @@
       ],
       "files": {
         "224": "img/legacy/royal-palaces-of-abomey-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "caracol-belize-caana",
@@ -4172,7 +4766,9 @@
       ],
       "files": {
         "224": "img/legacy/caracol-belize-caana-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "potosi-cerro-rico",
@@ -4185,7 +4781,9 @@
       ],
       "files": {
         "224": "img/legacy/potosi-cerro-rico-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tiwanaku-gate-of-the-sun",
@@ -4198,7 +4796,9 @@
       ],
       "files": {
         "224": "img/legacy/tiwanaku-gate-of-the-sun-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bascarsija-sarajevo",
@@ -4211,7 +4811,9 @@
       ],
       "files": {
         "224": "img/legacy/bascarsija-sarajevo-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tsodilo-hills-rock-paintings",
@@ -4224,7 +4826,9 @@
       ],
       "files": {
         "224": "img/legacy/tsodilo-hills-rock-paintings-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pelourinho-salvador",
@@ -4237,7 +4841,9 @@
       ],
       "files": {
         "224": "img/legacy/pelourinho-salvador-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "ouro-preto-church",
@@ -4250,7 +4856,9 @@
       ],
       "files": {
         "224": "img/legacy/ouro-preto-church-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kampong-ayer",
@@ -4263,7 +4871,9 @@
       ],
       "files": {
         "224": "img/legacy/kampong-ayer-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "loropeni-ruins",
@@ -4276,7 +4886,9 @@
       ],
       "files": {
         "224": "img/legacy/loropeni-ruins-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tsarevets-fortress",
@@ -4289,7 +4901,9 @@
       ],
       "files": {
         "224": "img/legacy/tsarevets-fortress-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "l-anse-aux-meadows",
@@ -4302,7 +4916,9 @@
       ],
       "files": {
         "224": "img/legacy/l-anse-aux-meadows-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "chateau-frontenac-quebec",
@@ -4315,7 +4931,9 @@
       ],
       "files": {
         "224": "img/legacy/chateau-frontenac-quebec-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "valparaiso-hills-houses",
@@ -4328,7 +4946,9 @@
       ],
       "files": {
         "224": "img/legacy/valparaiso-hills-houses-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "forbidden-city-beijing",
@@ -4341,7 +4961,9 @@
       ],
       "files": {
         "224": "img/legacy/forbidden-city-beijing-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "terracotta-army",
@@ -4354,7 +4976,9 @@
       ],
       "files": {
         "224": "img/legacy/terracotta-army-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "stone-spheres-of-costa-rica",
@@ -4367,7 +4991,9 @@
       ],
       "files": {
         "224": "img/legacy/stone-spheres-of-costa-rica-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "muisca-raft-gold-museum",
@@ -4380,7 +5006,9 @@
       ],
       "files": {
         "224": "img/legacy/muisca-raft-gold-museum-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "trinidad-cuba-street",
@@ -4393,7 +5021,9 @@
       ],
       "files": {
         "224": "img/legacy/trinidad-cuba-street-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "diocletian-s-palace-peristyle",
@@ -4406,7 +5036,9 @@
       ],
       "files": {
         "224": "img/legacy/diocletian-s-palace-peristyle-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "charles-bridge",
@@ -4419,7 +5051,9 @@
       ],
       "files": {
         "224": "img/legacy/charles-bridge-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "paphos-mosaics",
@@ -4432,7 +5066,9 @@
       ],
       "files": {
         "224": "img/legacy/paphos-mosaics-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jelling-stones",
@@ -4445,7 +5081,9 @@
       ],
       "files": {
         "224": "img/legacy/jelling-stones-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "quito-historic-center",
@@ -4458,7 +5096,9 @@
       ],
       "files": {
         "224": "img/legacy/quito-historic-center-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "valley-of-the-kings",
@@ -4471,7 +5111,9 @@
       ],
       "files": {
         "224": "img/legacy/valley-of-the-kings-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "karnak-temple-hypostyle",
@@ -4484,7 +5126,9 @@
       ],
       "files": {
         "224": "img/legacy/karnak-temple-hypostyle-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "aksum-obelisk",
@@ -4497,7 +5141,9 @@
       ],
       "files": {
         "224": "img/legacy/aksum-obelisk-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "levuka",
@@ -4510,7 +5156,9 @@
       ],
       "files": {
         "224": "img/legacy/levuka-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "turku-castle",
@@ -4523,7 +5171,9 @@
       ],
       "files": {
         "224": "img/legacy/turku-castle-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "palace-of-versailles",
@@ -4536,7 +5186,9 @@
       ],
       "files": {
         "224": "img/legacy/palace-of-versailles-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "joya-de-ceren",
@@ -4549,7 +5201,9 @@
       ],
       "files": {
         "224": "img/legacy/joya-de-ceren-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mont-saint-michel",
@@ -4562,7 +5216,9 @@
       ],
       "files": {
         "224": "img/legacy/mont-saint-michel-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "place-de-la-concorde",
@@ -4575,7 +5231,9 @@
       ],
       "files": {
         "224": "img/legacy/place-de-la-concorde-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lambarene-ogooue",
@@ -4588,7 +5246,9 @@
       ],
       "files": {
         "224": "img/legacy/lambarene-ogooue-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jvari-monastery-mtskheta",
@@ -4601,7 +5261,9 @@
       ],
       "files": {
         "224": "img/legacy/jvari-monastery-mtskheta-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "vardzia",
@@ -4614,7 +5276,9 @@
       ],
       "files": {
         "224": "img/legacy/vardzia-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "brandenburg-gate",
@@ -4627,7 +5291,9 @@
       ],
       "files": {
         "224": "img/legacy/brandenburg-gate-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cologne-cathedral",
@@ -4640,7 +5306,9 @@
       ],
       "files": {
         "224": "img/legacy/cologne-cathedral-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "delphi-tholos",
@@ -4653,7 +5321,9 @@
       ],
       "files": {
         "224": "img/legacy/delphi-tholos-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "olympia-greece-ruins",
@@ -4666,7 +5336,9 @@
       ],
       "files": {
         "224": "img/legacy/olympia-greece-ruins-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "antigua-guatemala-arch",
@@ -4679,7 +5351,9 @@
       ],
       "files": {
         "224": "img/legacy/antigua-guatemala-arch-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "buda-castle",
@@ -4692,7 +5366,9 @@
       ],
       "files": {
         "224": "img/legacy/buda-castle-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "ingvellir",
@@ -4705,7 +5381,9 @@
       ],
       "files": {
         "224": "img/legacy/ingvellir-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "varanasi-ghats",
@@ -4718,7 +5396,9 @@
       ],
       "files": {
         "224": "img/legacy/varanasi-ghats-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hampi-vittala-temple",
@@ -4731,7 +5411,9 @@
       ],
       "files": {
         "224": "img/legacy/hampi-vittala-temple-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "prambanan",
@@ -4744,7 +5426,9 @@
       ],
       "files": {
         "224": "img/legacy/prambanan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "babylon-ruins-iraq",
@@ -4757,7 +5441,9 @@
       ],
       "files": {
         "224": "img/legacy/babylon-ruins-iraq-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "persepolis",
@@ -4770,7 +5456,9 @@
       ],
       "files": {
         "224": "img/legacy/persepolis-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "newgrange",
@@ -4783,7 +5471,9 @@
       ],
       "files": {
         "224": "img/legacy/newgrange-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pompeii-vesuvius-forum",
@@ -4796,7 +5486,9 @@
       ],
       "files": {
         "224": "img/legacy/pompeii-vesuvius-forum-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "masada",
@@ -4809,7 +5501,9 @@
       ],
       "files": {
         "224": "img/legacy/masada-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "florence-cathedral",
@@ -4822,7 +5516,9 @@
       ],
       "files": {
         "224": "img/legacy/florence-cathedral-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kinkaku-ji",
@@ -4835,7 +5531,9 @@
       ],
       "files": {
         "224": "img/legacy/kinkaku-ji-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "port-royal-jamaica-fort-charles",
@@ -4848,7 +5546,9 @@
       ],
       "files": {
         "224": "img/legacy/port-royal-jamaica-fort-charles-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "himeji-castle",
@@ -4861,7 +5561,9 @@
       ],
       "files": {
         "224": "img/legacy/himeji-castle-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mausoleum-of-khoja-ahmed-yasawi",
@@ -4874,7 +5576,9 @@
       ],
       "files": {
         "224": "img/legacy/mausoleum-of-khoja-ahmed-yasawi-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tamgaly-petroglyphs",
@@ -4887,7 +5591,9 @@
       ],
       "files": {
         "224": "img/legacy/tamgaly-petroglyphs-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hiroshima-peace-memorial",
@@ -4900,7 +5606,9 @@
       ],
       "files": {
         "224": "img/legacy/hiroshima-peace-memorial-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lamu-old-town",
@@ -4913,7 +5621,9 @@
       ],
       "files": {
         "224": "img/legacy/lamu-old-town-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "baikonur-soyuz-launch",
@@ -4926,7 +5636,9 @@
       ],
       "files": {
         "224": "img/legacy/baikonur-soyuz-launch-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "fort-jesus",
@@ -4939,7 +5651,9 @@
       ],
       "files": {
         "224": "img/legacy/fort-jesus-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "patriarchate-of-pec",
@@ -4952,7 +5666,9 @@
       ],
       "files": {
         "224": "img/legacy/patriarchate-of-pec-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "burana-tower",
@@ -4965,7 +5681,9 @@
       ],
       "files": {
         "224": "img/legacy/burana-tower-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tash-rabat",
@@ -4978,7 +5696,9 @@
       ],
       "files": {
         "224": "img/legacy/tash-rabat-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "byblos-castle",
@@ -4991,7 +5711,9 @@
       ],
       "files": {
         "224": "img/legacy/byblos-castle-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "thaba-bosiu",
@@ -5004,7 +5726,9 @@
       ],
       "files": {
         "224": "img/legacy/thaba-bosiu-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "vilnius-old-town",
@@ -5017,7 +5741,9 @@
       ],
       "files": {
         "224": "img/legacy/vilnius-old-town-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "ambohimanga",
@@ -5030,7 +5756,9 @@
       ],
       "files": {
         "224": "img/legacy/ambohimanga-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "christ-church-malacca",
@@ -5043,7 +5771,9 @@
       ],
       "files": {
         "224": "img/legacy/christ-church-malacca-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "djinguereber-mosque",
@@ -5056,7 +5786,9 @@
       ],
       "files": {
         "224": "img/legacy/djinguereber-mosque-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pyramid-of-the-sun-teotihuacan",
@@ -5069,7 +5801,9 @@
       ],
       "files": {
         "224": "img/legacy/pyramid-of-the-sun-teotihuacan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "milestii-mici-wine-cellar",
@@ -5082,7 +5816,9 @@
       ],
       "files": {
         "224": "img/legacy/milestii-mici-wine-cellar-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "erdene-zuu-monastery",
@@ -5095,7 +5831,9 @@
       ],
       "files": {
         "224": "img/legacy/erdene-zuu-monastery-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "chouara-tannery-fez",
@@ -5108,7 +5846,9 @@
       ],
       "files": {
         "224": "img/legacy/chouara-tannery-fez-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jemaa-el-fnaa",
@@ -5121,7 +5861,9 @@
       ],
       "files": {
         "224": "img/legacy/jemaa-el-fnaa-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "twyfelfontein",
@@ -5134,7 +5876,9 @@
       ],
       "files": {
         "224": "img/legacy/twyfelfontein-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "shwedagon-pagoda",
@@ -5147,7 +5891,9 @@
       ],
       "files": {
         "224": "img/legacy/shwedagon-pagoda-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kolmanskop",
@@ -5160,7 +5906,9 @@
       ],
       "files": {
         "224": "img/legacy/kolmanskop-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "maya-devi-temple-lumbini",
@@ -5173,7 +5921,9 @@
       ],
       "files": {
         "224": "img/legacy/maya-devi-temple-lumbini-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bhaktapur-durbar-square",
@@ -5186,7 +5936,9 @@
       ],
       "files": {
         "224": "img/legacy/bhaktapur-durbar-square-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "rijksmuseum",
@@ -5199,7 +5951,9 @@
       ],
       "files": {
         "224": "img/legacy/rijksmuseum-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tjibaou-cultural-centre",
@@ -5212,7 +5966,9 @@
       ],
       "files": {
         "224": "img/legacy/tjibaou-cultural-centre-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "anne-frank-house",
@@ -5225,7 +5981,9 @@
       ],
       "files": {
         "224": "img/legacy/anne-frank-house-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "waitangi-treaty-house",
@@ -5238,7 +5996,9 @@
       ],
       "files": {
         "224": "img/legacy/waitangi-treaty-house-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "osun-osogbo-sacred-grove",
@@ -5251,7 +6011,9 @@
       ],
       "files": {
         "224": "img/legacy/osun-osogbo-sacred-grove-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "sukur-cultural-landscape",
@@ -5264,7 +6026,9 @@
       ],
       "files": {
         "224": "img/legacy/sukur-cultural-landscape-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "oseberg-ship",
@@ -5277,7 +6041,9 @@
       ],
       "files": {
         "224": "img/legacy/oseberg-ship-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bryggen",
@@ -5290,7 +6056,9 @@
       ],
       "files": {
         "224": "img/legacy/bryggen-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tell-es-sultan-jericho",
@@ -5303,7 +6071,9 @@
       ],
       "files": {
         "224": "img/legacy/tell-es-sultan-jericho-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mohenjo-daro",
@@ -5316,7 +6086,9 @@
       ],
       "files": {
         "224": "img/legacy/mohenjo-daro-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "panama-viejo",
@@ -5329,7 +6101,9 @@
       ],
       "files": {
         "224": "img/legacy/panama-viejo-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kuk-swamp",
@@ -5342,7 +6116,9 @@
       ],
       "files": {
         "224": "img/legacy/kuk-swamp-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cusco-plaza-de-armas",
@@ -5355,7 +6131,9 @@
       ],
       "files": {
         "224": "img/legacy/cusco-plaza-de-armas-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "nazca-lines-hummingbird",
@@ -5368,7 +6146,9 @@
       ],
       "files": {
         "224": "img/legacy/nazca-lines-hummingbird-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "intramuros",
@@ -5381,7 +6161,9 @@
       ],
       "files": {
         "224": "img/legacy/intramuros-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jeronimos-monastery",
@@ -5394,7 +6176,9 @@
       ],
       "files": {
         "224": "img/legacy/jeronimos-monastery-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "voronet-monastery",
@@ -5407,7 +6191,9 @@
       ],
       "files": {
         "224": "img/legacy/voronet-monastery-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "auschwitz-i-gate",
@@ -5420,7 +6206,9 @@
       ],
       "files": {
         "224": "img/legacy/auschwitz-i-gate-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "winter-palace",
@@ -5433,7 +6221,9 @@
       ],
       "files": {
         "224": "img/legacy/winter-palace-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "zubarah-fort",
@@ -5446,7 +6236,9 @@
       ],
       "files": {
         "224": "img/legacy/zubarah-fort-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hegra-mada-in-salih",
@@ -5459,7 +6251,9 @@
       ],
       "files": {
         "224": "img/legacy/hegra-mada-in-salih-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kigali-genocide-memorial",
@@ -5472,7 +6266,9 @@
       ],
       "files": {
         "224": "img/legacy/kigali-genocide-memorial-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "studenica-monastery",
@@ -5485,7 +6281,9 @@
       ],
       "files": {
         "224": "img/legacy/studenica-monastery-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "guadalcanal",
@@ -5498,7 +6296,9 @@
       ],
       "files": {
         "224": "img/legacy/guadalcanal-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "robben-island",
@@ -5511,7 +6311,9 @@
       ],
       "files": {
         "224": "img/legacy/robben-island-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bulguksa",
@@ -5524,7 +6326,9 @@
       ],
       "files": {
         "224": "img/legacy/bulguksa-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mosque-cathedral-of-cordoba",
@@ -5537,7 +6341,9 @@
       ],
       "files": {
         "224": "img/legacy/mosque-cathedral-of-cordoba-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "sterkfontein-caves",
@@ -5550,7 +6356,9 @@
       ],
       "files": {
         "224": "img/legacy/sterkfontein-caves-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "sagrada-familia",
@@ -5563,7 +6371,9 @@
       ],
       "files": {
         "224": "img/legacy/sagrada-familia-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "ruwanwelisaya",
@@ -5576,7 +6386,9 @@
       ],
       "files": {
         "224": "img/legacy/ruwanwelisaya-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "gamla-stan-stortorget",
@@ -5589,7 +6401,9 @@
       ],
       "files": {
         "224": "img/legacy/gamla-stan-stortorget-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "chillon-castle",
@@ -5602,7 +6416,9 @@
       ],
       "files": {
         "224": "img/legacy/chillon-castle-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "zytglogge-bern",
@@ -5615,7 +6431,9 @@
       ],
       "files": {
         "224": "img/legacy/zytglogge-bern-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "umayyad-mosque",
@@ -5628,7 +6446,9 @@
       ],
       "files": {
         "224": "img/legacy/umayyad-mosque-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "national-palace-museum-taipei",
@@ -5641,7 +6461,9 @@
       ],
       "files": {
         "224": "img/legacy/national-palace-museum-taipei-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "stone-town-zanzibar",
@@ -5654,7 +6476,9 @@
       ],
       "files": {
         "224": "img/legacy/stone-town-zanzibar-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "panjakent-ruins",
@@ -5667,7 +6491,9 @@
       ],
       "files": {
         "224": "img/legacy/panjakent-ruins-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "olduvai-gorge",
@@ -5680,7 +6506,9 @@
       ],
       "files": {
         "224": "img/legacy/olduvai-gorge-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "grand-palace-bangkok",
@@ -5693,7 +6521,9 @@
       ],
       "files": {
         "224": "img/legacy/grand-palace-bangkok-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "wat-mahathat-ayutthaya",
@@ -5706,7 +6536,9 @@
       ],
       "files": {
         "224": "img/legacy/wat-mahathat-ayutthaya-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "dili-timor-leste",
@@ -5719,7 +6551,9 @@
       ],
       "files": {
         "224": "img/legacy/dili-timor-leste-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "port-of-spain-carnival",
@@ -5732,7 +6566,9 @@
       ],
       "files": {
         "224": "img/legacy/port-of-spain-carnival-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "topkap-palace",
@@ -5745,7 +6581,9 @@
       ],
       "files": {
         "224": "img/legacy/topkap-palace-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "carthage-ruins",
@@ -5758,7 +6596,9 @@
       ],
       "files": {
         "224": "img/legacy/carthage-ruins-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kasubi-tombs",
@@ -5771,7 +6611,9 @@
       ],
       "files": {
         "224": "img/legacy/kasubi-tombs-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "source-of-the-nile-jinja",
@@ -5784,7 +6626,9 @@
       ],
       "files": {
         "224": "img/legacy/source-of-the-nile-jinja-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kyiv-pechersk-lavra",
@@ -5797,7 +6641,9 @@
       ],
       "files": {
         "224": "img/legacy/kyiv-pechersk-lavra-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "al-fahidi-historical-neighbourhood",
@@ -5810,7 +6656,9 @@
       ],
       "files": {
         "224": "img/legacy/al-fahidi-historical-neighbourhood-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tower-of-london",
@@ -5823,7 +6671,9 @@
       ],
       "files": {
         "224": "img/legacy/tower-of-london-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "stonehenge",
@@ -5836,7 +6686,9 @@
       ],
       "files": {
         "224": "img/legacy/stonehenge-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "independence-hall",
@@ -5849,7 +6701,9 @@
       ],
       "files": {
         "224": "img/legacy/independence-hall-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "statue-of-liberty",
@@ -5862,7 +6716,9 @@
       ],
       "files": {
         "224": "img/legacy/statue-of-liberty-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "itchan-kala-khiva",
@@ -5875,7 +6731,9 @@
       ],
       "files": {
         "224": "img/legacy/itchan-kala-khiva-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "westminster-abbey",
@@ -5888,7 +6746,9 @@
       ],
       "files": {
         "224": "img/legacy/westminster-abbey-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "cliff-palace-mesa-verde",
@@ -5901,7 +6761,9 @@
       ],
       "files": {
         "224": "img/legacy/cliff-palace-mesa-verde-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pentecost-island-land-diving",
@@ -5914,7 +6776,9 @@
       ],
       "files": {
         "224": "img/legacy/pentecost-island-land-diving-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "western-sahara-coast",
@@ -5927,7 +6791,9 @@
       ],
       "files": {
         "224": "img/legacy/western-sahara-coast-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "imperial-city-hue",
@@ -5940,7 +6806,9 @@
       ],
       "files": {
         "224": "img/legacy/imperial-city-hue-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "hungarian-parliament-building",
@@ -5955,7 +6823,9 @@
       "files": {
         "224": "img/legacy/hungarian-parliament-building-thumb.webp",
         "560": "img/legacy/hungarian-parliament-building-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "hoi-an-japanese-bridge",
@@ -5968,7 +6838,9 @@
       ],
       "files": {
         "224": "img/legacy/hoi-an-japanese-bridge-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "old-city-of-sanaa",
@@ -5981,7 +6853,9 @@
       ],
       "files": {
         "224": "img/legacy/old-city-of-sanaa-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "trakai-island-castle",
@@ -5996,7 +6870,9 @@
       "files": {
         "224": "img/legacy/trakai-island-castle-thumb.webp",
         "560": "img/legacy/trakai-island-castle-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "sigiriya",
@@ -6011,7 +6887,9 @@
       "files": {
         "224": "img/legacy/sigiriya-thumb.webp",
         "560": "img/legacy/sigiriya-cover.jpg"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "bagan-temples",
@@ -6026,7 +6904,9 @@
       "files": {
         "224": "img/legacy/bagan-temples-thumb.webp",
         "560": "img/legacy/bagan-temples-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "wat-arun",
@@ -6039,7 +6919,9 @@
       ],
       "files": {
         "560": "img/legacy/wat-arun-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "angkor-wat",
@@ -6054,7 +6936,9 @@
       "files": {
         "224": "img/legacy/angkor-wat-thumb.webp",
         "560": "img/legacy/angkor-wat-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "kaesong",
@@ -6069,7 +6953,9 @@
       "files": {
         "224": "img/legacy/kaesong-thumb.webp",
         "560": "img/legacy/kaesong-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "bwindi-gorilla",
@@ -6084,7 +6970,9 @@
       "files": {
         "224": "img/legacy/bwindi-gorilla-thumb.webp",
         "560": "img/legacy/bwindi-gorilla-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "meroe-pyramids",
@@ -6099,7 +6987,9 @@
       "files": {
         "224": "img/legacy/meroe-pyramids-thumb.webp",
         "560": "img/legacy/meroe-pyramids-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "solomon-islands-beach",
@@ -6112,7 +7002,9 @@
       ],
       "files": {
         "560": "img/legacy/solomon-islands-beach-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "victoria-falls",
@@ -6127,7 +7019,9 @@
       "files": {
         "224": "img/legacy/victoria-falls-thumb.webp",
         "560": "img/legacy/victoria-falls-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "monrovia-liberia",
@@ -6142,7 +7036,9 @@
       "files": {
         "224": "img/legacy/monrovia-liberia-thumb.webp",
         "560": "img/legacy/monrovia-liberia-cover.webp"
-      }
+      },
+      "w": 560,
+      "h": 280
     },
     {
       "id": "ponta-da-piedade",
@@ -6155,7 +7051,9 @@
       ],
       "files": {
         "224": "img/legacy/ponta-da-piedade-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "li-river-guilin-karst",
@@ -6168,7 +7066,9 @@
       ],
       "files": {
         "224": "img/legacy/li-river-guilin-karst-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mount-kinabalu",
@@ -6181,7 +7081,9 @@
       ],
       "files": {
         "224": "img/legacy/mount-kinabalu-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "krasnoyarsk-stolby-rocks",
@@ -6194,7 +7096,9 @@
       ],
       "files": {
         "224": "img/legacy/krasnoyarsk-stolby-rocks-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "barguzin-nature-reserve",
@@ -6207,7 +7111,9 @@
       ],
       "files": {
         "224": "img/legacy/barguzin-nature-reserve-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "wrangel-island-polar-bears",
@@ -6220,7 +7126,9 @@
       ],
       "files": {
         "224": "img/legacy/wrangel-island-polar-bears-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "putorana-plateau",
@@ -6233,7 +7141,9 @@
       ],
       "files": {
         "224": "img/legacy/putorana-plateau-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "altai-mountains-belukha",
@@ -6246,7 +7156,9 @@
       ],
       "files": {
         "224": "img/legacy/altai-mountains-belukha-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "caucasus-nature-reserve",
@@ -6259,7 +7171,9 @@
       ],
       "files": {
         "224": "img/legacy/caucasus-nature-reserve-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "aksu-zhabagly",
@@ -6272,7 +7186,9 @@
       ],
       "files": {
         "224": "img/legacy/aksu-zhabagly-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "altyn-emel-singing-dune",
@@ -6285,7 +7201,9 @@
       ],
       "files": {
         "224": "img/legacy/altyn-emel-singing-dune-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "korgalzhyn-flamingo",
@@ -6298,7 +7216,9 @@
       ],
       "files": {
         "224": "img/legacy/korgalzhyn-flamingo-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "burabay-lake-kazakhstan",
@@ -6311,7 +7231,9 @@
       ],
       "files": {
         "224": "img/legacy/burabay-lake-kazakhstan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "chatkal-mountains",
@@ -6324,7 +7246,9 @@
       ],
       "files": {
         "224": "img/legacy/chatkal-mountains-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "sary-chelek-lake",
@@ -6337,7 +7261,9 @@
       ],
       "files": {
         "224": "img/legacy/sary-chelek-lake-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "borjomi-kharagauli-national-park",
@@ -6350,7 +7276,9 @@
       ],
       "files": {
         "224": "img/legacy/borjomi-kharagauli-national-park-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "dilijan-national-park",
@@ -6363,7 +7291,9 @@
       ],
       "files": {
         "224": "img/legacy/dilijan-national-park-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "yosemite-valley",
@@ -6376,7 +7306,9 @@
       ],
       "files": {
         "224": "img/legacy/yosemite-valley-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "everglades-national-park-alligator",
@@ -6389,7 +7321,9 @@
       ],
       "files": {
         "224": "img/legacy/everglades-national-park-alligator-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "denali-mountain",
@@ -6402,7 +7336,9 @@
       ],
       "files": {
         "224": "img/legacy/denali-mountain-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "delicate-arch",
@@ -6415,7 +7351,9 @@
       ],
       "files": {
         "224": "img/legacy/delicate-arch-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "pantanal-jaguar",
@@ -6428,7 +7366,9 @@
       ],
       "files": {
         "224": "img/legacy/pantanal-jaguar-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "peninsula-valdes-whale",
@@ -6441,7 +7381,9 @@
       ],
       "files": {
         "224": "img/legacy/peninsula-valdes-whale-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "corcovado-national-park",
@@ -6454,7 +7396,9 @@
       ],
       "files": {
         "224": "img/legacy/corcovado-national-park-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "ngorongoro-crater",
@@ -6467,7 +7411,9 @@
       ],
       "files": {
         "224": "img/legacy/ngorongoro-crater-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "amboseli-elephants-kilimanjaro",
@@ -6480,7 +7426,9 @@
       ],
       "files": {
         "224": "img/legacy/amboseli-elephants-kilimanjaro-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "chobe-national-park-elephants",
@@ -6493,7 +7441,9 @@
       ],
       "files": {
         "224": "img/legacy/chobe-national-park-elephants-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mana-pools",
@@ -6506,7 +7456,9 @@
       ],
       "files": {
         "224": "img/legacy/mana-pools-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "banc-d-arguin",
@@ -6519,7 +7471,9 @@
       ],
       "files": {
         "224": "img/legacy/banc-d-arguin-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mount-nimba",
@@ -6532,7 +7486,9 @@
       ],
       "files": {
         "224": "img/legacy/mount-nimba-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "niokolo-koba",
@@ -6545,7 +7501,9 @@
       ],
       "files": {
         "224": "img/legacy/niokolo-koba-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "dzanga-sangha-forest-elephants-2",
@@ -6558,7 +7516,9 @@
       ],
       "files": {
         "224": "img/legacy/dzanga-sangha-forest-elephants-2-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "chitwan-rhinoceros",
@@ -6571,7 +7531,9 @@
       ],
       "files": {
         "224": "img/legacy/chitwan-rhinoceros-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kaziranga-rhinoceros",
@@ -6584,7 +7546,9 @@
       ],
       "files": {
         "224": "img/legacy/kaziranga-rhinoceros-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jiuzhaigou-lake",
@@ -6597,7 +7561,9 @@
       ],
       "files": {
         "224": "img/legacy/jiuzhaigou-lake-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "yala-national-park-leopard",
@@ -6610,7 +7576,9 @@
       ],
       "files": {
         "224": "img/legacy/yala-national-park-leopard-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "taman-negara-canopy-walkway",
@@ -6623,7 +7591,9 @@
       ],
       "files": {
         "224": "img/legacy/taman-negara-canopy-walkway-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "khao-yai-waterfall",
@@ -6636,7 +7606,9 @@
       ],
       "files": {
         "224": "img/legacy/khao-yai-waterfall-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "shiretoko",
@@ -6649,7 +7621,9 @@
       ],
       "files": {
         "224": "img/legacy/shiretoko-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "yakushima-cedar-forest",
@@ -6662,7 +7636,9 @@
       ],
       "files": {
         "224": "img/legacy/yakushima-cedar-forest-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "seoraksan",
@@ -6675,7 +7651,9 @@
       ],
       "files": {
         "224": "img/legacy/seoraksan-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "przewalski-s-horse-hustai",
@@ -6688,7 +7666,9 @@
       ],
       "files": {
         "224": "img/legacy/przewalski-s-horse-hustai-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "swiss-national-park",
@@ -6701,7 +7681,9 @@
       ],
       "files": {
         "224": "img/legacy/swiss-national-park-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "gran-paradiso-ibex",
@@ -6714,7 +7696,9 @@
       ],
       "files": {
         "224": "img/legacy/gran-paradiso-ibex-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "ordesa-valley",
@@ -6727,7 +7711,9 @@
       ],
       "files": {
         "224": "img/legacy/ordesa-valley-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "camargue-horses",
@@ -6740,7 +7726,9 @@
       ],
       "files": {
         "224": "img/legacy/camargue-horses-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "bastei-bridge",
@@ -6753,7 +7741,9 @@
       ],
       "files": {
         "224": "img/legacy/bastei-bridge-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "sarek-national-park",
@@ -6766,7 +7756,9 @@
       ],
       "files": {
         "224": "img/legacy/sarek-national-park-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "wadden-sea-mudflat",
@@ -6779,7 +7771,9 @@
       ],
       "files": {
         "224": "img/legacy/wadden-sea-mudflat-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "askania-nova",
@@ -6792,7 +7786,9 @@
       ],
       "files": {
         "224": "img/legacy/askania-nova-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "berezinsky-biosphere-reserve",
@@ -6805,7 +7801,9 @@
       ],
       "files": {
         "224": "img/legacy/berezinsky-biosphere-reserve-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "jotunheimen-besseggen",
@@ -6818,7 +7816,9 @@
       ],
       "files": {
         "224": "img/legacy/jotunheimen-besseggen-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "vatnajokull-glacier",
@@ -6831,7 +7831,9 @@
       ],
       "files": {
         "224": "img/legacy/vatnajokull-glacier-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "lake-district-wastwater",
@@ -6844,7 +7846,9 @@
       ],
       "files": {
         "224": "img/legacy/lake-district-wastwater-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "durmitor-black-lake",
@@ -6857,7 +7861,9 @@
       ],
       "files": {
         "224": "img/legacy/durmitor-black-lake-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "slovak-paradise-ladders",
@@ -6870,7 +7876,9 @@
       ],
       "files": {
         "224": "img/legacy/slovak-paradise-ladders-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "samaria-gorge",
@@ -6883,7 +7891,9 @@
       ],
       "files": {
         "224": "img/legacy/samaria-gorge-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "kakadu-national-park",
@@ -6896,7 +7906,9 @@
       ],
       "files": {
         "224": "img/legacy/kakadu-national-park-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "tongariro-emerald-lakes",
@@ -6909,7 +7921,9 @@
       ],
       "files": {
         "224": "img/legacy/tongariro-emerald-lakes-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "temple-of-artemis-ephesus-column",
@@ -6922,7 +7936,9 @@
       ],
       "files": {
         "224": "img/legacy/temple-of-artemis-ephesus-column-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mausoleum-at-halicarnassus-bodrum",
@@ -6935,7 +7951,9 @@
       ],
       "files": {
         "224": "img/legacy/mausoleum-at-halicarnassus-bodrum-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "mandraki-harbour-rhodes-deer",
@@ -6948,7 +7966,9 @@
       ],
       "files": {
         "224": "img/legacy/mandraki-harbour-rhodes-deer-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "citadel-of-qaitbay-alexandria",
@@ -6961,7 +7981,9 @@
       ],
       "files": {
         "224": "img/legacy/citadel-of-qaitbay-alexandria-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "christ-the-redeemer-rio-de-janeiro",
@@ -6974,7 +7996,9 @@
       ],
       "files": {
         "224": "img/legacy/christ-the-redeemer-rio-de-janeiro-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "puerto-princesa-underground-river",
@@ -6987,7 +8011,9 @@
       ],
       "files": {
         "224": "img/legacy/puerto-princesa-underground-river-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "table-mountain-cape-town",
@@ -7000,7 +8026,9 @@
       ],
       "files": {
         "224": "img/legacy/table-mountain-cape-town-thumb.webp"
-      }
+      },
+      "w": 224,
+      "h": 112
     },
     {
       "id": "standard-of-ur",
@@ -7013,7 +8041,9 @@
       ],
       "files": {
         "240": "img/legacy/standard-of-ur-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "great-pyramid-of-giza",
@@ -7026,7 +8056,9 @@
       ],
       "files": {
         "240": "img/legacy/great-pyramid-of-giza-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "cuneiform-clay-tablet",
@@ -7039,7 +8071,9 @@
       ],
       "files": {
         "240": "img/legacy/cuneiform-clay-tablet-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "stonehenge-2",
@@ -7052,7 +8086,9 @@
       ],
       "files": {
         "240": "img/legacy/stonehenge-2-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "code-of-hammurabi-stele-louvre",
@@ -7065,7 +8101,9 @@
       ],
       "files": {
         "240": "img/legacy/code-of-hammurabi-stele-louvre-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "priest-king-mohenjo-daro",
@@ -7078,7 +8116,9 @@
       ],
       "files": {
         "240": "img/legacy/priest-king-mohenjo-daro-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "nebra-sky-disc",
@@ -7091,7 +8131,9 @@
       ],
       "files": {
         "240": "img/legacy/nebra-sky-disc-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "mask-of-agamemnon",
@@ -7104,7 +8146,9 @@
       ],
       "files": {
         "240": "img/legacy/mask-of-agamemnon-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "tutankhamun-mask",
@@ -7117,7 +8161,9 @@
       ],
       "files": {
         "240": "img/legacy/tutankhamun-mask-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "olmec-colossal-head",
@@ -7130,7 +8176,9 @@
       ],
       "files": {
         "240": "img/legacy/olmec-colossal-head-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "lydian-electrum-coin",
@@ -7143,7 +8191,9 @@
       ],
       "files": {
         "240": "img/legacy/lydian-electrum-coin-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "oracle-bone-shang",
@@ -7156,7 +8206,9 @@
       ],
       "files": {
         "240": "img/legacy/oracle-bone-shang-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "scythian-gold-pectoral",
@@ -7169,7 +8221,9 @@
       ],
       "files": {
         "240": "img/legacy/scythian-gold-pectoral-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "golden-man-issyk",
@@ -7182,7 +8236,9 @@
       ],
       "files": {
         "240": "img/legacy/golden-man-issyk-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "ishtar-gate-pergamon",
@@ -7195,7 +8251,9 @@
       ],
       "files": {
         "240": "img/legacy/ishtar-gate-pergamon-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "terracotta-army-2",
@@ -7208,7 +8266,9 @@
       ],
       "files": {
         "240": "img/legacy/terracotta-army-2-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "rosetta-stone",
@@ -7221,7 +8281,9 @@
       ],
       "files": {
         "240": "img/legacy/rosetta-stone-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "antikythera-mechanism",
@@ -7234,7 +8296,9 @@
       ],
       "files": {
         "240": "img/legacy/antikythera-mechanism-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "papermaking-china-traditional",
@@ -7247,7 +8311,9 @@
       ],
       "files": {
         "240": "img/legacy/papermaking-china-traditional-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "iron-pillar-of-delhi",
@@ -7260,7 +8326,9 @@
       ],
       "files": {
         "240": "img/legacy/iron-pillar-of-delhi-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "pompeii-fresco",
@@ -7273,7 +8341,9 @@
       ],
       "files": {
         "240": "img/legacy/pompeii-fresco-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "oseberg-ship-2",
@@ -7286,7 +8356,9 @@
       ],
       "files": {
         "240": "img/legacy/oseberg-ship-2-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "pakal-jade-mask",
@@ -7299,7 +8371,9 @@
       ],
       "files": {
         "240": "img/legacy/pakal-jade-mask-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "sutton-hoo-helmet",
@@ -7312,7 +8386,9 @@
       ],
       "files": {
         "240": "img/legacy/sutton-hoo-helmet-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "bayeux-tapestry",
@@ -7325,7 +8401,9 @@
       ],
       "files": {
         "240": "img/legacy/bayeux-tapestry-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "diamond-sutra",
@@ -7338,7 +8416,9 @@
       ],
       "files": {
         "240": "img/legacy/diamond-sutra-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "astrolabe-islamic",
@@ -7351,7 +8431,9 @@
       ],
       "files": {
         "240": "img/legacy/astrolabe-islamic-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "golden-rhinoceros-of-mapungubwe",
@@ -7364,7 +8446,9 @@
       ],
       "files": {
         "240": "img/legacy/golden-rhinoceros-of-mapungubwe-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "benin-bronzes-plaque",
@@ -7377,7 +8461,9 @@
       ],
       "files": {
         "240": "img/legacy/benin-bronzes-plaque-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "ife-bronze-head",
@@ -7390,7 +8476,9 @@
       ],
       "files": {
         "240": "img/legacy/ife-bronze-head-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "mona-lisa",
@@ -7403,7 +8491,9 @@
       ],
       "files": {
         "240": "img/legacy/mona-lisa-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "philosophiae-naturalis-principia-mathematica",
@@ -7416,7 +8506,9 @@
       ],
       "files": {
         "240": "img/legacy/philosophiae-naturalis-principia-mathematica-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "galileo-telescope",
@@ -7429,7 +8521,9 @@
       ],
       "files": {
         "240": "img/legacy/galileo-telescope-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "aztec-calendar-stone",
@@ -7442,7 +8536,9 @@
       ],
       "files": {
         "240": "img/legacy/aztec-calendar-stone-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "watt-steam-engine",
@@ -7455,7 +8551,9 @@
       ],
       "files": {
         "240": "img/legacy/watt-steam-engine-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "stephenson-s-rocket",
@@ -7468,7 +8566,9 @@
       ],
       "files": {
         "240": "img/legacy/stephenson-s-rocket-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "edison-light-bulb",
@@ -7481,7 +8581,9 @@
       ],
       "files": {
         "240": "img/legacy/edison-light-bulb-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "bell-telephone-1876",
@@ -7494,7 +8596,9 @@
       ],
       "files": {
         "240": "img/legacy/bell-telephone-1876-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "wright-flyer-1903",
@@ -7507,7 +8611,9 @@
       ],
       "files": {
         "240": "img/legacy/wright-flyer-1903-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "penicillin-fleming",
@@ -7520,7 +8626,9 @@
       ],
       "files": {
         "240": "img/legacy/penicillin-fleming-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "eniac",
@@ -7533,7 +8641,9 @@
       ],
       "files": {
         "240": "img/legacy/eniac-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "sputnik-1",
@@ -7546,7 +8656,9 @@
       ],
       "files": {
         "240": "img/legacy/sputnik-1-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "apollo-11-aldrin",
@@ -7559,7 +8671,9 @@
       ],
       "files": {
         "240": "img/legacy/apollo-11-aldrin-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "lucy-australopithecus-skeleton",
@@ -7572,7 +8686,9 @@
       ],
       "files": {
         "240": "img/legacy/lucy-australopithecus-skeleton-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "first-web-server-tim-berners-lee-next",
@@ -7585,7 +8701,9 @@
       ],
       "files": {
         "240": "img/legacy/first-web-server-tim-berners-lee-next-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     },
     {
       "id": "james-webb-space-telescope",
@@ -7598,7 +8716,9 @@
       ],
       "files": {
         "240": "img/legacy/james-webb-space-telescope-thumb.jpg"
-      }
+      },
+      "w": 240,
+      "h": 180
     }
   ]
 }

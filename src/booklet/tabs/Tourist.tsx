@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import type { Country, MapPlace } from '../../content/schema';
-import { getPhoto, photoUrl } from '../../content';
+import { getPhoto } from '../../content';
+import { Photo } from '../../ui/photos/Photo';
 import { loadPlaces, type PlacesData } from '../../content/places';
 import natureTypes from '../../../content/places/nature-types.json';
 import wonderKinds from '../../../content/places/wonder-kinds.json';
@@ -16,11 +17,15 @@ const NTYPE = natureTypes as Record<string, { ru: string; icon: string; land: st
 const WKIND = wonderKinds as Record<string, string>;
 
 /** Фото места или запасной рисунок */
-function Thumb({ photo, alt, art }: { photo?: string; alt: string; art: [string, string] }) {
+function Thumb({ photo, alt, art, country }: { photo?: string; alt: string; art: [string, string]; country: string }) {
   const p = getPhoto(photo);
   return (
     <span className={s.thumb}>
-      {p ? <img src={photoUrl(p, 224)} alt={alt} loading="lazy" width={224} height={112} /> : <Art motif={art[0]} land={art[1]} seed={alt} />}
+      {p ? (
+        <Photo p={p} alt={alt} country={country} sizes="(max-width: 480px) 96px, 128px" width={224} height={112} />
+      ) : (
+        <Art motif={art[0]} land={art[1]} seed={alt} />
+      )}
     </span>
   );
 }
@@ -61,7 +66,7 @@ export function Tourist({ c }: { c: Country }) {
             const art = sightMotif(p.name, p.text, motif, c.region, land);
             return (
               <div key={p.name} className={s.card}>
-                <Thumb photo={p.photos?.[0]} alt={p.name} art={art} />
+                <Thumb photo={p.photos?.[0]} alt={p.name} art={art} country={c.name} />
                 <span>
                   <strong>{p.name}</strong>
                   <span>{p.text}</span>
@@ -69,7 +74,11 @@ export function Tourist({ c }: { c: Country }) {
                     <span className={s.strip}>
                       {p.photos.slice(1, 5).map((id) => {
                         const ph = getPhoto(id);
-                        return ph ? <img key={id} src={photoUrl(ph, 224)} alt={`${p.name}: ещё фото`} loading="lazy" /> : null;
+                        return ph ? (
+                          <span key={id} className={s.stripItem}>
+                            <Photo p={ph} alt={`${p.name}: ещё фото`} country={c.name} sizes="56px" />
+                          </span>
+                        ) : null;
                       })}
                     </span>
                   ) : null}
@@ -92,7 +101,7 @@ export function Tourist({ c }: { c: Country }) {
                     const nt = NTYPE[p.type];
                     return (
                       <div key={id} id={`place-${id}`} className={`${s.card} ${focus === id ? s.focus : ''}`}>
-                        <Thumb photo={p.photo} alt={p.name} art={nt ? [nt.icon, nt.land] : ['forest', 'jungle']} />
+                        <Thumb photo={p.photo} alt={p.name} art={nt ? [nt.icon, nt.land] : ['forest', 'jungle']} country={c.name} />
                         <span>
                           <span className={`${s.tag} ${cls}`}>{tag}</span>
                           <strong>{p.name}</strong>
@@ -151,7 +160,7 @@ export function Tourist({ c }: { c: Country }) {
           <div className={s.cards}>
             {t.food.map((f) => (
               <div key={f.name} className={s.card}>
-                <Thumb photo={f.photo} alt={f.name} art={['none', 'plain']} />
+                <Thumb photo={f.photo} alt={f.name} art={['none', 'plain']} country={c.name} />
                 <span>
                   <strong>{f.name}</strong>
                   <span>{f.text}</span>

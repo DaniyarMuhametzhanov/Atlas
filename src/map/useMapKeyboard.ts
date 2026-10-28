@@ -26,6 +26,7 @@ export function useMapKeyboard(mapRef: RefObject<MlMap | null>, box: RefObject<H
     const skip = (e: KeyboardEvent) => {
       const t = e.target as HTMLElement | null;
       if (e.ctrlKey || e.metaKey || e.altKey) return true;
+      if (document.documentElement.classList.contains('pswp-open')) return true; // открыто фото на весь экран
       if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.tagName === 'SELECT' || t.isContentEditable)) return true;
       if (t?.closest('[role=tablist], [role=dialog]')) return true;
       return false;

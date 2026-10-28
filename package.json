@@ -15,6 +15,8 @@
     "format": "prettier --write .",
     "build:map": "tsx scripts/build-map.ts",
     "fetch:glyphs": "tsx scripts/fetch-glyphs.ts",
+    "fetch:commons": "tsx scripts/fetch-commons.ts",
+    "build:images": "tsx scripts/build-images.ts",
     "data": "npm run extract && npm run fetch:glyphs && npm run build:map"
   },
   "devDependencies": {
@@ -51,6 +53,7 @@
   "dependencies": {
     "chart.js": "^4.6.1",
     "maplibre-gl": "^5.24.0",
+    "photoswipe": "^5.4.4",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "topojson-client": "^3.1.0",

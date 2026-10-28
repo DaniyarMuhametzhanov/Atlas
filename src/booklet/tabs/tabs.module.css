@@ -49,7 +49,8 @@
 
 .soonLine { margin: 6px 0 0; font-size: 13px; color: var(--muted); }
 .strip { display: flex !important; gap: 4px; margin-top: 6px; }
-.strip img { width: 56px; height: 40px; object-fit: cover; border-radius: 4px; }
+.stripItem { display: block; width: 56px; height: 40px; border-radius: 4px; overflow: hidden; }
+.strip img { width: 100%; height: 100%; object-fit: cover; }
 
 .practical { margin: 0; display: grid; gap: 0; }
 .practical div { display: grid; grid-template-columns: minmax(120px, 38%) 1fr; gap: 12px; padding: 7px 0; border-top: 1px dashed var(--line); }

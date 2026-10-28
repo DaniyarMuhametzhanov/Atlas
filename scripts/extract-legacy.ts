@@ -12,6 +12,7 @@ import { z } from 'zod';
 import {
   Country, MapPlace, PhotoSource, HistoryBooklet, Polity, WorldEvent, Find,
 } from '../src/content/schema.ts';
+import { applyPicks, keepBuilt, type Sources } from './lib/photos.ts';
 
 const require = createRequire(import.meta.url);
 const isoCountries = require('i18n-iso-countries') as { numericToAlpha3(n: string): string | undefined };
@@ -314,7 +315,11 @@ const reliefSize = imageSize(reliefBuf);
 // ---------- 10. Модуль ART (запасные SVG-картинки) — это код: перенесён вручную в src/booklet/art/art.ts ----------
 
 // ---------- 11. Источники наборов данных ----------
-writeJson(path.join(CONTENT, 'sources.json'), {
+// Если этап 6 уже сделал крупные фото и подключил выбранные — сохраняем это при повторном извлечении
+const oldSources = fs.existsSync(path.join(CONTENT, 'sources.json'))
+  ? (JSON.parse(fs.readFileSync(path.join(CONTENT, 'sources.json'), 'utf8')) as Sources).photos
+  : [];
+const sourcesJson: Sources = {
   datasets: [
     { id: 'world-atlas', name: 'Границы стран Natural Earth 50m и 10m (пакет world-atlas)', license: 'Public Domain / ISC', url: 'https://github.com/topojson/world-atlas' },
     { id: 'geonames', name: 'Столицы и крупные города GeoNames (пакет all-the-cities)', license: 'CC BY 4.0', url: 'https://www.geonames.org' },
@@ -323,8 +328,10 @@ writeJson(path.join(CONTENT, 'sources.json'), {
     { id: 'blue-marble', name: 'Рельеф NASA Blue Marble', license: 'Public Domain', url: 'https://visibleearth.nasa.gov/collection/1484/blue-marble' },
     { id: 'commons', name: 'Фото Wikimedia Commons', license: 'у каждого фото своя', url: 'https://commons.wikimedia.org' },
   ],
-  photos: sources,
-});
+  photos: keepBuilt(sources, oldSources),
+};
+applyPicks(sourcesJson);
+writeJson(path.join(CONTENT, 'sources.json'), sourcesJson);
 
 // ---------- 12. Сверка чисел и отчёт ----------
 const count = (dir: string) => fs.readdirSync(path.join(ROOT, dir)).length;

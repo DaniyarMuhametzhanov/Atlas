@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties, type KeyboardEvent } f
 import { flushSync } from 'react-dom';
 import { useStore } from '../store/store';
 import { Art } from './art/Art';
-import { getPhoto, loadCountry, photoUrl } from '../content';
+import { getPhoto, loadCountry } from '../content';
 import type { Country } from '../content/schema';
 import { REGIONS } from '../content/regions';
 import { navigate } from '../app/router';
@@ -13,6 +13,8 @@ import { Politics } from './tabs/Politics';
 import { Culture } from './tabs/Culture';
 import { Relations } from './tabs/Relations';
 import { Stereotypes } from './tabs/Stereotypes';
+import { Photo } from '../ui/photos/Photo';
+import { useGallery } from '../ui/photos/useGallery';
 import s from './Booklet.module.css';
 
 const PANELS: Record<TabId, (p: { c: Country }) => JSX.Element> = {
@@ -32,6 +34,8 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const top = useRef<HTMLElement>(null);
   const setRelationsMap = useStore((st) => st.setRelationsMap);
+  // обложка и все фото открытой вкладки — одна галерея на весь экран
+  useGallery(top, country?.id === id ? id : null);
 
   // при печати (кнопкой или Ctrl+P) печатаем все вкладки сразу
   useEffect(() => {
@@ -125,7 +129,7 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
         <figure className={s.cover}>
           {cover ? (
             <>
-              <img src={photoUrl(cover, 1200)} alt={country.name} width={560} height={280} />
+              <Photo p={cover} alt={country.name} country={country.name} sizes="(max-width: 760px) 100vw, 560px" width={560} height={280} lazy={false} />
               <a className={s.credit} href={cover.url} target="_blank" rel="noopener noreferrer">
                 Фото: {cover.author} · {cover.license}
               </a>
