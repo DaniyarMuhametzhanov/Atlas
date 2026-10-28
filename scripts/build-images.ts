@@ -46,7 +46,7 @@ const origOf = (id: string) => {
 const withOrig = sources.photos.filter((p) => origOf(p.id));
 const load = (file: string) => sharp(file, { failOn: 'none' }).rotate(); // rotate() — учесть поворот из EXIF
 /** ширина фото на весь экран; 0 — отдельной версии не нужно, хватит 1200 */
-const fullWidth = (orig: number, w: number) => (Math.min(orig, w) > 1200 * 1.2 ? Math.min(orig, w) : 0);
+const fullWidth = (orig: number, w: number) => (Math.min(orig, w) > 1300 ? Math.min(orig, w) : 0);
 const encodeFull = (file: string, w: number, q: number) => load(file).resize({ width: w, withoutEnlargement: true }).webp({ quality: q });
 
 // ---------- 0. AVIF от прошлых запусков больше не нужен (иначе он съел бы место при подсчёте) ----------
@@ -101,7 +101,7 @@ for (const v of FULL) {
   }
   const estimate = (bytes / Math.max(1, sample.length)) * withOrig.length;
   console.log(`\n  вариант ${v.w} px, качество ${v.q}: ≈ ${mb(estimate)} МБ (можно ${mb(budget)} МБ)`);
-  if (estimate <= budget * 0.95) {
+  if (estimate <= budget * 0.98) { // 2% на неточность оценки по выборке (ещё 12 МБ запаса — в RESERVE)
     pick = v;
     break;
   }
