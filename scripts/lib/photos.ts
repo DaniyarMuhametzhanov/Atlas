@@ -89,6 +89,8 @@ export function keepBuilt(fresh: PhotoSource[], old: PhotoSource[]): PhotoSource
     const o = byId.get(p.id);
     if (!o) return p;
     const size = o.w && o.h ? { w: o.w, h: o.h } : {};
-    return o.avif ? { ...p, sizes: o.sizes, files: o.files, avif: o.avif, ...size } : { ...p, ...size };
+    // файлы не из img/legacy/ сделал build-images.ts — их и оставляем
+    const built = Object.values(o.files).some((f) => !f.startsWith('img/legacy/'));
+    return built ? { ...p, sizes: o.sizes, files: o.files, ...(o.avif ? { avif: o.avif } : {}), ...size } : { ...p, ...size };
   });
 }

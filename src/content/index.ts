@@ -50,13 +50,13 @@ export function photoSrcset(files: Record<string, string>): string {
 
 /**
  * Файл для просмотра на весь экран и его размер.
- * Старые фото маленькие (560 px) — объявляем их вдвое крупнее, чтобы они заняли больше экрана (будут мягче).
+ * Старые фото маленькие (224–560 px) — объявляем их вдвое крупнее, чтобы они заняли больше экрана (будут мягче).
  */
 export function photoFull(p: PhotoSource): { src: string; w: number; h: number } {
   const big = Math.max(...Object.keys(p.files).map(Number));
   const w = p.w ?? big;
   const h = p.h ?? Math.round(w / 2);
-  const k = p.avif ? 1 : 2;
+  const k = p.files[String(big)].startsWith('img/legacy/') ? 2 : 1;
   return { src: import.meta.env.BASE_URL + p.files[String(big)], w: w * k, h: h * k };
 }
 

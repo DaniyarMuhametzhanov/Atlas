@@ -15,7 +15,6 @@ const legacy: PhotoSource = {
 const built: PhotoSource = {
   ...legacy, sizes: [480, 1200, 2000], w: 2000, h: 1333,
   files: { '480': 'img/a-480.webp', '1200': 'img/a-1200.webp', '2000': 'img/a-2000.webp' },
-  avif: { '480': 'img/a-480.avif', '1200': 'img/a-1200.avif', '2000': 'img/a-2000.avif' },
 };
 
 describe('фото', () => {
@@ -43,7 +42,7 @@ describe('фото', () => {
   it('повторное извлечение не теряет крупные фото', () => {
     const [merged] = keepBuilt([{ ...legacy, w: undefined, h: undefined }], [built]);
     expect(merged.files).toEqual(built.files);
-    expect(merged.avif).toEqual(built.avif);
+    expect(merged.w).toBe(2000);
     expect(keepBuilt([{ ...legacy, w: undefined }], [legacy])[0].w).toBe(560);
   });
 });
