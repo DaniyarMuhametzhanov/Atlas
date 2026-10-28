@@ -1,0 +1,24 @@
+{
+  "id": "avstriyskaya-imperiya-avstro-vengriya",
+  "name": "Австрийская империя / Австро-Венгрия",
+  "keys": [
+    "Austrian Empire",
+    "Austria Hungary",
+    "Austro-Hungarian Empire"
+  ],
+  "years": "1804 — 1918",
+  "capital": "Вена",
+  "intro": "Многонациональная держава Габсбургов.",
+  "timeline": [
+    {
+      "year": "1867",
+      "text": "Австро-Венгрия."
+    },
+    {
+      "year": "1914",
+      "text": "Сараево."
+    }
+  ],
+  "heritage": "Венский вальс.",
+  "photo": "schonbrunn-palace"
+}

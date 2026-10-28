@@ -1,0 +1,22 @@
+{
+  "id": "tevtonskiy-orden",
+  "name": "Тевтонский орден",
+  "keys": [
+    "Teutonic Knights"
+  ],
+  "years": "1190 — 1525",
+  "capital": "Мариенбург",
+  "intro": "Рыцарский орден, захвативший Пруссию и Прибалтику.",
+  "timeline": [
+    {
+      "year": "1242",
+      "text": "Ледовое побоище."
+    },
+    {
+      "year": "1410",
+      "text": "Разгром при Грюнвальде."
+    }
+  ],
+  "heritage": "Замок Мальборк.",
+  "photo": "trakai-island-castle"
+}

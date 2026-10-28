@@ -1,0 +1,22 @@
+{
+  "id": "fatimidskiy-khalifat",
+  "name": "Фатимидский халифат",
+  "keys": [
+    "Fatimid Caliphate"
+  ],
+  "years": "909 — 1171",
+  "capital": "Каир",
+  "intro": "Шиитская династия, основавшая Каир.",
+  "timeline": [
+    {
+      "year": "969",
+      "text": "Основан Каир."
+    },
+    {
+      "year": "970",
+      "text": "Мечеть-университет аль-Азхар."
+    }
+  ],
+  "heritage": "Каир и аль-Азхар.",
+  "photo": "giza-pyramids"
+}

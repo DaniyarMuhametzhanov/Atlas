@@ -1,0 +1,18 @@
+{
+  "id": "velikiy-zimbabve",
+  "name": "Великий Зимбабве",
+  "keys": [
+    "Great Zimbabwe"
+  ],
+  "years": "≈1100 — 1450",
+  "capital": "Великий Зимбабве",
+  "intro": "Каменный город-столица на юге Африки.",
+  "timeline": [
+    {
+      "year": "≈1300",
+      "text": "Расцвет, торговля золотом."
+    }
+  ],
+  "heritage": "Стены без раствора.",
+  "photo": "great-zimbabwe"
+}

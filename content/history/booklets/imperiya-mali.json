@@ -1,0 +1,18 @@
+{
+  "id": "imperiya-mali",
+  "name": "Империя Мали",
+  "keys": [
+    "Mali"
+  ],
+  "years": "1235 — 1600",
+  "capital": "Ниани",
+  "intro": "Богатейшая империя Западной Африки.",
+  "timeline": [
+    {
+      "year": "1324",
+      "text": "Хадж Мансы Мусы."
+    }
+  ],
+  "heritage": "Тимбукту и рукописи.",
+  "photo": "great-mosque-of-djenne"
+}

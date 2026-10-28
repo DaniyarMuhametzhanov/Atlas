@@ -1,0 +1,26 @@
+{
+  "id": "tsivilizatsiya-mayya",
+  "name": "Цивилизация майя",
+  "keys": [
+    "Maya city-states",
+    "Maya states",
+    "Maya chiefdoms and states",
+    "Mayas",
+    "Maya"
+  ],
+  "years": "≈2000 до н.э. — 1697",
+  "capital": "Тикаль, Паленке, Чичен-Ица",
+  "intro": "Города-государства в джунглях.",
+  "timeline": [
+    {
+      "year": "≈250–900",
+      "text": "Классический расцвет."
+    },
+    {
+      "year": "1697",
+      "text": "Падение последнего города."
+    }
+  ],
+  "heritage": "Календарь, письменность, ноль.",
+  "photo": "el-castillo-chichen-itza"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "derzhava-sefevidov",
+  "name": "Держава Сефевидов",
+  "keys": [
+    "Safavid Empire"
+  ],
+  "years": "1501 — 1736",
+  "capital": "Тебриз, Исфахан",
+  "intro": "Иранская держава, сделавшая шиизм главной религией.",
+  "timeline": [
+    {
+      "year": "1598",
+      "text": "Исфахан."
+    }
+  ],
+  "heritage": "Площадь Имама, ковры.",
+  "photo": "naqsh-e-jahan-square"
+}

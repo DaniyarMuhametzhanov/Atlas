@@ -1,0 +1,74 @@
+{
+  "id": "BWA",
+  "name": "Ботсвана",
+  "nameEn": "Botswana",
+  "region": "af",
+  "capital": "Габороне",
+  "tagline": "Алмазы и пустыня Калахари",
+  "fame": "Рисунки Цодило",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "rockart savanna"
+  },
+  "overview": {
+    "intro": "Бывший британский протекторат Бечуаналенд. После независимости нашли алмазы, и страна стала одной из самых успешных в Африке.",
+    "timeline": [
+      {
+        "year": "1885",
+        "text": "Британский протекторат."
+      },
+      {
+        "year": "1966",
+        "text": "Независимость."
+      },
+      {
+        "year": "1967",
+        "text": "Найдены алмазы."
+      }
+    ],
+    "funFact": "Ботсвана — одна из самых стабильных демократий Африки."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Цодило",
+        "text": "«Лувр пустыни» — тысячи наскальных рисунков.",
+        "photos": [
+          "tsodilo-hills-rock-paintings"
+        ]
+      }
+    ],
+    "nature": [
+      "bwa-delta-okavango",
+      "bwa-solonchaki-makgadikgadi"
+    ],
+    "reserves": [
+      "bwa-natsionalnyy-park-chobe"
+    ],
+    "wonders": [],
+    "danger": {
+      "level": 1,
+      "text": "Безопасно.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Парламентская республика.",
+    "mood": "Одна из стабильнейших демократий Африки.",
+    "techInfra": "Алмазы."
+  },
+  "culture": {
+    "character": "Спокойные, ценят согласие и разговор (собрания котла).",
+    "traditions": [
+      "Котла — общее собрание",
+      "Уважение к старшим",
+      "Говядина"
+    ]
+  },
+  "relations": {
+    "neighbors": "Стабильная, мирная страна."
+  },
+  "photos": {
+    "cover": "okavango-delta"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "imperiya-guptov",
+  "name": "Империя Гуптов",
+  "keys": [
+    "Gupta Empire"
+  ],
+  "years": "320 — 550",
+  "capital": "Паталипутра",
+  "intro": "«Золотой век» Индии.",
+  "timeline": [
+    {
+      "year": "499",
+      "text": "Математик Ариабхата."
+    }
+  ],
+  "heritage": "Ноль, десятичные цифры, шахматы.",
+  "photo": "iron-pillar-of-delhi"
+}

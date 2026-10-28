@@ -1,0 +1,19 @@
+{
+  "id": "tibetskaya-imperiya",
+  "name": "Тибетская империя",
+  "keys": [
+    "Tibetan Empire",
+    "Tufan Empire"
+  ],
+  "years": "618 — 842",
+  "capital": "Лхаса",
+  "intro": "Горная держава, соперничавшая с Китаем Тан.",
+  "timeline": [
+    {
+      "year": "763",
+      "text": "Тибетцы ненадолго захватывают Чанъань."
+    }
+  ],
+  "heritage": "Распространение буддизма в Тибете.",
+  "photo": "paro-taktsang"
+}

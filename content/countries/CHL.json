@@ -1,0 +1,79 @@
+{
+  "id": "CHL",
+  "name": "Чили",
+  "nameEn": "Chile",
+  "region": "am",
+  "capital": "Сантьяго",
+  "tagline": "Самая длинная страна",
+  "fame": "Остров Пасхи",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "moai sea"
+  },
+  "overview": {
+    "intro": "Народ мапуче долго сопротивлялся испанцам.",
+    "timeline": [
+      {
+        "year": "1541",
+        "text": "Основан Сантьяго."
+      },
+      {
+        "year": "1818",
+        "text": "Независимость."
+      },
+      {
+        "year": "1973–1990",
+        "text": "Диктатура Пиночета."
+      }
+    ],
+    "funFact": "Пустыня Атакама — одна из самых сухих мест Земли."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Остров Пасхи",
+        "text": "Каменные статуи моаи.",
+        "photos": [
+          "moai-easter-island-ahu-tongariki"
+        ]
+      },
+      {
+        "name": "Вальпараисо",
+        "text": "Портовый город на холмах.",
+        "photos": [
+          "valparaiso-hills-houses"
+        ]
+      }
+    ],
+    "nature": [
+      "chl-torres-del-payne",
+      "chl-pustynya-atakama"
+    ],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 2,
+      "text": "Безопасно; мелкие кражи.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Президентская республика.",
+    "mood": "Поляризация после протестов 2019 года.",
+    "techInfra": "Медь, литий, обсерватории."
+  },
+  "culture": {
+    "character": "Сдержанные, работящие.",
+    "traditions": [
+      "Онсе — вечерний чай",
+      "Эмпанадас",
+      "Танец куэка"
+    ]
+  },
+  "relations": {
+    "neighbors": "Спор с Боливией о море. Хорошие связи с Аргентиной и Перу."
+  },
+  "photos": {
+    "cover": "moai-easter-island-ahu-tongariki"
+  }
+}

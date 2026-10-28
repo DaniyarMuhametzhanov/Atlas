@@ -1,0 +1,61 @@
+{
+  "id": "ATF",
+  "name": "Французские Южные территории",
+  "nameEn": "Fr. S. Antarctic Lands",
+  "region": "oc",
+  "capital": "—",
+  "tagline": "Острова без постоянного населения",
+  "fame": "Острова учёных",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "ice sea"
+  },
+  "overview": {
+    "intro": "Отдалённые острова в южной части Индийского океана, где работают учёные.",
+    "timeline": [
+      {
+        "year": "1772",
+        "text": "Открытие островов Кергелен."
+      }
+    ],
+    "funFact": "Постоянных жителей здесь нет."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Кергелен",
+        "text": "Острова «Опустошения».",
+        "photos": [
+          "kerguelen-islands"
+        ]
+      }
+    ],
+    "nature": [],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 1,
+      "text": "Нет туристов.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Территория Франции.",
+    "mood": "Постоянных жителей нет.",
+    "techInfra": "Научные станции."
+  },
+  "culture": {
+    "character": "Постоянных жителей нет.",
+    "traditions": [
+      "Здесь живут учёные",
+      "Охрана природы",
+      "Пингвины"
+    ]
+  },
+  "relations": {
+    "neighbors": "Территория Франции."
+  },
+  "photos": {
+    "cover": "kerguelen-islands"
+  }
+}

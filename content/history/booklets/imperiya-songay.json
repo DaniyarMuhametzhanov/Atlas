@@ -1,0 +1,18 @@
+{
+  "id": "imperiya-songay",
+  "name": "Империя Сонгай",
+  "keys": [
+    "Songhai"
+  ],
+  "years": "1464 — 1591",
+  "capital": "Гао",
+  "intro": "Крупнейшее государство Западной Африки после Мали.",
+  "timeline": [
+    {
+      "year": "1591",
+      "text": "Разгром марокканцами."
+    }
+  ],
+  "heritage": "Университеты Тимбукту.",
+  "photo": "djinguereber-mosque"
+}

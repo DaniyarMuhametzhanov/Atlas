@@ -1,0 +1,18 @@
+{
+  "id": "imperiya-yuan",
+  "name": "Империя Юань",
+  "keys": [
+    "Great Khanate"
+  ],
+  "years": "1271 — 1368",
+  "capital": "Ханбалык (Пекин)",
+  "intro": "Китай под властью монголов во главе с Хубилаем.",
+  "timeline": [
+    {
+      "year": "1275",
+      "text": "Марко Поло при дворе Хубилая."
+    }
+  ],
+  "heritage": "Пекин стал столицей.",
+  "photo": "forbidden-city-beijing"
+}

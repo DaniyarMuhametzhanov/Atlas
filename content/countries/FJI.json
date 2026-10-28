@@ -1,0 +1,67 @@
+{
+  "id": "FJI",
+  "name": "Фиджи",
+  "nameEn": "Fiji",
+  "region": "oc",
+  "capital": "Сува",
+  "tagline": "Острова Тихого океана",
+  "fame": "Тропические острова",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "island sea"
+  },
+  "overview": {
+    "intro": "Бывшая британская колония.",
+    "timeline": [
+      {
+        "year": "1874",
+        "text": "Британская колония."
+      },
+      {
+        "year": "1970",
+        "text": "Независимость."
+      }
+    ],
+    "funFact": "Через Фиджи проходит 180-й меридиан."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Левука",
+        "text": "Старая столица.",
+        "photos": [
+          "levuka"
+        ]
+      }
+    ],
+    "nature": [
+      "fji-korallovye-rify-fidzhi"
+    ],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 1,
+      "text": "Безопасно.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Парламентская республика.",
+    "mood": "История переворотов, сейчас стабильно.",
+    "techInfra": "Туризм."
+  },
+  "culture": {
+    "character": "Дружелюбные, общинные.",
+    "traditions": [
+      "«Була!» — привет",
+      "Напиток кава",
+      "Деревня — вход с разрешения"
+    ]
+  },
+  "relations": {
+    "neighbors": "Хорошие отношения с соседями."
+  },
+  "photos": {
+    "cover": "fiji-beach"
+  }
+}

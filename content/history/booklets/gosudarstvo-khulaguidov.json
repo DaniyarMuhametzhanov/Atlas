@@ -1,0 +1,22 @@
+{
+  "id": "gosudarstvo-khulaguidov",
+  "name": "Государство Хулагуидов",
+  "keys": [
+    "Ilkhanate"
+  ],
+  "years": "1256 — 1335",
+  "capital": "Тебриз",
+  "intro": "Монгольская держава в Иране.",
+  "timeline": [
+    {
+      "year": "1258",
+      "text": "Разгром Багдада."
+    },
+    {
+      "year": "1295",
+      "text": "Принятие ислама."
+    }
+  ],
+  "heritage": "Обсерватория в Мараге.",
+  "photo": "naqsh-e-jahan-square"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "CIV",
+  "name": "Кот-д’Ивуар",
+  "nameEn": "Côte d'Ivoire",
+  "region": "af",
+  "capital": "Ямусукро",
+  "tagline": "Берег Слоновой Кости",
+  "fame": "Базилика Ямусукро",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "cathedral jungle"
+  },
+  "overview": {
+    "intro": "Европейцы назвали побережье по главному товару — слоновой кости.",
+    "timeline": [
+      {
+        "year": "1893",
+        "text": "Французская колония."
+      },
+      {
+        "year": "1960",
+        "text": "Независимость."
+      }
+    ],
+    "funFact": "Страна — крупнейший производитель какао в мире."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Базилика в Ямусукро",
+        "text": "Одна из самых больших церквей мира.",
+        "photos": [
+          "basilica-of-our-lady-of-peace-yamoussoukro"
+        ]
+      }
+    ],
+    "nature": [],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 2,
+      "text": "В целом безопасно.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Президентская республика.",
+    "mood": "Споры вокруг выборов.",
+    "techInfra": "Какао, порт Абиджан."
+  },
+  "culture": {
+    "character": "Общительные, любят музыку.",
+    "traditions": [
+      "Зуглу — музыка",
+      "Аттьеке — блюдо",
+      "Франкоязычная культура"
+    ]
+  },
+  "relations": {
+    "neighbors": "Хорошие связи с соседями и Францией."
+  },
+  "photos": {
+    "cover": "basilica-of-our-lady-of-peace-yamoussoukro"
+  }
+}

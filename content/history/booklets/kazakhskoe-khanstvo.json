@@ -1,0 +1,22 @@
+{
+  "id": "kazakhskoe-khanstvo",
+  "name": "Казахское ханство",
+  "keys": [
+    "Quazaq Khanate"
+  ],
+  "years": "1465 — 1847",
+  "capital": "Туркестан",
+  "intro": "Государство казахов в Великой степи.",
+  "timeline": [
+    {
+      "year": "1465",
+      "text": "Керей и Жанибек."
+    },
+    {
+      "year": "1723",
+      "text": "«Годы великого бедствия»."
+    }
+  ],
+  "heritage": "Жеты Жаргы.",
+  "photo": "mausoleum-of-khoja-ahmed-yasawi"
+}

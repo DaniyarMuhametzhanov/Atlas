@@ -1,0 +1,19 @@
+{
+  "id": "imperiya-atstekov",
+  "name": "Империя ацтеков",
+  "keys": [
+    "Aztec Empire",
+    "Mexihcah (Triple Alliance)"
+  ],
+  "years": "1428 — 1521",
+  "capital": "Теночтитлан",
+  "intro": "Держава в Мексике со столицей на озере.",
+  "timeline": [
+    {
+      "year": "1521",
+      "text": "Кортес."
+    }
+  ],
+  "heritage": "Камень Солнца, плавучие огороды.",
+  "photo": "aztec-calendar-stone"
+}

@@ -1,0 +1,24 @@
+{
+  "id": "frankskaya-derzhava",
+  "name": "Франкская держава",
+  "keys": [
+    "Carolingian Empire",
+    "Frankish Kingdom",
+    "Franks"
+  ],
+  "years": "481 — 843",
+  "capital": "Ахен",
+  "intro": "Королевство франков, при Карле Великом — империя Запада.",
+  "timeline": [
+    {
+      "year": "800",
+      "text": "Коронация Карла Великого."
+    },
+    {
+      "year": "843",
+      "text": "Раздел на три части."
+    }
+  ],
+  "heritage": "Основа будущих Франции и Германии.",
+  "photo": "cologne-cathedral"
+}

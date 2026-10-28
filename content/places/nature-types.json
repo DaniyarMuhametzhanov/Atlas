@@ -1,0 +1,127 @@
+{
+  "mountain": {
+    "ru": "Горы",
+    "icon": "peak",
+    "land": "mountains"
+  },
+  "volcano": {
+    "ru": "Вулкан",
+    "icon": "volcano",
+    "land": "mountains"
+  },
+  "waterfall": {
+    "ru": "Водопад",
+    "icon": "waterfall",
+    "land": "jungle"
+  },
+  "canyon": {
+    "ru": "Каньон",
+    "icon": "canyon",
+    "land": "desert"
+  },
+  "aurora": {
+    "ru": "Полярное сияние",
+    "icon": "aurora",
+    "land": "snow"
+  },
+  "geyser": {
+    "ru": "Гейзеры",
+    "icon": "geyser",
+    "land": "plain"
+  },
+  "reef": {
+    "ru": "Коралловый риф",
+    "icon": "reef",
+    "land": "sea"
+  },
+  "saltflat": {
+    "ru": "Солончак",
+    "icon": "saltflat",
+    "land": "plain"
+  },
+  "karst": {
+    "ru": "Карстовые скалы",
+    "icon": "karst",
+    "land": "sea"
+  },
+  "fjord": {
+    "ru": "Фьорд",
+    "icon": "fjord",
+    "land": "sea"
+  },
+  "dunes": {
+    "ru": "Пустыня",
+    "icon": "dunes",
+    "land": "desert"
+  },
+  "lake": {
+    "ru": "Озеро",
+    "icon": "lake",
+    "land": "mountains"
+  },
+  "forest": {
+    "ru": "Лес",
+    "icon": "forest",
+    "land": "jungle"
+  },
+  "glacier": {
+    "ru": "Ледник",
+    "icon": "ice",
+    "land": "snow"
+  },
+  "island": {
+    "ru": "Острова",
+    "icon": "island",
+    "land": "sea"
+  },
+  "cave": {
+    "ru": "Пещеры",
+    "icon": "cave",
+    "land": "mountains"
+  },
+  "travertine": {
+    "ru": "Источники",
+    "icon": "travertine",
+    "land": "hills"
+  },
+  "rock": {
+    "ru": "Скала",
+    "icon": "rock",
+    "land": "desert"
+  },
+  "pinnacles": {
+    "ru": "Каменные столбы",
+    "icon": "pinnacles",
+    "land": "desert"
+  },
+  "safari": {
+    "ru": "Сафари",
+    "icon": "safari",
+    "land": "savanna"
+  },
+  "bloom": {
+    "ru": "Цветение",
+    "icon": "blossom",
+    "land": "hills"
+  },
+  "cliffs": {
+    "ru": "Скалы у моря",
+    "icon": "cliffs",
+    "land": "sea"
+  },
+  "baobab": {
+    "ru": "Баобабы",
+    "icon": "baobab",
+    "land": "plain"
+  },
+  "terraces": {
+    "ru": "Террасы",
+    "icon": "terraces",
+    "land": "mountains"
+  },
+  "reserve": {
+    "ru": "Заповедник",
+    "icon": "forest",
+    "land": "jungle"
+  }
+}

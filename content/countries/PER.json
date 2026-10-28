@@ -1,0 +1,96 @@
+{
+  "id": "PER",
+  "name": "Перу",
+  "nameEn": "Peru",
+  "region": "am",
+  "capital": "Лима",
+  "tagline": "Земля инков",
+  "fame": "Мачу-Пикчу",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "terraces mountains"
+  },
+  "overview": {
+    "intro": "Здесь была империя инков. Задолго до них появились города Карал и культура Наска.",
+    "timeline": [
+      {
+        "year": "~2600 до н.э.",
+        "text": "Карал — древнейший город Америки."
+      },
+      {
+        "year": "~500",
+        "text": "Рисунки Наска."
+      },
+      {
+        "year": "1438",
+        "text": "Империя инков."
+      },
+      {
+        "year": "1532",
+        "text": "Испанское завоевание."
+      },
+      {
+        "year": "1821",
+        "text": "Независимость."
+      }
+    ],
+    "funFact": "Картофель родом из Перу."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Мачу-Пикчу",
+        "text": "Город инков в горах.",
+        "photos": [
+          "machu-picchu"
+        ]
+      },
+      {
+        "name": "Куско",
+        "text": "Столица инков.",
+        "photos": [
+          "cusco-plaza-de-armas"
+        ]
+      },
+      {
+        "name": "Линии Наска",
+        "text": "Огромные рисунки в пустыне.",
+        "photos": [
+          "nazca-lines-hummingbird"
+        ]
+      }
+    ],
+    "nature": [
+      "per-raduzhnaya-gora-vinikunka",
+      "per-amazoniya-peru"
+    ],
+    "reserves": [],
+    "wonders": [
+      "per-machu-pikchu"
+    ],
+    "danger": {
+      "level": 2,
+      "text": "Туристические места безопасны.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Президентская республика; частая смена президентов.",
+    "mood": "Глубокое недоверие к политикам.",
+    "techInfra": "Медь, новый порт Чанкай."
+  },
+  "culture": {
+    "character": "Гордые наследием инков, любят кухню.",
+    "traditions": [
+      "Севиче",
+      "Инти Райми — праздник Солнца",
+      "Кечуа рядом с испанским"
+    ]
+  },
+  "relations": {
+    "neighbors": "Хорошие отношения с соседями."
+  },
+  "photos": {
+    "cover": "machu-picchu"
+  }
+}

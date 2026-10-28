@@ -1,0 +1,89 @@
+{
+  "id": "BRA",
+  "name": "Бразилия",
+  "nameEn": "Brazil",
+  "region": "am",
+  "capital": "Бразилиа",
+  "tagline": "Огромная португалоязычная страна",
+  "fame": "Колониальные города",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "colonial jungle"
+  },
+  "overview": {
+    "intro": "Бразилия 300 лет была колонией Португалии. Здесь смешались индейские, европейские и африканские культуры.",
+    "timeline": [
+      {
+        "year": "1500",
+        "text": "Кабрал открывает Бразилию."
+      },
+      {
+        "year": "1808",
+        "text": "Двор португальского короля переезжает в Рио."
+      },
+      {
+        "year": "1822",
+        "text": "Независимость."
+      },
+      {
+        "year": "1888",
+        "text": "Отмена рабства."
+      }
+    ],
+    "funFact": "Бразилия — последняя страна Америки, отменившая рабство."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Салвадор",
+        "text": "Первая столица.",
+        "photos": [
+          "pelourinho-salvador"
+        ]
+      },
+      {
+        "name": "Ору-Прету",
+        "text": "Город золотой лихорадки.",
+        "photos": [
+          "ouro-preto-church"
+        ]
+      }
+    ],
+    "nature": [
+      "bra-amazonskie-dzhungli",
+      "bra-vodopady-iguasu",
+      "bra-lensoys-maranensis"
+    ],
+    "reserves": [
+      "bra-pantanal"
+    ],
+    "wonders": [
+      "bra-statuya-khrista-iskupitelya",
+      "bra-amazoniya"
+    ],
+    "danger": {
+      "level": 3,
+      "text": "Высокая преступность в больших городах.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Федеративная президентская республика.",
+    "mood": "Сильная поляризация левых и правых.",
+    "techInfra": "Самолёты Embraer, мгновенные платежи Pix, нефть."
+  },
+  "culture": {
+    "character": "Тёплые, общительные, любят праздники и футбол.",
+    "traditions": [
+      "Карнавал",
+      "Футбол — религия",
+      "Обнимаются при встрече"
+    ]
+  },
+  "relations": {
+    "neighbors": "Лидер Южной Америки, хорошие отношения с соседями."
+  },
+  "photos": {
+    "cover": "iguazu-falls"
+  }
+}

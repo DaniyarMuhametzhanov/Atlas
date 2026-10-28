@@ -1,0 +1,22 @@
+{
+  "id": "imperiya-velikikh-mogolov",
+  "name": "Империя Великих Моголов",
+  "keys": [
+    "Mughal Empire"
+  ],
+  "years": "1526 — 1857",
+  "capital": "Агра, Дели",
+  "intro": "Мусульманская династия Индии.",
+  "timeline": [
+    {
+      "year": "1632",
+      "text": "Тадж-Махал."
+    },
+    {
+      "year": "1857",
+      "text": "Конец империи."
+    }
+  ],
+  "heritage": "Тадж-Махал.",
+  "photo": "taj-mahal"
+}

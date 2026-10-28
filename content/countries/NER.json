@@ -1,0 +1,67 @@
+{
+  "id": "NER",
+  "name": "Нигер",
+  "nameEn": "Niger",
+  "region": "af",
+  "capital": "Ниамей",
+  "tagline": "Сахара и караванные города",
+  "fame": "Мечеть Агадеса",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "mudmosque desert"
+  },
+  "overview": {
+    "intro": "Через Нигер шли караваны, а город Агадес был воротами в Сахару.",
+    "timeline": [
+      {
+        "year": "XVI век",
+        "text": "Часть империи Сонгай."
+      },
+      {
+        "year": "1960",
+        "text": "Независимость от Франции."
+      }
+    ],
+    "funFact": "Здесь найдены кости динозавров в пустыне Тенере."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Агадес",
+        "text": "Глиняный минарет XVI века.",
+        "photos": [
+          "grand-mosque-of-agadez"
+        ]
+      }
+    ],
+    "nature": [
+      "ner-pustynya-tenere"
+    ],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 4,
+      "text": "Опасно.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Военная власть с 2023 года.",
+    "mood": "Настроения против бывших колониальных держав.",
+    "techInfra": "Уран."
+  },
+  "culture": {
+    "character": "Гостеприимны, традиционны.",
+    "traditions": [
+      "Праздник кочевников Кюр-Сале",
+      "Долгие приветствия",
+      "Чай"
+    ]
+  },
+  "relations": {
+    "neighbors": "Власть у военных с 2023 года, союз с Мали и Буркина-Фасо."
+  },
+  "photos": {
+    "cover": "grand-mosque-of-agadez"
+  }
+}

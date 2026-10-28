@@ -1,0 +1,27 @@
+{
+  "id": "zolotaya-orda",
+  "name": "Золотая Орда",
+  "keys": [
+    "Khanate of the Golden Horde",
+    "Golden Horde"
+  ],
+  "years": "1242 — 1502",
+  "capital": "Сарай",
+  "intro": "Монгольское государство в степях от Иртыша до Дуная.",
+  "timeline": [
+    {
+      "year": "1240-е",
+      "text": "Русь платит дань."
+    },
+    {
+      "year": "1380",
+      "text": "Куликовская битва."
+    },
+    {
+      "year": "1480",
+      "text": "Стояние на Угре."
+    }
+  ],
+  "heritage": "Власть над Русью почти 240 лет.",
+  "photo": "kazakh-yurt-steppe"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "parfiya",
+  "name": "Парфия",
+  "keys": [
+    "Parthia",
+    "Parthian Empire"
+  ],
+  "years": "247 до н.э. — 224 н.э.",
+  "capital": "Ктесифон",
+  "intro": "Иранское царство всадников-лучников, соперник Рима.",
+  "timeline": [
+    {
+      "year": "53 до н.э.",
+      "text": "Разгром римлян при Каррах."
+    }
+  ],
+  "heritage": "«Парфянский выстрел» с коня назад.",
+  "photo": "merv-sultan-sanjar-mausoleum"
+}

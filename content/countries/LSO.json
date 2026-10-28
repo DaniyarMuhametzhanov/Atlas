@@ -1,0 +1,67 @@
+{
+  "id": "LSO",
+  "name": "Лесото",
+  "nameEn": "Lesotho",
+  "region": "af",
+  "capital": "Масеру",
+  "tagline": "Королевство в небе",
+  "fame": "Горное королевство",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "village mountains"
+  },
+  "overview": {
+    "intro": "Горное королевство, со всех сторон окружённое ЮАР.",
+    "timeline": [
+      {
+        "year": "1822",
+        "text": "Король Мошвешве I объединяет басуто."
+      },
+      {
+        "year": "1966",
+        "text": "Независимость."
+      }
+    ],
+    "funFact": "Вся страна лежит выше 1000 м над уровнем моря."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Таба-Босиу",
+        "text": "Горная крепость Мошвешве.",
+        "photos": [
+          "thaba-bosiu"
+        ]
+      }
+    ],
+    "nature": [
+      "lso-vodopad-maletsunyane"
+    ],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 2,
+      "text": "Осторожность.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Конституционная монархия.",
+    "mood": "Частые политические кризисы.",
+    "techInfra": "Вода и гидроэнергия для ЮАР."
+  },
+  "culture": {
+    "character": "Горные традиции.",
+    "traditions": [
+      "Одеяла басото вместо пальто",
+      "Шляпа мокорото",
+      "Пони как транспорт"
+    ]
+  },
+  "relations": {
+    "neighbors": "Полностью окружено ЮАР и зависит от неё."
+  },
+  "photos": {
+    "cover": "maletsunyane-falls"
+  }
+}

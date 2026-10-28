@@ -1,0 +1,65 @@
+{
+  "id": "PNG",
+  "name": "Папуа — Новая Гвинея",
+  "nameEn": "Papua New Guinea",
+  "region": "oc",
+  "capital": "Порт-Морсби",
+  "tagline": "Страна 800 языков",
+  "fame": "Культура племён",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "village jungle"
+  },
+  "overview": {
+    "intro": "Здесь одно из древнейших земледелий мира.",
+    "timeline": [
+      {
+        "year": "~7000 лет назад",
+        "text": "Земледелие в Кук."
+      },
+      {
+        "year": "1975",
+        "text": "Независимость."
+      }
+    ],
+    "funFact": "Здесь говорят на более чем 800 языках."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Кук",
+        "text": "Древние земледельческие поля.",
+        "photos": [
+          "kuk-swamp"
+        ]
+      }
+    ],
+    "nature": [],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 3,
+      "text": "Высокая преступность.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Конституционная монархия.",
+    "mood": "Племенная политика.",
+    "techInfra": "Газ, золото, мало дорог."
+  },
+  "culture": {
+    "character": "Сотни племён и языков.",
+    "traditions": [
+      "Праздники синг-синг",
+      "Раскраска лиц",
+      "Свиньи — богатство"
+    ]
+  },
+  "relations": {
+    "neighbors": "Связи с Австралией."
+  },
+  "photos": {
+    "cover": "papua-new-guinea-sing-sing"
+  }
+}

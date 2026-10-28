@@ -1,0 +1,78 @@
+{
+  "id": "ECU",
+  "name": "Эквадор",
+  "nameEn": "Ecuador",
+  "region": "am",
+  "capital": "Кито",
+  "tagline": "Страна на экваторе",
+  "fame": "Вулканы и Галапагосы",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "volcano mountains"
+  },
+  "overview": {
+    "intro": "Кито был северной столицей инков.",
+    "timeline": [
+      {
+        "year": "~1460",
+        "text": "Завоевание инками."
+      },
+      {
+        "year": "1534",
+        "text": "Испанцы основывают Кито."
+      },
+      {
+        "year": "1830",
+        "text": "Независимость."
+      }
+    ],
+    "funFact": "Страна названа по экватору."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Старый Кито",
+        "text": "Один из лучше сохранившихся колониальных центров.",
+        "photos": [
+          "quito-historic-center"
+        ]
+      },
+      {
+        "name": "Галапагосы",
+        "text": "Острова, вдохновившие Дарвина.",
+        "photos": [
+          "galapagos-giant-tortoise"
+        ]
+      }
+    ],
+    "nature": [
+      "ecu-galapagosskie-ostrova"
+    ],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 3,
+      "text": "Рост преступности банд.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Президентская республика.",
+    "mood": "Требуют безопасности.",
+    "techInfra": "Нефть, бананы."
+  },
+  "culture": {
+    "character": "Дружелюбные, семейные.",
+    "traditions": [
+      "Инти Райми",
+      "Панамы (родом из Эквадора)",
+      "Рынки"
+    ]
+  },
+  "relations": {
+    "neighbors": "Хорошие отношения с соседями."
+  },
+  "photos": {
+    "cover": "galapagos-giant-tortoise"
+  }
+}

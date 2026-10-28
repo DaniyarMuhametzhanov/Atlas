@@ -1,0 +1,23 @@
+{
+  "id": "rech-pospolitaya",
+  "name": "Речь Посполитая",
+  "keys": [
+    "Polish–Lithuanian Commonwealth",
+    "Poland-Lithuania"
+  ],
+  "years": "1569 — 1795",
+  "capital": "Краков, Варшава",
+  "intro": "Союз Польши и Литвы.",
+  "timeline": [
+    {
+      "year": "1791",
+      "text": "Конституция."
+    },
+    {
+      "year": "1795",
+      "text": "Раздел."
+    }
+  ],
+  "heritage": "Одна из первых конституций.",
+  "photo": "krakow-main-square"
+}

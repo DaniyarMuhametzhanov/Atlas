@@ -1,0 +1,19 @@
+{
+  "id": "imperiya-gana",
+  "name": "Империя Гана",
+  "keys": [
+    "Empire of Ghana",
+    "Ghana"
+  ],
+  "years": "≈300 — 1200",
+  "capital": "Кумби-Сале",
+  "intro": "Западноафриканское царство, богатое золотом.",
+  "timeline": [
+    {
+      "year": "1076",
+      "text": "Набеги Альморавидов."
+    }
+  ],
+  "heritage": "Торговля золотом через Сахару.",
+  "photo": "chinguetti-mosque"
+}

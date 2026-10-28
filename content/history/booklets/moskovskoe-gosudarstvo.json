@@ -1,0 +1,27 @@
+{
+  "id": "moskovskoe-gosudarstvo",
+  "name": "Московское государство",
+  "keys": [
+    "Grand Duchy of Moscow",
+    "Tsardom of Muscovy"
+  ],
+  "years": "1263 — 1721",
+  "capital": "Москва",
+  "intro": "Из маленького княжества выросло Русское царство.",
+  "timeline": [
+    {
+      "year": "1480",
+      "text": "Конец зависимости от Орды."
+    },
+    {
+      "year": "1547",
+      "text": "Иван IV — первый царь."
+    },
+    {
+      "year": "1613",
+      "text": "Династия Романовых."
+    }
+  ],
+  "heritage": "Московский Кремль.",
+  "photo": "saint-basil-s-cathedral-red-square"
+}

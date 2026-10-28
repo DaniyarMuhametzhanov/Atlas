@@ -1,0 +1,18 @@
+{
+  "id": "britanskaya-indiya",
+  "name": "Британская Индия",
+  "keys": [
+    "British Raj"
+  ],
+  "years": "1858 — 1947",
+  "capital": "Калькутта, Дели",
+  "intro": "Индия под властью Британии.",
+  "timeline": [
+    {
+      "year": "1947",
+      "text": "Независимость и раздел."
+    }
+  ],
+  "heritage": "Железные дороги.",
+  "photo": "taj-mahal"
+}

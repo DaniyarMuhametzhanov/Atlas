@@ -1,0 +1,18 @@
+{
+  "id": "deliyskiy-sultanat",
+  "name": "Делийский султанат",
+  "keys": [
+    "Sultanate of Delhi"
+  ],
+  "years": "1206 — 1526",
+  "capital": "Дели",
+  "intro": "Мусульманское государство Северной Индии.",
+  "timeline": [
+    {
+      "year": "1526",
+      "text": "Разгромлен Бабуром."
+    }
+  ],
+  "heritage": "Минарет Кутб-Минар.",
+  "photo": "taj-mahal"
+}

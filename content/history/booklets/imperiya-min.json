@@ -1,0 +1,23 @@
+{
+  "id": "imperiya-min",
+  "name": "Империя Мин",
+  "keys": [
+    "Ming Empire",
+    "Ming Chinese Empire"
+  ],
+  "years": "1368 — 1644",
+  "capital": "Нанкин, Пекин",
+  "intro": "Китайская династия после изгнания монголов.",
+  "timeline": [
+    {
+      "year": "1405",
+      "text": "Плавания Чжэн Хэ."
+    },
+    {
+      "year": "1420",
+      "text": "Запретный город."
+    }
+  ],
+  "heritage": "Фарфор, Великая стена.",
+  "photo": "great-wall-of-china-mutianyu"
+}

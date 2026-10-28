@@ -1,0 +1,23 @@
+{
+  "id": "imperiya-tsin-2",
+  "name": "Империя Цин",
+  "keys": [
+    "Manchu Empire",
+    "Qing Empire"
+  ],
+  "years": "1644 — 1912",
+  "capital": "Пекин",
+  "intro": "Последняя императорская династия Китая.",
+  "timeline": [
+    {
+      "year": "1839",
+      "text": "Опиумные войны."
+    },
+    {
+      "year": "1912",
+      "text": "Падение империи."
+    }
+  ],
+  "heritage": "Наибольшие размеры Китая.",
+  "photo": "forbidden-city-beijing"
+}

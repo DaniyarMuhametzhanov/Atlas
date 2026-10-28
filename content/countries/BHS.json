@@ -1,0 +1,71 @@
+{
+  "id": "BHS",
+  "name": "Багамы",
+  "nameEn": "Bahamas",
+  "region": "am",
+  "capital": "Нассау",
+  "tagline": "Острова первой высадки Колумба",
+  "fame": "Острова пиратов",
+  "updated": "legacy-v1",
+  "icon": {
+    "motif": "ship sea"
+  },
+  "overview": {
+    "intro": "Здесь в 1492 году Колумб впервые ступил на землю Америки. Позже здесь были пираты.",
+    "timeline": [
+      {
+        "year": "1492",
+        "text": "Высадка Колумба."
+      },
+      {
+        "year": "1718",
+        "text": "Британцы изгоняют пиратов."
+      },
+      {
+        "year": "1973",
+        "text": "Независимость."
+      }
+    ],
+    "funFact": "Пират Чёрная Борода жил на Багамах."
+  },
+  "tourist": {
+    "sights": [
+      {
+        "name": "Нассау",
+        "text": "Бывшая «республика пиратов».",
+        "photos": [
+          "nassau-bahamas-fort-fincastle"
+        ]
+      }
+    ],
+    "nature": [
+      "bhs-plavayushchie-svini-i-laguny"
+    ],
+    "reserves": [],
+    "wonders": [],
+    "danger": {
+      "level": 2,
+      "text": "Осторожность в Нассау.",
+      "asOf": "не указано (старая версия)"
+    }
+  },
+  "politics": {
+    "system": "Конституционная монархия.",
+    "mood": "Стабильность.",
+    "techInfra": "Туризм, офшорные финансы."
+  },
+  "culture": {
+    "character": "Спокойные, островная жизнь.",
+    "traditions": [
+      "Карнавал Джанкану",
+      "Конк — моллюски",
+      "Британские традиции"
+    ]
+  },
+  "relations": {
+    "neighbors": "Близкие связи с США."
+  },
+  "photos": {
+    "cover": "nassau-bahamas-fort-fincastle"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "chagatayskiy-ulus",
+  "name": "Чагатайский улус",
+  "keys": [
+    "Chagatai Khanate"
+  ],
+  "years": "1225 — 1680-е",
+  "capital": "Алмалык",
+  "intro": "Монгольское государство в Средней Азии.",
+  "timeline": [
+    {
+      "year": "1370",
+      "text": "Власть переходит к Тимуру."
+    }
+  ],
+  "heritage": "Чагатайский язык.",
+  "photo": "registan"
+}

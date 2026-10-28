@@ -1,0 +1,23 @@
+{
+  "id": "yaponskaya-imperiya",
+  "name": "Японская империя",
+  "keys": [
+    "Empire of Japan",
+    "Imperial Japan"
+  ],
+  "years": "1868 — 1947",
+  "capital": "Токио",
+  "intro": "Модернизированная Япония.",
+  "timeline": [
+    {
+      "year": "1905",
+      "text": "Победа над Россией."
+    },
+    {
+      "year": "1945",
+      "text": "Поражение."
+    }
+  ],
+  "heritage": "Быстрая модернизация.",
+  "photo": "himeji-castle"
+}

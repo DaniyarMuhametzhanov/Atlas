@@ -1,0 +1,18 @@
+{
+  "id": "vidzhayanagar",
+  "name": "Виджаянагар",
+  "keys": [
+    "Vijayanagara"
+  ],
+  "years": "1336 — 1646",
+  "capital": "Хампи",
+  "intro": "Индуистская империя юга Индии.",
+  "timeline": [
+    {
+      "year": "1565",
+      "text": "Поражение при Таликоте."
+    }
+  ],
+  "heritage": "Храмы Хампи.",
+  "photo": "hampi-vittala-temple"
+}
