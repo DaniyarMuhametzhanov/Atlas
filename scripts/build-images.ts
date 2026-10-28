@@ -101,7 +101,7 @@ for (const v of FULL) {
   }
   const estimate = (bytes / Math.max(1, sample.length)) * withOrig.length;
   console.log(`\n  вариант ${v.w} px, качество ${v.q}: ≈ ${mb(estimate)} МБ (можно ${mb(budget)} МБ)`);
-  if (estimate <= budget * 0.98) { // 2% на неточность оценки по выборке (ещё 12 МБ запаса — в RESERVE)
+  if (estimate <= budget) { // неточность оценки по выборке покрывает запас RESERVE (12 МБ)
     pick = v;
     break;
   }
