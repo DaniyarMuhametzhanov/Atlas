@@ -80,5 +80,7 @@
   "relations": {
     "neighbors": "Лидер Африки, участник БРИКС."
   },
-  "photos": {}
+  "photos": {
+    "cover": "zaf-cape-town-table-mountain"
+  }
 }

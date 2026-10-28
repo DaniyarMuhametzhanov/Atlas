@@ -28,7 +28,10 @@
     "sights": [
       {
         "name": "Копан",
-        "text": "Лестница с иероглифами."
+        "text": "Лестница с иероглифами.",
+        "photos": [
+          "copan-ruins-unesco"
+        ]
       }
     ],
     "nature": [],
@@ -56,5 +59,7 @@
   "relations": {
     "neighbors": "Хорошие отношения с соседями."
   },
-  "photos": {}
+  "photos": {
+    "cover": "hnd-copan-scarlet-macaw"
+  }
 }

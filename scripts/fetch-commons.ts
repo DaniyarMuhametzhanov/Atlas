@@ -107,7 +107,10 @@ function thumbUrl(title: string, width: number): string {
   const name = title.replace(/^File:/, '').replace(/ /g, '_');
   const md5 = createHash('md5').update(name).digest('hex');
   const enc = encodeURIComponent(name);
-  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${md5[0]}/${md5.slice(0, 2)}/${enc}/${width}px-${enc}`;
+  const base = `https://upload.wikimedia.org/wikipedia/commons/thumb/${md5[0]}/${md5.slice(0, 2)}/${enc}`;
+  // у TIFF и PDF миниатюра — JPEG первой страницы: …/lossy-page1-1920px-Имя.tiff.jpg
+  if (/\.(tiff?|pdf)$/i.test(name)) return `${base}/lossy-page1-${width}px-${enc}.jpg`;
+  return `${base}/${width}px-${enc}`;
 }
 
 type Manifest = Record<string, { file: string; width: number; height: number }>;

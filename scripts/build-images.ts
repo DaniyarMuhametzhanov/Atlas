@@ -90,10 +90,33 @@ const isFullFile = (name: string) => {
 const fullNow = fs.readdirSync(OUT).filter(isFullFile).reduce((s, f) => s + fs.statSync(path.join(OUT, f)).size, 0);
 const budget = LIMIT_TOTAL - RESERVE - (sizeOf(PUBLIC) - fullNow);
 
+const stamp = fs.existsSync(STAMP) ? readJson<{ w: number; q: number }>(STAMP) : null;
+let pick = FULL[FULL.length - 1];
+// уже выбранный вариант оставляем, пока он помещается: добавили пару фото — не пересжимаем все 560
+let keepStamp = false;
+if (stamp) {
+  let have = 0;
+  let haveN = 0;
+  let missing = 0;
+  for (const p of withOrig) {
+    const fw = fullWidth(widthOf.get(p.id)!, stamp.w);
+    if (!fw) continue;
+    const f = path.join(OUT, `${p.id}-${fw}.webp`);
+    if (fs.existsSync(f)) {
+      have += fs.statSync(f).size;
+      haveN++;
+    } else missing++;
+  }
+  const estimate = have + (haveN ? have / haveN : 0) * missing;
+  keepStamp = haveN > 0 && estimate <= budget;
+  if (keepStamp) {
+    pick = { w: stamp.w, q: stamp.q };
+    console.log(`\n  оставляем ${stamp.w} px, качество ${stamp.q}: ≈ ${mb(estimate)} МБ (можно ${mb(budget)} МБ)`);
+  }
+}
 // оценка по выборке: 30 фото, равномерно по списку
 const sample = withOrig.filter((_, i) => i % Math.max(1, Math.floor(withOrig.length / 30)) === 0).slice(0, 30);
-let pick = FULL[FULL.length - 1];
-for (const v of FULL) {
+for (const v of keepStamp ? [] : FULL) {
   let bytes = 0;
   for (const p of sample) {
     const w = fullWidth(widthOf.get(p.id)!, v.w);
@@ -109,7 +132,6 @@ for (const v of FULL) {
 console.log(`Фото на весь экран: ${pick.w} px, качество ${pick.q}.`);
 
 // ---------- 3. версии на весь экран + запись в sources.json ----------
-const stamp = fs.existsSync(STAMP) ? readJson<{ w: number; q: number }>(STAMP) : null;
 const redo = !stamp || stamp.w !== pick.w || stamp.q !== pick.q;
 const keep = new Set<string>(['fullscreen.json']);
 for (const p of withOrig) {

@@ -463,7 +463,8 @@
     "lon": 74.5,
     "lat": 46.5,
     "text": "Озеро, где одна половина пресная, а другая солёная.",
-    "main": false
+    "main": false,
+    "photo": "lake-balkhash-mynaral"
   },
   {
     "id": "kgz-issyk-kul",
@@ -1253,7 +1254,8 @@
     "lon": 18.4,
     "lat": -33.96,
     "text": "Гора с плоской вершиной над Кейптауном.",
-    "main": true
+    "main": true,
+    "photo": "table-mountain-cape-town"
   },
   {
     "id": "zaf-drakonovy-gory",

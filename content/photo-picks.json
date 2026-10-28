@@ -1,0 +1,98 @@
+[
+  {
+    "target": "cover:ZAF",
+    "id": "zaf-cape-town-table-mountain",
+    "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2825",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2825.jpg"
+  },
+  {
+    "target": "cover:HND",
+    "id": "hnd-copan-scarlet-macaw",
+    "title": "Scarlet macaw (Ara macao cyanopterus) Copan",
+    "author": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg"
+  },
+  {
+    "target": "place:kaz-ozero-balkhash",
+    "id": "lake-balkhash-mynaral",
+    "title": "Lake Balkhash. Mynaral village. 03",
+    "author": "AALLMMAATT",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:Lake_Balkhash._Mynaral_village._03.jpg"
+  },
+  {
+    "target": "place:zaf-stolovaya-gora",
+    "id": "table-mountain-cape-town",
+    "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2821",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2821.jpg"
+  },
+  {
+    "target": "place:aut-vysokiy-tauern",
+    "id": "hohe-tauern-mallnitz-seebachtal",
+    "title": "Mallnitz Seebachtal 01",
+    "author": "Uoaei1",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Mallnitz_Seebachtal_01.jpg"
+  },
+  {
+    "target": "sight:MYS:Пещеры Бату",
+    "id": "batu-caves-waterfall",
+    "title": "Batu Caves Waterfall",
+    "author": "Vikaash Harichandran",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Batu_Caves_Waterfall.jpg"
+  },
+  {
+    "target": "sight:GNQ:Малабо",
+    "id": "malabo",
+    "title": "Malabo (16513094965)",
+    "author": "Ben Sutherland from Crystal Palace, London, UK",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Malabo_(16513094965).jpg"
+  },
+  {
+    "target": "sight:HND:Копан",
+    "id": "copan-ruins-unesco",
+    "title": "International cooperation, Copan - UNESCO - PHOTO0000002567 0001",
+    "author": "Yvonne Tabbush",
+    "license": "CC BY-SA 3.0 igo",
+    "url": "https://commons.wikimedia.org/wiki/File:International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002567_0001.tiff"
+  },
+  {
+    "target": "find:Библия Гутенберга",
+    "id": "gutenberg-bible-pelplin",
+    "title": "Gutenberg Bible in Pelplin, Poland 01",
+    "author": "Krugerr",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible_in_Pelplin%2C_Poland_01.jpg"
+  },
+  {
+    "target": "find:Полёт Гагарина",
+    "id": "vostok-descent-module",
+    "title": "Спускаемый аппарат корабля Восток-5 в Государственном музее истории космонавтики (51245960742)",
+    "author": "Денис Носов",
+    "license": "CC0",
+    "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D1%8F_%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA-5_%D0%B2_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%BC%D1%83%D0%B7%D0%B5%D0%B5_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8_(51245960742).jpg"
+  },
+  {
+    "target": "find:Смартфон",
+    "id": "smartphone",
+    "title": "Blackview A60 Smartphone Android mobile phone and folio case",
+    "author": "Acabashi",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg"
+  },
+  {
+    "target": "cover:GNQ",
+    "id": "malabo",
+    "title": "Malabo (16513094965)",
+    "author": "Ben Sutherland from Crystal Palace, London, UK",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Malabo_(16513094965).jpg"
+  }
+]
