@@ -56,6 +56,3 @@ export type MapData = Awaited<ReturnType<typeof loadMapData>>;
 let detailed: Promise<FeatureCollection> | null = null;
 /** Подробные границы 10m — только когда карту приблизили */
 export const loadDetailedBorders = () => (detailed ??= countries('countries-10m.topo.json'));
-
-let nb: Promise<Record<string, string[]>> | null = null;
-export const loadNeighbors = () => (nb ??= getJson<Record<string, string[]>>('neighbors.json'));

@@ -2,9 +2,11 @@
 
 /* компьютер: карта и буклет рядом, каждый прокручивается отдельно */
 .main {
-  flex: 1;
+  /* высота задана явно; flex: none — иначе flex-элемент растягивается под длинный буклет */
+  flex: none;
   display: grid;
   grid-template-columns: minmax(0, 62fr) minmax(360px, 38fr);
+  grid-template-rows: minmax(0, 1fr);
   gap: 16px;
   padding: 0 max(var(--gutter), env(safe-area-inset-right)) 16px max(var(--gutter), env(safe-area-inset-left));
   height: calc(100dvh - var(--header-h));
@@ -17,7 +19,7 @@
 
 /* планшет: карта сверху, буклет снизу, прокручивается вся страница */
 @media (max-width: 999px) {
-  .main { display: flex; flex-direction: column; height: auto; min-height: 0; }
+  .main { flex: 1 0 auto; display: flex; flex-direction: column; height: auto; min-height: 0; }
   .map { height: 56vh; min-height: 340px; }
   .side { overflow: visible; }
 }

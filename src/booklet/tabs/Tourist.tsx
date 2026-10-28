@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Country } from '../../content/schema';
 import { getPhoto, photoUrl } from '../../content';
 import { loadPlaces, type PlacesData } from '../../content/places';
+import { useStore } from '../../store/store';
 import { Section, Soon } from '../parts';
 import s from './tabs.module.css';
 
@@ -20,9 +21,16 @@ function Thumb({ id, alt }: { id?: string; alt: string }) {
 export function Tourist({ c }: { c: Country }) {
   const t = c.tourist;
   const [places, setPlaces] = useState<PlacesData | null>(null);
+  const focus = useStore((st) => st.focusPlace);
   useEffect(() => {
     loadPlaces().then(setPlaces);
   }, []);
+  // нажали на булавку на карте — прокручиваем к карточке этого места
+  useEffect(() => {
+    if (!places || !focus) return;
+    const el = document.getElementById(`place-${focus}`);
+    el?.scrollIntoView({ block: 'center', behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+  }, [places, focus]);
   const groups = [
     { ids: t.wonders, title: '★ Чудеса света', tag: 'Чудо света', cls: s.won },
     { ids: t.reserves, title: 'Заповедники', tag: 'Заповедник', cls: s.res },
@@ -54,7 +62,7 @@ export function Tourist({ c }: { c: Country }) {
                     const p = places.byId.get(id);
                     if (!p) return null;
                     return (
-                      <div key={id} className={s.card}>
+                      <div key={id} id={`place-${id}`} className={`${s.card} ${focus === id ? s.focus : ''}`}>
                         <Thumb id={p.photo} alt={p.name} />
                         <span>
                           <span className={`${s.tag} ${g.cls}`}>{g.tag}</span>

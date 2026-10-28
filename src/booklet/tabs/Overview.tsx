@@ -1,4 +1,8 @@
+import { useEffect, useState } from 'react';
 import type { Country } from '../../content/schema';
+import { COUNTRY_BY_ID } from '../../content';
+import { loadNeighbors } from '../../content/neighbors';
+import { navigate } from '../../app/router';
 import { Section, Soon, Timeline } from '../parts';
 import s from './tabs.module.css';
 
@@ -6,6 +10,17 @@ const num = (n: number) => n.toLocaleString('ru-RU');
 
 export function Overview({ c }: { c: Country }) {
   const f = c.overview.facts;
+  const [near, setNear] = useState<string[] | null>(null);
+  useEffect(() => {
+    let alive = true;
+    loadNeighbors().then(
+      (all) => alive && setNear(all[c.id] ?? []),
+      () => alive && setNear([]),
+    );
+    return () => {
+      alive = false;
+    };
+  }, [c.id]);
   return (
     <>
       <p className={s.lead}>{c.overview.intro}</p>
@@ -28,7 +43,21 @@ export function Overview({ c }: { c: Country }) {
         <h3>💡 Знаете ли вы?</h3>
         <p>{c.overview.funFact}</p>
       </section>
-      <Soon title="Соседи по карте" what="кнопки перехода к соседним странам (этап 4, по границам на карте)." />
+      {near === null ? null : near.length ? (
+        <Section title="Соседи по карте">
+          <div className={s.near}>
+            {near.map((id) => (
+              <button key={id} type="button" onClick={() => navigate({ name: 'country', id })}>
+                {COUNTRY_BY_ID.get(id)?.name ?? id}
+              </button>
+            ))}
+          </div>
+        </Section>
+      ) : (
+        <Section title="Соседи по карте">
+          <p>Сухопутных границ нет — соседи только через море.</p>
+        </Section>
+      )}
     </>
   );
 }

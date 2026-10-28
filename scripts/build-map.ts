@@ -14,6 +14,7 @@ import sharp from 'sharp';
 import polylabel from 'polylabel';
 import { geoArea, geoBounds, geoNaturalEarth1 } from 'd3-geo';
 import * as topojson from 'topojson-client';
+import * as topojsonServer from 'topojson-server';
 import type { Topology, GeometryCollection } from 'topojson-specification';
 import type { Feature, MultiPolygon, Polygon, Position } from 'geojson';
 import type { CountryIndexItem } from '../src/content/index.ts';
@@ -54,7 +55,7 @@ function prepareTopology(file: string) {
   const used = new Set<string>();
   const geoms = topo.objects.countries.geometries;
   for (const g of geoms) {
-    const en = g.properties!.name;
+    const en = (g.properties as { name: string }).name;
     let iso = legacyKeys[en] ?? EXTRA[en]?.iso ?? (g.id != null ? isoLib.numericToAlpha3(String(g.id)) : undefined);
     if (!iso || used.has(iso)) iso = `X${String(used.size).padStart(2, '0')}`; // запасной код для повторов
     used.add(iso);
@@ -68,7 +69,50 @@ function prepareTopology(file: string) {
     (g as unknown as { properties: Props }).properties = props;
     delete (g as { id?: unknown }).id;
   }
-  return topo as unknown as Topology<{ countries: GeometryCollection<Props> }>;
+  // Плоская карта (Меркатор) рисует скачок долготы +180° → −180° как линию через весь мир.
+  // Делаем контуры непрерывными: долгота может выйти за 180°, MapLibre сам перенесёт часть на другую сторону.
+  const fc = topojson.feature(topo, topo.objects.countries) as unknown as { features: Feature<Polygon | MultiPolygon, Props>[] };
+  for (const f of fc.features) {
+    if (!f.geometry) continue;
+    const polys = f.geometry.type === 'Polygon' ? [f.geometry.coordinates] : f.geometry.coordinates;
+    for (const poly of polys) for (const ring of poly) unwrapRing(ring);
+  }
+  // квантование 1e5 — та же точность, что у world-atlas
+  return topojsonServer.topology({ countries: fc as never }, 1e5) as unknown as Topology<{ countries: GeometryCollection<Props> }>;
+}
+function unwrapRing(ring: Position[]) {
+  const jumps = ring.filter((p, i) => i > 0 && Math.abs(p[0] - ring[i - 1][0]) > 180).length;
+  if (!jumps) return;
+  let pts = ring.slice(0, -1); // без замыкающей точки
+  let shift = 0;
+  const unwrap = (src: Position[]) =>
+    src.map((p, i) => {
+      if (i > 0) {
+        const d = p[0] - src[i - 1][0];
+        if (d > 180) shift -= 360;
+        else if (d < -180) shift += 360;
+      }
+      return [p[0] + shift, p[1]];
+    });
+  let out = unwrap(pts);
+  // кольцо «не сходится» (скачок на замыкающем отрезке) — значит, оно охватывает полюс
+  if (Math.abs(out[0][0] - out[out.length - 1][0]) > 180) {
+    // кольцо вокруг полюса (Антарктида): выбрасываем точки на самом полюсе, начинаем сразу после
+    // пересечения линии перемены дат и замыкаем кольцо через полюс
+    pts = pts.filter((p) => Math.abs(p[1]) < 89.9);
+    const k = pts.findIndex((p, i) => Math.abs(p[0] - pts[(i - 1 + pts.length) % pts.length][0]) > 180);
+    if (pts.length < 3 || k < 0) return;
+    pts = [...pts.slice(k), ...pts.slice(0, k)];
+    shift = 0;
+    out = unwrap(pts);
+    const pole = out[0][1] < 0 ? -90 : 90;
+    out.push([out[out.length - 1][0], pole], [out[0][0], pole]);
+  }
+  // если кольцо целиком уехало за 180°, возвращаем его в обычный диапазон
+  const back = Math.min(...out.map((p) => p[0])) >= 180 ? -360 : 0;
+  out = out.map((p) => [p[0] + back, p[1]]);
+  out.push(out[0]);
+  ring.splice(0, ring.length, ...out);
 }
 const t50 = prepareTopology('world-atlas/countries-50m.json');
 const t10 = prepareTopology('world-atlas/countries-10m.json');
@@ -100,8 +144,9 @@ function largestPolygon(g: Polygon | MultiPolygon): Position[][] {
 }
 function poleOfInaccessibility(g: Polygon | MultiPolygon): Position {
   const rings = largestPolygon(g).map((ring) => ring.map(merc));
-  const p = polylabel(rings, 500); // точность 500 м
-  return unmerc([p[0], p[1]]).map((v) => Math.round(v * 1e4) / 1e4);
+  const p = polylabel(rings as [number, number][][], 500); // точность 500 м
+  const [lon, lat] = unmerc([p[0], p[1]]);
+  return [((((lon + 180) % 360) + 360) % 360) - 180, lat].map((v) => Math.round(v * 1e4) / 1e4);
 }
 
 const ranked = [...features].sort((a, b) => geoArea(b) - geoArea(a));
@@ -130,10 +175,10 @@ const geomList = t50.objects.countries.geometries;
 const nb = topojson.neighbors(geomList as never);
 const neighbors: Record<string, string[]> = {};
 geomList.forEach((g, i) => {
-  const iso = g.properties!.iso;
+  const iso = (g.properties as Props).iso;
   if (!byIso.has(iso)) return;
   neighbors[iso] = nb[i]
-    .map((j) => geomList[j].properties!.iso)
+    .map((j) => (geomList[j].properties as Props).iso)
     .filter((x) => byIso.has(x))
     .sort((a, b) => byIso.get(a)!.name.localeCompare(byIso.get(b)!.name, 'ru'));
 });
@@ -217,7 +262,7 @@ for (const kind of ['nature', 'reserves', 'wonders'] as const) {
 // Старый снимок 3840×2000 нарисован в проекции Natural Earth (вписан в 960×500 с полями 6 px, масштаб ×4).
 // Перепроецируем в Меркатор. Разрешения снимка хватает до zoom 4 (4096 px на весь мир) — дальше MapLibre сам увеличивает.
 const ne = geoNaturalEarth1().fitExtent([[6, 6], [954, 494]], { type: 'Sphere' });
-const { data: src, info } = await sharp(path.join(ROOT, 'public/data/relief-bluemarble.jpg')).removeAlpha().raw().toBuffer({ resolveWithObject: true });
+const { data: src, info } = await sharp(path.join(ROOT, 'assets-src/relief-bluemarble.jpg')).removeAlpha().raw().toBuffer({ resolveWithObject: true });
 const SW = info.width, SH = info.height, K = SW / 960;
 const T = 256;
 const MAXZ = 4;

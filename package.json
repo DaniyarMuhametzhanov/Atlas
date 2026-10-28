@@ -14,7 +14,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "build:map": "tsx scripts/build-map.ts",
-    "fetch:glyphs": "tsx scripts/fetch-glyphs.ts"
+    "fetch:glyphs": "tsx scripts/fetch-glyphs.ts",
+    "data": "npm run extract && npm run fetch:glyphs && npm run build:map"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
@@ -27,6 +28,7 @@
     "@types/react": "^18.3.31",
     "@types/react-dom": "^18.3.7",
     "@types/topojson-client": "^3.1.5",
+    "@types/topojson-server": "^3.0.4",
     "@types/topojson-specification": "^1.0.5",
     "@vitejs/plugin-react": "^4.7.0",
     "all-the-cities": "^3.1.0",
@@ -37,6 +39,7 @@
     "polylabel": "^2.1.0",
     "prettier": "^3.9.10",
     "sharp": "^0.34.5",
+    "topojson-server": "^3.0.1",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.72.1",

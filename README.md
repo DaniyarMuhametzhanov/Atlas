@@ -12,7 +12,7 @@ npm run dev         # запуск для разработки: http://localhost
 npm run build       # веб-версия в папке dist/
 npm test            # модульные тесты (Vitest)
 npm run lint        # проверка кода (ESLint)
-npm run extract     # заново достать данные из legacy/atlas-v1.html в content/ и public/
+npm run data        # заново подготовить все данные: извлечь из legacy/atlas-v1.html, скачать шрифты карты, собрать карту
 ```
 
 ## Где что лежит
@@ -24,6 +24,8 @@ npm run extract     # заново достать данные из legacy/atlas
 | `public/` | картинки и карты: фото, значки, границы, рельеф |
 | `scripts/` | скрипты подготовки данных |
 | `src/app/` | приложение, раскладка экрана, роутер на `location.hash` |
+| `src/map/` | карта MapLibre: стиль, слои, нажатия, клавиши |
+| `assets-src/` | исходники для подготовки данных (в сайт не попадают) |
 | `src/booklet/` | буклет страны и 6 вкладок |
 | `src/store/` | общее хранилище состояния (Zustand) |
 | `src/styles/` | цвета и шрифты (`tokens.css`), темы |
@@ -35,7 +37,7 @@ npm run extract     # заново достать данные из legacy/atlas
 - [x] 1. Разбор старого файла
 - [x] 2. Извлечение данных — отчёт `reports/stage-2-extract.md`
 - [x] 3. Каркас (Vite + React + TS) — отчёт `reports/stage-3-skeleton.md`
-- [ ] 4. Карта (MapLibre)
+- [x] 4. Карта (MapLibre) — отчёт `reports/stage-4-map.md`
 - [ ] 5. Буклет с 6 вкладками
 - [ ] 6. Фото на весь экран
 - [ ] 7. Машина времени

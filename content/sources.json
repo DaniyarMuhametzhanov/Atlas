@@ -2,9 +2,21 @@
   "datasets": [
     {
       "id": "world-atlas",
-      "name": "Границы стран world-atlas countries-110m (Natural Earth)",
-      "license": "ISC / Public Domain",
+      "name": "Границы стран Natural Earth 50m и 10m (пакет world-atlas)",
+      "license": "Public Domain / ISC",
       "url": "https://github.com/topojson/world-atlas"
+    },
+    {
+      "id": "geonames",
+      "name": "Столицы и крупные города GeoNames (пакет all-the-cities)",
+      "license": "CC BY 4.0",
+      "url": "https://www.geonames.org"
+    },
+    {
+      "id": "noto-sans",
+      "name": "Шрифт подписей карты Noto Sans (protomaps/basemaps-assets)",
+      "license": "SIL OFL 1.1",
+      "url": "https://github.com/protomaps/basemaps-assets"
     },
     {
       "id": "cliopatria",

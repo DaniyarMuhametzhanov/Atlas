@@ -117,7 +117,7 @@ function check<T>(schema: z.ZodType<T>, value: unknown, where: string): T {
 
 // Чистим старый результат, чтобы не осталось «осиротевших» файлов
 for (const dir of ['countries', 'history', 'places', 'epochs']) fs.rmSync(path.join(CONTENT, dir), { recursive: true, force: true });
-for (const dir of ['img/legacy', 'img/icons', 'data']) fs.rmSync(path.join(PUBLIC, dir), { recursive: true, force: true });
+for (const dir of ['img/legacy', 'img/icons', 'data/history']) fs.rmSync(path.join(PUBLIC, dir), { recursive: true, force: true });
 
 // ---------- 3. Коды стран ISO 3166-1 alpha-3 ----------
 // В world-atlas у страны есть числовой код ISO (id: "398"). У трёх непризнанных территорий кода нет —
@@ -304,9 +304,12 @@ writeJson(path.join(CONTENT, 'epochs/finds.json'), finds);
 // ---------- 9. Карты и рельеф ----------
 const topo = structuredClone(L.TOPO);
 for (const g of topo.objects.countries.geometries) g.properties.iso = legacyKeys[g.properties.name];
-writeFile(path.join(PUBLIC, 'data/countries-110m.topo.json'), JSON.stringify(topo));
-const reliefRel = writeDataUri(L.RELIEF, 'data/relief-bluemarble');
-const reliefSize = sizeOfFile(reliefRel);
+// Исходники, из которых scripts/build-map.ts делает данные карты. В сайт они не попадают.
+const ASSETS_SRC = path.join(ROOT, 'assets-src');
+writeFile(path.join(ASSETS_SRC, 'countries-110m.topo.json'), JSON.stringify(topo));
+const reliefBuf = Buffer.from(String(L.RELIEF).split(',')[1], 'base64');
+writeFile(path.join(ASSETS_SRC, 'relief-bluemarble.jpg'), reliefBuf);
+const reliefSize = imageSize(reliefBuf);
 
 // ---------- 10. Модуль ART (запасные SVG-картинки) — это код, а не данные: переносим как есть ----------
 const artStart = html.indexOf('const ART=');
@@ -322,7 +325,9 @@ writeFile(
 // ---------- 11. Источники наборов данных ----------
 writeJson(path.join(CONTENT, 'sources.json'), {
   datasets: [
-    { id: 'world-atlas', name: 'Границы стран world-atlas countries-110m (Natural Earth)', license: 'ISC / Public Domain', url: 'https://github.com/topojson/world-atlas' },
+    { id: 'world-atlas', name: 'Границы стран Natural Earth 50m и 10m (пакет world-atlas)', license: 'Public Domain / ISC', url: 'https://github.com/topojson/world-atlas' },
+    { id: 'geonames', name: 'Столицы и крупные города GeoNames (пакет all-the-cities)', license: 'CC BY 4.0', url: 'https://www.geonames.org' },
+    { id: 'noto-sans', name: 'Шрифт подписей карты Noto Sans (protomaps/basemaps-assets)', license: 'SIL OFL 1.1', url: 'https://github.com/protomaps/basemaps-assets' },
     { id: 'cliopatria', name: 'Исторические границы Cliopatria (Seshat Global History Databank)', license: 'CC BY 4.0', url: 'https://github.com/Seshat-Global-History-Databank/cliopatria' },
     { id: 'blue-marble', name: 'Рельеф NASA Blue Marble', license: 'Public Domain', url: 'https://visibleearth.nasa.gov/collection/1484/blue-marble' },
     { id: 'commons', name: 'Фото Wikimedia Commons', license: 'у каждого фото своя', url: 'https://commons.wikimedia.org' },
