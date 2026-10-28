@@ -9,6 +9,7 @@ export type Theme = 'system' | 'light' | 'dark';
 export type SheetState = 'collapsed' | 'half' | 'full';
 export type LayerId = 'countries' | 'nature' | 'reserves' | 'wonders' | 'capitals' | 'cities';
 export type Layers = Record<LayerId, boolean>;
+export type MapMode = 'relief' | 'regions';
 
 const DEFAULT_LAYERS: Layers = {
   countries: true,
@@ -27,12 +28,19 @@ type State = {
   sheet: SheetState;
   timeMachine: boolean;
   year: number;
+  mapMode: MapMode;
+  globe: boolean;
+  /** место, на которое нажали на карте: буклет прокручивает к его карточке */
+  focusPlace: string | null;
   setRoute: (r: Route) => void;
   setTheme: (t: Theme) => void;
   toggleLayer: (id: LayerId) => void;
   setSheet: (s: SheetState) => void;
   setTimeMachine: (on: boolean) => void;
   setYear: (y: number) => void;
+  setMapMode: (m: MapMode) => void;
+  setGlobe: (on: boolean) => void;
+  setFocusPlace: (id: string | null) => void;
 };
 
 export const useStore = create<State>((set) => ({
@@ -43,6 +51,9 @@ export const useStore = create<State>((set) => ({
   sheet: 'collapsed',
   timeMachine: false,
   year: 2024,
+  mapMode: readStored<MapMode>('atlas.mapMode', 'relief'),
+  globe: readStored<boolean>('atlas.globe', false),
+  focusPlace: null,
 
   setRoute: (route) =>
     set((s) => {
@@ -65,4 +76,13 @@ export const useStore = create<State>((set) => ({
   setSheet: (sheet) => set({ sheet }),
   setTimeMachine: (timeMachine) => set({ timeMachine }),
   setYear: (year) => set({ year }),
+  setMapMode: (mapMode) => {
+    writeStored('atlas.mapMode', mapMode);
+    set({ mapMode });
+  },
+  setGlobe: (globe) => {
+    writeStored('atlas.globe', globe);
+    set({ globe });
+  },
+  setFocusPlace: (focusPlace) => set({ focusPlace }),
 }));
