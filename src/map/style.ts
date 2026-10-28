@@ -113,7 +113,7 @@ export function buildStyle(data: MapData, c: Colors, mode: MapMode): StyleSpecif
       relief: { type: 'raster', tiles: [abs('data/relief/{z}/{x}/{y}.jpg')], tileSize: 256, maxzoom: 4, attribution: 'Рельеф: NASA Blue Marble' },
       borders: { type: 'geojson', data: data.borders, promoteId: 'iso', attribution: 'Границы: Natural Earth' },
       points: { type: 'geojson', data: data.points },
-      capitals: { type: 'geojson', data: data.capitals, attribution: 'Города: GeoNames' },
+      capitals: { type: 'geojson', data: data.capitals, attribution: 'Города: GeoNames, русские названия: Викиданные' },
       cities: { type: 'geojson', data: data.cities },
       natureMain: { type: 'geojson', data: data.natureMain },
       natureRest: { type: 'geojson', data: data.natureRest, cluster: true, clusterMaxZoom: 3, clusterRadius: 40 },

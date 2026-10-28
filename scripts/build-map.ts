@@ -24,7 +24,7 @@ const require = createRequire(import.meta.url);
 const isoLib = require('i18n-iso-countries');
 isoLib.registerLocale(require('i18n-iso-countries/langs/ru.json'));
 const cities = require('all-the-cities') as {
-  name: string; country: string; featureCode: string; population: number; loc: { coordinates: [number, number] };
+  cityId: number; name: string; country: string; featureCode: string; population: number; loc: { coordinates: [number, number] };
 }[];
 
 const ROOT = path.resolve(import.meta.dirname, '..');
@@ -200,7 +200,7 @@ for (const c of index) {
   const a2 = isoLib.alpha3ToAlpha2(c.id);
   const cands = cities.filter((x) => x.country === a2 && x.featureCode === 'PPLC').sort((a, b) => b.population - a.population);
   const manual = MANUAL_CAPITALS[c.id];
-  if (manual) cands.unshift({ name: manual[2], country: a2, featureCode: 'PPLC', population: 0, loc: { coordinates: [manual[0], manual[1]] } });
+  if (manual) cands.unshift({ cityId: 0, name: manual[2], country: a2, featureCode: 'PPLC', population: 0, loc: { coordinates: [manual[0], manual[1]] } });
   if (!cands.length) {
     capitalMissing.push(`${c.name} (${c.capital})`);
     continue;
@@ -213,12 +213,14 @@ for (const c of index) {
   });
 }
 writeJson(path.join(OUT, 'capitals.json'), { type: 'FeatureCollection', features: capitals });
+// русские названия — из content/cities-ru.json (npm run fetch:cities-ru); без перевода остаётся латиница
+const cityRu: Record<string, string> = JSON.parse(fs.readFileSync(path.join(ROOT, 'content/cities-ru.json'), 'utf8'));
 const bigCities = cities
   .filter((x) => x.population >= 1_000_000 && x.featureCode !== 'PPLC')
   .sort((a, b) => b.population - a.population)
   .map((x) => ({
     type: 'Feature',
-    properties: { name: x.name, pop: x.population },
+    properties: { name: cityRu[x.cityId] ?? x.name, en: x.name, pop: x.population },
     geometry: { type: 'Point', coordinates: x.loc.coordinates },
   }));
 writeJson(path.join(OUT, 'cities.json'), { type: 'FeatureCollection', features: bigCities });

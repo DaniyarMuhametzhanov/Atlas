@@ -43,4 +43,9 @@ describe('данные карты', () => {
     }
     expect([...new Set(jumps)]).toEqual([]);
   });
+  it('крупные города подписаны по-русски', () => {
+    const cities = readJson('public/data/map/cities.json') as FeatureCollection<Point, { name: string; en: string }>;
+    const latin = cities.features.filter((f) => !/[а-яё]/i.test(f.properties.name)).map((f) => f.properties.en);
+    expect(latin).toEqual([]);
+  });
 });

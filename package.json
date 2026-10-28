@@ -19,7 +19,8 @@
     "build:images": "tsx scripts/build-images.ts",
     "data": "npm run extract && npm run fetch:glyphs && npm run build:map && npm run build:history",
     "build:history": "tsx scripts/build-history.ts",
-    "build:booklets": "tsx scripts/build-booklets.ts"
+    "build:booklets": "tsx scripts/build-booklets.ts",
+    "fetch:cities-ru": "tsx scripts/fetch-city-names.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
