@@ -8,6 +8,8 @@ import { Booklet } from '../booklet/Booklet';
 import { Welcome } from '../booklet/Welcome';
 import { BottomSheet } from '../ui/BottomSheet';
 import { SourcesPage } from '../ui/SourcesPage';
+import { EpochPanel } from '../booklet/EpochPanel';
+import { HistoryBooklet } from '../booklet/HistoryBooklet';
 import { COUNTRY_BY_ID } from '../content';
 import s from './App.module.css';
 
@@ -21,6 +23,10 @@ export function App() {
   const phone = useMedia(PHONE);
 
   const countryId = route.name === 'country' ? route.id : null;
+  // адрес #/time/1700 задаёт год машины времени (когда его открыли или поменяли вручную)
+  useEffect(() => {
+    if (route.name === 'time' && useStore.getState().year !== route.year) useStore.getState().setYear(route.year);
+  }, [route]);
   // на телефоне при выборе страны панель поднимается до половины экрана
   useEffect(() => {
     if (countryId) setSheet('half');
@@ -28,11 +34,24 @@ export function App() {
 
   useEffect(() => {
     const c = countryId ? COUNTRY_BY_ID.get(countryId) : null;
-    document.title = c ? `${c.name} — Атлас-путеводитель` : route.name === 'sources' ? 'Источники — Атлас-путеводитель' : 'Атлас-путеводитель';
+    document.title = c
+      ? `${c.name} — Атлас-путеводитель`
+      : route.name === 'sources'
+        ? 'Источники — Атлас-путеводитель'
+        : route.name === 'time'
+          ? 'Машина времени — Атлас-путеводитель'
+          : 'Атлас-путеводитель';
   }, [countryId, route.name]);
 
   const panel =
-    route.name === 'country' && route.tab ? <Booklet id={route.id} tab={route.tab} /> : <Welcome />;
+    route.name === 'country' && route.tab ? (
+      <Booklet id={route.id} tab={route.tab} />
+    ) : route.name === 'time' ? (
+      route.polity ? <HistoryBooklet en={route.polity} /> : <EpochPanel />
+    ) : (
+      <Welcome />
+    );
+  const sheetTitle = countryId ? COUNTRY_BY_ID.get(countryId)?.name : route.name === 'time' ? 'Машина времени' : 'Атлас-путеводитель';
 
   return (
     <div className={s.app}>
@@ -47,7 +66,7 @@ export function App() {
             <MapView />
           </section>
           {phone ? (
-            <BottomSheet title={countryId ? COUNTRY_BY_ID.get(countryId)?.name : 'Атлас-путеводитель'}>{panel}</BottomSheet>
+            <BottomSheet title={sheetTitle}>{panel}</BottomSheet>
           ) : (
             <aside className={s.side} aria-label="Буклет">
               {panel}

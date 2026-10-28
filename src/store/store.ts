@@ -31,6 +31,18 @@ type State = {
   sheet: SheetState;
   timeMachine: boolean;
   year: number;
+  playing: boolean;
+  speed: number;
+  /** слой «Народы и культуры» (historical-basemaps) */
+  peoples: boolean;
+  /** слой «Связи» (союзы, вассалитет…) */
+  links: boolean;
+  /** режим «История одной страны»: код современной страны */
+  historyOf: string | null;
+  /** подпись к резкому изменению границ («1991 — распад СССР») */
+  timeToast: { text: string; id: number } | null;
+  /** государства на карте в текущем году (для панели эпохи) */
+  timeActive: import('../map/time/data').Row[];
   mapMode: MapMode;
   globe: boolean;
   /** место, на которое нажали на карте: буклет прокручивает к его карточке */
@@ -42,6 +54,13 @@ type State = {
   setSheet: (s: SheetState) => void;
   setTimeMachine: (on: boolean) => void;
   setYear: (y: number) => void;
+  setPlaying: (on: boolean) => void;
+  setSpeed: (v: number) => void;
+  setPeoples: (on: boolean) => void;
+  setLinks: (on: boolean) => void;
+  setHistoryOf: (iso: string | null) => void;
+  setTimeToast: (text: string | null) => void;
+  setTimeActive: (rows: import('../map/time/data').Row[]) => void;
   setMapMode: (m: MapMode) => void;
   setGlobe: (on: boolean) => void;
   setFocusPlace: (id: string | null) => void;
@@ -55,7 +74,14 @@ export const useStore = create<State>((set) => ({
   layers: { ...DEFAULT_LAYERS, ...readStored<Partial<Layers>>('atlas.layers', {}) },
   sheet: 'collapsed',
   timeMachine: false,
-  year: 2024,
+  year: 1700,
+  playing: false,
+  speed: 1,
+  peoples: readStored<boolean>('atlas.peoples', true),
+  links: readStored<boolean>('atlas.links', false),
+  historyOf: null,
+  timeToast: null,
+  timeActive: [],
   mapMode: readStored<MapMode>('atlas.mapMode', 'relief'),
   globe: readStored<boolean>('atlas.globe', false),
   focusPlace: null,
@@ -82,6 +108,19 @@ export const useStore = create<State>((set) => ({
   setSheet: (sheet) => set({ sheet }),
   setTimeMachine: (timeMachine) => set({ timeMachine }),
   setYear: (year) => set({ year }),
+  setPlaying: (playing) => set({ playing }),
+  setSpeed: (speed) => set({ speed }),
+  setPeoples: (peoples) => {
+    writeStored('atlas.peoples', peoples);
+    set({ peoples });
+  },
+  setLinks: (links) => {
+    writeStored('atlas.links', links);
+    set({ links });
+  },
+  setHistoryOf: (historyOf) => set({ historyOf }),
+  setTimeToast: (text) => set((st) => ({ timeToast: text ? { text, id: (st.timeToast?.id ?? 0) + 1 } : null })),
+  setTimeActive: (timeActive) => set({ timeActive }),
   setMapMode: (mapMode) => {
     writeStored('atlas.mapMode', mapMode);
     set({ mapMode });

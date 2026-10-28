@@ -17,7 +17,9 @@
     "fetch:glyphs": "tsx scripts/fetch-glyphs.ts",
     "fetch:commons": "tsx scripts/fetch-commons.ts",
     "build:images": "tsx scripts/build-images.ts",
-    "data": "npm run extract && npm run fetch:glyphs && npm run build:map"
+    "data": "npm run extract && npm run fetch:glyphs && npm run build:map && npm run build:history",
+    "build:history": "tsx scripts/build-history.ts",
+    "build:booklets": "tsx scripts/build-booklets.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
@@ -38,6 +40,7 @@
     "eslint": "^9.39.5",
     "eslint-plugin-react-hooks": "^5.2.0",
     "i18n-iso-countries": "^7.14.0",
+    "mapshaper": "^0.7.100",
     "polylabel": "^2.1.0",
     "prettier": "^3.9.10",
     "sharp": "^0.34.5",

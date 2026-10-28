@@ -4,3 +4,8 @@ dist-offline/
 .DS_Store
 *.log
 assets-src/commons/
+
+# большие исходники (скачиваются скриптом)
+assets-src/cliopatria/
+assets-src/basemaps/
+assets-src/img/

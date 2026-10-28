@@ -62,11 +62,11 @@
 
 ## Размер public/
 
-Всего 21.06 МБ в 1516 файлах. Самые большие:
-- `public/data/history/cliopatria.topo.json` — 12.43 МБ
-- `public/img/legacy/eiffel-tower-cover.jpg` — 0.06 МБ
-- `public/img/legacy/rila-monastery-cover.jpg` — 0.05 МБ
-- `public/img/legacy/koutammakou-cover.jpg` — 0.05 МБ
-- `public/img/legacy/berat-albania-houses-cover.jpg` — 0.05 МБ
+Всего 236.24 МБ в 3010 файлах. Самые большие:
+- `public/data/map/countries-10m.topo.json` — 3.46 МБ
+- `public/data/history/polities/c1800.json` — 1.30 МБ
+- `public/data/history/polities/c1900.json` — 1.11 МБ
+- `public/data/history/polities/c1700.json` — 0.92 МБ
+- `public/img/mona-lisa-1600.webp` — 0.79 МБ
 
 Ограничение хостинга — 16 МБ на файл: соблюдено ✅.

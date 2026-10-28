@@ -74,11 +74,12 @@ const writeJson = (file: string, value: unknown) => writeFile(file, JSON.stringi
 
 const EXT: Record<string, string> = { 'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp', 'image/gif': 'gif' };
 // data:image/jpeg;base64,… → файл в public/, возвращает путь относительно public/
-function writeDataUri(uri: string, relNoExt: string): string {
+// base — куда писать (по умолчанию public/); путь в ответе — относительно base
+function writeDataUri(uri: string, relNoExt: string, base = PUBLIC): string {
   const m = /^data:([^;,]+);base64,(.*)$/s.exec(uri);
   if (!m) throw new Error('Не data URI: ' + relNoExt);
   const rel = `${relNoExt}.${EXT[m[1]] ?? 'bin'}`;
-  writeFile(path.join(PUBLIC, rel), Buffer.from(m[2], 'base64'));
+  writeFile(path.join(base, rel), Buffer.from(m[2], 'base64'));
   return rel;
 }
 // Размер картинки из заголовка JPEG / PNG / WebP — чтобы проверить, что фото действительно 560×280 и т.п.
@@ -106,7 +107,9 @@ function imageSize(buf: Buffer): [number, number] | null {
   }
   return null;
 }
-const sizeOfFile = (rel: string) => imageSize(fs.readFileSync(path.join(PUBLIC, rel)));
+const sizeOfFile = (rel: string, base = PUBLIC) => imageSize(fs.readFileSync(path.join(base, rel)));
+// Старые маленькие фото (560 / 224 px) — исходники: сайт показывает крупные из build-images.ts
+const LEGACY_PHOTOS = path.join(ROOT, 'assets-src');
 
 // Ошибки проверки Zod собираем все сразу, а не падаем на первой
 const problems: string[] = [];
@@ -117,8 +120,11 @@ function check<T>(schema: z.ZodType<T>, value: unknown, where: string): T {
 }
 
 // Чистим старый результат, чтобы не осталось «осиротевших» файлов
-for (const dir of ['countries', 'history', 'places', 'epochs']) fs.rmSync(path.join(CONTENT, dir), { recursive: true, force: true });
-for (const dir of ['img/legacy', 'img/icons', 'data/history']) fs.rmSync(path.join(PUBLIC, dir), { recursive: true, force: true });
+// content/history целиком не трогаем: там справочник машины времени (build-history.ts) и новые буклеты
+for (const dir of ['countries', 'history/legacy', 'places', 'epochs']) fs.rmSync(path.join(CONTENT, dir), { recursive: true, force: true });
+fs.rmSync(path.join(PUBLIC, 'img/icons'), { recursive: true, force: true });
+fs.rmSync(path.join(PUBLIC, 'img/legacy'), { recursive: true, force: true }); // раньше старые фото лежали здесь
+fs.rmSync(path.join(LEGACY_PHOTOS, 'img/legacy'), { recursive: true, force: true });
 
 // ---------- 3. Коды стран ISO 3166-1 alpha-3 ----------
 // В world-atlas у страны есть числовой код ISO (id: "398"). У трёх непризнанных территорий кода нет —
@@ -152,8 +158,8 @@ function addPhoto(key: string, p: Photo, kind: 'place' | 'find'): string {
   const files: Record<string, string> = {};
   for (const [field, uri] of [['c', p.c], ['t', p.t]] as const) {
     if (!uri) continue;
-    const rel = writeDataUri(uri, `img/legacy/${id}-${field === 'c' ? 'cover' : 'thumb'}`);
-    const wh = sizeOfFile(rel);
+    const rel = writeDataUri(uri, `img/legacy/${id}-${field === 'c' ? 'cover' : 'thumb'}`, LEGACY_PHOTOS);
+    const wh = sizeOfFile(rel, LEGACY_PHOTOS);
     const w = wh ? wh[0] : field === 'c' ? 560 : 224;
     files[String(w)] = rel;
     const k = wh ? `${wh[0]}×${wh[1]}` : '?';
@@ -280,12 +286,13 @@ writeJson(path.join(CONTENT, 'history/aliases.json'), L.HBA);
 
 const clioTopo = JSON.parse(zlib.gunzipSync(Buffer.from(L.CLIO.d, 'base64')).toString('utf8'));
 const clioGeoms = (Object.values(clioTopo.objects)[0] as { geometries: any[] }).geometries;
-writeFile(path.join(PUBLIC, 'data/history/cliopatria.topo.json'), JSON.stringify(clioTopo));
+// старая (упрощённая) Cliopatria — только для справки; машина времени строится из версии 0.21 (build-history.ts)
+writeFile(path.join(ROOT, 'assets-src/cliopatria-v1.topo.json'), JSON.stringify(clioTopo));
 const CSPAN = L.CSPAN as Record<string, [number, number]>;
 const polities = (L.CLIO.n as string[]).map((en, i) =>
   check(Polity, { i, en, ru: L.CLIO.r[i] ?? '', ...(CSPAN[en] ? { span: CSPAN[en] } : {}) }, `государство ${en}`),
 );
-writeJson(path.join(CONTENT, 'history/polities.json'), polities);
+writeJson(path.join(CONTENT, 'history/legacy/polities-v1.json'), polities);
 // Остатки версии на historical-basemaps: код их не читает, но они пригодятся для слоя «Народы и культуры»
 writeJson(path.join(CONTENT, 'history/legacy/hb-spans.json'), L.HSPAN);
 writeJson(path.join(CONTENT, 'history/legacy/hb-names-ru.json'), L.HRU);
@@ -324,13 +331,16 @@ const sourcesJson: Sources = {
     { id: 'world-atlas', name: 'Границы стран Natural Earth 50m и 10m (пакет world-atlas)', license: 'Public Domain / ISC', url: 'https://github.com/topojson/world-atlas' },
     { id: 'geonames', name: 'Столицы и крупные города GeoNames (пакет all-the-cities)', license: 'CC BY 4.0', url: 'https://www.geonames.org' },
     { id: 'noto-sans', name: 'Шрифт подписей карты Noto Sans (protomaps/basemaps-assets)', license: 'SIL OFL 1.1', url: 'https://github.com/protomaps/basemaps-assets' },
-    { id: 'cliopatria', name: 'Исторические границы Cliopatria (Seshat Global History Databank)', license: 'CC BY 4.0', url: 'https://github.com/Seshat-Global-History-Databank/cliopatria' },
+    { id: 'cliopatria', name: 'Исторические границы Cliopatria 0.21 (Seshat Global History Databank)', license: 'CC BY 4.0', url: 'https://github.com/Seshat-Global-History-Databank/cliopatria' },
+    { id: 'historical-basemaps', name: 'Племена и культуры: historical-basemaps (A. Ourednik)', license: 'GPL-3.0', url: 'https://github.com/aourednik/historical-basemaps' },
     { id: 'blue-marble', name: 'Рельеф NASA Blue Marble', license: 'Public Domain', url: 'https://visibleearth.nasa.gov/collection/1484/blue-marble' },
     { id: 'commons', name: 'Фото Wikimedia Commons', license: 'у каждого фото своя', url: 'https://commons.wikimedia.org' },
   ],
-  photos: keepBuilt(sources, oldSources),
+  photos: sources,
 };
 applyPicks(sourcesJson);
+// готовые файлы переносим ПОСЛЕ подключения выбранных фото — иначе у них пропадут файлы, сделанные build-images.ts
+sourcesJson.photos = keepBuilt(sourcesJson.photos, oldSources);
 writeJson(path.join(CONTENT, 'sources.json'), sourcesJson);
 
 // ---------- 12. Сверка чисел и отчёт ----------
@@ -352,7 +362,7 @@ const rows: [string, number | string, number | string, number | string][] = [
   ['Находки', 49, L.FINDS.length, finds.length],
   ['Фото мест (PH)', '—', Object.keys(PH).length, Object.keys(photoIdByKey).filter((k) => k.startsWith('place:')).length],
   ['Фото находок (FPH)', '—', Object.keys(FPH).length, Object.keys(photoIdByKey).filter((k) => k.startsWith('find:')).length],
-  ['Файлы фото (обложки + миниатюры)', '—', [...Object.values(PH), ...Object.values(FPH)].reduce((n, p) => n + (p.c ? 1 : 0) + (p.t ? 1 : 0), 0), count('public/img/legacy')],
+  ['Файлы фото (обложки + миниатюры)', '—', [...Object.values(PH), ...Object.values(FPH)].reduce((n, p) => n + (p.c ? 1 : 0) + (p.t ? 1 : 0), 0), count('assets-src/img/legacy')],
   ['Обложки стран (PC)', '—', Object.keys(L.PC).length, countryCount.covers],
   ['Достопримечательности', '—', countryCount.sights, countryCount.sights],
   ['…из них с фото (PS)', '—', Object.keys(L.PS).length, countryCount.sightPhotos],

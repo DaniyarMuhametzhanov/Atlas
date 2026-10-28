@@ -9,6 +9,9 @@ import { loadDetailedBorders, loadMapData, type MapData, type PointProps } from 
 import { applyTheme, buildStyle, INTERACTIVE, KIND_BY_LAYER, LAYER_GROUPS, themeColors } from './style';
 import { useMapKeyboard } from './useMapKeyboard';
 import { MapControls } from './MapControls';
+import { TimeLayers } from './time/timeLayers';
+import { TimeBar } from './time/TimeBar';
+import { loadPolities, type Polity } from './time/data';
 import s from './MapView.module.css';
 
 const BASE = import.meta.env.BASE_URL;
@@ -70,6 +73,15 @@ export default function AtlasMap() {
   const relationsMap = useStore((st) => st.relationsMap);
   const setRelationsMap = useStore((st) => st.setRelationsMap);
   const selected = route.name === 'country' ? route.id : '';
+  const timeMachine = route.name === 'time';
+  const timePolity = route.name === 'time' ? route.polity : undefined;
+  const year = useStore((st) => st.year);
+  const peoples = useStore((st) => st.peoples);
+  const links = useStore((st) => st.links);
+  const historyOf = useStore((st) => st.historyOf);
+  const timeRef = useRef<TimeLayers | null>(null);
+  const politiesRef = useRef<Polity[]>([]);
+  const [timeReady, setTimeReady] = useState(false);
 
   // ---------- создание карты ----------
   useEffect(() => {
@@ -142,18 +154,23 @@ export default function AtlasMap() {
   // ---------- флажки слоёв ----------
   useEffect(() => {
     const map = mapRef.current;
-    if (!map || !ready) return;
+    if (!map || !ready || timeMachine) return;
     for (const [group, ids] of Object.entries(LAYER_GROUPS) as [LayerId, string[]][]) {
       for (const id of ids) map.setLayoutProperty(id, 'visibility', layers[group] ? 'visible' : 'none');
     }
+    for (const id of ['countries-fill', 'countries-selected', 'hit-small']) map.setLayoutProperty(id, 'visibility', 'visible');
     applyPlaceFilters(map, selected, layers);
-  }, [layers, ready, selected]);
+  }, [layers, ready, selected, timeMachine]);
 
   // ---------- тема и режим «Рельеф / Регионы» ----------
   useEffect(() => {
     const map = mapRef.current;
     if (!map || !ready) return;
-    const apply = () => applyTheme(map, themeColors(), mapMode);
+    const apply = () => {
+      const c = themeColors();
+      applyTheme(map, c, mapMode);
+      timeRef.current?.refreshTheme(mapMode, c.dark);
+    };
     // атрибут data-theme ставится в эффекте App — ждём кадр
     const raf = requestAnimationFrame(apply);
     const mq = matchMedia('(prefers-color-scheme: dark)');
@@ -189,6 +206,69 @@ export default function AtlasMap() {
     map.setProjection({ type: globe ? 'globe' : 'mercator' });
   }, [globe, ready]);
 
+  // ---------- машина времени ----------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready || !timeMachine) return;
+    let alive = true;
+    loadPolities().then((polities) => {
+      if (!alive) return;
+      politiesRef.current = polities;
+      const st = useStore.getState();
+      timeRef.current = new TimeLayers(map, polities, tip.current!, {
+        onToast: (text) => useStore.getState().setTimeToast(text),
+        onActive: (rows) => useStore.getState().setTimeActive(rows),
+        onSelect: (p) => {
+          const y = useStore.getState().year;
+          useStore.getState().setPlaying(false);
+          navigate({ name: 'time', year: y, ...(p ? { polity: p.en } : {}) });
+        },
+      });
+      timeRef.current.enable(st.mapMode, themeColors().dark);
+      timeRef.current.setPeoples(st.peoples);
+      void timeRef.current.setLinks(st.links);
+      timeRef.current.setHistoryOf(st.historyOf);
+      void timeRef.current.setYear(st.year);
+      setTimeReady(true);
+    });
+    return () => {
+      alive = false;
+      timeRef.current?.disable();
+      timeRef.current = null;
+      setTimeReady(false);
+      useStore.getState().setPlaying(false);
+    };
+  }, [ready, timeMachine]);
+
+  useEffect(() => {
+    if (timeReady) void timeRef.current?.setYear(year);
+  }, [year, timeReady]);
+  useEffect(() => {
+    if (timeReady) timeRef.current?.setPeoples(peoples);
+  }, [peoples, timeReady]);
+  useEffect(() => {
+    if (timeReady) void timeRef.current?.setLinks(links);
+  }, [links, timeReady]);
+  useEffect(() => {
+    if (timeReady) timeRef.current?.setMode(mapMode);
+  }, [mapMode, timeReady]);
+  useEffect(() => {
+    if (!timeReady) return;
+    const i = timePolity ? politiesRef.current.find((p) => p.en === timePolity)?.i ?? null : null;
+    timeRef.current?.select(i);
+  }, [timePolity, timeReady]);
+  // «История одной страны»: показываем только её территорию и перелетаем к ней
+  useEffect(() => {
+    if (!timeReady) return;
+    timeRef.current?.setHistoryOf(historyOf);
+    const map = mapRef.current;
+    const p = historyOf ? dataRef.current?.points.features.find((f) => f.properties.iso === historyOf) : null;
+    if (!map || !p) return;
+    const [w, so, e0, n] = p.properties.bbox;
+    const e = e0 < w ? e0 + 360 : e0;
+    map.fitBounds([[w, so], [e - w > 200 ? w + 80 : e, n]], { padding: 60, maxZoom: 5, duration: reducedMotion() ? 0 : 900 });
+  }, [historyOf, timeReady]);
+
   useMapKeyboard(mapRef, box);
 
   return (
@@ -203,7 +283,8 @@ export default function AtlasMap() {
       <div ref={tip} className={s.tip} role="status" aria-live="off" />
       {error ? <p className={s.error}>Карта не загрузилась: {error}</p> : null}
       {!ready && !error ? <p className={s.loading}>Загружаю карту…</p> : null}
-      {relationsMap ? (
+      {timeMachine ? <TimeBar /> : null}
+      {relationsMap && !timeMachine ? (
         <div className={s.relLegend} role="group" aria-label="Легенда режима «Отношения»">
           <b>Отношения</b>
           <span><i className={s.relCenter} />выбранная страна</span>
@@ -259,6 +340,7 @@ function setupInteraction(map: MlMap, tip: HTMLDivElement) {
   };
 
   map.on('mousemove', (e) => {
+    if (useStore.getState().route.name === 'time') return; // в машине времени свои подсказки
     const f = pick(e.point);
     map.getCanvas().style.cursor = f ? 'pointer' : '';
     setHover(f && !f.properties.point_count ? (isoOf(f) ?? null) : null);
@@ -277,6 +359,7 @@ function setupInteraction(map: MlMap, tip: HTMLDivElement) {
   map.on('movestart', () => (tip.style.opacity = '0'));
 
   map.on('click', async (e) => {
+    if (useStore.getState().route.name === 'time') return;
     const f = pick(e.point);
     if (!f) return;
     const p = f.properties as Record<string, string | number>;

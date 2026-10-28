@@ -16,3 +16,15 @@ describe('роутер', () => {
     for (const h of ['#/', '#/sources', '#/country/KAZ/tourist']) expect(formatHash(parseHash(h))).toBe(h);
   });
 });
+
+describe('роутер: машина времени', () => {
+  it('год и государство в адресе', () => {
+    expect(parseHash('#/time/1700')).toEqual({ name: 'time', year: 1700 });
+    expect(parseHash('#/time/-500/Achaemenid%20Empire')).toEqual({ name: 'time', year: -500, polity: 'Achaemenid Empire' });
+    expect(formatHash({ name: 'time', year: 1700, polity: 'Kazakh Khanate' })).toBe('#/time/1700/Kazakh%20Khanate');
+  });
+  it('нулевого года нет, годы ограничены данными', () => {
+    expect(parseHash('#/time/0')).toEqual({ name: 'time', year: 1700 });
+    expect(parseHash('#/time/9999')).toEqual({ name: 'time', year: 2024 });
+  });
+});

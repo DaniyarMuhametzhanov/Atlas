@@ -4,6 +4,7 @@
 import { useEffect, type RefObject } from 'react';
 import type { Map as MlMap } from 'maplibre-gl';
 import { useStore } from '../store/store';
+import { EPOCHS } from './time/data';
 
 const DIR: Record<string, [number, number]> = {
   KeyW: [0, -1], KeyS: [0, 1], KeyA: [-1, 0], KeyD: [1, 0],
@@ -59,6 +60,22 @@ export function useMapKeyboard(mapRef: RefObject<MlMap | null>, box: RefObject<H
       }
       if (e.code === 'ShiftLeft' || e.code === 'ShiftRight') return void held.add(e.code);
       if (e.repeat) return;
+      // машина времени: пробел — пуск / пауза, [ ] — эпоха назад / вперёд
+      const st = useStore.getState();
+      if (st.route.name === 'time') {
+        if (e.code === 'Space') {
+          e.preventDefault();
+          return st.setPlaying(!st.playing);
+        }
+        if (e.code === 'BracketLeft' || e.code === 'BracketRight') {
+          e.preventDefault();
+          const ep = EPOCHS;
+          const i = ep.findIndex((y) => y > st.year);
+          const cur = i < 0 ? ep.length - 1 : i - 1;
+          st.setPlaying(false);
+          return st.setYear(ep[Math.max(0, Math.min(ep.length - 1, cur + (e.code === 'BracketRight' ? 1 : -1)))]);
+        }
+      }
       const instant = matchMedia('(prefers-reduced-motion: reduce)').matches;
       if (ZOOM[e.code]) {
         e.preventDefault();

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useStore, type LayerId } from '../store/store';
+import { navigate } from '../app/router';
 import s from './MapView.module.css';
 
 const LAYER_LABEL: Record<LayerId, string> = {
@@ -20,6 +21,7 @@ export function MapControls({ onZoom, onReset }: { onZoom: (d: number) => void; 
   const layers = useStore((st) => st.layers);
   const toggleLayer = useStore((st) => st.toggleLayer);
   const [open, setOpen] = useState(false);
+  const timeMachine = useStore((st) => st.route.name === 'time');
 
   return (
     <>
@@ -31,6 +33,12 @@ export function MapControls({ onZoom, onReset }: { onZoom: (d: number) => void; 
         <button type="button" className={s.chip} aria-pressed={globe} onClick={() => setGlobe(!globe)} title="Глобус (G)">
           🌐 <span className={s.wide}>Глобус</span>
         </button>
+        {timeMachine ? null : (
+          <button type="button" className={s.chip} onClick={() => navigate({ name: 'time', year: useStore.getState().year })} title="Машина времени: границы с 3000 г. до н.э.">
+            ⏳ <span className={s.wide}>Машина времени</span>
+          </button>
+        )}
+        {timeMachine ? null : (
         <div className={s.layersWrap}>
           <button type="button" className={s.chip} aria-expanded={open} aria-controls="map-layers" onClick={() => setOpen(!open)}>
             ☰ <span className={s.wide}>Слои</span>
@@ -46,6 +54,7 @@ export function MapControls({ onZoom, onReset }: { onZoom: (d: number) => void; 
             </fieldset>
           ) : null}
         </div>
+        )}
       </div>
       <div className={s.zoom}>
         <button type="button" onClick={() => onZoom(1)} aria-label="Приблизить (E)">+</button>
