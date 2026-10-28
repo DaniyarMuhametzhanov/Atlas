@@ -114,75 +114,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -6,
-        "tMax": 0,
-        "rainMm": 20
+        "tMin": -8,
+        "tMax": 2,
+        "rainMm": 21
       },
       {
         "month": 2,
-        "tMin": -4,
-        "tMax": 3,
-        "rainMm": 25
+        "tMin": -5,
+        "tMax": 6,
+        "rainMm": 21
       },
       {
         "month": 3,
         "tMin": 1,
-        "tMax": 10,
-        "rainMm": 35
+        "tMax": 14,
+        "rainMm": 60
       },
       {
         "month": 4,
         "tMin": 6,
-        "tMax": 17,
-        "rainMm": 45
+        "tMax": 20,
+        "rainMm": 56
       },
       {
         "month": 5,
-        "tMin": 10,
-        "tMax": 22,
-        "rainMm": 60
+        "tMin": 11,
+        "tMax": 25,
+        "rainMm": 47
       },
       {
         "month": 6,
-        "tMin": 14,
-        "tMax": 27,
-        "rainMm": 35
+        "tMin": 15,
+        "tMax": 31,
+        "rainMm": 24
       },
       {
         "month": 7,
-        "tMin": 18,
-        "tMax": 31,
-        "rainMm": 15
+        "tMin": 19,
+        "tMax": 35,
+        "rainMm": 17
       },
       {
         "month": 8,
-        "tMin": 18,
-        "tMax": 31,
+        "tMin": 19,
+        "tMax": 34,
         "rainMm": 10
       },
       {
         "month": 9,
         "tMin": 13,
-        "tMax": 26,
-        "rainMm": 15
+        "tMax": 29,
+        "rainMm": 10
       },
       {
         "month": 10,
         "tMin": 7,
-        "tMax": 18,
-        "rainMm": 30
+        "tMax": 22,
+        "rainMm": 51
       },
       {
         "month": 11,
-        "tMin": 2,
-        "tMax": 9,
-        "rainMm": 30
+        "tMin": 0,
+        "tMax": 13,
+        "rainMm": 25
       },
       {
         "month": 12,
-        "tMin": -3,
-        "tMax": 3,
-        "rainMm": 25
+        "tMin": -5,
+        "tMax": 4,
+        "rainMm": 21
       }
     ],
     "food": [
@@ -379,7 +379,8 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Yerevan (1991–2020, extremes 1885–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Yerevan"
     },
     {
       "title": "Этнический состав — перепись населения Армении 2022 года (по данным ЦРУ World Factbook)"
@@ -387,6 +388,10 @@
     {
       "title": "Итоги выборов в Армении 7 июня 2026 года (JAMnews)",
       "url": "https://jam-news.net/final-election-results-in-armenia-pashinyans-party-wins-majority/"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

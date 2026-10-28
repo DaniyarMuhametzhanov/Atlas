@@ -123,74 +123,74 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 19,
-        "tMax": 28,
+        "tMin": 20,
+        "tMax": 27,
         "rainMm": 1
       },
       {
         "month": 2,
-        "tMin": 20,
-        "tMax": 29,
+        "tMin": 21,
+        "tMax": 28,
         "rainMm": 0
       },
       {
         "month": 3,
-        "tMin": 19,
-        "tMax": 29,
+        "tMin": 21,
+        "tMax": 28,
         "rainMm": 0
       },
       {
         "month": 4,
-        "tMin": 17,
-        "tMax": 27,
+        "tMin": 19,
+        "tMax": 25,
         "rainMm": 0
       },
       {
         "month": 5,
-        "tMin": 16,
-        "tMax": 24,
-        "rainMm": 1
+        "tMin": 17,
+        "tMax": 23,
+        "rainMm": 0
       },
       {
         "month": 6,
-        "tMin": 15,
-        "tMax": 22,
-        "rainMm": 2
+        "tMin": 17,
+        "tMax": 21,
+        "rainMm": 1
       },
       {
         "month": 7,
-        "tMin": 14,
-        "tMax": 21,
-        "rainMm": 5
+        "tMin": 16,
+        "tMax": 20,
+        "rainMm": 1
       },
       {
         "month": 8,
-        "tMin": 14,
-        "tMax": 21,
-        "rainMm": 4
+        "tMin": 15,
+        "tMax": 19,
+        "rainMm": 2
       },
       {
         "month": 9,
-        "tMin": 14,
-        "tMax": 22,
-        "rainMm": 3
+        "tMin": 15,
+        "tMax": 20,
+        "rainMm": 1
       },
       {
         "month": 10,
-        "tMin": 15,
-        "tMax": 24,
-        "rainMm": 1
+        "tMin": 16,
+        "tMax": 21,
+        "rainMm": 0
       },
       {
         "month": 11,
-        "tMin": 16,
-        "tMax": 25,
-        "rainMm": 1
+        "tMin": 17,
+        "tMax": 22,
+        "rainMm": 0
       },
       {
         "month": 12,
-        "tMin": 18,
-        "tMax": 27,
+        "tMin": 19,
+        "tMax": 24,
         "rainMm": 0
       }
     ],
@@ -405,7 +405,8 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Lima (Jorge Chávez International Airport)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Lima"
     },
     {
       "title": "Этнический состав — перепись населения Перу 2017 года (INEI), самоидентификация"
@@ -413,6 +414,10 @@
     {
       "title": "Кэйко Фухимори приведена к присяге (агентство Andina)",
       "url": "https://andina.pe/ingles/noticia-peru-keiko-fujimori-sworn-in-as-president-of-republic-1085378.aspx"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

@@ -126,72 +126,72 @@
       {
         "month": 1,
         "tMin": 3,
-        "tMax": 12,
+        "tMax": 13,
         "rainMm": 66
       },
       {
         "month": 2,
         "tMin": 3,
-        "tMax": 13,
+        "tMax": 14,
         "rainMm": 63
       },
       {
         "month": 3,
         "tMin": 6,
-        "tMax": 16,
+        "tMax": 17,
         "rainMm": 59
       },
       {
         "month": 4,
-        "tMin": 9,
-        "tMax": 19,
+        "tMin": 8,
+        "tMax": 20,
         "rainMm": 69
       },
       {
         "month": 5,
         "tMin": 13,
-        "tMax": 22,
+        "tMax": 25,
         "rainMm": 57
       },
       {
         "month": 6,
         "tMin": 17,
-        "tMax": 28,
+        "tMax": 30,
         "rainMm": 30
       },
       {
         "month": 7,
         "tMin": 19,
-        "tMax": 31,
+        "tMax": 33,
         "rainMm": 20
       },
       {
         "month": 8,
         "tMin": 20,
-        "tMax": 32,
+        "tMax": 33,
         "rainMm": 30
       },
       {
         "month": 9,
         "tMin": 16,
-        "tMax": 27,
+        "tMax": 28,
         "rainMm": 65
       },
       {
         "month": 10,
         "tMin": 12,
-        "tMax": 22,
+        "tMax": 23,
         "rainMm": 88
       },
       {
         "month": 11,
-        "tMin": 9,
+        "tMin": 8,
         "tMax": 17,
         "rainMm": 108
       },
       {
         "month": 12,
-        "tMin": 5,
+        "tMin": 4,
         "tMax": 13,
         "rainMm": 98
       }
@@ -399,10 +399,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Rome Urbe Airport (1991–2020 averages, extremes 1862–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Rome"
     },
     {
       "title": "Этнический состав — Национальный институт статистики Италии (ISTAT), 2023 год"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

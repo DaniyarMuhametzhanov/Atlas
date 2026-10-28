@@ -116,75 +116,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 6,
+        "tMin": 9,
         "tMax": 22,
-        "rainMm": 13
+        "rainMm": 12
       },
       {
         "month": 2,
-        "tMin": 7,
+        "tMin": 10,
         "tMax": 24,
-        "rainMm": 8
+        "rainMm": 6
       },
       {
         "month": 3,
-        "tMin": 9,
+        "tMin": 11,
         "tMax": 26,
-        "rainMm": 10
+        "rainMm": 12
       },
       {
         "month": 4,
-        "tMin": 11,
+        "tMin": 13,
         "tMax": 28,
-        "rainMm": 20
+        "rainMm": 24
       },
       {
         "month": 5,
-        "tMin": 13,
-        "tMax": 28,
-        "rainMm": 60
+        "tMin": 14,
+        "tMax": 27,
+        "rainMm": 59
       },
       {
         "month": 6,
         "tMin": 14,
         "tMax": 26,
-        "rainMm": 130
+        "rainMm": 133
       },
       {
         "month": 7,
         "tMin": 13,
         "tMax": 25,
-        "rainMm": 150
+        "rainMm": 174
       },
       {
         "month": 8,
         "tMin": 13,
         "tMax": 25,
-        "rainMm": 140
+        "rainMm": 176
       },
       {
         "month": 9,
         "tMin": 13,
         "tMax": 24,
-        "rainMm": 140
+        "rainMm": 158
       },
       {
         "month": 10,
-        "tMin": 11,
+        "tMin": 12,
         "tMax": 24,
-        "rainMm": 60
+        "rainMm": 71
       },
       {
         "month": 11,
-        "tMin": 8,
+        "tMin": 10,
         "tMax": 23,
-        "rainMm": 20
+        "rainMm": 17
       },
       {
         "month": 12,
-        "tMin": 6,
+        "tMin": 9,
         "tMax": 22,
-        "rainMm": 10
+        "rainMm": 5
       }
     ],
     "food": [
@@ -398,7 +398,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Ciudad de México (Tacubaya), normals 1991–2020, extremes 1877–2024» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Mexico_City"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

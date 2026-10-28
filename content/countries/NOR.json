@@ -117,74 +117,74 @@
       {
         "month": 1,
         "tMin": -5,
-        "tMax": -1,
-        "rainMm": 49
+        "tMax": 0,
+        "rainMm": 58
       },
       {
         "month": 2,
         "tMin": -5,
-        "tMax": 0,
-        "rainMm": 36
+        "tMax": 1,
+        "rainMm": 45
       },
       {
         "month": 3,
         "tMin": -2,
         "tMax": 5,
-        "rainMm": 47
+        "rainMm": 41
       },
       {
         "month": 4,
         "tMin": 2,
-        "tMax": 10,
-        "rainMm": 41
+        "tMax": 11,
+        "rainMm": 48
       },
       {
         "month": 5,
         "tMin": 7,
-        "tMax": 16,
-        "rainMm": 55
+        "tMax": 17,
+        "rainMm": 60
       },
       {
         "month": 6,
         "tMin": 11,
         "tMax": 20,
-        "rainMm": 82
+        "rainMm": 80
       },
       {
         "month": 7,
-        "tMin": 14,
-        "tMax": 22,
-        "rainMm": 81
+        "tMin": 13,
+        "tMax": 23,
+        "rainMm": 87
       },
       {
         "month": 8,
         "tMin": 13,
-        "tMax": 20,
-        "rainMm": 89
+        "tMax": 21,
+        "rainMm": 103
       },
       {
         "month": 9,
         "tMin": 9,
-        "tMax": 15,
-        "rainMm": 105
+        "tMax": 16,
+        "rainMm": 82
       },
       {
         "month": 10,
         "tMin": 4,
-        "tMax": 8,
-        "rainMm": 100
+        "tMax": 10,
+        "rainMm": 93
       },
       {
         "month": 11,
-        "tMin": -1,
-        "tMax": 3,
-        "rainMm": 93
+        "tMin": 0,
+        "tMax": 4,
+        "rainMm": 85
       },
       {
         "month": 12,
         "tMin": -4,
-        "tMax": 0,
-        "rainMm": 60
+        "tMax": 1,
+        "rainMm": 54
       }
     ],
     "food": [
@@ -222,7 +222,7 @@
     "system": "Конституционная монархия, парламентская демократия.",
     "mood": "Консенсус вокруг государства всеобщего благосостояния.",
     "techInfra": "Нефть и газ, гидроэнергия, лидер по электромобилям.",
-    "leaders": "Король — Харальд V. Премьер-министр — Йонас Гар Стёре (с 2021 года, переизбран в 2025).",
+    "leaders": "Король — Хокон VIII (с 28 августа 2026 года, после смерти короля Харальда V). Премьер-министр — Йонас Гар Стёре (с 2021 года, переизбран в 2025-м).",
     "economy": "Нефть и газ (суверенный фонд — один из крупнейших в мире), рыбоводство, судоходство, гидроэнергетика.",
     "asOf": "октябрь 2026",
     "freedom": [
@@ -386,10 +386,19 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Oslo (Blindern, 94 m (308 ft)) (1991–2020 normals, extremes 1937–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Oslo"
     },
     {
       "title": "Этнический состав — Статистическое бюро Норвегии (SSB), 2023 год: около 17% — иммигранты и их дети"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+    },
+    {
+      "title": "Король Харальд V умер, на трон взошёл Хокон VIII (Al Jazeera)",
+      "url": "https://aljazeera.com/news/2026/8/28/norways-king-harald-v-dies-succeeded-by-son"
     }
   ]
 }

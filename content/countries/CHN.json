@@ -130,75 +130,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -9,
+        "tMin": -7,
         "tMax": 2,
-        "rainMm": 3
+        "rainMm": 2
       },
       {
         "month": 2,
-        "tMin": -6,
+        "tMin": -4,
         "tMax": 6,
-        "rainMm": 5
+        "rainMm": 6
       },
       {
         "month": 3,
-        "tMin": 0,
+        "tMin": 2,
         "tMax": 13,
         "rainMm": 9
       },
       {
         "month": 4,
-        "tMin": 7,
+        "tMin": 9,
         "tMax": 21,
-        "rainMm": 25
+        "rainMm": 22
       },
       {
         "month": 5,
-        "tMin": 13,
+        "tMin": 15,
         "tMax": 27,
-        "rainMm": 35
+        "rainMm": 36
       },
       {
         "month": 6,
-        "tMin": 18,
+        "tMin": 20,
         "tMax": 31,
-        "rainMm": 75
+        "rainMm": 72
       },
       {
         "month": 7,
-        "tMin": 22,
-        "tMax": 31,
-        "rainMm": 185
+        "tMin": 23,
+        "tMax": 32,
+        "rainMm": 170
       },
       {
         "month": 8,
-        "tMin": 21,
-        "tMax": 30,
-        "rainMm": 160
+        "tMin": 22,
+        "tMax": 31,
+        "rainMm": 113
       },
       {
         "month": 9,
-        "tMin": 14,
-        "tMax": 26,
-        "rainMm": 50
+        "tMin": 16,
+        "tMax": 27,
+        "rainMm": 54
       },
       {
         "month": 10,
-        "tMin": 7,
+        "tMin": 9,
         "tMax": 19,
-        "rainMm": 25
+        "rainMm": 29
       },
       {
         "month": 11,
-        "tMin": -1,
+        "tMin": 1,
         "tMax": 10,
-        "rainMm": 10
+        "rainMm": 14
       },
       {
         "month": 12,
-        "tMin": -7,
-        "tMax": 3,
-        "rainMm": 3
+        "tMin": -5,
+        "tMax": 4,
+        "rainMm": 2
       }
     ],
     "food": [
@@ -412,10 +412,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Beijing» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Beijing"
     },
     {
       "title": "Этнический состав — перепись населения Китая 2020 года"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

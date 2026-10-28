@@ -115,75 +115,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 0,
-        "tMax": 6,
-        "rainMm": 15
+        "tMin": -1,
+        "tMax": 7,
+        "rainMm": 16
       },
       {
         "month": 2,
-        "tMin": 1,
+        "tMin": 0,
         "tMax": 8,
-        "rainMm": 15
+        "rainMm": 18
       },
       {
         "month": 3,
         "tMin": 4,
         "tMax": 13,
-        "rainMm": 25
+        "rainMm": 29
       },
       {
         "month": 4,
         "tMin": 8,
         "tMax": 19,
-        "rainMm": 40
+        "rainMm": 64
       },
       {
         "month": 5,
         "tMin": 13,
         "tMax": 24,
-        "rainMm": 60
+        "rainMm": 83
       },
       {
         "month": 6,
-        "tMin": 16,
-        "tMax": 28,
-        "rainMm": 70
+        "tMin": 17,
+        "tMax": 29,
+        "rainMm": 84
       },
       {
         "month": 7,
-        "tMin": 19,
-        "tMax": 31,
-        "rainMm": 55
+        "tMin": 20,
+        "tMax": 32,
+        "rainMm": 42
       },
       {
         "month": 8,
-        "tMin": 19,
-        "tMax": 31,
-        "rainMm": 50
+        "tMin": 20,
+        "tMax": 32,
+        "rainMm": 39
       },
       {
         "month": 9,
-        "tMin": 15,
-        "tMax": 27,
-        "rainMm": 40
+        "tMin": 16,
+        "tMax": 26,
+        "rainMm": 35
       },
       {
         "month": 10,
-        "tMin": 10,
+        "tMin": 11,
         "tMax": 20,
-        "rainMm": 40
+        "rainMm": 46
       },
       {
         "month": 11,
         "tMin": 5,
         "tMax": 13,
-        "rainMm": 25
+        "rainMm": 34
       },
       {
         "month": 12,
         "tMin": 1,
         "tMax": 8,
-        "rainMm": 20
+        "rainMm": 21
       }
     ],
     "food": [
@@ -397,10 +397,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Tbilisi (1991–2020 normals, extremes 1881–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Tbilisi"
     },
     {
       "title": "Этнический состав — перепись населения Грузии 2014 года (Geostat)"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

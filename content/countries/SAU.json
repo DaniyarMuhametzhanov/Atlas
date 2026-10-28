@@ -109,75 +109,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 8,
-        "tMax": 21,
-        "rainMm": 10
-      },
-      {
-        "month": 2,
-        "tMin": 10,
-        "tMax": 24,
-        "rainMm": 10
-      },
-      {
-        "month": 3,
-        "tMin": 14,
-        "tMax": 28,
+        "tMin": 9,
+        "tMax": 20,
         "rainMm": 15
       },
       {
+        "month": 2,
+        "tMin": 12,
+        "tMax": 24,
+        "rainMm": 6
+      },
+      {
+        "month": 3,
+        "tMin": 15,
+        "tMax": 28,
+        "rainMm": 21
+      },
+      {
         "month": 4,
-        "tMin": 19,
+        "tMin": 21,
         "tMax": 34,
-        "rainMm": 20
+        "rainMm": 24
       },
       {
         "month": 5,
-        "tMin": 24,
-        "tMax": 40,
+        "tMin": 26,
+        "tMax": 39,
         "rainMm": 5
       },
       {
         "month": 6,
-        "tMin": 27,
+        "tMin": 28,
         "tMax": 43,
         "rainMm": 0
       },
       {
         "month": 7,
-        "tMin": 28,
+        "tMin": 29,
         "tMax": 43,
         "rainMm": 0
       },
       {
         "month": 8,
-        "tMin": 28,
-        "tMax": 43,
-        "rainMm": 0
+        "tMin": 30,
+        "tMax": 44,
+        "rainMm": 1
       },
       {
         "month": 9,
-        "tMin": 25,
-        "tMax": 41,
+        "tMin": 26,
+        "tMax": 40,
         "rainMm": 0
       },
       {
         "month": 10,
-        "tMin": 20,
-        "tMax": 36,
+        "tMin": 21,
+        "tMax": 35,
         "rainMm": 1
       },
       {
         "month": 11,
-        "tMin": 14,
+        "tMin": 16,
         "tMax": 28,
-        "rainMm": 15
+        "rainMm": 11
       },
       {
         "month": 12,
-        "tMin": 9,
-        "tMax": 23,
-        "rainMm": 10
+        "tMin": 11,
+        "tMax": 22,
+        "rainMm": 15
       }
     ],
     "food": [
@@ -377,10 +377,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Riyadh Old (1991–2020 normals)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Riyadh"
     },
     {
       "title": "Этнический состав — оценка CIA World Factbook; около 40% жителей — иностранцы"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

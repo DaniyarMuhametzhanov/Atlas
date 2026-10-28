@@ -128,75 +128,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 2,
-        "tMax": 8,
-        "rainMm": 55
-      },
-      {
-        "month": 2,
-        "tMin": 2,
-        "tMax": 8,
-        "rainMm": 41
-      },
-      {
-        "month": 3,
         "tMin": 3,
-        "tMax": 10,
-        "rainMm": 41
-      },
-      {
-        "month": 4,
-        "tMin": 4,
-        "tMax": 13,
-        "rainMm": 43
-      },
-      {
-        "month": 5,
-        "tMin": 7,
-        "tMax": 16,
-        "rainMm": 49
-      },
-      {
-        "month": 6,
-        "tMin": 10,
-        "tMax": 19,
-        "rainMm": 45
-      },
-      {
-        "month": 7,
-        "tMin": 12,
-        "tMax": 21,
-        "rainMm": 45
-      },
-      {
-        "month": 8,
-        "tMin": 12,
-        "tMax": 21,
-        "rainMm": 50
-      },
-      {
-        "month": 9,
-        "tMin": 10,
-        "tMax": 18,
-        "rainMm": 49
-      },
-      {
-        "month": 10,
-        "tMin": 7,
-        "tMax": 14,
-        "rainMm": 68
-      },
-      {
-        "month": 11,
-        "tMin": 4,
-        "tMax": 10,
+        "tMax": 8,
         "rainMm": 59
       },
       {
+        "month": 2,
+        "tMin": 3,
+        "tMax": 9,
+        "rainMm": 45
+      },
+      {
+        "month": 3,
+        "tMin": 4,
+        "tMax": 12,
+        "rainMm": 39
+      },
+      {
+        "month": 4,
+        "tMin": 6,
+        "tMax": 15,
+        "rainMm": 42
+      },
+      {
+        "month": 5,
+        "tMin": 9,
+        "tMax": 18,
+        "rainMm": 46
+      },
+      {
+        "month": 6,
+        "tMin": 12,
+        "tMax": 22,
+        "rainMm": 47
+      },
+      {
+        "month": 7,
+        "tMin": 14,
+        "tMax": 24,
+        "rainMm": 46
+      },
+      {
+        "month": 8,
+        "tMin": 14,
+        "tMax": 23,
+        "rainMm": 53
+      },
+      {
+        "month": 9,
+        "tMin": 12,
+        "tMax": 20,
+        "rainMm": 50
+      },
+      {
+        "month": 10,
+        "tMin": 9,
+        "tMax": 16,
+        "rainMm": 65
+      },
+      {
+        "month": 11,
+        "tMin": 5,
+        "tMax": 12,
+        "rainMm": 67
+      },
+      {
         "month": 12,
-        "tMin": 2,
-        "tMax": 8,
-        "rainMm": 55
+        "tMin": 3,
+        "tMax": 9,
+        "rainMm": 57
       }
     ],
     "food": [
@@ -410,7 +410,8 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «London (LHR), note 1» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/London"
     },
     {
       "title": "Этнический состав — перепись населения Англии и Уэльса 2021 года (ONS)"
@@ -418,6 +419,10 @@
     {
       "title": "Энди Бёрнем стал премьер-министром (NBC News)",
       "url": "https://www.nbcnews.com/world/united-kingdom/andy-burnham-british-prime-minister-keir-starmer-labour-king-charles-rcna588324"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

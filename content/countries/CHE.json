@@ -110,75 +110,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -2,
+        "tMin": -3,
         "tMax": 3,
         "rainMm": 60
       },
       {
         "month": 2,
-        "tMin": -1,
+        "tMin": -3,
         "tMax": 5,
-        "rainMm": 55
+        "rainMm": 56
       },
       {
         "month": 3,
-        "tMin": 2,
+        "tMin": 0,
         "tMax": 10,
-        "rainMm": 70
+        "rainMm": 65
       },
       {
         "month": 4,
-        "tMin": 5,
+        "tMin": 3,
         "tMax": 15,
-        "rainMm": 75
+        "rainMm": 78
       },
       {
         "month": 5,
-        "tMin": 10,
+        "tMin": 8,
         "tMax": 19,
-        "rainMm": 100
+        "rainMm": 112
       },
       {
         "month": 6,
-        "tMin": 13,
+        "tMin": 11,
         "tMax": 23,
-        "rainMm": 115
+        "rainMm": 102
       },
       {
         "month": 7,
-        "tMin": 15,
+        "tMin": 13,
         "tMax": 25,
-        "rainMm": 105
+        "rainMm": 108
       },
       {
         "month": 8,
-        "tMin": 15,
+        "tMin": 13,
         "tMax": 24,
-        "rainMm": 110
+        "rainMm": 112
       },
       {
         "month": 9,
-        "tMin": 11,
-        "tMax": 20,
-        "rainMm": 85
+        "tMin": 9,
+        "tMax": 19,
+        "rainMm": 87
       },
       {
         "month": 10,
-        "tMin": 7,
+        "tMin": 6,
         "tMax": 14,
-        "rainMm": 80
+        "rainMm": 87
       },
       {
         "month": 11,
-        "tMin": 2,
-        "tMax": 7,
-        "rainMm": 75
+        "tMin": 1,
+        "tMax": 8,
+        "rainMm": 77
       },
       {
         "month": 12,
-        "tMin": -1,
+        "tMin": -2,
         "tMax": 4,
-        "rainMm": 70
+        "rainMm": 79
       }
     ],
     "food": [
@@ -407,7 +407,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Bern (Zollikofen)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Bern"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

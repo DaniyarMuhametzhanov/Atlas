@@ -110,75 +110,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -4,
-        "tMax": 2,
-        "rainMm": 37
+        "tMin": -2,
+        "tMax": 3,
+        "rainMm": 31
       },
       {
         "month": 2,
-        "tMin": -2,
-        "tMax": 5,
-        "rainMm": 30
+        "tMin": -1,
+        "tMax": 6,
+        "rainMm": 31
       },
       {
         "month": 3,
-        "tMin": 1,
+        "tMin": 2,
         "tMax": 11,
-        "rainMm": 28
+        "rainMm": 32
       },
       {
         "month": 4,
-        "tMin": 6,
-        "tMax": 17,
-        "rainMm": 45
+        "tMin": 7,
+        "tMax": 18,
+        "rainMm": 35
       },
       {
         "month": 5,
-        "tMin": 11,
-        "tMax": 22,
-        "rainMm": 60
+        "tMin": 12,
+        "tMax": 23,
+        "rainMm": 65
       },
       {
         "month": 6,
-        "tMin": 14,
-        "tMax": 25,
-        "rainMm": 70
+        "tMin": 15,
+        "tMax": 26,
+        "rainMm": 65
       },
       {
         "month": 7,
-        "tMin": 16,
+        "tMin": 17,
         "tMax": 28,
-        "rainMm": 55
+        "rainMm": 74
       },
       {
         "month": 8,
-        "tMin": 16,
+        "tMin": 17,
         "tMax": 28,
-        "rainMm": 55
+        "rainMm": 59
       },
       {
         "month": 9,
         "tMin": 12,
         "tMax": 23,
-        "rainMm": 40
+        "rainMm": 51
       },
       {
         "month": 10,
         "tMin": 7,
         "tMax": 16,
-        "rainMm": 40
+        "rainMm": 44
       },
       {
         "month": 11,
-        "tMin": 2,
-        "tMax": 8,
-        "rainMm": 50
+        "tMin": 3,
+        "tMax": 9,
+        "rainMm": 47
       },
       {
         "month": 12,
-        "tMin": -2,
-        "tMax": 3,
-        "rainMm": 45
+        "tMin": -1,
+        "tMax": 4,
+        "rainMm": 39
       }
     ],
     "food": [
@@ -216,7 +216,7 @@
     "system": "Парламентская республика; одна партия долго имела большинство.",
     "mood": "Сильная поддержка национал-консерваторов; оппозиция в крупных городах; часто спорит с ЕС.",
     "techInfra": "Автозаводы, фармацевтика.",
-    "leaders": "Президент — Тамаш Шуйок (с 2024 года). Премьер-министр — Петер Мадьяр (партия «Тиса», с 9 мая 2026 года). Он сменил Виктора Орбана, который руководил правительством с 2010 года.",
+    "leaders": "Президент — Андраш Бака (с 19 августа 2026 года; бывший председатель Верховного суда). Премьер-министр — Петер Мадьяр (партия «Тиса», с 9 мая 2026 года). Он сменил Виктора Орбана, который руководил правительством с 2010 года.",
     "economy": "Автомобили (Audi, Mercedes), электроника, фармацевтика, туризм. Страна в ЕС с 2004 года.",
     "asOf": "октябрь 2026",
     "freedom": [
@@ -400,7 +400,8 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Pestszentlőrinc, Budapest (WMO number: 12843) 1991-2020;» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Budapest"
     },
     {
       "title": "Этнический состав — перепись населения Венгрии 2022 года (по данным ЦРУ World Factbook)"
@@ -408,6 +409,14 @@
     {
       "title": "Петер Мадьяр принял присягу премьер-министра (AP, май 2026)",
       "url": "https://wtop.com/europe/2026/05/hungarys-peter-magyar-is-set-to-be-sworn-in-as-prime-minister-ending-viktor-orbans-16-year-rule/"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
+    },
+    {
+      "title": "Андраш Бака избран президентом Венгрии (Euronews)",
+      "url": "https://euronews.com/my-europe/2026/08/11/hungarys-parliament-approves-orban-critic-and-former-judge-andras-baka-as-president"
     }
   ]
 }

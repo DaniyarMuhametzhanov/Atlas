@@ -51,20 +51,6 @@
       ]
     },
     "climate": {
-      "tMax": [
-        5,
-        7,
-        12,
-        18,
-        23,
-        27,
-        31,
-        31,
-        27,
-        20,
-        13,
-        7
-      ],
       "tMin": [
         -2,
         -1,
@@ -78,6 +64,20 @@
         8,
         3,
         0
+      ],
+      "tMax": [
+        5,
+        7,
+        12,
+        18,
+        23,
+        27,
+        31,
+        31,
+        27,
+        20,
+        13,
+        7
       ],
       "rain": [
         39,
@@ -279,10 +279,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Ankara (Turkish State Meteorological Service Compound, Keçiören), 1991–2020, ext» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Ankara"
     },
     {
       "title": "Этнический состав — оценка CIA World Factbook (переписи этнического состава в Турции не проводятся)"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

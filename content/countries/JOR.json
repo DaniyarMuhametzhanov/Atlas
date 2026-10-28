@@ -108,38 +108,38 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 5,
+        "tMin": 4,
         "tMax": 13,
-        "rainMm": 60
+        "rainMm": 61
       },
       {
         "month": 2,
-        "tMin": 6,
-        "tMax": 15,
-        "rainMm": 50
+        "tMin": 5,
+        "tMax": 14,
+        "rainMm": 58
       },
       {
         "month": 3,
         "tMin": 8,
-        "tMax": 19,
-        "rainMm": 40
+        "tMax": 18,
+        "rainMm": 31
       },
       {
         "month": 4,
-        "tMin": 12,
-        "tMax": 25,
-        "rainMm": 15
+        "tMin": 11,
+        "tMax": 24,
+        "rainMm": 8
       },
       {
         "month": 5,
-        "tMin": 16,
-        "tMax": 30,
-        "rainMm": 5
+        "tMin": 15,
+        "tMax": 28,
+        "rainMm": 3
       },
       {
         "month": 6,
         "tMin": 19,
-        "tMax": 32,
+        "tMax": 31,
         "rainMm": 0
       },
       {
@@ -163,20 +163,20 @@
       {
         "month": 10,
         "tMin": 15,
-        "tMax": 28,
-        "rainMm": 10
+        "tMax": 27,
+        "rainMm": 5
       },
       {
         "month": 11,
         "tMin": 10,
-        "tMax": 21,
-        "rainMm": 30
+        "tMax": 20,
+        "rainMm": 21
       },
       {
         "month": 12,
         "tMin": 6,
         "tMax": 15,
-        "rainMm": 50
+        "rainMm": 47
       }
     ],
     "food": [
@@ -374,10 +374,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «East Amman, Amman Civil Airport» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Amman"
     },
     {
       "title": "Этнический состав — оценка CIA World Factbook; около трети жителей — иностранные граждане и беженцы"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

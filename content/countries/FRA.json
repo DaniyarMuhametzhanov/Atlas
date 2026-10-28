@@ -127,75 +127,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 2,
-        "tMax": 7,
-        "rainMm": 53
+        "tMin": 3,
+        "tMax": 8,
+        "rainMm": 48
       },
       {
         "month": 2,
-        "tMin": 2,
-        "tMax": 8,
-        "rainMm": 46
+        "tMin": 3,
+        "tMax": 9,
+        "rainMm": 42
       },
       {
         "month": 3,
-        "tMin": 4,
-        "tMax": 12,
-        "rainMm": 53
+        "tMin": 6,
+        "tMax": 13,
+        "rainMm": 45
       },
       {
         "month": 4,
-        "tMin": 6,
-        "tMax": 16,
-        "rainMm": 52
+        "tMin": 8,
+        "tMax": 17,
+        "rainMm": 46
       },
       {
         "month": 5,
-        "tMin": 9,
+        "tMin": 11,
         "tMax": 20,
-        "rainMm": 65
+        "rainMm": 69
       },
       {
         "month": 6,
-        "tMin": 12,
+        "tMin": 14,
         "tMax": 23,
-        "rainMm": 54
-      },
-      {
-        "month": 7,
-        "tMin": 14,
-        "tMax": 25,
-        "rainMm": 63
-      },
-      {
-        "month": 8,
-        "tMin": 14,
-        "tMax": 25,
-        "rainMm": 43
-      },
-      {
-        "month": 9,
-        "tMin": 11,
-        "tMax": 21,
-        "rainMm": 54
-      },
-      {
-        "month": 10,
-        "tMin": 8,
-        "tMax": 16,
-        "rainMm": 59
-      },
-      {
-        "month": 11,
-        "tMin": 4,
-        "tMax": 10,
         "rainMm": 51
       },
       {
-        "month": 12,
-        "tMin": 2,
-        "tMax": 7,
+        "month": 7,
+        "tMin": 16,
+        "tMax": 26,
         "rainMm": 59
+      },
+      {
+        "month": 8,
+        "tMin": 16,
+        "tMax": 26,
+        "rainMm": 58
+      },
+      {
+        "month": 9,
+        "tMin": 13,
+        "tMax": 22,
+        "rainMm": 45
+      },
+      {
+        "month": 10,
+        "tMin": 10,
+        "tMax": 17,
+        "rainMm": 55
+      },
+      {
+        "month": 11,
+        "tMin": 6,
+        "tMax": 11,
+        "rainMm": 54
+      },
+      {
+        "month": 12,
+        "tMin": 4,
+        "tMax": 8,
+        "rainMm": 62
       }
     ],
     "food": [
@@ -401,10 +401,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Paris (Parc Montsouris)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Paris"
     },
     {
       "title": "Этнический состав — Национальный институт статистики Франции (INSEE), 2023 год; данные о национальности во Франции по закону не собирают"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

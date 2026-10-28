@@ -121,15 +121,15 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -10,
-        "tMax": -5,
-        "rainMm": 52
+        "tMin": -9,
+        "tMax": -4,
+        "rainMm": 53
       },
       {
         "month": 2,
         "tMin": -9,
         "tMax": -3,
-        "rainMm": 40
+        "rainMm": 44
       },
       {
         "month": 3,
@@ -139,39 +139,39 @@
       },
       {
         "month": 4,
-        "tMin": 3,
+        "tMin": 2,
         "tMax": 12,
-        "rainMm": 38
+        "rainMm": 37
       },
       {
         "month": 5,
-        "tMin": 9,
+        "tMin": 8,
         "tMax": 19,
-        "rainMm": 52
+        "rainMm": 61
       },
       {
         "month": 6,
-        "tMin": 13,
-        "tMax": 23,
-        "rainMm": 80
+        "tMin": 12,
+        "tMax": 22,
+        "rainMm": 78
       },
       {
         "month": 7,
-        "tMin": 16,
+        "tMin": 15,
         "tMax": 25,
-        "rainMm": 85
+        "rainMm": 84
       },
       {
         "month": 8,
-        "tMin": 14,
+        "tMin": 13,
         "tMax": 23,
-        "rainMm": 82
+        "rainMm": 78
       },
       {
         "month": 9,
-        "tMin": 9,
-        "tMax": 17,
-        "rainMm": 65
+        "tMin": 8,
+        "tMax": 16,
+        "rainMm": 66
       },
       {
         "month": 10,
@@ -181,15 +181,15 @@
       },
       {
         "month": 11,
-        "tMin": -3,
+        "tMin": -2,
         "tMax": 2,
         "rainMm": 52
       },
       {
         "month": 12,
-        "tMin": -8,
-        "tMax": -3,
-        "rainMm": 56
+        "tMin": -6,
+        "tMax": -2,
+        "rainMm": 51
       }
     ],
     "food": [
@@ -409,10 +409,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Moscow (VDNKh) WMO ID: 27612; coordinates <link rel=\"mw-deduplicated-inline-styl» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Moscow"
     },
     {
       "title": "Этнический состав — Всероссийская перепись населения 2021 года (Росстат); около 28% населения не указали национальность"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

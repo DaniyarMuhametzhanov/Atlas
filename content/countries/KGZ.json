@@ -107,75 +107,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -11,
-        "tMax": -2,
-        "rainMm": 20
+        "tMin": -7,
+        "tMax": 3,
+        "rainMm": 28
       },
       {
         "month": 2,
-        "tMin": -9,
-        "tMax": 0,
-        "rainMm": 25
+        "tMin": -5,
+        "tMax": 5,
+        "rainMm": 36
       },
       {
         "month": 3,
-        "tMin": -2,
-        "tMax": 8,
-        "rainMm": 40
+        "tMin": 1,
+        "tMax": 12,
+        "rainMm": 48
       },
       {
         "month": 4,
-        "tMin": 5,
-        "tMax": 16,
-        "rainMm": 60
+        "tMin": 7,
+        "tMax": 19,
+        "rainMm": 71
       },
       {
         "month": 5,
-        "tMin": 9,
-        "tMax": 21,
-        "rainMm": 60
+        "tMin": 11,
+        "tMax": 24,
+        "rainMm": 59
       },
       {
         "month": 6,
-        "tMin": 13,
-        "tMax": 26,
-        "rainMm": 35
+        "tMin": 16,
+        "tMax": 30,
+        "rainMm": 34
       },
       {
         "month": 7,
-        "tMin": 16,
-        "tMax": 29,
-        "rainMm": 20
+        "tMin": 18,
+        "tMax": 32,
+        "rainMm": 19
       },
       {
         "month": 8,
-        "tMin": 15,
-        "tMax": 28,
+        "tMin": 17,
+        "tMax": 31,
         "rainMm": 15
       },
       {
         "month": 9,
-        "tMin": 10,
-        "tMax": 23,
-        "rainMm": 15
+        "tMin": 12,
+        "tMax": 26,
+        "rainMm": 18
       },
       {
         "month": 10,
-        "tMin": 3,
-        "tMax": 15,
-        "rainMm": 35
+        "tMin": 6,
+        "tMax": 19,
+        "rainMm": 37
       },
       {
         "month": 11,
-        "tMin": -3,
-        "tMax": 6,
-        "rainMm": 35
+        "tMin": 0,
+        "tMax": 10,
+        "rainMm": 45
       },
       {
         "month": 12,
-        "tMin": -8,
-        "tMax": 0,
-        "rainMm": 25
+        "tMin": -5,
+        "tMax": 5,
+        "rainMm": 37
       }
     ],
     "food": [
@@ -385,7 +385,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Bishkek (1991–2020, extremes 1936–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Bishkek"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

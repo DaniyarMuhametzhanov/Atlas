@@ -52,46 +52,46 @@
     },
     "climate": {
       "tMin": [
-        -4,
-        -4,
-        -2,
-        2,
+        -3,
+        -3,
+        -1,
+        3,
         7,
         12,
         15,
         14,
         10,
-        5,
-        1,
-        -2
+        6,
+        2,
+        -1
       ],
       "tMax": [
-        0,
-        0,
-        4,
-        10,
-        16,
-        20,
-        22,
+        1,
+        1,
+        5,
+        11,
+        17,
         21,
-        16,
-        9,
-        4,
-        1
+        24,
+        22,
+        17,
+        10,
+        5,
+        3
       ],
       "rain": [
-        39,
+        37,
+        29,
         27,
-        26,
-        30,
-        30,
-        45,
-        72,
+        29,
+        34,
+        62,
+        62,
         66,
-        55,
-        50,
         53,
-        46
+        51,
+        48,
+        48
       ]
     },
     "food": [
@@ -295,11 +295,16 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Stockholm (Observatorielunden), 1991–2020 normals, extremes since 1901» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Stockholm"
     },
     {
       "title": "Парламент Швеции не утвердил Магдалену Андерссон (Oman Observer, 15.10.2026)",
       "url": "https://www.omanobserver.om/article/1197877/world/europe/swedish-parliament-rejects-andersson-as-prime-minister"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

@@ -126,74 +126,74 @@
       {
         "month": 1,
         "tMin": 8,
-        "tMax": 21,
+        "tMax": 20,
         "rainMm": 19
       },
       {
         "month": 2,
         "tMin": 11,
         "tMax": 24,
-        "rainMm": 20
+        "rainMm": 21
       },
       {
         "month": 3,
         "tMin": 16,
-        "tMax": 31,
-        "rainMm": 15
+        "tMax": 30,
+        "rainMm": 17
       },
       {
         "month": 4,
-        "tMin": 22,
+        "tMin": 21,
         "tMax": 37,
-        "rainMm": 15
+        "rainMm": 16
       },
       {
         "month": 5,
         "tMin": 26,
-        "tMax": 39,
-        "rainMm": 35
+        "tMax": 40,
+        "rainMm": 31
       },
       {
         "month": 6,
         "tMin": 28,
-        "tMax": 37,
-        "rainMm": 65
+        "tMax": 39,
+        "rainMm": 74
       },
       {
         "month": 7,
-        "tMin": 27,
-        "tMax": 34,
+        "tMin": 28,
+        "tMax": 36,
         "rainMm": 210
       },
       {
         "month": 8,
-        "tMin": 26,
-        "tMax": 33,
-        "rainMm": 260
+        "tMin": 27,
+        "tMax": 34,
+        "rainMm": 233
       },
       {
         "month": 9,
         "tMin": 25,
         "tMax": 34,
-        "rainMm": 150
+        "rainMm": 124
       },
       {
         "month": 10,
-        "tMin": 21,
+        "tMin": 20,
         "tMax": 33,
-        "rainMm": 25
+        "rainMm": 15
       },
       {
         "month": 11,
-        "tMin": 14,
+        "tMin": 13,
         "tMax": 28,
-        "rainMm": 5
+        "rainMm": 6
       },
       {
         "month": 12,
-        "tMin": 9,
+        "tMin": 8,
         "tMax": 23,
-        "rainMm": 10
+        "rainMm": 8
       }
     ],
     "food": [
@@ -407,7 +407,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «New Delhi (Safdarjung) 1991–2020 normals, extremes 1901–present» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/New_Delhi"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

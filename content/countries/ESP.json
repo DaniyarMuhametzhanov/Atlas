@@ -120,73 +120,73 @@
         "month": 1,
         "tMin": 3,
         "tMax": 10,
-        "rainMm": 34
+        "rainMm": 32
       },
       {
         "month": 2,
-        "tMin": 3,
+        "tMin": 4,
         "tMax": 12,
-        "rainMm": 35
+        "rainMm": 34
       },
       {
         "month": 3,
-        "tMin": 5,
+        "tMin": 6,
         "tMax": 16,
-        "rainMm": 28
+        "rainMm": 35
       },
       {
         "month": 4,
-        "tMin": 7,
+        "tMin": 8,
         "tMax": 19,
-        "rainMm": 40
+        "rainMm": 46
       },
       {
         "month": 5,
-        "tMin": 10,
-        "tMax": 24,
-        "rainMm": 45
+        "tMin": 12,
+        "tMax": 23,
+        "rainMm": 48
       },
       {
         "month": 6,
-        "tMin": 14,
-        "tMax": 30,
-        "rainMm": 22
+        "tMin": 17,
+        "tMax": 29,
+        "rainMm": 20
       },
       {
         "month": 7,
-        "tMin": 17,
-        "tMax": 34,
-        "rainMm": 12
+        "tMin": 20,
+        "tMax": 33,
+        "rainMm": 9
       },
       {
         "month": 8,
-        "tMin": 17,
-        "tMax": 33,
-        "rainMm": 12
+        "tMin": 19,
+        "tMax": 32,
+        "rainMm": 10
       },
       {
         "month": 9,
-        "tMin": 14,
-        "tMax": 28,
-        "rainMm": 30
+        "tMin": 16,
+        "tMax": 27,
+        "rainMm": 24
       },
       {
         "month": 10,
-        "tMin": 10,
-        "tMax": 21,
-        "rainMm": 50
+        "tMin": 11,
+        "tMax": 20,
+        "rainMm": 64
       },
       {
         "month": 11,
         "tMin": 6,
         "tMax": 14,
-        "rainMm": 48
+        "rainMm": 52
       },
       {
         "month": 12,
         "tMin": 4,
         "tMax": 10,
-        "rainMm": 45
+        "rainMm": 42
       }
     ],
     "food": [
@@ -392,7 +392,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Madrid (667 m), Buen Retiro Park in the city centre (1991–2020 normals, sunshine» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Madrid"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

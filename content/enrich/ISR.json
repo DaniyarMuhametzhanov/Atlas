@@ -52,20 +52,6 @@
       ]
     },
     "climate": {
-      "tMax": [
-        13,
-        14,
-        17,
-        22,
-        26,
-        29,
-        30,
-        30,
-        29,
-        26,
-        20,
-        15
-      ],
       "tMin": [
         7,
         7,
@@ -79,6 +65,20 @@
         17,
         13,
         9
+      ],
+      "tMax": [
+        13,
+        14,
+        17,
+        22,
+        26,
+        29,
+        30,
+        30,
+        29,
+        26,
+        20,
+        15
       ],
       "rain": [
         137,
@@ -297,7 +297,8 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Jerusalem (1991–2020 normals)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Jerusalem"
     },
     {
       "title": "Этнический состав — Центральное статистическое бюро Израиля (CBS), 2023 год"
@@ -305,6 +306,10 @@
     {
       "title": "Предварительные итоги выборов в Израиле 27 октября 2026 года (CNN)",
       "url": "https://www.cnn.com/2026/10/28/world/live-news/israel-election-result-live-latest-netanyahu-eisenkot-intl"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

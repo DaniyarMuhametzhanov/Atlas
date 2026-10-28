@@ -113,50 +113,50 @@
       {
         "month": 1,
         "tMin": -4,
-        "tMax": 0,
-        "rainMm": 27
+        "tMax": 1,
+        "rainMm": 31
       },
       {
         "month": 2,
         "tMin": -3,
-        "tMax": 2,
-        "rainMm": 25
+        "tMax": 3,
+        "rainMm": 30
       },
       {
         "month": 3,
-        "tMin": 0,
+        "tMin": -1,
         "tMax": 7,
-        "rainMm": 30
+        "rainMm": 29
       },
       {
         "month": 4,
         "tMin": 4,
-        "tMax": 14,
-        "rainMm": 38
+        "tMax": 15,
+        "rainMm": 35
       },
       {
         "month": 5,
-        "tMin": 10,
+        "tMin": 9,
         "tMax": 20,
-        "rainMm": 60
+        "rainMm": 56
       },
       {
         "month": 6,
-        "tMin": 13,
+        "tMin": 12,
         "tMax": 23,
-        "rainMm": 75
+        "rainMm": 64
       },
       {
         "month": 7,
         "tMin": 15,
         "tMax": 25,
-        "rainMm": 85
+        "rainMm": 82
       },
       {
         "month": 8,
         "tMin": 14,
-        "tMax": 24,
-        "rainMm": 70
+        "tMax": 25,
+        "rainMm": 61
       },
       {
         "month": 9,
@@ -168,19 +168,19 @@
         "month": 10,
         "tMin": 5,
         "tMax": 13,
-        "rainMm": 35
+        "rainMm": 40
       },
       {
         "month": 11,
         "tMin": 1,
-        "tMax": 6,
-        "rainMm": 35
+        "tMax": 7,
+        "rainMm": 36
       },
       {
         "month": 12,
         "tMin": -2,
         "tMax": 2,
-        "rainMm": 30
+        "rainMm": 36
       }
     ],
     "food": [
@@ -377,10 +377,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Warsaw (WAW), 1991–2020 normals, extremes 1779–present» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Warsaw"
     },
     {
       "title": "Этнический состав — перепись населения Польши 2021 года (GUS); многие указали двойную идентичность"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

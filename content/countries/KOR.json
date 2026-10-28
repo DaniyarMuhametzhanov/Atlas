@@ -112,75 +112,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -6,
+        "tMin": -5,
         "tMax": 2,
-        "rainMm": 22
+        "rainMm": 17
       },
       {
         "month": 2,
-        "tMin": -4,
+        "tMin": -3,
         "tMax": 5,
-        "rainMm": 30
+        "rainMm": 28
       },
       {
         "month": 3,
-        "tMin": 1,
+        "tMin": 2,
         "tMax": 11,
-        "rainMm": 48
+        "rainMm": 37
       },
       {
         "month": 4,
-        "tMin": 7,
+        "tMin": 8,
         "tMax": 18,
-        "rainMm": 80
+        "rainMm": 73
       },
       {
         "month": 5,
-        "tMin": 13,
-        "tMax": 23,
-        "rainMm": 105
+        "tMin": 14,
+        "tMax": 24,
+        "rainMm": 104
       },
       {
         "month": 6,
-        "tMin": 18,
-        "tMax": 27,
-        "rainMm": 133
+        "tMin": 19,
+        "tMax": 28,
+        "rainMm": 130
       },
       {
         "month": 7,
         "tMin": 22,
         "tMax": 29,
-        "rainMm": 328
+        "rainMm": 414
       },
       {
         "month": 8,
         "tMin": 23,
-        "tMax": 31,
+        "tMax": 30,
         "rainMm": 348
       },
       {
         "month": 9,
-        "tMin": 17,
+        "tMin": 18,
         "tMax": 26,
-        "rainMm": 169
+        "rainMm": 142
       },
       {
         "month": 10,
-        "tMin": 10,
+        "tMin": 11,
         "tMax": 20,
-        "rainMm": 63
+        "rainMm": 52
       },
       {
         "month": 11,
-        "tMin": 3,
+        "tMin": 4,
         "tMax": 12,
-        "rainMm": 52
+        "rainMm": 51
       },
       {
         "month": 12,
         "tMin": -3,
         "tMax": 4,
-        "rainMm": 22
+        "rainMm": 23
       }
     ],
     "food": [
@@ -385,10 +385,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Seoul (1991–2020 normals, extremes 1907–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Seoul"
     },
     {
       "title": "Этнический состав — оценка CIA World Factbook; иностранцы — около 4%"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

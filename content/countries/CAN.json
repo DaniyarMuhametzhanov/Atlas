@@ -111,74 +111,74 @@
       {
         "month": 1,
         "tMin": -14,
-        "tMax": -6,
-        "rainMm": 63
+        "tMax": -5,
+        "rainMm": 70
       },
       {
         "month": 2,
-        "tMin": -12,
+        "tMin": -13,
         "tMax": -4,
-        "rainMm": 55
+        "rainMm": 50
       },
       {
         "month": 3,
         "tMin": -7,
-        "tMax": 3,
-        "rainMm": 69
+        "tMax": 2,
+        "rainMm": 66
       },
       {
         "month": 4,
-        "tMin": 0,
+        "tMin": 1,
         "tMax": 11,
-        "rainMm": 75
+        "rainMm": 81
       },
       {
         "month": 5,
-        "tMin": 7,
-        "tMax": 19,
-        "rainMm": 85
+        "tMin": 8,
+        "tMax": 20,
+        "rainMm": 75
       },
       {
         "month": 6,
-        "tMin": 12,
+        "tMin": 13,
         "tMax": 24,
-        "rainMm": 80
+        "rainMm": 97
       },
       {
         "month": 7,
         "tMin": 15,
         "tMax": 27,
-        "rainMm": 70
+        "rainMm": 89
       },
       {
         "month": 8,
         "tMin": 14,
-        "tMax": 25,
-        "rainMm": 80
+        "tMax": 26,
+        "rainMm": 79
       },
       {
         "month": 9,
-        "tMin": 9,
-        "tMax": 19,
-        "rainMm": 75
+        "tMin": 10,
+        "tMax": 21,
+        "rainMm": 90
       },
       {
         "month": 10,
         "tMin": 3,
-        "tMax": 11,
-        "rainMm": 80
+        "tMax": 13,
+        "rainMm": 87
       },
       {
         "month": 11,
-        "tMin": -3,
-        "tMax": 3,
-        "rainMm": 90
+        "tMin": -2,
+        "tMax": 6,
+        "rainMm": 74
       },
       {
         "month": 12,
         "tMin": -10,
-        "tMax": -3,
-        "rainMm": 70
+        "tMax": -2,
+        "rainMm": 72
       }
     ],
     "food": [
@@ -392,10 +392,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Ottawa International Airport, 1991–2020 normals, extremes 1938–present<a href=\"#» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Ottawa"
     },
     {
       "title": "Этнический состав — перепись населения Канады 2021 года (Statistics Canada)"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

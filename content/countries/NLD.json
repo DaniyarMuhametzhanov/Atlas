@@ -120,7 +120,7 @@
         "month": 1,
         "tMin": 1,
         "tMax": 6,
-        "rainMm": 70
+        "rainMm": 67
       },
       {
         "month": 2,
@@ -132,7 +132,7 @@
         "month": 3,
         "tMin": 3,
         "tMax": 10,
-        "rainMm": 62
+        "rainMm": 52
       },
       {
         "month": 4,
@@ -144,49 +144,49 @@
         "month": 5,
         "tMin": 9,
         "tMax": 18,
-        "rainMm": 57
+        "rainMm": 54
       },
       {
         "month": 6,
-        "tMin": 12,
-        "tMax": 21,
-        "rainMm": 70
+        "tMin": 11,
+        "tMax": 20,
+        "rainMm": 65
       },
       {
         "month": 7,
         "tMin": 14,
         "tMax": 23,
-        "rainMm": 85
+        "rainMm": 82
       },
       {
         "month": 8,
-        "tMin": 14,
-        "tMax": 23,
-        "rainMm": 80
+        "tMin": 13,
+        "tMax": 22,
+        "rainMm": 99
       },
       {
         "month": 9,
         "tMin": 11,
         "tMax": 19,
-        "rainMm": 80
+        "rainMm": 84
       },
       {
         "month": 10,
         "tMin": 8,
-        "tMax": 14,
-        "rainMm": 85
+        "tMax": 15,
+        "rainMm": 87
       },
       {
         "month": 11,
-        "tMin": 4,
-        "tMax": 9,
+        "tMin": 5,
+        "tMax": 10,
         "rainMm": 85
       },
       {
         "month": 12,
         "tMin": 2,
-        "tMax": 6,
-        "rainMm": 85
+        "tMax": 7,
+        "rainMm": 82
       }
     ],
     "food": [
@@ -396,7 +396,8 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Amsterdam Airport Schiphol (1991-2020)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Amsterdam"
     },
     {
       "title": "Этнический состав — Центральное статистическое бюро Нидерландов (CBS), 2023 год"
@@ -404,6 +405,10 @@
     {
       "title": "Правительство Роба Йеттена приведено к присяге (Википедия)",
       "url": "https://en.wikipedia.org/wiki/Jetten_cabinet"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

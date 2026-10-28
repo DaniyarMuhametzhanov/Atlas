@@ -115,75 +115,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -4,
-        "tMax": 0,
-        "rainMm": 39
+        "tMin": -3,
+        "tMax": 1,
+        "rainMm": 37
       },
       {
         "month": 2,
-        "tMin": -4,
-        "tMax": 0,
-        "rainMm": 27
+        "tMin": -3,
+        "tMax": 1,
+        "rainMm": 29
       },
       {
         "month": 3,
-        "tMin": -2,
-        "tMax": 4,
-        "rainMm": 26
+        "tMin": -1,
+        "tMax": 5,
+        "rainMm": 27
       },
       {
         "month": 4,
-        "tMin": 2,
-        "tMax": 10,
-        "rainMm": 30
+        "tMin": 3,
+        "tMax": 11,
+        "rainMm": 29
       },
       {
         "month": 5,
         "tMin": 7,
-        "tMax": 16,
-        "rainMm": 30
+        "tMax": 17,
+        "rainMm": 34
       },
       {
         "month": 6,
         "tMin": 12,
-        "tMax": 20,
-        "rainMm": 45
+        "tMax": 21,
+        "rainMm": 62
       },
       {
         "month": 7,
         "tMin": 15,
-        "tMax": 22,
-        "rainMm": 72
+        "tMax": 24,
+        "rainMm": 62
       },
       {
         "month": 8,
         "tMin": 14,
-        "tMax": 21,
+        "tMax": 22,
         "rainMm": 66
       },
       {
         "month": 9,
         "tMin": 10,
-        "tMax": 16,
-        "rainMm": 55
-      },
-      {
-        "month": 10,
-        "tMin": 5,
-        "tMax": 9,
-        "rainMm": 50
-      },
-      {
-        "month": 11,
-        "tMin": 1,
-        "tMax": 4,
+        "tMax": 17,
         "rainMm": 53
       },
       {
+        "month": 10,
+        "tMin": 6,
+        "tMax": 10,
+        "rainMm": 51
+      },
+      {
+        "month": 11,
+        "tMin": 2,
+        "tMax": 5,
+        "rainMm": 48
+      },
+      {
         "month": 12,
-        "tMin": -2,
-        "tMax": 1,
-        "rainMm": 46
+        "tMin": -1,
+        "tMax": 3,
+        "rainMm": 48
       }
     ],
     "food": [
@@ -397,11 +397,16 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Stockholm (Observatorielunden), 1991–2020 normals, extremes since 1901» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Stockholm"
     },
     {
       "title": "Парламент Швеции не утвердил Магдалену Андерссон (Oman Observer, 15.10.2026)",
       "url": "https://www.omanobserver.om/article/1197877/world/europe/swedish-parliament-rejects-andersson-as-prime-minister"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

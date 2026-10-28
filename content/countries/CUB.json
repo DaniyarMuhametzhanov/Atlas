@@ -107,31 +107,31 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 18,
-        "tMax": 26,
-        "rainMm": 70
+        "tMin": 19,
+        "tMax": 27,
+        "rainMm": 56
       },
       {
         "month": 2,
-        "tMin": 18,
+        "tMin": 19,
         "tMax": 27,
-        "rainMm": 60
+        "rainMm": 59
       },
       {
         "month": 3,
-        "tMin": 19,
-        "tMax": 28,
-        "rainMm": 55
+        "tMin": 20,
+        "tMax": 29,
+        "rainMm": 54
       },
       {
         "month": 4,
-        "tMin": 21,
-        "tMax": 29,
-        "rainMm": 70
+        "tMin": 22,
+        "tMax": 30,
+        "rainMm": 58
       },
       {
         "month": 5,
-        "tMin": 22,
+        "tMin": 23,
         "tMax": 31,
         "rainMm": 120
       },
@@ -139,43 +139,43 @@
         "month": 6,
         "tMin": 24,
         "tMax": 32,
-        "rainMm": 150
+        "rainMm": 168
       },
       {
         "month": 7,
         "tMin": 24,
         "tMax": 32,
-        "rainMm": 95
+        "rainMm": 125
       },
       {
         "month": 8,
-        "tMin": 24,
-        "tMax": 33,
-        "rainMm": 115
+        "tMin": 25,
+        "tMax": 32,
+        "rainMm": 145
       },
       {
         "month": 9,
         "tMin": 24,
         "tMax": 32,
-        "rainMm": 145
+        "rainMm": 176
       },
       {
         "month": 10,
-        "tMin": 22,
-        "tMax": 30,
-        "rainMm": 160
+        "tMin": 23,
+        "tMax": 31,
+        "rainMm": 140
       },
       {
         "month": 11,
-        "tMin": 20,
-        "tMax": 28,
-        "rainMm": 95
+        "tMin": 22,
+        "tMax": 29,
+        "rainMm": 83
       },
       {
         "month": 12,
-        "tMin": 19,
+        "tMin": 20,
         "tMax": 27,
-        "rainMm": 60
+        "rainMm": 58
       }
     ],
     "food": [
@@ -384,10 +384,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Havana (Havana Province, Casa Blanca Station) 1991–2020 normals, extremes 1859–p» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Havana"
     },
     {
       "title": "Этнический состав — перепись населения Кубы 2012 года (ONEI) — по данным CIA World Factbook"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

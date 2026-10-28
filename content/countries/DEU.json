@@ -128,73 +128,73 @@
         "month": 1,
         "tMin": -2,
         "tMax": 3,
-        "rainMm": 43
+        "rainMm": 42
       },
       {
         "month": 2,
-        "tMin": -1,
+        "tMin": -2,
         "tMax": 5,
-        "rainMm": 33
+        "rainMm": 30
       },
       {
         "month": 3,
-        "tMin": 1,
-        "tMax": 10,
-        "rainMm": 41
+        "tMin": 0,
+        "tMax": 9,
+        "rainMm": 36
       },
       {
         "month": 4,
         "tMin": 4,
         "tMax": 15,
-        "rainMm": 37
+        "rainMm": 28
       },
       {
         "month": 5,
         "tMin": 8,
         "tMax": 20,
-        "rainMm": 54
+        "rainMm": 53
       },
       {
         "month": 6,
         "tMin": 12,
         "tMax": 23,
-        "rainMm": 69
+        "rainMm": 60
       },
       {
         "month": 7,
         "tMin": 14,
         "tMax": 25,
-        "rainMm": 56
+        "rainMm": 70
       },
       {
         "month": 8,
-        "tMin": 13,
+        "tMin": 14,
         "tMax": 25,
-        "rainMm": 58
+        "rainMm": 52
       },
       {
         "month": 9,
         "tMin": 10,
         "tMax": 20,
-        "rainMm": 45
+        "rainMm": 44
       },
       {
         "month": 10,
         "tMin": 6,
         "tMax": 14,
-        "rainMm": 37
+        "rainMm": 40
       },
       {
         "month": 11,
         "tMin": 2,
         "tMax": 8,
-        "rainMm": 45
+        "rainMm": 39
       },
       {
         "month": 12,
-        "tMin": 0,
+        "tMin": -1,
         "tMax": 4,
-        "rainMm": 48
+        "rainMm": 39
       }
     ],
     "food": [
@@ -420,7 +420,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Berlin (Brandenburg), 1991–2020, extremes 1957–present» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Berlin"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

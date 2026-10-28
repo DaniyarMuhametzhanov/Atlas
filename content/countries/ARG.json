@@ -103,74 +103,74 @@
       {
         "month": 1,
         "tMin": 20,
-        "tMax": 29,
-        "rainMm": 125
+        "tMax": 30,
+        "rainMm": 134
       },
       {
         "month": 2,
         "tMin": 19,
-        "tMax": 28,
-        "rainMm": 110
+        "tMax": 29,
+        "rainMm": 129
       },
       {
         "month": 3,
         "tMin": 18,
-        "tMax": 26,
-        "rainMm": 130
+        "tMax": 27,
+        "rainMm": 120
       },
       {
         "month": 4,
         "tMin": 14,
-        "tMax": 22,
-        "rainMm": 100
+        "tMax": 23,
+        "rainMm": 130
       },
       {
         "month": 5,
         "tMin": 11,
-        "tMax": 18,
-        "rainMm": 80
+        "tMax": 19,
+        "rainMm": 94
       },
       {
         "month": 6,
         "tMin": 8,
-        "tMax": 15,
-        "rainMm": 60
+        "tMax": 16,
+        "rainMm": 62
       },
       {
         "month": 7,
         "tMin": 8,
-        "tMax": 14,
-        "rainMm": 60
+        "tMax": 16,
+        "rainMm": 74
       },
       {
         "month": 8,
         "tMin": 9,
-        "tMax": 16,
+        "tMax": 18,
         "rainMm": 70
       },
       {
         "month": 9,
         "tMin": 11,
-        "tMax": 18,
-        "rainMm": 80
+        "tMax": 20,
+        "rainMm": 81
       },
       {
         "month": 10,
-        "tMin": 14,
-        "tMax": 22,
-        "rainMm": 100
+        "tMin": 13,
+        "tMax": 23,
+        "rainMm": 123
       },
       {
         "month": 11,
         "tMin": 16,
-        "tMax": 25,
-        "rainMm": 100
+        "tMax": 26,
+        "rainMm": 118
       },
       {
         "month": 12,
         "tMin": 19,
-        "tMax": 28,
-        "rainMm": 100
+        "tMax": 29,
+        "rainMm": 123
       }
     ],
     "food": [
@@ -379,7 +379,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Buenos Aires Central Observatory, located in Agronomía (1991–2020, extremes 1906» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Buenos_Aires"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

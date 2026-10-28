@@ -113,39 +113,39 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 8,
+        "tMin": 9,
         "tMax": 15,
-        "rainMm": 100
+        "rainMm": 104
       },
       {
         "month": 2,
         "tMin": 9,
         "tMax": 16,
-        "rainMm": 85
+        "rainMm": 78
       },
       {
         "month": 3,
-        "tMin": 10,
-        "tMax": 18,
-        "rainMm": 60
+        "tMin": 11,
+        "tMax": 19,
+        "rainMm": 69
       },
       {
         "month": 4,
-        "tMin": 11,
+        "tMin": 12,
         "tMax": 20,
-        "rainMm": 70
+        "rainMm": 72
       },
       {
         "month": 5,
-        "tMin": 13,
-        "tMax": 22,
-        "rainMm": 45
+        "tMin": 14,
+        "tMax": 23,
+        "rainMm": 58
       },
       {
         "month": 6,
-        "tMin": 16,
+        "tMin": 17,
         "tMax": 26,
-        "rainMm": 15
+        "rainMm": 14
       },
       {
         "month": 7,
@@ -155,33 +155,33 @@
       },
       {
         "month": 8,
-        "tMin": 18,
+        "tMin": 19,
         "tMax": 29,
         "rainMm": 5
       },
       {
         "month": 9,
-        "tMin": 17,
-        "tMax": 26,
-        "rainMm": 30
+        "tMin": 18,
+        "tMax": 27,
+        "rainMm": 39
       },
       {
         "month": 10,
-        "tMin": 14,
-        "tMax": 22,
-        "rainMm": 85
+        "tMin": 15,
+        "tMax": 23,
+        "rainMm": 111
       },
       {
         "month": 11,
-        "tMin": 11,
+        "tMin": 12,
         "tMax": 18,
-        "rainMm": 110
+        "rainMm": 134
       },
       {
         "month": 12,
         "tMin": 9,
-        "tMax": 16,
-        "rainMm": 105
+        "tMax": 15,
+        "rainMm": 109
       }
     ],
     "food": [
@@ -383,11 +383,16 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Lisbon (Instituto Geofísico D. Luís) (1991–2020 normals, extremes 1854–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Lisbon"
     },
     {
       "title": "Антониу Жозе Сегуру вступил в должность президента (правительство Португалии)",
       "url": "https://portugal.gov.pt/en/gc25/communication/news/prime-minister-wishes-antonio-jose-seguro-greatest-success-at-the-start-of-his-presidential-term"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

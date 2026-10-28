@@ -100,36 +100,36 @@
       {
         "month": 1,
         "tMin": 14,
-        "tMax": 24,
-        "rainMm": 19
+        "tMax": 25,
+        "rainMm": 13
       },
       {
         "month": 2,
-        "tMin": 15,
-        "tMax": 26,
-        "rainMm": 25
+        "tMin": 16,
+        "tMax": 27,
+        "rainMm": 8
       },
       {
         "month": 3,
         "tMin": 18,
-        "tMax": 29,
-        "rainMm": 22
+        "tMax": 30,
+        "rainMm": 13
       },
       {
         "month": 4,
         "tMin": 21,
-        "tMax": 34,
-        "rainMm": 7
+        "tMax": 35,
+        "rainMm": 5
       },
       {
         "month": 5,
         "tMin": 25,
-        "tMax": 39,
+        "tMax": 40,
         "rainMm": 0
       },
       {
         "month": 6,
-        "tMin": 28,
+        "tMin": 27,
         "tMax": 41,
         "rainMm": 0
       },
@@ -137,7 +137,7 @@
         "month": 7,
         "tMin": 30,
         "tMax": 43,
-        "rainMm": 0
+        "rainMm": 1
       },
       {
         "month": 8,
@@ -148,26 +148,26 @@
       {
         "month": 9,
         "tMin": 27,
-        "tMax": 40,
+        "tMax": 41,
         "rainMm": 0
       },
       {
         "month": 10,
-        "tMin": 23,
-        "tMax": 36,
+        "tMin": 24,
+        "tMax": 37,
         "rainMm": 0
       },
       {
         "month": 11,
-        "tMin": 19,
-        "tMax": 30,
-        "rainMm": 3
+        "tMin": 20,
+        "tMax": 31,
+        "rainMm": 2
       },
       {
         "month": 12,
         "tMin": 16,
-        "tMax": 26,
-        "rainMm": 15
+        "tMax": 27,
+        "rainMm": 8
       }
     ],
     "food": [
@@ -386,7 +386,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Abu Dhabi (Zayed International Airport), 1991–2020 normals» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Abu_Dhabi"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

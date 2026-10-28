@@ -107,75 +107,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 23,
-        "tMax": 32,
-        "rainMm": 158
+        "tMin": 24,
+        "tMax": 33,
+        "rainMm": 227
       },
       {
         "month": 2,
-        "tMin": 23,
+        "tMin": 24,
         "tMax": 33,
-        "rainMm": 172
+        "rainMm": 193
       },
       {
         "month": 3,
-        "tMin": 24,
-        "tMax": 33,
-        "rainMm": 240
+        "tMin": 25,
+        "tMax": 34,
+        "rainMm": 270
       },
       {
         "month": 4,
-        "tMin": 24,
-        "tMax": 33,
-        "rainMm": 290
+        "tMin": 25,
+        "tMax": 34,
+        "rainMm": 302
       },
       {
         "month": 5,
-        "tMin": 24,
-        "tMax": 33,
-        "rainMm": 260
+        "tMin": 25,
+        "tMax": 34,
+        "rainMm": 230
       },
       {
         "month": 6,
-        "tMin": 24,
+        "tMin": 25,
         "tMax": 33,
-        "rainMm": 160
+        "rainMm": 146
       },
       {
         "month": 7,
-        "tMin": 23,
-        "tMax": 32,
-        "rainMm": 150
+        "tMin": 24,
+        "tMax": 33,
+        "rainMm": 165
       },
       {
         "month": 8,
-        "tMin": 23,
-        "tMax": 32,
-        "rainMm": 190
+        "tMin": 25,
+        "tMax": 33,
+        "rainMm": 174
       },
       {
         "month": 9,
-        "tMin": 23,
-        "tMax": 32,
+        "tMin": 24,
+        "tMax": 33,
         "rainMm": 220
       },
       {
         "month": 10,
-        "tMin": 23,
-        "tMax": 32,
-        "rainMm": 265
+        "tMin": 24,
+        "tMax": 33,
+        "rainMm": 284
       },
       {
         "month": 11,
-        "tMin": 23,
+        "tMin": 24,
         "tMax": 32,
-        "rainMm": 310
+        "rainMm": 356
       },
       {
         "month": 12,
-        "tMin": 23,
+        "tMin": 24,
         "tMax": 32,
-        "rainMm": 250
+        "rainMm": 281
       }
     ],
     "food": [
@@ -384,10 +384,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Kuala Lumpur (Sultan Abdul Aziz Shah Airport) (1991–2020 normals, extremes 1963–» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Kuala_Lumpur"
     },
     {
       "title": "Этнический состав — статистика Департамента статистики Малайзии, 2020 год (среди граждан)"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

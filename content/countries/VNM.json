@@ -118,68 +118,68 @@
       },
       {
         "month": 2,
-        "tMin": 15,
-        "tMax": 21,
-        "rainMm": 25
+        "tMin": 16,
+        "tMax": 22,
+        "rainMm": 20
       },
       {
         "month": 3,
-        "tMin": 18,
-        "tMax": 24,
-        "rainMm": 40
+        "tMin": 21,
+        "tMax": 26,
+        "rainMm": 36
       },
       {
         "month": 4,
-        "tMin": 21,
-        "tMax": 28,
-        "rainMm": 90
+        "tMin": 22,
+        "tMax": 29,
+        "rainMm": 104
       },
       {
         "month": 5,
-        "tMin": 24,
-        "tMax": 32,
-        "rainMm": 190
+        "tMin": 25,
+        "tMax": 33,
+        "rainMm": 165
       },
       {
         "month": 6,
-        "tMin": 26,
-        "tMax": 33,
-        "rainMm": 240
+        "tMin": 27,
+        "tMax": 35,
+        "rainMm": 264
       },
       {
         "month": 7,
-        "tMin": 26,
-        "tMax": 33,
-        "rainMm": 320
+        "tMin": 27,
+        "tMax": 34,
+        "rainMm": 254
       },
       {
         "month": 8,
         "tMin": 26,
         "tMax": 33,
-        "rainMm": 340
+        "rainMm": 274
       },
       {
         "month": 9,
         "tMin": 25,
         "tMax": 32,
-        "rainMm": 260
+        "rainMm": 228
       },
       {
         "month": 10,
-        "tMin": 22,
-        "tMax": 29,
-        "rainMm": 120
+        "tMin": 23,
+        "tMax": 30,
+        "rainMm": 155
       },
       {
         "month": 11,
-        "tMin": 19,
-        "tMax": 26,
-        "rainMm": 45
+        "tMin": 20,
+        "tMax": 27,
+        "rainMm": 61
       },
       {
         "month": 12,
-        "tMin": 15,
-        "tMax": 22,
+        "tMin": 14,
+        "tMax": 21,
         "rainMm": 20
       }
     ],
@@ -410,7 +410,8 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «downtown Hanoi (Láng) (1991–2020 normals) located in (Đống Đa district)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Hanoi"
     },
     {
       "title": "Этнический состав — перепись населения Вьетнама 2019 года"
@@ -418,6 +419,10 @@
     {
       "title": "Национальное собрание избрало То Лама президентом (VietNamNet)",
       "url": "https://vietnamnet.vn/en/general-secretary-to-lam-elected-state-president-with-unanimous-vote-2504092.html"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

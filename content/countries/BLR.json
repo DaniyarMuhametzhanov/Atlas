@@ -110,75 +110,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -8,
-        "tMax": -3,
-        "rainMm": 45
+        "tMin": -6,
+        "tMax": -2,
+        "rainMm": 47
       },
       {
         "month": 2,
-        "tMin": -8,
-        "tMax": -2,
-        "rainMm": 38
-      },
-      {
-        "month": 3,
-        "tMin": -4,
-        "tMax": 3,
+        "tMin": -6,
+        "tMax": -1,
         "rainMm": 40
       },
       {
+        "month": 3,
+        "tMin": -3,
+        "tMax": 5,
+        "rainMm": 41
+      },
+      {
         "month": 4,
-        "tMin": 2,
-        "tMax": 12,
-        "rainMm": 42
+        "tMin": 3,
+        "tMax": 13,
+        "rainMm": 43
       },
       {
         "month": 5,
-        "tMin": 7,
-        "tMax": 18,
-        "rainMm": 60
+        "tMin": 8,
+        "tMax": 19,
+        "rainMm": 66
       },
       {
         "month": 6,
-        "tMin": 11,
-        "tMax": 21,
-        "rainMm": 80
+        "tMin": 12,
+        "tMax": 22,
+        "rainMm": 79
       },
       {
         "month": 7,
         "tMin": 14,
-        "tMax": 23,
-        "rainMm": 85
+        "tMax": 24,
+        "rainMm": 97
       },
       {
         "month": 8,
         "tMin": 13,
-        "tMax": 22,
-        "rainMm": 70
+        "tMax": 24,
+        "rainMm": 71
       },
       {
         "month": 9,
-        "tMin": 8,
-        "tMax": 17,
-        "rainMm": 60
+        "tMin": 9,
+        "tMax": 18,
+        "rainMm": 51
       },
       {
         "month": 10,
-        "tMin": 3,
+        "tMin": 4,
         "tMax": 10,
         "rainMm": 55
       },
       {
         "month": 11,
-        "tMin": -1,
-        "tMax": 3,
-        "rainMm": 50
+        "tMin": 0,
+        "tMax": 4,
+        "rainMm": 49
       },
       {
         "month": 12,
-        "tMin": -5,
+        "tMin": -4,
         "tMax": -1,
-        "rainMm": 50
+        "rainMm": 47
       }
     ],
     "food": [
@@ -391,10 +391,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Minsk (1991–2020 normals, extremes 1887–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Minsk"
     },
     {
       "title": "Этнический состав — перепись населения Беларуси 2019 года (Белстат)"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

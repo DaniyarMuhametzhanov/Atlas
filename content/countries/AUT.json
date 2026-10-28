@@ -115,75 +115,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -3,
-        "tMax": 2,
+        "tMin": 0,
+        "tMax": 4,
         "rainMm": 38
       },
       {
         "month": 2,
-        "tMin": -2,
-        "tMax": 5,
-        "rainMm": 40
+        "tMin": 1,
+        "tMax": 7,
+        "rainMm": 34
       },
       {
         "month": 3,
-        "tMin": 2,
-        "tMax": 10,
-        "rainMm": 50
+        "tMin": 4,
+        "tMax": 11,
+        "rainMm": 46
       },
       {
         "month": 4,
-        "tMin": 6,
-        "tMax": 16,
-        "rainMm": 48
-      },
-      {
-        "month": 5,
-        "tMin": 11,
-        "tMax": 21,
-        "rainMm": 70
-      },
-      {
-        "month": 6,
-        "tMin": 14,
-        "tMax": 24,
-        "rainMm": 80
-      },
-      {
-        "month": 7,
-        "tMin": 16,
-        "tMax": 27,
-        "rainMm": 85
-      },
-      {
-        "month": 8,
-        "tMin": 16,
-        "tMax": 26,
-        "rainMm": 75
-      },
-      {
-        "month": 9,
-        "tMin": 12,
-        "tMax": 21,
-        "rainMm": 55
-      },
-      {
-        "month": 10,
-        "tMin": 7,
-        "tMax": 14,
+        "tMin": 9,
+        "tMax": 17,
         "rainMm": 40
       },
       {
+        "month": 5,
+        "tMin": 12,
+        "tMax": 21,
+        "rainMm": 78
+      },
+      {
+        "month": 6,
+        "tMin": 16,
+        "tMax": 26,
+        "rainMm": 82
+      },
+      {
+        "month": 7,
+        "tMin": 18,
+        "tMax": 27,
+        "rainMm": 80
+      },
+      {
+        "month": 8,
+        "tMin": 18,
+        "tMax": 27,
+        "rainMm": 74
+      },
+      {
+        "month": 9,
+        "tMin": 14,
+        "tMax": 22,
+        "rainMm": 67
+      },
+      {
+        "month": 10,
+        "tMin": 9,
+        "tMax": 15,
+        "rainMm": 48
+      },
+      {
         "month": 11,
-        "tMin": 2,
-        "tMax": 7,
-        "rainMm": 50
+        "tMin": 5,
+        "tMax": 10,
+        "rainMm": 43
       },
       {
         "month": 12,
-        "tMin": -2,
-        "tMax": 3,
-        "rainMm": 45
+        "tMin": 1,
+        "tMax": 5,
+        "rainMm": 40
       }
     ],
     "food": [
@@ -409,7 +409,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Vienna (Innere Stadt), 1991–2020 normals, extremes 1775–present» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Vienna"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

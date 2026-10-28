@@ -110,75 +110,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -4,
-        "tMax": 1,
-        "rainMm": 23
+        "tMin": 0,
+        "tMax": 4,
+        "rainMm": 18
       },
       {
         "month": 2,
-        "tMin": -3,
-        "tMax": 3,
-        "rainMm": 22
+        "tMin": 0,
+        "tMax": 6,
+        "rainMm": 16
       },
       {
         "month": 3,
-        "tMin": 0,
-        "tMax": 8,
-        "rainMm": 29
+        "tMin": 3,
+        "tMax": 10,
+        "rainMm": 26
       },
       {
         "month": 4,
-        "tMin": 4,
-        "tMax": 14,
-        "rainMm": 34
+        "tMin": 7,
+        "tMax": 16,
+        "rainMm": 25
       },
       {
         "month": 5,
-        "tMin": 9,
-        "tMax": 19,
-        "rainMm": 67
+        "tMin": 11,
+        "tMax": 21,
+        "rainMm": 58
       },
       {
         "month": 6,
-        "tMin": 12,
-        "tMax": 22,
+        "tMin": 15,
+        "tMax": 24,
         "rainMm": 69
       },
       {
         "month": 7,
-        "tMin": 14,
-        "tMax": 25,
-        "rainMm": 73
+        "tMin": 17,
+        "tMax": 27,
+        "rainMm": 67
       },
       {
         "month": 8,
-        "tMin": 14,
-        "tMax": 25,
-        "rainMm": 64
+        "tMin": 16,
+        "tMax": 26,
+        "rainMm": 62
       },
       {
         "month": 9,
-        "tMin": 10,
+        "tMin": 12,
         "tMax": 20,
-        "rainMm": 40
+        "rainMm": 34
       },
       {
         "month": 10,
-        "tMin": 5,
-        "tMax": 13,
+        "tMin": 8,
+        "tMax": 14,
         "rainMm": 30
       },
       {
         "month": 11,
-        "tMin": 1,
-        "tMax": 6,
-        "rainMm": 36
+        "tMin": 4,
+        "tMax": 9,
+        "rainMm": 26
       },
       {
         "month": 12,
-        "tMin": -2,
-        "tMax": 2,
-        "rainMm": 32
+        "tMin": 1,
+        "tMax": 5,
+        "rainMm": 23
       }
     ],
     "food": [
@@ -387,10 +387,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Clementinum, PragueWMO ID: 11515; 1991–2020 normals, extremes 1775–present» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Prague"
     },
     {
       "title": "Этнический состав — перепись населения Чехии 2021 года (по данным ЦРУ World Factbook); почти треть жителей не ответила на вопрос"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

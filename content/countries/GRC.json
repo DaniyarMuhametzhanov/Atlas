@@ -125,75 +125,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 6,
+        "tMin": 7,
         "tMax": 13,
-        "rainMm": 55
+        "rainMm": 56
       },
       {
         "month": 2,
         "tMin": 7,
         "tMax": 14,
-        "rainMm": 45
+        "rainMm": 44
       },
       {
         "month": 3,
-        "tMin": 8,
+        "tMin": 9,
         "tMax": 17,
-        "rainMm": 40
+        "rainMm": 46
       },
       {
         "month": 4,
-        "tMin": 11,
+        "tMin": 12,
         "tMax": 21,
-        "rainMm": 25
+        "rainMm": 28
       },
       {
         "month": 5,
-        "tMin": 15,
-        "tMax": 26,
-        "rainMm": 15
+        "tMin": 17,
+        "tMax": 27,
+        "rainMm": 21
       },
       {
         "month": 6,
-        "tMin": 19,
-        "tMax": 31,
-        "rainMm": 6
+        "tMin": 22,
+        "tMax": 32,
+        "rainMm": 12
       },
       {
         "month": 7,
-        "tMin": 22,
+        "tMin": 24,
         "tMax": 34,
-        "rainMm": 2
+        "rainMm": 11
       },
       {
         "month": 8,
-        "tMin": 22,
+        "tMin": 24,
         "tMax": 34,
         "rainMm": 5
       },
       {
         "month": 9,
-        "tMin": 19,
+        "tMin": 20,
         "tMax": 30,
-        "rainMm": 12
+        "rainMm": 26
       },
       {
         "month": 10,
-        "tMin": 15,
+        "tMin": 16,
         "tMax": 24,
-        "rainMm": 40
+        "rainMm": 39
       },
       {
         "month": 11,
-        "tMin": 11,
-        "tMax": 18,
-        "rainMm": 55
+        "tMin": 12,
+        "tMax": 19,
+        "rainMm": 71
       },
       {
         "month": 12,
-        "tMin": 8,
+        "tMin": 9,
         "tMax": 14,
-        "rainMm": 60
+        "rainMm": 76
       }
     ],
     "food": [
@@ -390,10 +390,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «downtown Athens (1991–2020 normals, extremes 1890–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Athens"
     },
     {
       "title": "Этнический состав — перепись населения Греции 2021 года (ELSTAT); граждане/иностранцы"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

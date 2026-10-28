@@ -109,75 +109,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 24,
-        "tMax": 30,
-        "rainMm": 300
+        "tMin": 25,
+        "tMax": 31,
+        "rainMm": 373
       },
       {
         "month": 2,
-        "tMin": 24,
-        "tMax": 30,
-        "rainMm": 300
+        "tMin": 25,
+        "tMax": 31,
+        "rainMm": 381
       },
       {
         "month": 3,
-        "tMin": 24,
-        "tMax": 31,
+        "tMin": 26,
+        "tMax": 32,
         "rainMm": 210
       },
       {
         "month": 4,
-        "tMin": 24,
-        "tMax": 32,
-        "rainMm": 150
+        "tMin": 26,
+        "tMax": 33,
+        "rainMm": 164
       },
       {
         "month": 5,
-        "tMin": 24,
-        "tMax": 32,
-        "rainMm": 120
+        "tMin": 26,
+        "tMax": 33,
+        "rainMm": 103
       },
       {
         "month": 6,
-        "tMin": 24,
-        "tMax": 31,
-        "rainMm": 95
+        "tMin": 26,
+        "tMax": 33,
+        "rainMm": 80
       },
       {
         "month": 7,
-        "tMin": 23,
-        "tMax": 31,
-        "rainMm": 65
+        "tMin": 25,
+        "tMax": 33,
+        "rainMm": 78
       },
       {
         "month": 8,
-        "tMin": 23,
-        "tMax": 31,
-        "rainMm": 50
+        "tMin": 25,
+        "tMax": 33,
+        "rainMm": 52
       },
       {
         "month": 9,
-        "tMin": 24,
-        "tMax": 32,
-        "rainMm": 65
+        "tMin": 26,
+        "tMax": 33,
+        "rainMm": 61
       },
       {
         "month": 10,
-        "tMin": 24,
-        "tMax": 32,
-        "rainMm": 110
+        "tMin": 26,
+        "tMax": 33,
+        "rainMm": 112
       },
       {
         "month": 11,
-        "tMin": 24,
-        "tMax": 31,
-        "rainMm": 170
+        "tMin": 26,
+        "tMax": 33,
+        "rainMm": 135
       },
       {
         "month": 12,
-        "tMin": 24,
-        "tMax": 31,
-        "rainMm": 220
+        "tMin": 26,
+        "tMax": 32,
+        "rainMm": 183
       }
     ],
     "food": [
@@ -399,10 +399,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Jakarta, 1991–2020 normals» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Jakarta"
     },
     {
       "title": "Этнический состав — перепись населения Индонезии 2010 года (последняя с данными по этносам)"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

@@ -127,75 +127,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -18,
+        "tMin": -19,
         "tMax": -10,
-        "rainMm": 15
+        "rainMm": 18
       },
       {
         "month": 2,
         "tMin": -18,
         "tMax": -9,
-        "rainMm": 13
+        "rainMm": 17
       },
       {
         "month": 3,
-        "tMin": -11,
-        "tMax": -2,
-        "rainMm": 16
+        "tMin": -10,
+        "tMax": -1,
+        "rainMm": 20
       },
       {
         "month": 4,
-        "tMin": 0,
+        "tMin": 1,
         "tMax": 12,
-        "rainMm": 25
+        "rainMm": 22
       },
       {
         "month": 5,
-        "tMin": 7,
-        "tMax": 20,
+        "tMin": 8,
+        "tMax": 21,
         "rainMm": 33
       },
       {
         "month": 6,
-        "tMin": 12,
+        "tMin": 13,
         "tMax": 26,
         "rainMm": 40
       },
       {
         "month": 7,
         "tMin": 15,
-        "tMax": 28,
-        "rainMm": 55
+        "tMax": 27,
+        "rainMm": 56
       },
       {
         "month": 8,
         "tMin": 13,
         "tMax": 26,
-        "rainMm": 35
+        "rainMm": 31
       },
       {
         "month": 9,
         "tMin": 7,
-        "tMax": 20,
-        "rainMm": 25
+        "tMax": 19,
+        "rainMm": 21
       },
       {
         "month": 10,
-        "tMin": 0,
-        "tMax": 11,
-        "rainMm": 28
+        "tMin": 1,
+        "tMax": 10,
+        "rainMm": 26
       },
       {
         "month": 11,
         "tMin": -9,
-        "tMax": 0,
-        "rainMm": 25
+        "tMax": -1,
+        "rainMm": 29
       },
       {
         "month": 12,
-        "tMin": -15,
-        "tMax": -7,
-        "rainMm": 22
+        "tMin": -16,
+        "tMax": -8,
+        "rainMm": 25
       }
     ],
     "food": [
@@ -426,11 +426,16 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Astana (1991–2020, extremes 1881–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Astana"
     },
     {
       "title": "Курултай утвердил вице-президента и премьер-министра (The Times of Central Asia)",
       "url": "https://timesca.com/kazakhstan-vice-president-prime-minister-approved/"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

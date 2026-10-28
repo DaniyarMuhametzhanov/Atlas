@@ -128,13 +128,13 @@
     "climate": [
       {
         "month": 1,
-        "tMin": 9,
+        "tMin": 10,
         "tMax": 19,
         "rainMm": 5
       },
       {
         "month": 2,
-        "tMin": 10,
+        "tMin": 11,
         "tMax": 21,
         "rainMm": 4
       },
@@ -142,19 +142,19 @@
         "month": 3,
         "tMin": 13,
         "tMax": 24,
-        "rainMm": 4
+        "rainMm": 6
       },
       {
         "month": 4,
         "tMin": 16,
         "tMax": 28,
-        "rainMm": 2
+        "rainMm": 1
       },
       {
         "month": 5,
-        "tMin": 20,
-        "tMax": 33,
-        "rainMm": 1
+        "tMin": 19,
+        "tMax": 32,
+        "rainMm": 0
       },
       {
         "month": 6,
@@ -164,39 +164,39 @@
       },
       {
         "month": 7,
-        "tMin": 23,
+        "tMin": 24,
         "tMax": 35,
         "rainMm": 0
       },
       {
         "month": 8,
-        "tMin": 23,
-        "tMax": 34,
+        "tMin": 24,
+        "tMax": 35,
         "rainMm": 0
       },
       {
         "month": 9,
-        "tMin": 22,
+        "tMin": 23,
         "tMax": 33,
         "rainMm": 0
       },
       {
         "month": 10,
-        "tMin": 19,
+        "tMin": 20,
         "tMax": 30,
         "rainMm": 1
       },
       {
         "month": 11,
-        "tMin": 14,
+        "tMin": 16,
         "tMax": 25,
-        "rainMm": 3
+        "rainMm": 4
       },
       {
         "month": 12,
-        "tMin": 10,
-        "tMax": 20,
-        "rainMm": 5
+        "tMin": 12,
+        "tMax": 21,
+        "rainMm": 3
       }
     ],
     "food": [
@@ -394,7 +394,12 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Cairo (Cairo International Airport), 1991–2020 normals» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Cairo"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }

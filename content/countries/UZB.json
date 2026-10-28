@@ -112,75 +112,75 @@
     "climate": [
       {
         "month": 1,
-        "tMin": -3,
-        "tMax": 6,
-        "rainMm": 50
+        "tMin": -1,
+        "tMax": 7,
+        "rainMm": 55
       },
       {
         "month": 2,
         "tMin": 0,
-        "tMax": 9,
-        "rainMm": 48
+        "tMax": 10,
+        "rainMm": 72
       },
       {
         "month": 3,
-        "tMin": 6,
+        "tMin": 5,
         "tMax": 16,
-        "rainMm": 70
+        "rainMm": 66
       },
       {
         "month": 4,
-        "tMin": 12,
-        "tMax": 24,
-        "rainMm": 60
+        "tMin": 10,
+        "tMax": 22,
+        "rainMm": 63
       },
       {
         "month": 5,
-        "tMin": 17,
-        "tMax": 30,
-        "rainMm": 35
+        "tMin": 14,
+        "tMax": 28,
+        "rainMm": 41
       },
       {
         "month": 6,
-        "tMin": 22,
-        "tMax": 36,
-        "rainMm": 10
+        "tMin": 18,
+        "tMax": 34,
+        "rainMm": 17
       },
       {
         "month": 7,
-        "tMin": 24,
-        "tMax": 37,
+        "tMin": 20,
+        "tMax": 36,
         "rainMm": 3
       },
       {
         "month": 8,
-        "tMin": 22,
+        "tMin": 18,
         "tMax": 35,
         "rainMm": 2
       },
       {
         "month": 9,
-        "tMin": 16,
-        "tMax": 29,
+        "tMin": 13,
+        "tMax": 30,
         "rainMm": 5
       },
       {
         "month": 10,
-        "tMin": 9,
-        "tMax": 21,
-        "rainMm": 30
+        "tMin": 8,
+        "tMax": 22,
+        "rainMm": 24
       },
       {
         "month": 11,
-        "tMin": 3,
-        "tMax": 13,
-        "rainMm": 45
+        "tMin": 4,
+        "tMax": 14,
+        "rainMm": 51
       },
       {
         "month": 12,
-        "tMin": -1,
-        "tMax": 7,
-        "rainMm": 50
+        "tMin": 0,
+        "tMax": 9,
+        "rainMm": 58
       }
     ],
     "food": [
@@ -395,10 +395,15 @@
       "url": "https://en.wikipedia.org/wiki/Visa_requirements_for_Kazakhstani_citizens"
     },
     {
-      "title": "Климат столицы — средние многолетние значения по данным национальной метеослужбы (таблицы Википедии)"
+      "title": "Климат столицы — средние многолетние значения метеостанции «Tashkent (1991–2020 normals, extremes 1867–present)» (таблица Википедии)",
+      "url": "https://en.wikipedia.org/wiki/Tashkent"
     },
     {
       "title": "Этнический состав — оценка по данным Агентства статистики Узбекистана за 2021–2022 годы"
+    },
+    {
+      "title": "Руководители — Википедия, «Список действующих глав государств и правительств» (октябрь 2026)",
+      "url": "https://en.wikipedia.org/wiki/List_of_current_heads_of_state_and_government"
     }
   ]
 }
