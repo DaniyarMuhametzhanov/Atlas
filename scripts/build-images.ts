@@ -13,6 +13,7 @@ import { ORIGINALS, ROOT, SOURCES, readJson, writeJson, type Sources } from './l
 const WIDTHS = [480, 1200, 2000];
 // качество подобрано так, чтобы ~560 фото уложились в лимит хостинга
 const QUALITY: Record<number, { webp: number; avif: number }> = {
+  // ширина, которой нет в списке (например 1920), берёт качество ближайшей большей
   480: { webp: 78, avif: 55 },
   1200: { webp: 74, avif: 50 },
   2000: { webp: 70, avif: 45 },
@@ -35,7 +36,8 @@ for (const p of sources.photos) {
     const img = sharp(orig, { failOn: 'none' }).rotate(); // rotate() — учесть поворот из EXIF
     const { width = 0, height = 0 } = await img.metadata();
     const widths = WIDTHS.filter((w) => w <= width);
-    if (!widths.length) widths.push(width);
+    // исходник 1920 px (Commons не отдаёт 2000) — крупнейшей версией будет он сам
+    if (!widths.length || (width < 2000 && width > widths[widths.length - 1] * 1.2)) widths.push(width);
     const files: Record<string, string> = {};
     const avif: Record<string, string> = {};
     for (const w of widths) {
@@ -43,7 +45,7 @@ for (const p of sources.photos) {
         const rel = `img/${p.id}-${w}.${fmt}`;
         const dst = path.join(PUBLIC, rel);
         if (!fs.existsSync(dst) || fs.statSync(dst).mtimeMs < fs.statSync(orig).mtimeMs) {
-          const q = QUALITY[w] ?? QUALITY[2000];
+          const q = QUALITY[WIDTHS.find((x) => x >= w) ?? 2000];
           const pipe = img.clone().resize({ width: w, withoutEnlargement: true });
           await (fmt === 'webp' ? pipe.webp({ quality: q.webp }) : pipe.avif({ quality: q.avif, effort: 4 })).toFile(dst);
           made++;

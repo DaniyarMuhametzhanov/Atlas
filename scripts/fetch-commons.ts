@@ -1,8 +1,9 @@
 // Работа с Wikimedia Commons. Три режима:
 //
-//   npm run fetch:commons            — для каждого фото из content/sources.json скачать версию 2000 px
-//                                      в assets-src/commons/ и сверить автора и лицензию с тем, что записано.
-//                                      Отчёт: reports/commons-check.md
+//   npm run fetch:commons            — для каждого фото из content/sources.json скачать миниатюру 1920 px
+//                                      (или 1280 / 960, если оригинал меньше) в assets-src/commons/.
+//                                      Отчёт: reports/commons-download.md
+//   npm run fetch:commons -- --verify — сверить автора и лицензию через API (reports/commons-check.md)
 //   npm run fetch:commons -- --search — найти фото для мест без фото (список в content/photo-wanted.json).
 //                                      Итог: reports/commons-candidates.html — сетка на проверку владельцу.
 //   npm run fetch:commons -- --apply  — подключить выбранные фото из content/photo-picks.json
@@ -10,8 +11,10 @@
 //
 // Вежливость к Commons: User-Agent с адресом проекта, запросы по одному с паузой, maxlag.
 // Уже скачанные файлы повторно не качаются.
+import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
+import sharp from 'sharp';
 import {
   ORIGINALS, PICKS, ROOT, SOURCES, applyPicks, commonsTitle, commonsUrl, isFreeLicense, readJson, writeJson,
   type Pick, type Sources,
@@ -20,7 +23,6 @@ import {
 const API = 'https://commons.wikimedia.org/w/api.php';
 const UA = 'AtlasGuide/2.0 (https://github.com/daniyarmuhametzhanov/atlas) node-fetch';
 const PAUSE_MS = 1000;
-const WIDTH = 2000;
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
@@ -82,21 +84,86 @@ const plain = (html = '') => html.replace(/<[^>]*>/g, '').replace(/&amp;/g, '&')
 const meta = (ii: ImageInfo, key: string) => plain(ii.extmetadata?.[key]?.value);
 const norm = (s: string) => s.toLowerCase().replace(/[^\p{L}\p{N}]+/gu, '');
 
-// ---------- режим 1: скачать и сверить ----------
+// ---------- режим 1: скачать ----------
+// API Commons с облачных адресов часто отвечает 429, поэтому файлы берём без него — готовыми миниатюрами
+// стандартных ширин с upload.wikimedia.org. Адрес считается из имени файла:
+//   thumb/{md5[0]}/{md5[0..1]}/{имя}/{ширина}px-{имя}
+// 2000 px — нестандартная ширина (сервер отвечает 400), берём 1920. Если оригинал меньше — 1280, затем 960.
+const THUMB_WIDTHS = [1920, 1280, 960];
+const MAX_PASSES = 8;
+
+function thumbUrl(title: string, width: number): string {
+  const name = title.replace(/^File:/, '').replace(/ /g, '_');
+  const md5 = createHash('md5').update(name).digest('hex');
+  const enc = encodeURIComponent(name);
+  return `https://upload.wikimedia.org/wikipedia/commons/thumb/${md5[0]}/${md5.slice(0, 2)}/${enc}/${width}px-${enc}`;
+}
+
+type Manifest = Record<string, { file: string; width: number; height: number }>;
+
 async function download(sources: Sources) {
   fs.mkdirSync(ORIGINALS, { recursive: true });
   const manifestFile = path.join(ORIGINALS, 'manifest.json');
-  const manifest: Record<string, { file: string; width: number; height: number; origWidth: number; origHeight: number }> =
-    fs.existsSync(manifestFile) ? readJson(manifestFile) : {};
-  const todo = sources.photos.filter((p) => !manifest[p.id] || !fs.existsSync(path.join(ORIGINALS, manifest[p.id].file)));
+  const manifest: Manifest = fs.existsSync(manifestFile) ? readJson(manifestFile) : {};
+  let todo = sources.photos.filter((p) => !manifest[p.id] || !fs.existsSync(path.join(ORIGINALS, manifest[p.id].file)));
   console.log(`Фото в sources.json: ${sources.photos.length}, нужно скачать: ${todo.length}`);
-  const info = await imageInfo(todo.map((p) => commonsTitle(p.url)), WIDTH);
-
-  const problems: string[] = [];
+  const missing: string[] = [];
   let bytes = 0;
-  for (const [n, p] of todo.entries()) {
-    const page = info.get(commonsTitle(p.url));
-    const ii = page?.imageinfo?.[0];
+  let got = 0;
+  for (let pass = 1; pass <= MAX_PASSES && todo.length; pass++) {
+    const later: typeof todo = [];
+    for (const p of todo) {
+      const title = commonsTitle(p.url);
+      let done = false;
+      let limited = false;
+      for (const w of THUMB_WIDTHS) {
+        const res = await fetch(thumbUrl(title, w), { headers: { 'User-Agent': UA } }).catch(() => null);
+        await sleep(PAUSE_MS);
+        if (!res) {
+          limited = true;
+          break;
+        }
+        if (res.status === 429) {
+          // сервер просит подождать — ждём сколько сказано и откладываем фото на следующий проход
+          await sleep(Math.max(10, Number(res.headers.get('retry-after') ?? 10)) * 1000);
+          limited = true;
+          break;
+        }
+        if (!res.ok) continue; // 400/404 — такой ширины нет (оригинал меньше), пробуем меньшую
+        const buf = Buffer.from(await res.arrayBuffer());
+        const file = `${p.id}.jpg`;
+        fs.writeFileSync(path.join(ORIGINALS, file), buf);
+        const m = await sharp(buf).metadata();
+        manifest[p.id] = { file, width: m.width ?? w, height: m.height ?? 0 };
+        bytes += buf.length;
+        got++;
+        done = true;
+        break;
+      }
+      if (!done && limited) later.push(p);
+      else if (!done) missing.push(`| ${p.id} | нет миниатюры 960 px и больше (файл удалён, переименован или слишком мал) | ${p.url} |`);
+      if (got % 10 === 0) writeJson(manifestFile, manifest); // чтобы обрыв не терял сделанное
+      process.stdout.write(`  проход ${pass}: скачано ${got}, отложено ${later.length}, ${(bytes / 1048576).toFixed(0)} МБ\r`);
+    }
+    writeJson(manifestFile, manifest);
+    console.log(`\nПроход ${pass}: осталось ${later.length}`);
+    todo = later;
+  }
+  for (const p of todo) missing.push(`| ${p.id} | не скачано: сервер ${MAX_PASSES} раз ответил «слишком много запросов» | ${p.url} |`);
+  fs.writeFileSync(
+    path.join(ROOT, 'reports/commons-download.md'),
+    `# Скачивание фото с Wikimedia Commons\n\nСкачано за этот запуск: ${got}. Всего в папке: ${Object.keys(manifest).length} из ${sources.photos.length}. Не скачано: ${missing.length}.\n\n` +
+      (missing.length ? `| id | почему | страница |\n|---|---|---|\n${missing.join('\n')}\n` : ''),
+  );
+  console.log(`Готово. Не скачано: ${missing.length} (reports/commons-download.md). Повторный запуск докачает отложенные.`);
+}
+
+// ---------- режим 1б: сверить автора и лицензию через API (--verify) ----------
+async function verify(sources: Sources) {
+  const info = await imageInfo(sources.photos.map((p) => commonsTitle(p.url)), 960);
+  const problems: string[] = [];
+  for (const p of sources.photos) {
+    const ii = info.get(commonsTitle(p.url))?.imageinfo?.[0];
     if (!ii) {
       problems.push(`| ${p.id} | файл не найден на Commons (удалён или переименован) | ${p.url} |`);
       continue;
@@ -107,25 +174,13 @@ async function download(sources: Sources) {
     if (norm(license) !== norm(p.license)) problems.push(`| ${p.id} | лицензия: у нас «${p.license}», на Commons «${license}» | ${p.url} |`);
     if (author && !norm(author).includes(norm(p.author)) && !norm(p.author).includes(norm(author)))
       problems.push(`| ${p.id} | автор: у нас «${p.author}», на Commons «${author}» | ${p.url} |`);
-
-    const src = ii.thumburl ?? ii.url;
-    const ext = (path.extname(new URL(src).pathname) || '.jpg').toLowerCase();
-    const buf = Buffer.from(await (await get(src)).arrayBuffer());
-    await sleep(PAUSE_MS);
-    const file = `${p.id}${ext}`;
-    fs.writeFileSync(path.join(ORIGINALS, file), buf);
-    bytes += buf.length;
-    manifest[p.id] = { file, width: ii.thumbwidth ?? ii.width, height: ii.thumbheight ?? ii.height, origWidth: ii.width, origHeight: ii.height };
-    if (n % 10 === 0) writeJson(manifestFile, manifest); // чтобы обрыв связи не терял сделанное
-    process.stdout.write(`  скачано: ${n + 1} / ${todo.length}, ${(bytes / 1048576).toFixed(0)} МБ\r`);
   }
-  writeJson(manifestFile, manifest);
-  console.log(`\nГотово. Замечаний при сверке: ${problems.length}`);
   fs.writeFileSync(
     path.join(ROOT, 'reports/commons-check.md'),
-    `# Сверка фото с Wikimedia Commons\n\nПроверено: ${todo.length}. Замечаний: ${problems.length}.\n\n` +
+    `# Сверка фото с Wikimedia Commons\n\nПроверено: ${sources.photos.length}. Замечаний: ${problems.length}.\n\n` +
       (problems.length ? `| id | что не так | страница |\n|---|---|---|\n${problems.join('\n')}\n` : 'Всё совпало.\n'),
   );
+  console.log(`Сверка: замечаний ${problems.length} (reports/commons-check.md)`);
 }
 
 // ---------- режим 2: поиск недостающих ----------
@@ -178,6 +233,7 @@ ${result.map((r) => `<h2>${esc(r.label)} <small>(${esc(r.target)})</small></h2><
 const sources = readJson<Sources>(SOURCES);
 try {
   if (process.argv.includes('--search')) await search();
+  else if (process.argv.includes('--verify')) await verify(sources);
   else {
     if (process.argv.includes('--apply')) {
       if (!fs.existsSync(PICKS)) throw new Error('Нет content/photo-picks.json — сначала --search и выбор владельца');
