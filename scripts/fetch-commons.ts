@@ -11,6 +11,7 @@
 //
 // Вежливость к Commons: User-Agent с адресом проекта, запросы по одному с паузой, maxlag.
 // Уже скачанные файлы повторно не качаются.
+import { spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -19,6 +20,16 @@ import {
   ORIGINALS, PICKS, ROOT, SOURCES, applyPicks, commonsTitle, commonsUrl, isFreeLicense, readJson, writeJson,
   type Pick, type Sources,
 } from './lib/photos.ts';
+
+// Node 22 не ходит через прокси из HTTPS_PROXY, пока не задано NODE_USE_ENV_PROXY=1 (так в облачной среде).
+// На обычном компьютере прокси нет — ничего не меняется.
+if (process.env.HTTPS_PROXY && !process.env.NODE_USE_ENV_PROXY) {
+  const r = spawnSync(process.execPath, [...process.execArgv, ...process.argv.slice(1)], {
+    stdio: 'inherit',
+    env: { ...process.env, NODE_USE_ENV_PROXY: '1', NODE_NO_WARNINGS: '1' },
+  });
+  process.exit(r.status ?? 1);
+}
 
 const API = 'https://commons.wikimedia.org/w/api.php';
 const UA = 'AtlasGuide/2.0 (https://github.com/daniyarmuhametzhanov/atlas) node-fetch';
