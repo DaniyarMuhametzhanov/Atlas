@@ -8,8 +8,11 @@
 
 ```bash
 npm install
-npm run extract     # достать данные из legacy/atlas-v1.html в content/ и public/
-npm run typecheck   # проверка типов TypeScript
+npm run dev         # запуск для разработки: http://localhost:5173
+npm run build       # веб-версия в папке dist/
+npm test            # модульные тесты (Vitest)
+npm run lint        # проверка кода (ESLint)
+npm run extract     # заново достать данные из legacy/atlas-v1.html в content/ и public/
 ```
 
 ## Где что лежит
@@ -20,6 +23,10 @@ npm run typecheck   # проверка типов TypeScript
 | `content/` | тексты: страны (`countries/KAZ.json`), места, история, эпохи, источники фото |
 | `public/` | картинки и карты: фото, значки, границы, рельеф |
 | `scripts/` | скрипты подготовки данных |
+| `src/app/` | приложение, раскладка экрана, роутер на `location.hash` |
+| `src/booklet/` | буклет страны и 6 вкладок |
+| `src/store/` | общее хранилище состояния (Zustand) |
+| `src/styles/` | цвета и шрифты (`tokens.css`), темы |
 | `src/content/schema.ts` | схемы данных (Zod) |
 | `reports/` | отчёты по этапам |
 
@@ -27,7 +34,7 @@ npm run typecheck   # проверка типов TypeScript
 
 - [x] 1. Разбор старого файла
 - [x] 2. Извлечение данных — отчёт `reports/stage-2-extract.md`
-- [ ] 3. Каркас (Vite + React + TS)
+- [x] 3. Каркас (Vite + React + TS) — отчёт `reports/stage-3-skeleton.md`
 - [ ] 4. Карта (MapLibre)
 - [ ] 5. Буклет с 6 вкладками
 - [ ] 6. Фото на весь экран

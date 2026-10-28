@@ -34,7 +34,6 @@ const NAMES = ['C', 'X', 'P', 'FAME', 'MOT', 'ICONFIX', 'NAT', 'NTYPE', 'RES', '
 const sandbox: Record<string, unknown> = {};
 vm.createContext(sandbox);
 vm.runInContext(`${dataSrc};\nglobalThis.__legacy={${NAMES.join(',')}};`, sandbox, { timeout: 60_000 });
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const L = sandbox.__legacy as Record<(typeof NAMES)[number], any>;
 
 type Photo = { a: string; l: string; u: string; c?: string; t?: string };
@@ -207,6 +206,8 @@ writeJson(path.join(CONTENT, 'places/wonder-kinds.json'), L.WKIND);
 
 // ---------- 6. Страны ----------
 const countryCount = { total: 0, sights: 0, sightPhotos: 0, covers: 0, icons: 0 };
+// Короткий список стран для карты и поиска: грузится сразу, а полные файлы — по требованию
+const countryIndex: { id: string; name: string; nameEn: string; region: string; capital: string }[] = [];
 const byCountry = (list: { id: string; country: string }[], code: string) =>
   list.filter((p) => p.country === code).map((p) => p.id);
 for (const [key, c] of Object.entries(L.C as Record<string, any>)) {
@@ -253,8 +254,11 @@ for (const [key, c] of Object.entries(L.C as Record<string, any>)) {
     photos: cover ? { cover } : {},
   };
   writeJson(path.join(CONTENT, `countries/${code}.json`), check(Country, country, `страна ${code}`));
+  countryIndex.push({ id: code, name: c.n, nameEn: key, region: c.r, capital: c.cap });
   countryCount.total++;
 }
+countryIndex.sort((a, b) => a.name.localeCompare(b.name, 'ru'));
+writeJson(path.join(CONTENT, 'countries-index.json'), countryIndex);
 
 // ---------- 7. Исторические буклеты и Cliopatria ----------
 const hbIds = new Set<string>();
@@ -335,7 +339,7 @@ const rows: [string, number | string, number | string, number | string][] = [
   ['Природные места (без заповедников)', 158, legacyNat - RES.length, nature.length],
   ['Заповедники', 57, RES.length, reserves.length],
   ['Чудеса света', 21, L.WON.length, wonders.length],
-  ['Исторические буклеты', 77, L.HB.length, count('content/history/booklets')],
+  ['Исторические буклеты', 77, L.HB.length, Math.min(booklets.length, count('content/history/booklets'))],
   ['Синонимы имён для буклетов', '—', Object.keys(L.HBA).length, Object.keys(L.HBA).length],
   ['Государства Cliopatria (имена)', '≈1550', L.CLIO.n.length, polities.length],
   ['Куски границ Cliopatria', '—', clioGeoms.length, clioGeoms.length],

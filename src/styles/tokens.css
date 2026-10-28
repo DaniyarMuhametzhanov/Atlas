@@ -1,0 +1,65 @@
+/* Цвета и шрифты — CSS-переменные (токены). Тёмная тема переопределяет те же переменные.
+   Палитра перенесена из старой версии атласа. */
+:root {
+  --bg: #f3f1ec;
+  --paper: #fffdf8;
+  --paper-2: #f8f4ea;
+  --ink: #1d2430;
+  --muted: #5a6373;
+  --line: #dcd8cf;
+  --sea: #bcd6e3;
+  --sea-deep: #a6c7d8;
+  --accent: #c8361f;
+  --accent-ink: #fff;
+  --focus: #1f5fd1;
+  --shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 6px 20px rgb(0 0 0 / 7%);
+
+  /* регионы: заливка (r) и тёмный цвет для текста и линий (k) */
+  --r-eu: #e7a9bd; --k-eu: #a5285a;
+  --r-me: #ecc77a; --k-me: #8a5f05;
+  --r-as: #f0b48a; --k-as: #a8491a;
+  --r-af: #a9d39a; --k-af: #2f7a2c;
+  --r-am: #a8b7ee; --k-am: #3550b8;
+  --r-oc: #8fd0c8; --k-oc: #16766b;
+
+  /* природа, заповедники, чудеса света */
+  --nat: #1f7a4d;
+  --reserve: #1b5e20;
+  --wonder: #a8851a;
+
+  /* уровни опасности 1–4 */
+  --danger-1: #2e9e5b; --danger-2: #c9a400; --danger-3: #e07a1f; --danger-4: #d23c2a;
+
+  --display: 'Unbounded', 'Arial Black', system-ui, sans-serif;
+  --body: 'Golos Text', 'Segoe UI', system-ui, sans-serif;
+
+  --radius: 14px;
+  --gutter: 16px;
+  --header-h: 60px;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #12161d; --paper: #1a2029; --paper-2: #212833; --ink: #e8ebf0; --muted: #a3acba; --line: #2c3440;
+    --sea: #1d3443; --sea-deep: #183040; --accent: #ff6a55; --accent-ink: #1a0a06; --focus: #8cb4ff;
+    --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 35%);
+    --r-eu: #7a3f55; --k-eu: #f39ab9; --r-me: #7a6230; --k-me: #f0c461; --r-as: #7d4f33; --k-as: #f6a374;
+    --r-af: #3f6a3a; --k-af: #8fd47e; --r-am: #3e4b80; --k-am: #9eb0ff; --r-oc: #2c6660; --k-oc: #78d6ca;
+    --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #12161d; --paper: #1a2029; --paper-2: #212833; --ink: #e8ebf0; --muted: #a3acba; --line: #2c3440;
+  --sea: #1d3443; --sea-deep: #183040; --accent: #ff6a55; --accent-ink: #1a0a06; --focus: #8cb4ff;
+  --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 35%);
+  --r-eu: #7a3f55; --k-eu: #f39ab9; --r-me: #7a6230; --k-me: #f0c461; --r-as: #7d4f33; --k-as: #f6a374;
+  --r-af: #3f6a3a; --k-af: #8fd47e; --r-am: #3e4b80; --k-am: #9eb0ff; --r-oc: #2c6660; --k-oc: #78d6ca;
+  --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a;
+  color-scheme: dark;
+}
+
+@media (max-width: 699px) {
+  :root { --header-h: 56px; }
+}
