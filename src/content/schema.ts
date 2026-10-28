@@ -56,6 +56,7 @@ export const Country = z.object({
         visaKZ: z.string().optional(),
         visaRU: z.string().optional(),
         bestSeason: Text,
+        asOf: z.string().optional(),
       })
       .optional(),
     climate: z
@@ -77,10 +78,12 @@ export const Country = z.object({
     freedom: z
       .array(z.object({ source: z.enum(['Freedom House', 'V-Dem']), score: Text, year: z.number().int() }))
       .optional(),
+    asOf: z.string().optional(), // «верно на: осень 2026»
   }),
 
   culture: z.object({
-    ethnic: z.array(z.object({ group: Text, percent: z.number() })).optional(),
+    ethnic: z.array(z.object({ group: Text, percent: z.number().min(0).max(100) })).optional(),
+    ethnicSource: z.string().optional(), // перепись и её год
     languages: z.array(Text).optional(),
     religions: z.array(z.object({ name: Text, percent: z.number().optional() })).optional(),
     character: Text,
@@ -95,13 +98,14 @@ export const Country = z.object({
     world: z
       .array(
         z.object({
-          country: Text,
+          country: z.string().regex(/^[A-Z]{3}$/), // код ISO страны
           status: z.enum(['союз', 'дружба', 'нейтрально', 'напряжённость', 'конфликт']),
           text: Text,
         }),
       )
       .optional(),
     attitudes: z.array(z.object({ toward: Text, text: Text, source: Text, year: z.number().int() })).optional(),
+    asOf: z.string().optional(),
   }),
 
   stereotypes: z

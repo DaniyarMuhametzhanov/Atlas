@@ -16,6 +16,10 @@ export const COUNTRY_BY_ID = new Map(COUNTRIES.map((c) => [c.id, c]));
 
 const cache = new Map<string, Promise<Country>>();
 export function loadCountry(id: string): Promise<Country> {
+  if (import.meta.env.DEV) {
+    const fx = (window as unknown as { __atlasFixtures?: Record<string, Country> }).__atlasFixtures?.[id];
+    if (fx) return Promise.resolve(fx);
+  }
   const loader = full[`../../content/countries/${id}.json`];
   if (!loader) return Promise.reject(new Error(`Нет страны с кодом ${id}`));
   if (!cache.has(id)) cache.set(id, loader());

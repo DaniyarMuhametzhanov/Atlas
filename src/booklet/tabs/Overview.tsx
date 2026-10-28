@@ -7,6 +7,8 @@ import { Section, Soon, Timeline } from '../parts';
 import s from './tabs.module.css';
 
 const num = (n: number) => n.toLocaleString('ru-RU');
+/** 20 300 000 → «20,3 млн» */
+const people = (n: number) => (n >= 1e6 ? `${(n / 1e6).toLocaleString('ru-RU', { maximumFractionDigits: 1 })} млн` : num(n));
 
 export function Overview({ c }: { c: Country }) {
   const f = c.overview.facts;
@@ -21,21 +23,23 @@ export function Overview({ c }: { c: Country }) {
       alive = false;
     };
   }, [c.id]);
+
   return (
     <>
       <p className={s.lead}>{c.overview.intro}</p>
-      {f ? (
-        <Section title="В цифрах">
-          <dl className={s.facts}>
-            <div><dt>Площадь</dt><dd>{num(f.area)} км²</dd></div>
-            <div><dt>Население</dt><dd>{num(f.population)}</dd></div>
-            {f.gdpPerCapita ? <div><dt>ВВП на человека</dt><dd>${num(f.gdpPerCapita)}</dd></div> : null}
-            <div><dt>Столица</dt><dd>{c.capital}</dd></div>
-          </dl>
-        </Section>
-      ) : (
-        <Soon title="В цифрах" what="площадь, население, ВВП на человека." />
-      )}
+      <Section title="В цифрах">
+        <dl className={s.facts}>
+          <div><dt>Столица</dt><dd>{c.capital}</dd></div>
+          {f ? (
+            <>
+              <div><dt>Площадь</dt><dd>{num(f.area)} км²</dd></div>
+              <div><dt>Население</dt><dd>{people(f.population)}</dd></div>
+              {f.gdpPerCapita ? <div><dt>ВВП на человека</dt><dd>${num(f.gdpPerCapita)}</dd></div> : null}
+            </>
+          ) : null}
+        </dl>
+        {f ? null : <p className={s.soonLine}>⏳ Площадь, население и ВВП на человека — скоро появятся.</p>}
+      </Section>
       <Section title="Вехи истории">
         <Timeline items={c.overview.timeline} />
       </Section>
@@ -43,21 +47,22 @@ export function Overview({ c }: { c: Country }) {
         <h3>💡 Знаете ли вы?</h3>
         <p>{c.overview.funFact}</p>
       </section>
-      {near === null ? null : near.length ? (
+      {near === null ? null : (
         <Section title="Соседи по карте">
-          <div className={s.near}>
-            {near.map((id) => (
-              <button key={id} type="button" onClick={() => navigate({ name: 'country', id })}>
-                {COUNTRY_BY_ID.get(id)?.name ?? id}
-              </button>
-            ))}
-          </div>
-        </Section>
-      ) : (
-        <Section title="Соседи по карте">
-          <p>Сухопутных границ нет — соседи только через море.</p>
+          {near.length ? (
+            <div className={s.near}>
+              {near.map((id) => (
+                <button key={id} type="button" onClick={() => navigate({ name: 'country', id })}>
+                  {COUNTRY_BY_ID.get(id)?.name ?? id}
+                </button>
+              ))}
+            </div>
+          ) : (
+            <p>Сухопутных границ нет — соседи только через море.</p>
+          )}
         </Section>
       )}
+      {near === null && !f ? <Soon title="Соседи по карте" what="загружаются…" /> : null}
     </>
   );
 }

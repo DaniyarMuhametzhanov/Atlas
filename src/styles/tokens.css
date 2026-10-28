@@ -27,6 +27,17 @@
   --reserve: #1b5e20;
   --wonder: #a8851a;
 
+  /* графики: категориальная палитра (порядок фиксирован, проверена на цветовую слепоту) */
+  --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #eda100;
+  --series-5: #e87ba4; --series-6: #008300; --series-7: #6250d6; --series-8: #e34948;
+  --grid: #e9e5dc;
+
+  /* отношения между странами */
+  --rel-alliance: #6250d6; --rel-friend: #1baf7a; --rel-neutral: #8a8f98; --rel-tension: #eda100; --rel-conflict: #e34948;
+
+  /* запасные рисунки: солнце, цветение, полярное сияние */
+  --sunc: #fffdf8; --bloom: #f2a7c0; --aur: #3fd18f;
+
   /* уровни опасности 1–4 */
   --danger-1: #2e9e5b; --danger-2: #c9a400; --danger-3: #e07a1f; --danger-4: #d23c2a;
 
@@ -47,6 +58,11 @@
     --r-eu: #7a3f55; --k-eu: #f39ab9; --r-me: #7a6230; --k-me: #f0c461; --r-as: #7d4f33; --k-as: #f6a374;
     --r-af: #3f6a3a; --k-af: #8fd47e; --r-am: #3e4b80; --k-am: #9eb0ff; --r-oc: #2c6660; --k-oc: #78d6ca;
     --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a;
+    --sunc: #f1e6c2; --bloom: #e58aab; --aur: #5ff0a8;
+    --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+    --series-5: #d55181; --series-6: #008300; --series-7: #9085e9; --series-8: #e66767;
+    --grid: #2a313b;
+    --rel-alliance: #9085e9; --rel-friend: #199e70; --rel-neutral: #7d8591; --rel-tension: #c98500; --rel-conflict: #e66767;
     color-scheme: dark;
   }
 }
@@ -57,6 +73,11 @@
   --r-eu: #7a3f55; --k-eu: #f39ab9; --r-me: #7a6230; --k-me: #f0c461; --r-as: #7d4f33; --k-as: #f6a374;
   --r-af: #3f6a3a; --k-af: #8fd47e; --r-am: #3e4b80; --k-am: #9eb0ff; --r-oc: #2c6660; --k-oc: #78d6ca;
   --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a;
+  --sunc: #f1e6c2; --bloom: #e58aab; --aur: #5ff0a8;
+  --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
+  --series-5: #d55181; --series-6: #008300; --series-7: #9085e9; --series-8: #e66767;
+  --grid: #2a313b;
+  --rel-alliance: #9085e9; --rel-friend: #199e70; --rel-neutral: #7d8591; --rel-tension: #c98500; --rel-conflict: #e66767;
   color-scheme: dark;
 }
 

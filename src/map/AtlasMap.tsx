@@ -12,6 +12,7 @@ import { MapControls } from './MapControls';
 import s from './MapView.module.css';
 
 const BASE = import.meta.env.BASE_URL;
+const REL_CLASS = { союз: 'alliance', дружба: 'friend', нейтрально: 'neutral', напряжённость: 'tension', конфликт: 'conflict' } as const;
 const WORLD: [[number, number], [number, number]] = [[-170, -58], [190, 78]];
 const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -66,6 +67,8 @@ export default function AtlasMap() {
   const mapMode = useStore((st) => st.mapMode);
   const globe = useStore((st) => st.globe);
   const theme = useStore((st) => st.theme);
+  const relationsMap = useStore((st) => st.relationsMap);
+  const setRelationsMap = useStore((st) => st.setRelationsMap);
   const selected = route.name === 'country' ? route.id : '';
 
   // ---------- создание карты ----------
@@ -161,6 +164,24 @@ export default function AtlasMap() {
     };
   }, [mapMode, theme, ready]);
 
+  // ---------- режим «Отношения» ----------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
+    const ids = new Set<string>();
+    if (relationsMap) {
+      map.setFeatureState({ source: 'borders', id: relationsMap.iso }, { center: true });
+      ids.add(relationsMap.iso);
+      for (const [iso, status] of Object.entries(relationsMap.statuses)) {
+        map.setFeatureState({ source: 'borders', id: iso }, { rel: status });
+        ids.add(iso);
+      }
+    }
+    return () => {
+      for (const iso of ids) map.setFeatureState({ source: 'borders', id: iso }, { center: false, rel: null });
+    };
+  }, [relationsMap, ready]);
+
   // ---------- глобус ----------
   useEffect(() => {
     const map = mapRef.current;
@@ -182,6 +203,16 @@ export default function AtlasMap() {
       <div ref={tip} className={s.tip} role="status" aria-live="off" />
       {error ? <p className={s.error}>Карта не загрузилась: {error}</p> : null}
       {!ready && !error ? <p className={s.loading}>Загружаю карту…</p> : null}
+      {relationsMap ? (
+        <div className={s.relLegend} role="group" aria-label="Легенда режима «Отношения»">
+          <b>Отношения</b>
+          <span><i className={s.relCenter} />выбранная страна</span>
+          {(['союз', 'дружба', 'нейтрально', 'напряжённость', 'конфликт'] as const).map((st) => (
+            <span key={st}><i style={{ background: `var(--rel-${REL_CLASS[st]})` }} />{st}</span>
+          ))}
+          <button type="button" onClick={() => setRelationsMap(null)} aria-label="Выключить режим «Отношения»">✕</button>
+        </div>
+      ) : null}
       <MapControls
         onZoom={(d) => mapRef.current?.zoomTo(mapRef.current.getZoom() + d, { duration: reducedMotion() ? 0 : 250 })}
         onReset={() => mapRef.current?.fitBounds(WORLD, { duration: reducedMotion() ? 0 : 600 })}

@@ -1,0 +1,17 @@
+.climate { display: grid; gap: 4px; }
+.caption { margin: 6px 0 0 !important; font-size: 12.5px; color: var(--muted); }
+.box { position: relative; height: 170px; }
+.small { height: 120px; }
+.table summary { cursor: pointer; font-size: 13px; color: var(--muted); margin-top: 4px; }
+.table table { border-collapse: collapse; font-size: 13px; margin-top: 6px; width: 100%; font-variant-numeric: tabular-nums; }
+.table th, .table td { text-align: right; padding: 3px 8px; border-bottom: 1px solid var(--line); }
+.table th:first-child, .table td:first-child { text-align: left; }
+
+.ethnic { margin: 0; display: grid; gap: 10px; }
+.bar { display: flex; gap: 2px; height: 18px; border-radius: 4px; overflow: hidden; }
+.bar span { min-width: 3px; }
+.legend { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.legend li { display: grid; grid-template-columns: 12px 1fr auto; gap: 8px; align-items: center; font-size: 14px; }
+.legend i { width: 12px; height: 12px; border-radius: 3px; }
+.legend b { font-weight: 600; font-variant-numeric: tabular-nums; }
+.ethnic figcaption { font-size: 12.5px; color: var(--muted); }

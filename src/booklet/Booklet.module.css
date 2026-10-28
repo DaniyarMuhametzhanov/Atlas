@@ -12,6 +12,7 @@
 .titles { position: relative; padding: 14px 20px 10px; display: flex; flex-direction: column; gap: 6px; }
 .kicker { margin: 0; font-size: 11.5px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: var(--rk); }
 .name { font-weight: 700; font-size: clamp(24px, 3vw, 34px); max-width: calc(100% - 96px); text-wrap: balance; }
+.nameLong { font-size: clamp(20px, 2.3vw, 26px); overflow-wrap: anywhere; hyphens: auto; }
 .tagline { margin: 0; font-size: 15px; font-weight: 500; max-width: calc(100% - 96px); }
 .fame { margin: 0; font-size: 13.5px; }
 .fame span { font-weight: 600; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--rk); }
@@ -28,6 +29,8 @@
 }
 .actions button:hover:not(:disabled) { border-color: var(--rk); }
 .actions button:disabled { opacity: 0.55; cursor: not-allowed; }
+.toast { align-self: center; font-size: 13px; color: var(--rk); font-weight: 600; }
+.printTitle { display: none; }
 
 /* вкладки: строка, на узком экране листается вбок и прилипает к верху */
 .tabs {
@@ -63,4 +66,6 @@
 
 @media print {
   .tabs, .actions, .credit { display: none; }
+  .printTitle { display: block; font-size: 18px; border-bottom: 2px solid var(--rk); padding-bottom: 4px; }
+  .panel { break-inside: auto; }
 }

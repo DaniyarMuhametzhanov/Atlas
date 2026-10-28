@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState, type CSSProperties, type KeyboardEvent } from 'react';
+import { flushSync } from 'react-dom';
+import { useStore } from '../store/store';
+import { Art } from './art/Art';
 import { getPhoto, loadCountry, photoUrl } from '../content';
 import type { Country } from '../content/schema';
 import { REGIONS } from '../content/regions';
@@ -24,8 +27,35 @@ const PANELS: Record<TabId, (p: { c: Country }) => JSX.Element> = {
 export function Booklet({ id, tab }: { id: string; tab: TabId }) {
   const [country, setCountry] = useState<Country | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [printAll, setPrintAll] = useState(false);
+  const [toast, setToast] = useState<string | null>(null);
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const top = useRef<HTMLElement>(null);
+  const setRelationsMap = useStore((st) => st.setRelationsMap);
+
+  // при печати (кнопкой или Ctrl+P) печатаем все вкладки сразу
+  useEffect(() => {
+    const before = () => flushSync(() => setPrintAll(true));
+    const after = () => setPrintAll(false);
+    window.addEventListener('beforeprint', before);
+    window.addEventListener('afterprint', after);
+    return () => {
+      window.removeEventListener('beforeprint', before);
+      window.removeEventListener('afterprint', after);
+    };
+  }, []);
+
+  // режим «Отношения» на карте относится к одной стране — при смене страны выключаем
+  useEffect(() => {
+    const rm = useStore.getState().relationsMap;
+    if (rm && rm.iso !== id) setRelationsMap(null);
+  }, [id, setRelationsMap]);
+
+  useEffect(() => {
+    if (!toast) return;
+    const t = setTimeout(() => setToast(null), 2200);
+    return () => clearTimeout(t);
+  }, [toast]);
 
   useEffect(() => {
     let alive = true;
@@ -43,6 +73,14 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
   useEffect(() => {
     top.current?.scrollIntoView({ block: 'start' });
   }, [id]);
+
+  // на узком экране строка вкладок листается вбок — держим активную вкладку в поле зрения
+  useEffect(() => {
+    const el = tabRefs.current[TABS.findIndex((x) => x.id === tab)];
+    const row = el?.parentElement;
+    if (!el || !row || row.scrollWidth <= row.clientWidth) return;
+    row.scrollTo({ left: el.offsetLeft - (row.clientWidth - el.offsetWidth) / 2, behavior: 'auto' });
+  }, [tab, country]);
 
   if (error) return <p className={s.state}>Не получилось открыть страну: {error}</p>;
   if (!country || country.id !== id) return <p className={s.state} aria-busy="true">Открываю буклет…</p>;
@@ -67,30 +105,38 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
 
   const cover = getPhoto(country.photos.cover);
   const Panel = PANELS[tab];
+  const [motif, land] = country.icon.motif.split(' ');
   const share = async () => {
     const url = location.href;
     try {
-      if (navigator.share) await navigator.share({ title: country.name, url });
-      else await navigator.clipboard.writeText(url);
+      if (navigator.share && matchMedia('(pointer: coarse)').matches) await navigator.share({ title: country.name, url });
+      else {
+        await navigator.clipboard.writeText(url);
+        setToast('Ссылка скопирована');
+      }
     } catch {
-      /* пользователь отменил */
+      /* пользователь отменил или буфер обмена недоступен */
     }
   };
 
   return (
     <article ref={top} className={s.booklet} style={{ '--rc': `var(--r-${country.region})`, '--rk': `var(--k-${country.region})` } as CSSProperties}>
       <header className={s.head}>
-        {cover ? (
-          <figure className={s.cover}>
-            <img src={photoUrl(cover, 1200)} alt={country.name} width={560} height={280} />
-            <a className={s.credit} href={cover.url} target="_blank" rel="noopener noreferrer">
-              Фото: {cover.author} · {cover.license}
-            </a>
-          </figure>
-        ) : null}
+        <figure className={s.cover}>
+          {cover ? (
+            <>
+              <img src={photoUrl(cover, 1200)} alt={country.name} width={560} height={280} />
+              <a className={s.credit} href={cover.url} target="_blank" rel="noopener noreferrer">
+                Фото: {cover.author} · {cover.license}
+              </a>
+            </>
+          ) : (
+            <Art motif={motif} land={land} seed={country.name} big />
+          )}
+        </figure>
         <div className={s.titles}>
           <p className={s.kicker}>{REGIONS[country.region]}</p>
-          <h2 className={s.name}>{country.name}</h2>
+          <h2 className={`${s.name} ${country.name.length > 12 ? s.nameLong : ''}`}>{country.name}</h2>
           <p className={s.tagline}>{country.tagline}</p>
           <p className={s.fame}>
             <span>Чем знаменита:</span> {country.fame}
@@ -104,6 +150,7 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
           <button type="button" onClick={share}>🔗 Поделиться</button>
           <button type="button" disabled title="Появится на этапе 9">⚖️ Сравнить</button>
           <button type="button" onClick={() => window.print()}>🖨 Распечатать</button>
+          <span className={s.toast} role="status">{toast}</span>
         </div>
       </header>
 
@@ -128,9 +175,21 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
         ))}
       </div>
 
-      <section className={s.panel} role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`} tabIndex={0}>
-        <Panel c={country} />
-      </section>
+      {printAll ? (
+        TABS.map((t) => {
+          const P = PANELS[t.id];
+          return (
+            <section key={t.id} className={s.panel}>
+              <h3 className={s.printTitle}>{t.icon} {t.label}</h3>
+              <P c={country} />
+            </section>
+          );
+        })
+      ) : (
+        <section className={s.panel} role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`} tabIndex={0}>
+          <Panel c={country} />
+        </section>
+      )}
     </article>
   );
 }

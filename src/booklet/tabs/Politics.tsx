@@ -1,17 +1,21 @@
 import type { Country } from '../../content/schema';
-import { Section, Soon } from '../parts';
+import { AsOf, Section, Soon } from '../parts';
+import s from './tabs.module.css';
 
 export function Politics({ c }: { c: Country }) {
   const p = c.politics;
   return (
     <>
+      {c.updated === 'legacy-v1' ? (
+        <p className={s.soonLine}>Текст из старой версии атласа; дата проверки не указана. Обновление — на этапе наполнения.</p>
+      ) : null}
       <Section title="Как устроена власть">
         <p>{p.system}</p>
       </Section>
       {p.leaders || p.parties ? (
         <Section title="Кто у власти">
           {p.leaders ? <p>{p.leaders}</p> : null}
-          {p.parties ? <p>{p.parties}</p> : null}
+          {p.parties ? <p>Главные партии: {p.parties}</p> : null}
         </Section>
       ) : (
         <Soon title="Кто у власти" what="руководители страны и главные партии." />
@@ -29,19 +33,21 @@ export function Politics({ c }: { c: Country }) {
       <Section title="Технологии и инфраструктура">
         <p>{p.techInfra}</p>
       </Section>
-      {p.freedom ? (
+      {p.freedom?.length ? (
         <Section title="Оценки свободы" note="Это внешняя оценка организаций, а не мнение атласа.">
-          <ul>
+          <dl className={s.practical}>
             {p.freedom.map((f) => (
-              <li key={f.source}>
-                {f.source}: {f.score} ({f.year})
-              </li>
+              <div key={f.source}>
+                <dt>{f.source}, {f.year}</dt>
+                <dd>{f.score}</dd>
+              </div>
             ))}
-          </ul>
+          </dl>
         </Section>
       ) : (
         <Soon title="Оценки свободы" what="оценки Freedom House или V-Dem с годом." />
       )}
+      <AsOf value={p.asOf} />
     </>
   );
 }

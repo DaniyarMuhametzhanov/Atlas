@@ -311,16 +311,7 @@ const reliefBuf = Buffer.from(String(L.RELIEF).split(',')[1], 'base64');
 writeFile(path.join(ASSETS_SRC, 'relief-bluemarble.jpg'), reliefBuf);
 const reliefSize = imageSize(reliefBuf);
 
-// ---------- 10. Модуль ART (запасные SVG-картинки) — это код, а не данные: переносим как есть ----------
-const artStart = html.indexOf('const ART=');
-const artEnd = html.indexOf('const MOT=', artStart);
-writeFile(
-  path.join(ROOT, 'src/legacy/art.js'),
-  '// Модуль ART из старого атласа: рисует запасные SVG-картинки, если нет фото.\n' +
-    '// Перенесён без изменений скриптом extract-legacy.ts; будет переписан на TypeScript на этапе 5.\n' +
-    '/* eslint-disable */\n' +
-    html.slice(artStart, artEnd).trim() + '\n\nexport default ART;\n',
-);
+// ---------- 10. Модуль ART (запасные SVG-картинки) — это код: перенесён вручную в src/booklet/art/art.ts ----------
 
 // ---------- 11. Источники наборов данных ----------
 writeJson(path.join(CONTENT, 'sources.json'), {

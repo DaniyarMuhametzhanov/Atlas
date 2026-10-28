@@ -33,6 +33,7 @@ export function themeColors() {
     nat: v('--nat'),
     reserve: v('--reserve'),
     wonder: v('--wonder'),
+    rel: { союз: v('--rel-alliance'), дружба: v('--rel-friend'), нейтрально: v('--rel-neutral'), напряжённость: v('--rel-tension'), конфликт: v('--rel-conflict') } as Record<string, string>,
     region: { eu: v('--r-eu'), me: v('--r-me'), as: v('--r-as'), af: v('--r-af'), am: v('--r-am'), oc: v('--r-oc') } as Record<string, string>,
     regionInk: { eu: v('--k-eu'), me: v('--k-me'), as: v('--k-as'), af: v('--k-af'), am: v('--k-am'), oc: v('--k-oc') } as Record<string, string>,
     dark: document.documentElement.dataset.theme === 'dark' || (document.documentElement.dataset.theme !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches),
@@ -177,9 +178,18 @@ export function buildStyle(data: MapData, c: Colors, mode: MapMode): StyleSpecif
 
 function fillPaint(c: Colors, mode: MapMode) {
   const hover = ['boolean', ['feature-state', 'hover'], false] as ExpressionSpecification;
-  return mode === 'relief'
-    ? { 'fill-color': '#ffffff', 'fill-opacity': ['case', hover, 0.16, 0] as ExpressionSpecification }
-    : { 'fill-color': regionMatch(c.region, c.dark ? '#2a313c' : '#e6e1d6'), 'fill-opacity': ['case', hover, 0.75, 1] as ExpressionSpecification };
+  // режим «Отношения»: у страны есть состояние rel (статус) или center (выбранная страна)
+  const rel = ['feature-state', 'rel'] as ExpressionSpecification;
+  const hasRel = ['!=', ['coalesce', rel, ''], ''] as ExpressionSpecification;
+  const center = ['boolean', ['feature-state', 'center'], false] as ExpressionSpecification;
+  const relColor = ['match', ['coalesce', rel, ''], 'союз', c.rel['союз'], 'дружба', c.rel['дружба'], 'нейтрально', c.rel['нейтрально'], 'напряжённость', c.rel['напряжённость'], 'конфликт', c.rel['конфликт'], '#000000'] as ExpressionSpecification;
+  const base = mode === 'relief' ? '#ffffff' : regionMatch(c.region, c.dark ? '#2a313c' : '#e6e1d6');
+  return {
+    'fill-color': ['case', center, c.paper, hasRel, relColor, base] as ExpressionSpecification,
+    'fill-opacity': (mode === 'relief'
+      ? ['case', center, 0.75, hasRel, 0.7, hover, 0.16, 0]
+      : ['case', center, 0.9, hasRel, 0.9, hover, 0.75, 1]) as ExpressionSpecification,
+  };
 }
 function linePaint(c: Colors, mode: MapMode) {
   return {

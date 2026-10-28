@@ -1,21 +1,30 @@
 import type { Country } from '../../content/schema';
+import { EthnicBar } from '../charts/EthnicBar';
 import { Bullets, Section, Soon } from '../parts';
+import s from './tabs.module.css';
 
 export function Culture({ c }: { c: Country }) {
   const k = c.culture;
   return (
     <>
-      {k.ethnic ? (
+      {k.ethnic?.length ? (
         <Section title="Этнический состав">
-          <Bullets items={k.ethnic.map((e) => `${e.group} — ${e.percent}%`)} />
+          <EthnicBar groups={k.ethnic} source={k.ethnicSource} />
         </Section>
       ) : (
-        <Soon title="Этнический состав" what="диаграмма и проценты по данным переписи." />
+        <Soon title="Этнический состав" what="доли народов по данным переписи (с годом)." />
       )}
-      {k.languages || k.religions ? (
+      {k.languages?.length || k.religions?.length ? (
         <Section title="Языки и религии">
-          {k.languages ? <p>Языки: {k.languages.join(', ')}</p> : null}
-          {k.religions ? <p>Религии: {k.religions.map((r) => (r.percent ? `${r.name} (${r.percent}%)` : r.name)).join(', ')}</p> : null}
+          <dl className={s.practical}>
+            {k.languages?.length ? <div><dt>Языки</dt><dd>{k.languages.join(', ')}</dd></div> : null}
+            {k.religions?.length ? (
+              <div>
+                <dt>Религии</dt>
+                <dd>{k.religions.map((r) => (r.percent != null ? `${r.name} (${r.percent}%)` : r.name)).join(', ')}</dd>
+              </div>
+            ) : null}
+          </dl>
         </Section>
       ) : (
         <Soon title="Языки и религии" what="на каких языках говорят и во что верят." />
@@ -26,16 +35,29 @@ export function Culture({ c }: { c: Country }) {
       <Section title="Традиции">
         <Bullets items={k.traditions} />
       </Section>
-      {k.holidays ? (
-        <Section title="Праздники">
-          <Bullets items={k.holidays.map((h) => `${h.date} — ${h.name}: ${h.text}`)} />
+      {k.holidays?.length ? (
+        <Section title="Главные праздники">
+          <ul className={s.holidays}>
+            {k.holidays.map((h) => (
+              <li key={h.name}>
+                <b>{h.date}</b>
+                <span><strong>{h.name}</strong> — {h.text}</span>
+              </li>
+            ))}
+          </ul>
         </Section>
       ) : (
-        <Soon title="Праздники" what="главные праздники: дата и смысл." />
+        <Soon title="Главные праздники" what="дата и смысл праздника." />
       )}
-      {k.people ? (
+      {k.people?.length ? (
         <Section title="Известные люди">
-          <Bullets items={k.people.map((p) => `${p.name} — ${p.who}`)} />
+          <ul className={s.holidays}>
+            {k.people.map((p) => (
+              <li key={p.name}>
+                <span><strong>{p.name}</strong> — {p.who}</span>
+              </li>
+            ))}
+          </ul>
         </Section>
       ) : (
         <Soon title="Известные люди" what="3–5 человек, которыми гордится страна." />

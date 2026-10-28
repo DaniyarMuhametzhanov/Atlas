@@ -36,6 +36,17 @@
   font-size: 18px; line-height: 1; box-shadow: var(--shadow);
 }
 
+/* легенда режима «Отношения» */
+.relLegend {
+  position: absolute; left: 10px; bottom: 34px; z-index: 4; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 10px;
+  max-width: calc(100% - 20px); padding: 6px 10px; border-radius: 12px; background: var(--paper); border: 1px solid var(--line);
+  box-shadow: var(--shadow); font-size: 12.5px;
+}
+.relLegend span { display: inline-flex; align-items: center; gap: 5px; }
+.relLegend i { width: 10px; height: 10px; border-radius: 3px; }
+.relLegend .relCenter { background: var(--paper); outline: 2px solid var(--accent); outline-offset: -2px; }
+.relLegend button { border: 0; background: none; font-size: 14px; padding: 0 2px; }
+
 /* подпись источников MapLibre — в цветах сайта */
 .map :global(.maplibregl-ctrl-attrib) { background: color-mix(in oklab, var(--paper) 85%, transparent); color: var(--muted); font-size: 11px; }
 .map :global(.maplibregl-ctrl-attrib a) { color: inherit; }
@@ -45,4 +56,7 @@
   .map { border-radius: 0; border: 0; }
   .wide { display: none; }
   .modes button { padding: 5px 10px; }
+}
+@media (max-width: 699px) {
+  .relLegend { bottom: auto; top: 54px; }
 }

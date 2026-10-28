@@ -10,6 +10,9 @@ export type SheetState = 'collapsed' | 'half' | 'full';
 export type LayerId = 'countries' | 'nature' | 'reserves' | 'wonders' | 'capitals' | 'cities';
 export type Layers = Record<LayerId, boolean>;
 export type MapMode = 'relief' | 'regions';
+export type RelationStatus = 'союз' | 'дружба' | 'нейтрально' | 'напряжённость' | 'конфликт';
+/** Режим карты «Отношения»: выбранная страна в центре, остальные окрашены по статусу */
+export type RelationsMap = { iso: string; statuses: Record<string, RelationStatus> } | null;
 
 const DEFAULT_LAYERS: Layers = {
   countries: true,
@@ -32,6 +35,7 @@ type State = {
   globe: boolean;
   /** место, на которое нажали на карте: буклет прокручивает к его карточке */
   focusPlace: string | null;
+  relationsMap: RelationsMap;
   setRoute: (r: Route) => void;
   setTheme: (t: Theme) => void;
   toggleLayer: (id: LayerId) => void;
@@ -41,6 +45,7 @@ type State = {
   setMapMode: (m: MapMode) => void;
   setGlobe: (on: boolean) => void;
   setFocusPlace: (id: string | null) => void;
+  setRelationsMap: (r: RelationsMap) => void;
 };
 
 export const useStore = create<State>((set) => ({
@@ -54,6 +59,7 @@ export const useStore = create<State>((set) => ({
   mapMode: readStored<MapMode>('atlas.mapMode', 'relief'),
   globe: readStored<boolean>('atlas.globe', false),
   focusPlace: null,
+  relationsMap: null,
 
   setRoute: (route) =>
     set((s) => {
@@ -85,4 +91,5 @@ export const useStore = create<State>((set) => ({
     set({ globe });
   },
   setFocusPlace: (focusPlace) => set({ focusPlace }),
+  setRelationsMap: (relationsMap) => set({ relationsMap }),
 }));

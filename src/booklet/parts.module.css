@@ -13,3 +13,9 @@
 .bul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
 .bul li { position: relative; padding-left: 22px; }
 .bul li::before { content: ''; position: absolute; left: 2px; top: 0.45em; width: 10px; height: 10px; border-radius: 50%; border: 2px solid var(--rk); }
+
+.badge {
+  display: inline-flex; align-items: center; gap: 4px; padding: 1px 8px; border-radius: 999px; font-size: 12px; font-weight: 600;
+  color: var(--ink); background: color-mix(in oklab, var(--c) 18%, var(--paper)); border: 1px solid var(--c); white-space: nowrap;
+}
+.badge span { color: var(--c); }

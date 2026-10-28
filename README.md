@@ -38,7 +38,7 @@ npm run data        # заново подготовить все данные: �
 - [x] 2. Извлечение данных — отчёт `reports/stage-2-extract.md`
 - [x] 3. Каркас (Vite + React + TS) — отчёт `reports/stage-3-skeleton.md`
 - [x] 4. Карта (MapLibre) — отчёт `reports/stage-4-map.md`
-- [ ] 5. Буклет с 6 вкладками
+- [x] 5. Буклет с 6 вкладками — отчёт `reports/stage-5-booklet.md`
 - [ ] 6. Фото на весь экран
 - [ ] 7. Машина времени
 - [ ] 8. Наполнение текстами
