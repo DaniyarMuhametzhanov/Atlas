@@ -3,6 +3,7 @@ import { flushSync } from 'react-dom';
 import { useStore } from '../store/store';
 import { Art } from './art/Art';
 import { COUNTRIES, getPhoto, loadCountry } from '../content';
+import { shareInTelegram, TELEGRAM } from '../telegram/telegram';
 import type { Country } from '../content/schema';
 import { REGIONS } from '../content/regions';
 import { navigate } from '../app/router';
@@ -144,6 +145,7 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
   const Panel = PANELS[tab];
   const [motif, land] = country.icon.motif.split(' ');
   const share = async () => {
+    if (shareInTelegram(country.name)) return;
     const url = location.href;
     try {
       if (navigator.share && matchMedia('(pointer: coarse)').matches) await navigator.share({ title: country.name, url });
@@ -197,19 +199,21 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
             {explored ? '✓ Изучена' : '☆ Отметить изученной'}
           </button>
           <button type="button" onClick={() => navigate({ name: 'compare', ids: [id] })}>⚖️ Сравнить</button>
-          <button
-            type="button"
-            onClick={async () => {
-              // сначала все вкладки и все фото, потом окно печати — иначе фото ниже экрана печатаются пустыми
-              flushSync(() => setPrintAll(true));
-              // места природы и заповедники подгружаются отдельно — даём им появиться
-              await new Promise((ok) => setTimeout(ok, 300));
-              await waitImages(eagerImages(top.current), 4000);
-              window.print();
-            }}
-          >
-            🖨 Распечатать
-          </button>
+          {TELEGRAM ? null : (
+            <button
+              type="button"
+              onClick={async () => {
+                // сначала все вкладки и все фото, потом окно печати — иначе фото ниже экрана печатаются пустыми
+                flushSync(() => setPrintAll(true));
+                // места природы и заповедники подгружаются отдельно — даём им появиться
+                await new Promise((ok) => setTimeout(ok, 300));
+                await waitImages(eagerImages(top.current), 4000);
+                window.print();
+              }}
+            >
+              🖨 Распечатать
+            </button>
+          )}
           <span className={s.toast} role="status">{toast}</span>
         </div>
       </header>

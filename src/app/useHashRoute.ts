@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { onTelegramTheme, paintTelegram, telegramScheme } from '../telegram/telegram';
 import { useStore } from '../store/store';
 import { navigate, parseHash } from './router';
 import { COUNTRY_BY_ID } from '../content';
@@ -22,12 +23,18 @@ export function useHashRoute() {
   }, [setRoute]);
 }
 
-/** Ставит data-theme на <html>, если тема выбрана вручную */
+/** Ставит data-theme на <html>, если тема выбрана вручную. В Telegram «как в системе» значит «как в Telegram». */
 export function useThemeAttr() {
   const theme = useStore((s) => s.theme);
   useEffect(() => {
-    const root = document.documentElement;
-    if (theme === 'system') root.removeAttribute('data-theme');
-    else root.setAttribute('data-theme', theme);
+    const apply = () => {
+      const root = document.documentElement;
+      const t = theme === 'system' ? telegramScheme() : theme;
+      if (t) root.setAttribute('data-theme', t);
+      else root.removeAttribute('data-theme');
+      paintTelegram();
+    };
+    apply();
+    return onTelegramTheme(apply);
   }, [theme]);
 }

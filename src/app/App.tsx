@@ -14,6 +14,7 @@ import { Compare } from '../compare/Compare';
 import { Quiz } from '../quiz/Quiz';
 import { Tour } from '../tour/Tour';
 import { COUNTRY_BY_ID } from '../content';
+import { syncBackButton } from '../telegram/telegram';
 import s from './App.module.css';
 
 // Раскладка: компьютер — карта слева (62%), буклет справа; планшет — карта сверху, буклет снизу;
@@ -36,6 +37,8 @@ export function App() {
   }, [countryId, route.name, setSheet]);
   // машина времени на телефоне: проигрыватель стоит внизу карты — панель сворачиваем, чтобы его не закрыть;
   // выбрали государство — поднимаем панель с его буклетом
+  // Telegram: системная кнопка «Назад»
+  useEffect(() => syncBackButton(route), [route]);
   const timePolity = route.name === 'time' ? (route.polity ?? '') : null;
   useEffect(() => {
     if (timePolity === null) return;
