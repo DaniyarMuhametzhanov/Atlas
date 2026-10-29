@@ -17,6 +17,9 @@ const KEYS: [string, string][] = [
 export function Welcome() {
   const picks = ['KAZ', 'JPN', 'PER', 'EGY', 'ISL', 'NZL'].map((id) => COUNTRIES.find((c) => c.id === id)!).filter(Boolean);
   const explored = useStore((st) => st.explored);
+  const recent = useStore((st) => st.recent)
+    .map((id) => COUNTRIES.find((c) => c.id === id))
+    .filter((c) => !!c);
   // считаем только страны с буклетом (отметка могла остаться от старой версии)
   const done = explored.filter((id) => COUNTRIES.some((c) => c.id === id)).length;
   return (
@@ -29,9 +32,11 @@ export function Welcome() {
       <p className={s.muted}>
         В атласе {COUNTRIES.length} стран и {photoCount} фото.
       </p>
+      {recent.length ? <h3>Недавно смотрели</h3> : null}
       <div className={s.picks}>
-        {picks.map((c) => (
+        {(recent.length ? recent : picks).map((c) => (
           <button key={c.id} type="button" onClick={() => navigate({ name: 'country', id: c.id })}>
+            {explored.includes(c.id) ? <span aria-label="изучена">✓ </span> : null}
             {c.name}
           </button>
         ))}

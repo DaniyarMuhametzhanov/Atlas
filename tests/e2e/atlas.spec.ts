@@ -183,3 +183,14 @@ test('переходы между разделами не роняют стра�
   await expect(page.getByRole('heading', { name: 'Казахстан', level: 2 })).toBeVisible();
   expectClean(errors);
 });
+
+test('стартовая панель помнит недавние страны, источники ищутся по-русски', async ({ page }) => {
+  const errors = await open(page, '#/country/JPN');
+  await page.goto('#/country/PER');
+  await page.goto('#/');
+  await expect(page.getByRole('heading', { name: 'Недавно смотрели' })).toBeAttached();
+  await page.goto('#/sources');
+  await page.getByRole('searchbox', { name: /Найти фото/ }).fill('Байкал');
+  await expect(page.getByRole('status')).toHaveText(/Найдено: [1-9]/);
+  expectClean(errors);
+});

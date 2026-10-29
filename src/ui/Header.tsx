@@ -14,7 +14,13 @@ export function Header() {
 
   const open = (id: string) => navigate({ name: 'country', id });
   const random = () => {
-    const pool = COUNTRIES.filter((c) => c.id !== 'ATA' && c.id !== 'ATF');
+    const all = COUNTRIES.filter((c) => c.id !== 'ATA' && c.id !== 'ATF');
+    // сначала страны, которые ещё не отмечены изученными; изучено всё — любая
+    const explored = useStore.getState().explored;
+    const route = useStore.getState().route;
+    const current = route.name === 'country' ? route.id : '';
+    const fresh = all.filter((c) => !explored.includes(c.id) && c.id !== current);
+    const pool = fresh.length ? fresh : all;
     open(pool[Math.floor(Math.random() * pool.length)].id);
   };
 

@@ -19,6 +19,9 @@ export type RelationStatus = 'союз' | 'дружба' | 'нейтрально
 export type FlyTo = { center?: [number, number]; zoom?: number; bbox?: [number, number, number, number]; iso?: string; id: number };
 export type RelationsMap = { iso: string; statuses: Record<string, RelationStatus> } | null;
 
+/** Сколько недавних стран помнить */
+const RECENT_MAX = 8;
+
 const DEFAULT_LAYERS: Layers = {
   countries: true,
   nature: true,
@@ -56,6 +59,8 @@ type State = {
   flyTo: FlyTo | null;
   /** «Исследователь»: страны, где побывал или о которых прочитал */
   explored: string[];
+  /** недавно открытые страны (сначала последняя), не больше RECENT_MAX */
+  recent: string[];
   /** викторина «Найди на карте»: нажатие на страну отвечает на вопрос, а не открывает буклет; подписи стран скрыты */
   mapPick: { prompt: string; onPick: (iso: string) => void } | null;
   /** страны, обведённые на карте вне буклета (ответ викторины, остановка экскурсии) */
@@ -104,16 +109,22 @@ export const useStore = create<State>((set) => ({
   relationsMap: null,
   flyTo: null,
   explored: readStored<string[]>('atlas.explored', []),
+  recent: readStored<string[]>('atlas.recent', []),
   mapPick: null,
   highlight: [],
 
   setRoute: (route) =>
     set((s) => {
+      const next: Partial<State> = { route };
       if (route.name === 'country' && route.tab && route.tab !== s.lastTab) {
         writeStored('atlas.lastTab', route.tab);
-        return { route, lastTab: route.tab };
+        next.lastTab = route.tab;
       }
-      return { route };
+      if (route.name === 'country' && s.recent[0] !== route.id) {
+        next.recent = [route.id, ...s.recent.filter((x) => x !== route.id)].slice(0, RECENT_MAX);
+        writeStored('atlas.recent', next.recent);
+      }
+      return next;
     }),
   setTheme: (theme) => {
     writeStored('atlas.theme', theme);
