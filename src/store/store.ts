@@ -56,6 +56,10 @@ type State = {
   flyTo: FlyTo | null;
   /** «Исследователь»: страны, где побывал или о которых прочитал */
   explored: string[];
+  /** викторина «Найди на карте»: нажатие на страну отвечает на вопрос, а не открывает буклет; подписи стран скрыты */
+  mapPick: { prompt: string; onPick: (iso: string) => void } | null;
+  /** страны, обведённые на карте вне буклета (ответ викторины, остановка экскурсии) */
+  highlight: string[];
   setRoute: (r: Route) => void;
   setTheme: (t: Theme) => void;
   toggleLayer: (id: LayerId) => void;
@@ -75,6 +79,8 @@ type State = {
   setRelationsMap: (r: RelationsMap) => void;
   setFlyTo: (f: Omit<FlyTo, 'id'> | null) => void;
   toggleExplored: (iso: string) => void;
+  setMapPick: (p: State['mapPick']) => void;
+  setHighlight: (ids: string[]) => void;
 };
 
 export const useStore = create<State>((set) => ({
@@ -98,6 +104,8 @@ export const useStore = create<State>((set) => ({
   relationsMap: null,
   flyTo: null,
   explored: readStored<string[]>('atlas.explored', []),
+  mapPick: null,
+  highlight: [],
 
   setRoute: (route) =>
     set((s) => {
@@ -149,5 +157,7 @@ export const useStore = create<State>((set) => ({
       writeStored('atlas.explored', explored);
       return { explored };
     }),
+  setMapPick: (mapPick) => set({ mapPick }),
+  setHighlight: (highlight) => set({ highlight }),
   setFlyTo: (f) => set((st) => ({ flyTo: f ? { ...f, id: (st.flyTo?.id ?? 0) + 1 } : null })),
 }));

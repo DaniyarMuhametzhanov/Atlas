@@ -4,7 +4,7 @@ import type { Feature } from 'geojson';
 import { navigate } from '../app/router';
 import { COUNTRY_BY_ID } from '../content';
 import { useStore } from '../store/store';
-import { activeRows, centuryOf, loadCentury, MAX_YEAR, MIN_YEAR, type Polity } from '../map/time/data';
+import { activeRows, centuryOf, loadCentury, MAX_YEAR, MIN_YEAR, type Polity, type Row } from '../map/time/data';
 import type { SearchItem } from './searchIndex';
 
 type BBox = [number, number, number, number];
@@ -26,25 +26,29 @@ function bboxOf(features: Feature[]): BBox {
 
 /**
  * Год, в который показать государство, и его рамка на карте.
- * Пробуем середину существования, потом начало и конец: в Cliopatria у государства бывают годы без границ.
+ * Берём пять лет на равных расстояниях за время существования и выбираем тот, где государство крупнее всего:
+ * середина бывает неудачной (у Золотой Орды в 1495 году — уже остаток).
  */
 export async function polityView(p: Polity): Promise<{ year: number; bbox?: BBox }> {
   const [a, b] = p.span ?? [1700, 1700];
   const fix = (y: number) => Math.max(MIN_YEAR, Math.min(MAX_YEAR, Math.round(y))) || 1; // нулевого года нет
-  for (const year of [fix((a + b) / 2), fix(a), fix(b)]) {
+  const years = [...new Set([0.1, 0.3, 0.5, 0.7, 0.9].map((k) => fix(a + (b - a) * k)))];
+  let best: { year: number; rows: Row[]; area: number } | null = null;
+  for (const year of years) {
     const rows = activeRows(await loadCentury(centuryOf(year)), year).filter(
       (r) => r.properties.i === p.i || r.properties.g === p.i,
     );
-    if (!rows.length) continue;
-    const bbox = bboxOf(rows);
-    // государство через линию перемены дат (Россия, США) — рамка на весь мир бесполезна, берём самую большую часть
-    if (bbox[2] - bbox[0] > 200) {
-      const big = rows.reduce((m, r) => (r.properties.ar > m.properties.ar ? r : m));
-      return { year, bbox: bboxOf([big]) };
-    }
-    return { year, bbox };
+    const area = rows.reduce((s, r) => s + r.properties.ar, 0);
+    if (rows.length && (!best || area > best.area)) best = { year, rows, area };
   }
-  return { year: fix(a) };
+  if (!best) return { year: fix(a) };
+  const bbox = bboxOf(best.rows);
+  // государство через линию перемены дат (Россия, США) — рамка на весь мир бесполезна, берём самую большую часть
+  if (bbox[2] - bbox[0] > 200) {
+    const big = best.rows.reduce((m, r) => (r.properties.ar > m.properties.ar ? r : m));
+    return { year: best.year, bbox: bboxOf([big]) };
+  }
+  return { year: best.year, bbox };
 }
 
 export async function openItem(item: SearchItem): Promise<void> {
@@ -75,7 +79,7 @@ export async function openItem(item: SearchItem): Promise<void> {
       st.setHistoryOf(null);
       st.setPlaying(false);
       st.setYear(year);
-      if (bbox) st.setFlyTo({ bbox, zoom: 5 });
+      if (bbox) st.setFlyTo({ bbox, zoom: 4.5 });
       navigate({ name: 'time', year, polity: p.en });
       return;
     }

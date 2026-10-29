@@ -5,7 +5,7 @@ import type { FeatureCollection, Point } from 'geojson';
 import { loadPlaces } from '../content/places';
 
 const BASE = import.meta.env.BASE_URL;
-const getJson = async <T,>(file: string): Promise<T> => {
+export const getJson = async <T,>(file: string): Promise<T> => {
   const res = await fetch(`${BASE}data/map/${file}`);
   if (!res.ok) throw new Error(`Не загрузился ${file}: ${res.status}`);
   return res.json() as Promise<T>;
@@ -20,10 +20,17 @@ async function countries(file: string) {
   return topojson.feature(topo, topo.objects.countries) as FeatureCollection;
 }
 
+let bordersP: Promise<FeatureCollection> | null = null;
+/** Границы 50m (общие для карты и викторины) */
+export const loadBorders = () => (bordersP ??= countries('countries-50m.topo.json'));
+let pointsP: Promise<FeatureCollection<Point, PointProps>> | null = null;
+/** Точки значков стран: полюс недоступности, рамка, ранг */
+export const loadPoints = () => (pointsP ??= getJson<FeatureCollection<Point, PointProps>>('country-points.json'));
+
 export async function loadMapData() {
   const [borders, points, capitals, cities, places] = await Promise.all([
-    countries('countries-50m.topo.json'),
-    getJson<FeatureCollection<Point, PointProps>>('country-points.json'),
+    loadBorders(),
+    loadPoints(),
     getJson<FeatureCollection<Point>>('capitals.json'),
     getJson<FeatureCollection<Point>>('cities.json'),
     loadPlaces(),

@@ -101,6 +101,8 @@ export default function AtlasMap() {
   const setRelationsMap = useStore((st) => st.setRelationsMap);
   const flyTo = useStore((st) => st.flyTo);
   const explored = useStore((st) => st.explored);
+  const highlight = useStore((st) => st.highlight);
+  const mapPick = useStore((st) => st.mapPick);
   const compareIds = route.name === 'compare' ? route.ids.join(',') : '';
   const selected = route.name === 'country' ? route.id : '';
   const timeMachine = route.name === 'time';
@@ -220,6 +222,29 @@ export default function AtlasMap() {
       map.setFilter('countries-selected', ['==', ['get', 'iso'], '']);
     };
   }, [compareIds, ready]);
+
+  // ---------- обводка вне буклета и сравнения: ответ викторины, остановка экскурсии ----------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready || selected || compareIds) return;
+    map.setFilter('countries-selected', ['in', ['get', 'iso'], ['literal', highlight]]);
+  }, [highlight, ready, selected, compareIds]);
+
+  // ---------- «Найди на карте»: подписи и значки стран прячем, чтобы карта не подсказывала ----------
+  const picking = !!mapPick;
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready || !picking) return;
+    const hide = [...LAYER_GROUPS.countries, ...LAYER_GROUPS.capitals, ...LAYER_GROUPS.cities];
+    for (const id of hide) map.setLayoutProperty(id, 'visibility', 'none');
+    map.fitBounds(WORLD, { duration: reducedMotion() ? 0 : 800 });
+    return () => {
+      const on = useStore.getState().layers;
+      for (const [group, ids] of Object.entries(LAYER_GROUPS) as [LayerId, string[]][]) {
+        for (const id of ids) if (hide.includes(id)) map.setLayoutProperty(id, 'visibility', on[group] ? 'visible' : 'none');
+      }
+    };
+  }, [picking, ready]);
 
   // ---------- перелёт по запросу (поиск, экскурсия) ----------
   useEffect(() => {
@@ -363,6 +388,12 @@ export default function AtlasMap() {
       {error ? <p className={s.error}>Карта не загрузилась: {error}</p> : null}
       {!ready && !error ? <p className={s.loading}>Загружаю карту…</p> : null}
       {timeMachine ? <TimeBar /> : null}
+      {mapPick ? (
+        <div className={s.pickBanner} role="status">
+          <b>{mapPick.prompt}</b>
+          <span>Подписи стран скрыты</span>
+        </div>
+      ) : null}
       {relationsMap && !timeMachine ? (
         <div className={s.relLegend} role="group" aria-label="Легенда режима «Отношения»">
           <b>Отношения</b>
@@ -435,6 +466,13 @@ function setupInteraction(map: MlMap, tip: HTMLDivElement) {
   map.on('mousemove', (e) => {
     if (useStore.getState().route.name === 'time') return; // в машине времени свои подсказки
     const f = pick(e.point);
+    if (useStore.getState().mapPick) {
+      // подсказка с названием выдала бы ответ
+      map.getCanvas().style.cursor = f ? 'pointer' : '';
+      setHover(f && !f.properties.point_count ? (isoOf(f) ?? null) : null);
+      tip.style.opacity = '0';
+      return;
+    }
     map.getCanvas().style.cursor = f ? 'pointer' : '';
     setHover(f && !f.properties.point_count ? (isoOf(f) ?? null) : null);
     if (!f) {
@@ -454,6 +492,14 @@ function setupInteraction(map: MlMap, tip: HTMLDivElement) {
   map.on('click', async (e) => {
     if (useStore.getState().route.name === 'time') return;
     const f = pick(e.point);
+    const picker = useStore.getState().mapPick;
+    if (picker) {
+      // ответ — страна под пальцем (заливка), даже если сверху значок места
+      const land = map.queryRenderedFeatures(e.point, { layers: ['countries-fill'] })[0];
+      const iso = (land?.properties.iso as string | undefined) ?? (f ? isoOf(f) : undefined);
+      if (iso) picker.onPick(iso);
+      return;
+    }
     if (!f) return;
     const p = f.properties as Record<string, string | number>;
     if (p.point_count) {

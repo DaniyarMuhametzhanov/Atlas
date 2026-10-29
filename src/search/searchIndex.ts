@@ -4,6 +4,7 @@ import type { FeatureCollection, Point } from 'geojson';
 import { COUNTRIES, COUNTRY_BY_ID } from '../content';
 import { loadPlaces } from '../content/places';
 import { loadPolities, type Polity } from '../map/time/data';
+import { getJson } from '../map/data';
 import { formatYear } from '../lib/years';
 import { bestScore, normalize, switchLayout } from './fuzzy';
 
@@ -110,18 +111,12 @@ export function polityItems(polities: Polity[]): SearchItem[] {
   }));
 }
 
-async function getMapJson<T>(file: string): Promise<T> {
-  const res = await fetch(`${import.meta.env.BASE_URL}data/map/${file}`);
-  if (!res.ok) throw new Error(`Не загрузился ${file}: ${res.status}`);
-  return res.json() as Promise<T>;
-}
-
 let full: Promise<SearchItem[]> | null = null;
 /** Полный список (города, места, история); грузится один раз */
 export function loadSearchItems(): Promise<SearchItem[]> {
   full ??= Promise.all([
-    getMapJson<Cities>('capitals.json'),
-    getMapJson<Cities>('cities.json'),
+    getJson<Cities>('capitals.json'),
+    getJson<Cities>('cities.json'),
     loadPlaces(),
     loadPolities(),
   ]).then(([capitals, cities, places, polities]) => buildItems(capitals, cities, places, polities));

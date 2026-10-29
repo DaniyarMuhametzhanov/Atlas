@@ -19,3 +19,5 @@
 .title { font-family: var(--display); font-weight: 700; font-size: 16px; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .body { flex: 1; overflow-y: auto; overscroll-behavior: contain; touch-action: pan-y; padding-bottom: env(safe-area-inset-bottom); }
 .sheet[data-state='collapsed'] .body { visibility: hidden; }
+/* на половине экрана нижняя часть панели за краем — прокрутка только в видимой части, иначе конец текста не достать */
+.sheet[data-state='half'] .body { flex: none; height: calc(52dvh - var(--handle-h, 53px)); }

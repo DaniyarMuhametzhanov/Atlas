@@ -52,6 +52,12 @@ export function Welcome() {
       </div>
       <h3>Поиграть и сравнить</h3>
       <div className={s.picks}>
+        <button type="button" onClick={() => navigate({ name: 'quiz' })}>
+          🎯 Викторина
+        </button>
+        <button type="button" onClick={() => navigate({ name: 'tour' })}>
+          🧭 Случайная экскурсия
+        </button>
         <button type="button" onClick={() => navigate({ name: 'compare', ids: [] })}>
           ⚖️ Сравнить страны
         </button>
