@@ -28,8 +28,8 @@ describe('фото', () => {
   });
   it('у всех фото в данных свободная лицензия и известен размер', () => {
     for (const p of sources) {
-      // FAL и GFDL — тоже свободные, но не из списка промпта; перечислены владельцу в отчёте этапа 6
-      expect(isFreeLicense(p.license) || /^(FAL|GFDL)/.test(p.license), `${p.id}: ${p.license}`).toBe(true);
+      // только лицензии из задания; FAL и GFDL заменены (content/photo-drop.json)
+      expect(isFreeLicense(p.license), `${p.id}: ${p.license}`).toBe(true);
       if (p.sizes.length) expect(p.w && p.h, p.id).toBeTruthy();
     }
   });

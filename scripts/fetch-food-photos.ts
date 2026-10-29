@@ -89,6 +89,8 @@ const REJECTED = new Set([
   'ZMB|Капента', // рисунок рыбы
   'SDN|Кисра', // портрет
   'SSD|Кисра', // портрет
+  'GBR|Чай с молоком', // стакан зелёного чая с листьями
+  'FLK|Чай со сконами', // то же фото
 ]);
 type Dish = { iso: string; country: string; countryEn: string; name: string };
 

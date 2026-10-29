@@ -26,6 +26,15 @@ const PANELS: Record<TabId, (p: { c: Country }) => JSX.Element> = {
   stereotypes: Stereotypes,
 };
 
+/**
+ * В круглый штамп столицы помещается ≈7 букв шрифта Unbounded: длинное слово уменьшаем, а не рвём посередине
+ * («Претори / я»). Не меньше 65% — дальше уже не прочитать; совсем длинные («Шри-Джаяварденепура-Котте») переносятся.
+ */
+function stampFit(capital: string): number {
+  const longest = Math.max(...capital.split(/[\s-]+/).map((w) => w.length));
+  return Math.max(0.65, Math.min(1, 7 / longest));
+}
+
 /** Фото грузятся лениво (по мере прокрутки); для печати нужны все сразу */
 function eagerImages(root: HTMLElement | null): HTMLImageElement[] {
   const imgs = [...(root?.querySelectorAll('img') ?? [])];
@@ -169,7 +178,7 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
           <p className={s.fame}>
             <span>Чем знаменита:</span> {country.fame}
           </p>
-          <div className={s.stamp} aria-label={`Столица: ${country.capital}`}>
+          <div className={s.stamp} aria-label={`Столица: ${country.capital}`} style={{ '--fit': stampFit(country.capital) } as CSSProperties}>
             <small>Столица</small>
             <b>{country.capital}</b>
           </div>

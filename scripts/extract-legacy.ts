@@ -12,7 +12,7 @@ import { z } from 'zod';
 import {
   Country, MapPlace, PhotoSource, HistoryBooklet, Polity, WorldEvent, Find,
 } from '../src/content/schema.ts';
-import { applyPicks, keepBuilt, type Sources } from './lib/photos.ts';
+import { applyPicks, dropPhotos, keepBuilt, type Sources } from './lib/photos.ts';
 
 const require = createRequire(import.meta.url);
 const isoCountries = require('i18n-iso-countries') as { numericToAlpha3(n: string): string | undefined };
@@ -372,6 +372,8 @@ const sourcesJson: Sources = {
 applyPicks(sourcesJson);
 // готовые файлы переносим ПОСЛЕ подключения выбранных фото — иначе у них пропадут файлы, сделанные build-images.ts
 sourcesJson.photos = keepBuilt(sourcesJson.photos, oldSources);
+// фото с лицензией не из списка задания и заменённые — убираем отовсюду (content/photo-drop.json)
+dropPhotos(sourcesJson);
 writeJson(path.join(CONTENT, 'sources.json'), sourcesJson);
 
 // ---------- 12. Сверка чисел и отчёт ----------

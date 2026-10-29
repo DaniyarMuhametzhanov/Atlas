@@ -12,7 +12,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
-import { ORIGINALS, ROOT, SOURCES, readJson, writeJson, type Sources } from './lib/photos.ts';
+import { ORIGINALS, ROOT, SOURCES, isFoodPhoto, readJson, writeJson, type Sources } from './lib/photos.ts';
 
 const BOOKLET = [480, 1200];
 const Q_BOOKLET: Record<number, number> = { 480: 78, 1200: 74 };
@@ -43,7 +43,7 @@ const origOf = (id: string) => {
   const f = manifest[id] && path.join(ORIGINALS, manifest[id].file);
   return f && fs.existsSync(f) ? f : null;
 };
-const withOrig = sources.photos.filter((p) => origOf(p.id));
+const withOrig = sources.photos.filter((p) => !isFoodPhoto(p) && origOf(p.id));
 const load = (file: string) => sharp(file, { failOn: 'none' }).rotate(); // rotate() — учесть поворот из EXIF
 /** ширина фото на весь экран; 0 — отдельной версии не нужно, хватит 1200 */
 const fullWidth = (orig: number, w: number) => (Math.min(orig, w) > 1300 ? Math.min(orig, w) : 0);

@@ -17,7 +17,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 import {
-  ORIGINALS, PICKS, ROOT, SOURCES, applyPicks, commonsTitle, commonsUrl, isFreeLicense, readJson, writeJson,
+  ORIGINALS, PICKS, ROOT, SOURCES, applyPicks, commonsTitle, dropPhotos, isFoodPhoto, commonsUrl, isFreeLicense, readJson, writeJson,
   type Pick, type Sources,
 } from './lib/photos.ts';
 
@@ -119,7 +119,7 @@ async function download(sources: Sources) {
   fs.mkdirSync(ORIGINALS, { recursive: true });
   const manifestFile = path.join(ORIGINALS, 'manifest.json');
   const manifest: Manifest = fs.existsSync(manifestFile) ? readJson(manifestFile) : {};
-  let todo = sources.photos.filter((p) => !manifest[p.id] || !fs.existsSync(path.join(ORIGINALS, manifest[p.id].file)));
+  let todo = sources.photos.filter((p) => !isFoodPhoto(p) && (!manifest[p.id] || !fs.existsSync(path.join(ORIGINALS, manifest[p.id].file))));
   console.log(`Фото в sources.json: ${sources.photos.length}, нужно скачать: ${todo.length}`);
   const missing: string[] = [];
   let bytes = 0;
@@ -252,6 +252,7 @@ try {
     if (process.argv.includes('--apply')) {
       if (!fs.existsSync(PICKS)) throw new Error('Нет content/photo-picks.json — сначала --search и выбор владельца');
       console.log(`Подключено выбранных фото: ${applyPicks(sources)}`);
+      console.log(`Убрано фото по content/photo-drop.json: ${dropPhotos(sources)}`);
       writeJson(SOURCES, sources);
     }
     await download(sources);

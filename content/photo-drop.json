@@ -1,0 +1,62 @@
+[
+  {
+    "id": "kourion-theatre",
+    "why": "лицензия FAL — не из списка задания; замена cyp-kourion-theatre-sea"
+  },
+  {
+    "id": "lala-mustafa-pasha-mosque-famagusta",
+    "why": "лицензия FAL; замена xnc-lala-mustafa-pasha-exterior"
+  },
+  {
+    "id": "iguazu-falls",
+    "why": "лицензия FAL; замена iguazu-falls-panorama"
+  },
+  {
+    "id": "aurora-troms",
+    "why": "лицензия FAL; замена tromso-aurora-mountains"
+  },
+  {
+    "id": "pamukkale-travertines",
+    "why": "лицензия FAL; замена pamukkale-terraces"
+  },
+  {
+    "id": "black-forest-germany",
+    "why": "лицензия FAL; замена black-forest-panorama"
+  },
+  {
+    "id": "nine-arch-bridge-ella",
+    "why": "лицензия FAL; замена ella-misty-tea-plantation"
+  },
+  {
+    "id": "dallol-hydrothermal",
+    "why": "лицензия FAL; замена dallol-yellow-springs"
+  },
+  {
+    "id": "serengeti",
+    "why": "лицензия GFDL 1.2; замена serengeti-lion"
+  },
+  {
+    "id": "salzburg-old-town-hohensalzburg",
+    "why": "лицензия FAL; замена salzburg-altstadt-fortress"
+  },
+  {
+    "id": "charles-bridge",
+    "why": "лицензия FAL; замена charles-bridge-from-manes-bridge"
+  },
+  {
+    "id": "ruwanwelisaya",
+    "why": "лицензия FAL; замена ruwanwelisaya-stupa"
+  },
+  {
+    "id": "bastei-bridge",
+    "why": "лицензия FAL; замена bastei-bridge-dawn"
+  },
+  {
+    "id": "vostok-descent-module",
+    "why": "на фото «Восток-5», а не корабль Гагарина; замена gagarin-before-flight"
+  },
+  {
+    "id": "zaf-cape-town-table-mountain",
+    "why": "на снимке камни на вершине, самой Столовой горы не видно; замена zaf-table-mountain-from-bloubergstrand"
+  }
+]

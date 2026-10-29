@@ -18,10 +18,10 @@
 .fame span { font-weight: 600; font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase; color: var(--rk); }
 .stamp {
   position: absolute; right: 16px; top: 14px; width: 84px; height: 84px; border: 2px dashed var(--rk); color: var(--rk);
-  border-radius: 50%; display: grid; place-content: center; text-align: center; transform: rotate(-8deg); padding: 6px;
+  border-radius: 50%; display: grid; place-content: center; text-align: center; transform: rotate(-8deg); padding: 4px;
 }
 .stamp small { font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 600; }
-.stamp b { font-family: var(--display); font-size: 11px; line-height: 1.15; word-break: break-word; }
+.stamp b { font-family: var(--display); font-size: calc(11px * var(--fit, 1)); line-height: 1.15; overflow-wrap: anywhere; }
 .actions { display: flex; flex-wrap: wrap; gap: 6px; padding: 4px 20px 14px; }
 .actions button {
   padding: 6px 12px; border-radius: 999px; border: 1px solid color-mix(in oklab, var(--rk) 40%, transparent);
@@ -60,7 +60,7 @@
 @media (max-width: 480px) {
   .stamp { width: 70px; height: 70px; right: 12px; }
   .stamp small { font-size: 7.5px; }
-  .stamp b { font-size: 9.5px; }
+  .stamp b { font-size: calc(9.5px * var(--fit, 1)); }
   .name, .tagline { max-width: calc(100% - 78px); }
   .titles, .actions, .panel { padding-left: 16px; padding-right: 16px; }
 }

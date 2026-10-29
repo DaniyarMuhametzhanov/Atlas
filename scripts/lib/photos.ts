@@ -13,6 +13,9 @@ export const ORIGINALS = path.join(ROOT, 'assets-src/commons');
 
 export type Sources = { datasets: unknown[]; photos: PhotoSource[] };
 
+/** Фото блюд готовит fetch-food-photos.ts (400 px); fetch-commons и build-images их не трогают */
+export const isFoodPhoto = (p: { id: string }) => p.id.startsWith('food-');
+
 export const readJson = <T>(file: string): T => JSON.parse(fs.readFileSync(file, 'utf8')) as T;
 export const writeJson = (file: string, value: unknown) => {
   fs.mkdirSync(path.dirname(file), { recursive: true });
@@ -82,6 +85,46 @@ export function applyPicks(sources: Sources): number {
     } else throw new Error(`Непонятная цель: ${p.target}`);
   }
   return picks.length;
+}
+
+export const DROP = path.join(CONTENT, 'photo-drop.json');
+
+/**
+ * Убирает фото отовсюду — из источников, обложек, достопримечательностей, мест и находок (content/photo-drop.json):
+ * лицензия не из списка задания (FAL, GFDL) или фото заменено другим. Старая версия атласа приносит их при каждом
+ * извлечении, поэтому список применяется после applyPicks и keepBuilt. Возвращает, сколько фото убрано из источников.
+ */
+export function dropPhotos(sources: Sources): number {
+  if (!fs.existsSync(DROP)) return 0;
+  const drop = new Set(readJson<{ id: string }[]>(DROP).map((d) => d.id));
+  const before = sources.photos.length;
+  sources.photos = sources.photos.filter((p) => !drop.has(p.id));
+  type C = { photos: { cover?: string; gallery?: string[] }; tourist: { sights: { photos?: string[] }[] } };
+  for (const f of fs.readdirSync(path.join(CONTENT, 'countries'))) {
+    const file = path.join(CONTENT, 'countries', f);
+    const c = readJson<C>(file);
+    const was = JSON.stringify(c);
+    if (c.photos.cover && drop.has(c.photos.cover)) delete c.photos.cover;
+    if (c.photos.gallery) c.photos.gallery = c.photos.gallery.filter((x) => !drop.has(x));
+    for (const s of c.tourist.sights) {
+      if (!s.photos) continue;
+      s.photos = s.photos.filter((x) => !drop.has(x));
+      if (!s.photos.length) delete s.photos;
+    }
+    if (JSON.stringify(c) !== was) writeJson(file, c);
+  }
+  for (const f of ['places/nature.json', 'places/reserves.json', 'places/wonders.json', 'epochs/finds.json']) {
+    const file = path.join(CONTENT, f);
+    const list = readJson<{ photo?: string }[]>(file);
+    if (!list.some((x) => x.photo && drop.has(x.photo))) continue;
+    writeJson(file, list.map((x) => {
+      if (!x.photo || !drop.has(x.photo)) return x;
+      const rest = { ...x };
+      delete rest.photo;
+      return rest;
+    }));
+  }
+  return before - sources.photos.length;
 }
 
 /** Переносит из старого sources.json то, что сделал этап 6 (крупные файлы, размеры), в новый */

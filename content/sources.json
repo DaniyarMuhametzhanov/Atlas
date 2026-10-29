@@ -748,44 +748,6 @@
       "h": 1067
     },
     {
-      "id": "kourion-theatre",
-      "title": "Kourion theatre",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Episkopi_01-2017_img04_Kourion.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/kourion-theatre-480.webp",
-        "1200": "img/kourion-theatre-1200.webp",
-        "1600": "img/kourion-theatre-1600.webp"
-      },
-      "w": 1600,
-      "h": 1000
-    },
-    {
-      "id": "lala-mustafa-pasha-mosque-famagusta",
-      "title": "Lala Mustafa Pasha Mosque Famagusta",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Famagusta_01-2017_img14_Lala_Mustafa_Pasha_Mosque.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/lala-mustafa-pasha-mosque-famagusta-480.webp",
-        "1200": "img/lala-mustafa-pasha-mosque-famagusta-1200.webp",
-        "1600": "img/lala-mustafa-pasha-mosque-famagusta-1600.webp"
-      },
-      "w": 1600,
-      "h": 1067
-    },
-    {
       "id": "hagia-sophia",
       "title": "Hagia Sophia",
       "author": "Arild Vågen",
@@ -2838,25 +2800,6 @@
       "h": 1063
     },
     {
-      "id": "iguazu-falls",
-      "title": "Iguazu Falls",
-      "author": "Anouchka Unel (Kremtak)",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Cataratas027.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/iguazu-falls-480.webp",
-        "1200": "img/iguazu-falls-1200.webp",
-        "1600": "img/iguazu-falls-1600.webp"
-      },
-      "w": 1600,
-      "h": 1200
-    },
-    {
       "id": "salar-de-uyuni",
       "title": "Salar de Uyuni",
       "author": "Luca Galuzzi (Lucag), edit by Trialsanderrors",
@@ -3159,25 +3102,6 @@
       },
       "w": 1600,
       "h": 1067
-    },
-    {
-      "id": "aurora-troms",
-      "title": "Aurora Tromsø",
-      "author": "Alchemist-hp (talk)",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Aurora_Troms%C3%B8_Norway_HP_L8400_e.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/aurora-troms-480.webp",
-        "1200": "img/aurora-troms-1200.webp",
-        "1600": "img/aurora-troms-1600.webp"
-      },
-      "w": 1600,
-      "h": 1108
     },
     {
       "id": "jokulsarlon",
@@ -3522,25 +3446,6 @@
       "h": 1093
     },
     {
-      "id": "pamukkale-travertines",
-      "title": "Pamukkale travertines",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:TR_Pamukkale_White_Terraces_asv2020-02_img16.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/pamukkale-travertines-480.webp",
-        "1200": "img/pamukkale-travertines-1200.webp",
-        "1600": "img/pamukkale-travertines-1600.webp"
-      },
-      "w": 1600,
-      "h": 1068
-    },
-    {
       "id": "gergeti-trinity-church-kazbek",
       "title": "Gergeti Trinity Church Kazbek",
       "author": "MaxBenidze",
@@ -3558,25 +3463,6 @@
       },
       "w": 1600,
       "h": 818
-    },
-    {
-      "id": "black-forest-germany",
-      "title": "Black Forest Germany",
-      "author": "Taxiarchos228",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Schonach_-_Paradies_-_Sonnenaufgang.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/black-forest-germany-480.webp",
-        "1200": "img/black-forest-germany-1200.webp",
-        "1600": "img/black-forest-germany-1600.webp"
-      },
-      "w": 1600,
-      "h": 1003
     },
     {
       "id": "hallstatt",
@@ -3995,25 +3881,6 @@
       },
       "w": 1600,
       "h": 1057
-    },
-    {
-      "id": "nine-arch-bridge-ella",
-      "title": "Nine Arch Bridge Ella",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:SL_Demodara_near_Ella_asv2020-01_img02.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/nine-arch-bridge-ella-480.webp",
-        "1200": "img/nine-arch-bridge-ella-1200.webp",
-        "1600": "img/nine-arch-bridge-ella-1600.webp"
-      },
-      "w": 1600,
-      "h": 1000
     },
     {
       "id": "mount-fuji",
@@ -4586,25 +4453,6 @@
       "h": 881
     },
     {
-      "id": "dallol-hydrothermal",
-      "title": "Dallol hydrothermal",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:ET_Afar_asv2018-01_img48_Dallol.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/dallol-hydrothermal-480.webp",
-        "1200": "img/dallol-hydrothermal-1200.webp",
-        "1600": "img/dallol-hydrothermal-1600.webp"
-      },
-      "w": 1600,
-      "h": 900
-    },
-    {
       "id": "simien-mountains-gelada",
       "title": "Simien Mountains gelada",
       "author": "Barrowbob",
@@ -4660,25 +4508,6 @@
       },
       "w": 1600,
       "h": 1200
-    },
-    {
-      "id": "serengeti",
-      "title": "Serengeti",
-      "author": "Ikiwaner",
-      "license": "GFDL 1.2",
-      "url": "https://commons.wikimedia.org/wiki/File:Serengeti_Elefantenherde1.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/serengeti-480.webp",
-        "1200": "img/serengeti-1200.webp",
-        "1600": "img/serengeti-1600.webp"
-      },
-      "w": 1600,
-      "h": 1067
     },
     {
       "id": "virunga-mountains",
@@ -5593,25 +5422,6 @@
       "h": 1067
     },
     {
-      "id": "salzburg-old-town-hohensalzburg",
-      "title": "Salzburg old town Hohensalzburg",
-      "author": "Wladyslaw Sojka",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Salzburg_-_Panorama_(nachts)_-_CN.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/salzburg-old-town-hohensalzburg-480.webp",
-        "1200": "img/salzburg-old-town-hohensalzburg-1200.webp",
-        "1600": "img/salzburg-old-town-hohensalzburg-1600.webp"
-      },
-      "w": 1600,
-      "h": 685
-    },
-    {
       "id": "grand-place-brussels",
       "title": "Grand Place Brussels",
       "author": "Diego Delso",
@@ -6044,25 +5854,6 @@
         "480": "img/diocletian-s-palace-peristyle-480.webp",
         "1200": "img/diocletian-s-palace-peristyle-1200.webp",
         "1600": "img/diocletian-s-palace-peristyle-1600.webp"
-      },
-      "w": 1600,
-      "h": 1067
-    },
-    {
-      "id": "charles-bridge",
-      "title": "Charles Bridge",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Prague_07-2016_View_from_Petrinska_Tower_img2.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/charles-bridge-480.webp",
-        "1200": "img/charles-bridge-1200.webp",
-        "1600": "img/charles-bridge-1600.webp"
       },
       "w": 1600,
       "h": 1067
@@ -7740,25 +7531,6 @@
       "h": 1071
     },
     {
-      "id": "ruwanwelisaya",
-      "title": "Ruwanwelisaya",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:SL_Anuradhapura_asv2020-01_img11_Ruwanwelisaya_Stupa.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/ruwanwelisaya-480.webp",
-        "1200": "img/ruwanwelisaya-1200.webp",
-        "1600": "img/ruwanwelisaya-1600.webp"
-      },
-      "w": 1600,
-      "h": 800
-    },
-    {
       "id": "gamla-stan-stortorget",
       "title": "Gamla stan Stortorget",
       "author": "Øyvind Holmstad",
@@ -9431,25 +9203,6 @@
       "h": 1068
     },
     {
-      "id": "bastei-bridge",
-      "title": "Bastei bridge",
-      "author": "A.Savin",
-      "license": "FAL",
-      "url": "https://commons.wikimedia.org/wiki/File:Rathen_und_Elbsandsteingebirge_asv2022-08_img04.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/bastei-bridge-480.webp",
-        "1200": "img/bastei-bridge-1200.webp",
-        "1600": "img/bastei-bridge-1600.webp"
-      },
-      "w": 1600,
-      "h": 1067
-    },
-    {
       "id": "sarek-national-park",
       "title": "Sarek National Park",
       "author": "Trougnouf (Benoit Brummer)",
@@ -10685,25 +10438,6 @@
       "h": 1065
     },
     {
-      "id": "zaf-cape-town-table-mountain",
-      "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2825",
-      "author": "Dietmar Rabich",
-      "license": "CC BY-SA 4.0",
-      "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2825.jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/zaf-cape-town-table-mountain-480.webp",
-        "1200": "img/zaf-cape-town-table-mountain-1200.webp",
-        "1600": "img/zaf-cape-town-table-mountain-1600.webp"
-      },
-      "w": 1600,
-      "h": 1000
-    },
-    {
       "id": "hnd-copan-scarlet-macaw",
       "title": "Scarlet macaw (Ara macao cyanopterus) Copan",
       "author": "Charles J. Sharp",
@@ -10856,25 +10590,6 @@
       "h": 1200
     },
     {
-      "id": "vostok-descent-module",
-      "title": "Спускаемый аппарат корабля Восток-5 в Государственном музее истории космонавтики (51245960742)",
-      "author": "Денис Носов",
-      "license": "CC0",
-      "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D1%8F_%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA-5_%D0%B2_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%BC%D1%83%D0%B7%D0%B5%D0%B5_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8_(51245960742).jpg",
-      "sizes": [
-        480,
-        1200,
-        1600
-      ],
-      "files": {
-        "480": "img/vostok-descent-module-480.webp",
-        "1200": "img/vostok-descent-module-1200.webp",
-        "1600": "img/vostok-descent-module-1600.webp"
-      },
-      "w": 1600,
-      "h": 900
-    },
-    {
       "id": "smartphone",
       "title": "Blackview A60 Smartphone Android mobile phone and folio case",
       "author": "Acabashi",
@@ -10892,6 +10607,272 @@
       },
       "w": 1600,
       "h": 1200
+    },
+    {
+      "id": "cyp-kourion-theatre-sea",
+      "title": "Kourion theatre southeast 2010",
+      "author": "Wknight94 talk",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Kourion_theatre_southeast_2010.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/cyp-kourion-theatre-sea-480.webp",
+        "1200": "img/cyp-kourion-theatre-sea-1200.webp",
+        "1600": "img/cyp-kourion-theatre-sea-1600.webp"
+      },
+      "w": 1600,
+      "h": 1067
+    },
+    {
+      "id": "xnc-lala-mustafa-pasha-exterior",
+      "title": "Lala Mustafa Pasha Mosque (Saint Nicholas Cathedral, Famagusta) (31)",
+      "author": "Chris06",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Lala_Mustafa_Pasha_Mosque_(Saint_Nicholas_Cathedral%2C_Famagusta)_(31).JPG",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/xnc-lala-mustafa-pasha-exterior-480.webp",
+        "1200": "img/xnc-lala-mustafa-pasha-exterior-1200.webp",
+        "1600": "img/xnc-lala-mustafa-pasha-exterior-1600.webp"
+      },
+      "w": 1600,
+      "h": 1253
+    },
+    {
+      "id": "iguazu-falls-panorama",
+      "title": "Iguazu-Falls-January-2013",
+      "author": "Acediscovery",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Iguazu-Falls-January-2013.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/iguazu-falls-panorama-480.webp",
+        "1200": "img/iguazu-falls-panorama-1200.webp",
+        "1600": "img/iguazu-falls-panorama-1600.webp"
+      },
+      "w": 1600,
+      "h": 1158
+    },
+    {
+      "id": "tromso-aurora-mountains",
+      "title": "Aurora Borealis Tromsø Norway",
+      "author": "Andi Gentsch",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Aurora_Borealis_Troms%C3%B8_Norway.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/tromso-aurora-mountains-480.webp",
+        "1200": "img/tromso-aurora-mountains-1200.webp",
+        "1600": "img/tromso-aurora-mountains-1600.webp"
+      },
+      "w": 1600,
+      "h": 1060
+    },
+    {
+      "id": "pamukkale-terraces",
+      "title": "The travertine terraces of Pamukkale 4",
+      "author": "Slyronit",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:The_travertine_terraces_of_Pamukkale_4.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/pamukkale-terraces-480.webp",
+        "1200": "img/pamukkale-terraces-1200.webp",
+        "1600": "img/pamukkale-terraces-1600.webp"
+      },
+      "w": 1600,
+      "h": 1200
+    },
+    {
+      "id": "black-forest-panorama",
+      "title": "May Hochschwarzwald Panoramas - Master Black Forest Photography 2014 Kandel Plateau Masif 1300 mtr - panoramio",
+      "author": "pictures Jettcom",
+      "license": "CC BY 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:May_Hochschwarzwald_Panoramas_-_Master_Black_Forest_Photography_2014_Kandel_Plateau_Masif_1300_mtr_-_panoramio.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/black-forest-panorama-480.webp",
+        "1200": "img/black-forest-panorama-1200.webp",
+        "1600": "img/black-forest-panorama-1600.webp"
+      },
+      "w": 1600,
+      "h": 1203
+    },
+    {
+      "id": "ella-misty-tea-plantation",
+      "title": "Misty Tea Plantation Scenery - Outside Ella - Sri Lanka - 01 (14110130712)",
+      "author": "Adam Jones from Kelowna, BC, Canada",
+      "license": "CC BY-SA 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Misty_Tea_Plantation_Scenery_-_Outside_Ella_-_Sri_Lanka_-_01_(14110130712).jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/ella-misty-tea-plantation-480.webp",
+        "1200": "img/ella-misty-tea-plantation-1200.webp",
+        "1600": "img/ella-misty-tea-plantation-1600.webp"
+      },
+      "w": 1600,
+      "h": 1200
+    },
+    {
+      "id": "dallol-yellow-springs",
+      "title": "Dallol-Ethiopie (49)",
+      "author": "Ji-Elle",
+      "license": "CC BY-SA 3.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Dallol-Ethiopie_(49).jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/dallol-yellow-springs-480.webp",
+        "1200": "img/dallol-yellow-springs-1200.webp",
+        "1600": "img/dallol-yellow-springs-1600.webp"
+      },
+      "w": 1600,
+      "h": 1200
+    },
+    {
+      "id": "serengeti-lion",
+      "title": "002 Male Lion prowling in the Serengeti National Park Photo by Giles Laurent",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:002_Male_Lion_prowling_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/serengeti-lion-480.webp",
+        "1200": "img/serengeti-lion-1200.webp",
+        "1600": "img/serengeti-lion-1600.webp"
+      },
+      "w": 1600,
+      "h": 1068
+    },
+    {
+      "id": "salzburg-altstadt-fortress",
+      "title": "Salzburg Altstadt 13",
+      "author": "Clemens Stockner",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Salzburg_Altstadt_13.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/salzburg-altstadt-fortress-480.webp",
+        "1200": "img/salzburg-altstadt-fortress-1200.webp",
+        "1600": "img/salzburg-altstadt-fortress-1600.webp"
+      },
+      "w": 1600,
+      "h": 1067
+    },
+    {
+      "id": "charles-bridge-from-manes-bridge",
+      "title": "North view of Charles Bridge from Mánesův most, Prague 20160808 1",
+      "author": "DXR",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:North_view_of_Charles_Bridge_from_M%C3%A1nes%C5%AFv_most%2C_Prague_20160808_1.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/charles-bridge-from-manes-bridge-480.webp",
+        "1200": "img/charles-bridge-from-manes-bridge-1200.webp",
+        "1600": "img/charles-bridge-from-manes-bridge-1600.webp"
+      },
+      "w": 1600,
+      "h": 900
+    },
+    {
+      "id": "bastei-bridge-dawn",
+      "title": "Bastei Bridge in Saxon Switzerland",
+      "author": "Flukes69",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Bastei_Bridge_in_Saxon_Switzerland.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/bastei-bridge-dawn-480.webp",
+        "1200": "img/bastei-bridge-dawn-1200.webp",
+        "1600": "img/bastei-bridge-dawn-1600.webp"
+      },
+      "w": 1600,
+      "h": 1067
+    },
+    {
+      "id": "gagarin-before-flight",
+      "title": "Гагарин перед полётом",
+      "author": "Минобороны РФ / РИА Новости",
+      "license": "CC BY 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%D0%BF%D0%B5%D1%80%D0%B5%D0%B4_%D0%BF%D0%BE%D0%BB%D1%91%D1%82%D0%BE%D0%BC.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/gagarin-before-flight-480.webp",
+        "1200": "img/gagarin-before-flight-1200.webp",
+        "1600": "img/gagarin-before-flight-1600.webp"
+      },
+      "w": 1600,
+      "h": 1133
+    },
+    {
+      "id": "ruwanwelisaya-stupa",
+      "title": "Ruwanweli Saya 1",
+      "author": "KennyOMG",
+      "license": "CC BY-SA 4.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Ruwanweli_Saya_1.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/ruwanwelisaya-stupa-480.webp",
+        "1200": "img/ruwanwelisaya-stupa-1200.webp",
+        "1600": "img/ruwanwelisaya-stupa-1600.webp"
+      },
+      "w": 1600,
+      "h": 960
     },
     {
       "id": "food-afghan-palo",
@@ -15572,6 +15553,25 @@
       },
       "w": 400,
       "h": 300
+    },
+    {
+      "id": "zaf-table-mountain-from-bloubergstrand",
+      "title": "Table Mountain DanieVDM",
+      "author": "Danie van der Merwe from Cape Town, South Africa",
+      "license": "CC BY 2.0",
+      "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_DanieVDM.jpg",
+      "sizes": [
+        480,
+        1200,
+        1600
+      ],
+      "files": {
+        "480": "img/zaf-table-mountain-from-bloubergstrand-480.webp",
+        "1200": "img/zaf-table-mountain-from-bloubergstrand-1200.webp",
+        "1600": "img/zaf-table-mountain-from-bloubergstrand-1600.webp"
+      },
+      "w": 1600,
+      "h": 1047
     }
   ]
 }

@@ -1,13 +1,5 @@
 [
   {
-    "target": "cover:ZAF",
-    "id": "zaf-cape-town-table-mountain",
-    "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2825",
-    "author": "Dietmar Rabich",
-    "license": "CC BY-SA 4.0",
-    "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2825.jpg"
-  },
-  {
     "target": "cover:HND",
     "id": "hnd-copan-scarlet-macaw",
     "title": "Scarlet macaw (Ara macao cyanopterus) Copan",
@@ -72,14 +64,6 @@
     "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible_in_Pelplin%2C_Poland_01.jpg"
   },
   {
-    "target": "find:Полёт Гагарина",
-    "id": "vostok-descent-module",
-    "title": "Спускаемый аппарат корабля Восток-5 в Государственном музее истории космонавтики (51245960742)",
-    "author": "Денис Носов",
-    "license": "CC0",
-    "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D1%8F_%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA-5_%D0%B2_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%BC%D1%83%D0%B7%D0%B5%D0%B5_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8_(51245960742).jpg"
-  },
-  {
     "target": "find:Смартфон",
     "id": "smartphone",
     "title": "Blackview A60 Smartphone Android mobile phone and folio case",
@@ -94,5 +78,149 @@
     "author": "Ben Sutherland from Crystal Palace, London, UK",
     "license": "CC BY 2.0",
     "url": "https://commons.wikimedia.org/wiki/File:Malabo_(16513094965).jpg"
+  },
+  {
+    "target": "cover:CYP",
+    "id": "cyp-kourion-theatre-sea",
+    "title": "Kourion theatre southeast 2010",
+    "author": "Wknight94 talk",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Kourion_theatre_southeast_2010.jpg"
+  },
+  {
+    "target": "cover:XNC",
+    "id": "xnc-lala-mustafa-pasha-exterior",
+    "title": "Lala Mustafa Pasha Mosque (Saint Nicholas Cathedral, Famagusta) (31)",
+    "author": "Chris06",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Lala_Mustafa_Pasha_Mosque_(Saint_Nicholas_Cathedral%2C_Famagusta)_(31).JPG"
+  },
+  {
+    "target": "sight:XNC:Фамагуста",
+    "id": "xnc-lala-mustafa-pasha-exterior",
+    "title": "Lala Mustafa Pasha Mosque (Saint Nicholas Cathedral, Famagusta) (31)",
+    "author": "Chris06",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Lala_Mustafa_Pasha_Mosque_(Saint_Nicholas_Cathedral%2C_Famagusta)_(31).JPG"
+  },
+  {
+    "target": "cover:BRA",
+    "id": "iguazu-falls-panorama",
+    "title": "Iguazu-Falls-January-2013",
+    "author": "Acediscovery",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Iguazu-Falls-January-2013.jpg"
+  },
+  {
+    "target": "place:bra-vodopady-iguasu",
+    "id": "iguazu-falls-panorama",
+    "title": "Iguazu-Falls-January-2013",
+    "author": "Acediscovery",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Iguazu-Falls-January-2013.jpg"
+  },
+  {
+    "target": "place:arg-vodopady-iguasu",
+    "id": "iguazu-falls-panorama",
+    "title": "Iguazu-Falls-January-2013",
+    "author": "Acediscovery",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Iguazu-Falls-January-2013.jpg"
+  },
+  {
+    "target": "place:nor-severnoe-siyanie-v-tromse",
+    "id": "tromso-aurora-mountains",
+    "title": "Aurora Borealis Tromsø Norway",
+    "author": "Andi Gentsch",
+    "license": "CC BY-SA 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Aurora_Borealis_Troms%C3%B8_Norway.jpg"
+  },
+  {
+    "target": "place:tur-pamukkale",
+    "id": "pamukkale-terraces",
+    "title": "The travertine terraces of Pamukkale 4",
+    "author": "Slyronit",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:The_travertine_terraces_of_Pamukkale_4.jpg"
+  },
+  {
+    "target": "place:deu-shvartsvald",
+    "id": "black-forest-panorama",
+    "title": "May Hochschwarzwald Panoramas - Master Black Forest Photography 2014 Kandel Plateau Masif 1300 mtr - panoramio",
+    "author": "pictures Jettcom",
+    "license": "CC BY 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:May_Hochschwarzwald_Panoramas_-_Master_Black_Forest_Photography_2014_Kandel_Plateau_Masif_1300_mtr_-_panoramio.jpg"
+  },
+  {
+    "target": "place:lka-chaynye-kholmy-elly",
+    "id": "ella-misty-tea-plantation",
+    "title": "Misty Tea Plantation Scenery - Outside Ella - Sri Lanka - 01 (14110130712)",
+    "author": "Adam Jones from Kelowna, BC, Canada",
+    "license": "CC BY-SA 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Misty_Tea_Plantation_Scenery_-_Outside_Ella_-_Sri_Lanka_-_01_(14110130712).jpg"
+  },
+  {
+    "target": "place:eth-vpadina-danakil",
+    "id": "dallol-yellow-springs",
+    "title": "Dallol-Ethiopie (49)",
+    "author": "Ji-Elle",
+    "license": "CC BY-SA 3.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Dallol-Ethiopie_(49).jpg"
+  },
+  {
+    "target": "place:tza-serengeti",
+    "id": "serengeti-lion",
+    "title": "002 Male Lion prowling in the Serengeti National Park Photo by Giles Laurent",
+    "author": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:002_Male_Lion_prowling_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+    "target": "sight:AUT:Зальцбург",
+    "id": "salzburg-altstadt-fortress",
+    "title": "Salzburg Altstadt 13",
+    "author": "Clemens Stockner",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Salzburg_Altstadt_13.jpg"
+  },
+  {
+    "target": "sight:CZE:Карлов мост",
+    "id": "charles-bridge-from-manes-bridge",
+    "title": "North view of Charles Bridge from Mánesův most, Prague 20160808 1",
+    "author": "DXR",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:North_view_of_Charles_Bridge_from_M%C3%A1nes%C5%AFv_most%2C_Prague_20160808_1.jpg"
+  },
+  {
+    "target": "place:deu-saksonskaya-shveytsariya",
+    "id": "bastei-bridge-dawn",
+    "title": "Bastei Bridge in Saxon Switzerland",
+    "author": "Flukes69",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Bastei_Bridge_in_Saxon_Switzerland.jpg"
+  },
+  {
+    "target": "find:Полёт Гагарина",
+    "id": "gagarin-before-flight",
+    "title": "Гагарин перед полётом",
+    "author": "Минобороны РФ / РИА Новости",
+    "license": "CC BY 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:%D0%93%D0%B0%D0%B3%D0%B0%D1%80%D0%B8%D0%BD_%D0%BF%D0%B5%D1%80%D0%B5%D0%B4_%D0%BF%D0%BE%D0%BB%D1%91%D1%82%D0%BE%D0%BC.jpg"
+  },
+  {
+    "target": "sight:LKA:Анурадхапура",
+    "id": "ruwanwelisaya-stupa",
+    "title": "Ruwanweli Saya 1",
+    "author": "KennyOMG",
+    "license": "CC BY-SA 4.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Ruwanweli_Saya_1.jpg"
+  },
+  {
+    "target": "cover:ZAF",
+    "id": "zaf-table-mountain-from-bloubergstrand",
+    "title": "Table Mountain DanieVDM",
+    "author": "Danie van der Merwe from Cape Town, South Africa",
+    "license": "CC BY 2.0",
+    "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_DanieVDM.jpg"
   }
 ]

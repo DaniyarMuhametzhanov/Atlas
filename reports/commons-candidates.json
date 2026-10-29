@@ -1,732 +1,133 @@
 [
   {
-    "target": "cover:GNQ",
-    "label": "Экваториальная Гвинея — обложка",
-    "candidates": []
-  },
-  {
     "target": "cover:ZAF",
-    "label": "ЮАР — обложка",
+    "label": "ЮАР — Столовая гора из Блаубергстранда",
     "candidates": [
       {
         "target": "cover:ZAF",
         "id": "",
-        "title": "Table Mountain plateau, Cape Town (P1050368)",
-        "author": "Matti Blume",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_plateau%2C_Cape_Town_(P1050368).jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Table_Mountain_plateau%2C_Cape_Town_%28P1050368%29.jpg/500px-Table_Mountain_plateau%2C_Cape_Town_%28P1050368%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4000×3000"
+        "title": "Table Mountain from Bloubergstrand 19th century",
+        "author": "AnonymousUnknown author",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_from_Bloubergstrand_19th_century.jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/67/Table_Mountain_from_Bloubergstrand_19th_century.jpg/500px-Table_Mountain_from_Bloubergstrand_19th_century.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "1600×1083"
       },
       {
         "target": "cover:ZAF",
         "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2821",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2821.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2821.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2821.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6720×4480"
+        "title": "Table Mountain from Blouberg, South Africa (4028515275)",
+        "author": "South African Tourism from South Africa",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_from_Blouberg%2C_South_Africa_(4028515275).jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Table_Mountain_from_Blouberg%2C_South_Africa_%284028515275%29.jpg/500px-Table_Mountain_from_Blouberg%2C_South_Africa_%284028515275%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "6144×4096"
       },
       {
         "target": "cover:ZAF",
         "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2822",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2822.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2822.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6720×4480"
+        "title": "Table Mountain DanieVDM",
+        "author": "Danie van der Merwe from Cape Town, South Africa",
+        "license": "CC BY 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_DanieVDM.jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Table_Mountain_DanieVDM.jpg/500px-Table_Mountain_DanieVDM.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "2048×1340"
       },
       {
         "target": "cover:ZAF",
         "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 3437",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_3437.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_3437.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_3437.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6559×3689"
+        "title": "Bloubergstrand, South Africa8",
+        "author": "dconvertini",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bloubergstrand%2C_South_Africa8.jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Bloubergstrand%2C_South_Africa8.jpg/500px-Bloubergstrand%2C_South_Africa8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "5590×3727"
       },
       {
         "target": "cover:ZAF",
         "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2825",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2825.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2825.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2825.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6720×4200"
-      },
-      {
-        "target": "cover:ZAF",
-        "id": "",
-        "title": "Table Mountain, Cape Town ( 1050261)",
-        "author": "Matti Blume",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain%2C_Cape_Town_(_1050261).jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Table_Mountain%2C_Cape_Town_%28_1050261%29.jpg/500px-Table_Mountain%2C_Cape_Town_%28_1050261%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4000×3000"
-      }
-    ]
-  },
-  {
-    "target": "cover:HND",
-    "label": "Гондурас — обложка",
-    "candidates": [
-      {
-        "target": "cover:HND",
-        "id": "",
-        "title": "Scarlet macaw (Ara macao cyanopterus) Copan",
-        "author": "Charles J. Sharp",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg/500px-Scarlet_macaw_%28Ara_macao_cyanopterus%29_Copan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5435×3623"
-      },
-      {
-        "target": "cover:HND",
-        "id": "",
-        "title": "Ruinas MAYA Copan Honduras 10",
-        "author": "Mónica J. Mora",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Ruinas_MAYA_Copan_Honduras_10.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Ruinas_MAYA_Copan_Honduras_10.jpg/500px-Ruinas_MAYA_Copan_Honduras_10.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4160×3120"
-      },
-      {
-        "target": "cover:HND",
-        "id": "",
-        "title": "Ruinas MAYA Copan Honduras 11",
-        "author": "Mónica J. Mora",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Ruinas_MAYA_Copan_Honduras_11.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/Ruinas_MAYA_Copan_Honduras_11.jpg/500px-Ruinas_MAYA_Copan_Honduras_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4160×3120"
-      },
-      {
-        "target": "cover:HND",
-        "id": "",
-        "title": "Public transport, Honduras. Copán Ruinas to the Guatemalan border",
-        "author": "Ridiculopathy",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border.jpg/500px-Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4608×2592"
-      },
-      {
-        "target": "cover:HND",
-        "id": "",
-        "title": "Public transport, Honduras. Copán Ruinas to the Guatemalan border 3",
-        "author": "Ridiculopathy",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border_3.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border_3.jpg/500px-Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4608×2592"
-      },
-      {
-        "target": "cover:HND",
-        "id": "",
-        "title": "Public transport, Honduras. Copán Ruinas to the Guatemalan border 2",
-        "author": "Ridiculopathy",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border_2.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border_2.jpg/500px-Public_transport%2C_Honduras._Cop%C3%A1n_Ruinas_to_the_Guatemalan_border_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4608×2592"
-      }
-    ]
-  },
-  {
-    "target": "place:kaz-ozero-balkhash",
-    "label": "Озеро Балхаш",
-    "candidates": [
-      {
-        "target": "place:kaz-ozero-balkhash",
-        "id": "",
-        "title": "Караойский заказник, берег Балхаша сверху (4)",
-        "author": "Nikolai Bulykin",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:%D0%9A%D0%B0%D1%80%D0%B0%D0%BE%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%BD%D0%B8%D0%BA%2C_%D0%B1%D0%B5%D1%80%D0%B5%D0%B3_%D0%91%D0%B0%D0%BB%D1%85%D0%B0%D1%88%D0%B0_%D1%81%D0%B2%D0%B5%D1%80%D1%85%D1%83_(4).jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/%D0%9A%D0%B0%D1%80%D0%B0%D0%BE%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%BD%D0%B8%D0%BA%2C_%D0%B1%D0%B5%D1%80%D0%B5%D0%B3_%D0%91%D0%B0%D0%BB%D1%85%D0%B0%D1%88%D0%B0_%D1%81%D0%B2%D0%B5%D1%80%D1%85%D1%83_%284%29.jpg/500px-%D0%9A%D0%B0%D1%80%D0%B0%D0%BE%D0%B9%D1%81%D0%BA%D0%B8%D0%B9_%D0%B7%D0%B0%D0%BA%D0%B0%D0%B7%D0%BD%D0%B8%D0%BA%2C_%D0%B1%D0%B5%D1%80%D0%B5%D0%B3_%D0%91%D0%B0%D0%BB%D1%85%D0%B0%D1%88%D0%B0_%D1%81%D0%B2%D0%B5%D1%80%D1%85%D1%83_%284%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5280×3956"
-      },
-      {
-        "target": "place:kaz-ozero-balkhash",
-        "id": "",
-        "title": "Lake Balkhash. Mynaral village. 16",
-        "author": "AALLMMAATT",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Lake_Balkhash._Mynaral_village._16.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Lake_Balkhash._Mynaral_village._16.jpg/500px-Lake_Balkhash._Mynaral_village._16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4624×2604"
-      },
-      {
-        "target": "place:kaz-ozero-balkhash",
-        "id": "",
-        "title": "Lake Balkhash. Mynaral village. 01",
-        "author": "AALLMMAATT",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Lake_Balkhash._Mynaral_village._01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Lake_Balkhash._Mynaral_village._01.jpg/500px-Lake_Balkhash._Mynaral_village._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4624×2604"
-      },
-      {
-        "target": "place:kaz-ozero-balkhash",
-        "id": "",
-        "title": "Lake Balkhash. Mynaral village. 03",
-        "author": "AALLMMAATT",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Lake_Balkhash._Mynaral_village._03.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Lake_Balkhash._Mynaral_village._03.jpg/500px-Lake_Balkhash._Mynaral_village._03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4000×2252"
-      },
-      {
-        "target": "place:kaz-ozero-balkhash",
-        "id": "",
-        "title": "Lake Balkhash. Mynaral village. 17",
-        "author": "AALLMMAATT",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Lake_Balkhash._Mynaral_village._17.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Lake_Balkhash._Mynaral_village._17.jpg/500px-Lake_Balkhash._Mynaral_village._17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4624×2604"
-      },
-      {
-        "target": "place:kaz-ozero-balkhash",
-        "id": "",
-        "title": "Lake Balkhash. Mynaral village. 11",
-        "author": "AALLMMAATT",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Lake_Balkhash._Mynaral_village._11.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Lake_Balkhash._Mynaral_village._11.jpg/500px-Lake_Balkhash._Mynaral_village._11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4624×2604"
-      }
-    ]
-  },
-  {
-    "target": "place:zaf-stolovaya-gora",
-    "label": "Столовая гора",
-    "candidates": [
-      {
-        "target": "place:zaf-stolovaya-gora",
-        "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2825",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2825.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2825.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2825.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6720×4200"
-      },
-      {
-        "target": "place:zaf-stolovaya-gora",
-        "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2821",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2821.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2821.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2821.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6720×4480"
-      },
-      {
-        "target": "place:zaf-stolovaya-gora",
-        "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2822",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2822.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2822.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2822.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6720×4480"
-      },
-      {
-        "target": "place:zaf-stolovaya-gora",
-        "id": "",
-        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 3437",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_3437.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_3437.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_3437.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6559×3689"
-      },
-      {
-        "target": "place:zaf-stolovaya-gora",
-        "id": "",
-        "title": "Cape Town (ZA), Table Mountain, Crassula coccinea -- 2024 -- 2838",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain%2C_Crassula_coccinea_--_2024_--_2838.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Cape_Town_%28ZA%29%2C_Table_Mountain%2C_Crassula_coccinea_--_2024_--_2838.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain%2C_Crassula_coccinea_--_2024_--_2838.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6720×4480"
-      },
-      {
-        "target": "place:zaf-stolovaya-gora",
-        "id": "",
-        "title": "Cape Town (ZA), Table Mountain, Seilbahn, Talstation -- 2024 -- 2851",
-        "author": "Dietmar Rabich",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain%2C_Seilbahn%2C_Talstation_--_2024_--_2851.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1e/Cape_Town_%28ZA%29%2C_Table_Mountain%2C_Seilbahn%2C_Talstation_--_2024_--_2851.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain%2C_Seilbahn%2C_Talstation_--_2024_--_2851.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5744×3829"
-      }
-    ]
-  },
-  {
-    "target": "place:aut-vysokiy-tauern",
-    "label": "Высокий Тауэрн",
-    "candidates": [
-      {
-        "target": "place:aut-vysokiy-tauern",
-        "id": "",
-        "title": "Vulpes vulpes Mallnitz 01",
-        "author": "Uoaei1",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Vulpes_vulpes_Mallnitz_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Vulpes_vulpes_Mallnitz_01.jpg/500px-Vulpes_vulpes_Mallnitz_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Bloubergstrand, South Africa9",
+        "author": "dconvertini",
+        "license": "CC BY-SA 2.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Bloubergstrand%2C_South_Africa9.jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Bloubergstrand%2C_South_Africa9.jpg/500px-Bloubergstrand%2C_South_Africa9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "size": "6000×4000"
       },
       {
-        "target": "place:aut-vysokiy-tauern",
+        "target": "cover:ZAF",
         "id": "",
-        "title": "Mallnitz Seebachtal Wasserfälle 02",
-        "author": "Uoaei1",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mallnitz_Seebachtal_Wasserf%C3%A4lle_02.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Mallnitz_Seebachtal_Wasserf%C3%A4lle_02.jpg/500px-Mallnitz_Seebachtal_Wasserf%C3%A4lle_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6738×4116"
-      },
-      {
-        "target": "place:aut-vysokiy-tauern",
-        "id": "",
-        "title": "Mallnitz Hagener Hütte Panorama NO 01",
-        "author": "Uoaei1",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mallnitz_Hagener_H%C3%BCtte_Panorama_NO_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Mallnitz_Hagener_H%C3%BCtte_Panorama_NO_01.jpg/500px-Mallnitz_Hagener_H%C3%BCtte_Panorama_NO_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "9016×3818"
-      },
-      {
-        "target": "place:aut-vysokiy-tauern",
-        "id": "",
-        "title": "Mallnitz Seebachtal 01",
-        "author": "Uoaei1",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mallnitz_Seebachtal_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/Mallnitz_Seebachtal_01.jpg/500px-Mallnitz_Seebachtal_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5809×3873"
-      },
-      {
-        "target": "place:aut-vysokiy-tauern",
-        "id": "",
-        "title": "Mallnitz Säuleck 01",
-        "author": "Uoaei1",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mallnitz_S%C3%A4uleck_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Mallnitz_S%C3%A4uleck_01.jpg/500px-Mallnitz_S%C3%A4uleck_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "10284×6148"
-      },
-      {
-        "target": "place:aut-vysokiy-tauern",
-        "id": "",
-        "title": "Mallnitz Tauerntal Zedelnig 20160807",
-        "author": "Uoaei1",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Mallnitz_Tauerntal_Zedelnig_20160807.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Mallnitz_Tauerntal_Zedelnig_20160807.jpg/500px-Mallnitz_Tauerntal_Zedelnig_20160807.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "7272×3636"
-      }
-    ]
-  },
-  {
-    "target": "sight:MYS:Пещеры Бату",
-    "label": "Пещеры Бату",
-    "candidates": [
-      {
-        "target": "sight:MYS:Пещеры Бату",
-        "id": "",
-        "title": "Pankaj Vashisht at Batu Caves, Malaysia",
-        "author": "Masterstrock1",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Pankaj_Vashisht_at_Batu_Caves%2C_Malaysia.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Pankaj_Vashisht_at_Batu_Caves%2C_Malaysia.jpg/500px-Pankaj_Vashisht_at_Batu_Caves%2C_Malaysia.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3264×2448"
-      },
-      {
-        "target": "sight:MYS:Пещеры Бату",
-        "id": "",
-        "title": "Batu Caves 1",
-        "author": "Wiki Farazi",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Batu_Caves_1.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Batu_Caves_1.jpg/500px-Batu_Caves_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3264×2448"
-      },
-      {
-        "target": "sight:MYS:Пещеры Бату",
-        "id": "",
-        "title": "Batu Caves 3",
-        "author": "Wiki Farazi",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Batu_Caves_3.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Batu_Caves_3.jpg/500px-Batu_Caves_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3264×2448"
-      },
-      {
-        "target": "sight:MYS:Пещеры Бату",
-        "id": "",
-        "title": "Batu Caves Waterfall",
-        "author": "Vikaash Harichandran",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Batu_Caves_Waterfall.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Batu_Caves_Waterfall.jpg/500px-Batu_Caves_Waterfall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4160×2340"
-      },
-      {
-        "target": "sight:MYS:Пещеры Бату",
-        "id": "",
-        "title": "Batu Caves 2",
-        "author": "Wiki Farazi",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Batu_Caves_2.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8a/Batu_Caves_2.jpg/500px-Batu_Caves_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3264×2448"
-      },
-      {
-        "target": "sight:MYS:Пещеры Бату",
-        "id": "",
-        "title": "Batu Caves stairs 2022-05",
-        "author": "Chainwit.",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Batu_Caves_stairs_2022-05.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Batu_Caves_stairs_2022-05.jpg/500px-Batu_Caves_stairs_2022-05.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4032×3024"
-      }
-    ]
-  },
-  {
-    "target": "sight:GNQ:Малабо",
-    "label": "Малабо",
-    "candidates": [
-      {
-        "target": "sight:GNQ:Малабо",
-        "id": "",
-        "title": "Malabo (16513094965)",
-        "author": "Ben Sutherland from Crystal Palace, London, UK",
+        "title": "Table Mountain from Blouberg - South Africa (3609949385)",
+        "author": "South African Tourism from South Africa",
         "license": "CC BY 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Malabo_(16513094965).jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Malabo_%2816513094965%29.jpg/500px-Malabo_%2816513094965%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4928×3264"
+        "url": "https://commons.wikimedia.org/wiki/File:Table_Mountain_from_Blouberg_-_South_Africa_(3609949385).jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Table_Mountain_from_Blouberg_-_South_Africa_%283609949385%29.jpg/500px-Table_Mountain_from_Blouberg_-_South_Africa_%283609949385%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "4096×2731"
+      }
+    ]
+  },
+  {
+    "target": "cover:ZAF",
+    "label": "ЮАР — Столовая гора над Кейптауном",
+    "candidates": [
+      {
+        "target": "cover:ZAF",
+        "id": "",
+        "title": "Cape Town (ZA), Table Mountain -- 2024 -- 2762+64+66+68+70+72",
+        "author": "Dietmar Rabich",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_(ZA)%2C_Table_Mountain_--_2024_--_2762%2B64%2B66%2B68%2B70%2B72.jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2762%2B64%2B66%2B68%2B70%2B72.jpg/500px-Cape_Town_%28ZA%29%2C_Table_Mountain_--_2024_--_2762%2B64%2B66%2B68%2B70%2B72.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "8616×5791"
       },
       {
-        "target": "sight:GNQ:Малабо",
+        "target": "cover:ZAF",
         "id": "",
-        "title": "St Elisabeth Cathedral Kosice",
-        "author": "Ingo Mehling",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:St_Elisabeth_Cathedral_Kosice.jpeg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/St_Elisabeth_Cathedral_Kosice.jpeg/500px-St_Elisabeth_Cathedral_Kosice.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5946×4511"
+        "title": "Brig in Table Bay with Table Mountain panorama.1848",
+        "author": "Thomas Baines",
+        "license": "Public domain",
+        "url": "https://commons.wikimedia.org/wiki/File:Brig_in_Table_Bay_with_Table_Mountain_panorama.1848.jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Brig_in_Table_Bay_with_Table_Mountain_panorama.1848.jpg/500px-Brig_in_Table_Bay_with_Table_Mountain_panorama.1848.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "3334×2274"
       },
       {
-        "target": "sight:GNQ:Малабо",
+        "target": "cover:ZAF",
         "id": "",
-        "title": "KathedraleMalaboInnen3",
-        "author": "Denis Barthel",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:KathedraleMalaboInnen3.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/KathedraleMalaboInnen3.jpg/500px-KathedraleMalaboInnen3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "title": "Cape Town 1",
+        "author": "Woubster",
+        "license": "CC BY-SA 4.0",
+        "url": "https://commons.wikimedia.org/wiki/File:Cape_Town_1.jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Cape_Town_1.jpg/500px-Cape_Town_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
         "size": "3264×2448"
       },
       {
-        "target": "sight:GNQ:Малабо",
+        "target": "cover:ZAF",
         "id": "",
-        "title": "KathedraleMalaboInnen4",
-        "author": "Denis Barthel",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:KathedraleMalaboInnen4.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/KathedraleMalaboInnen4.jpg/500px-KathedraleMalaboInnen4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3264×2448"
-      },
-      {
-        "target": "sight:GNQ:Малабо",
-        "id": "",
-        "title": "Kosice - St. Elisabeth Cathedral inside",
-        "author": "Maros M r a z (Maros)",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Kosice_-_St._Elisabeth_Cathedral_inside.JPG",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Kosice_-_St._Elisabeth_Cathedral_inside.JPG/500px-Kosice_-_St._Elisabeth_Cathedral_inside.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "2560×1920"
-      },
-      {
-        "target": "sight:GNQ:Малабо",
-        "id": "",
-        "title": "Elisabeth Cathedral Kosice Portal",
-        "author": "Ingo Mehling",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Elisabeth_Cathedral_Kosice_Portal.jpeg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Elisabeth_Cathedral_Kosice_Portal.jpeg/500px-Elisabeth_Cathedral_Kosice_Portal.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5087×3832"
-      }
-    ]
-  },
-  {
-    "target": "sight:HND:Копан",
-    "label": "Копан",
-    "candidates": [
-      {
-        "target": "sight:HND:Копан",
-        "id": "",
-        "title": "Copán archaeological site, Honduras 22",
-        "author": "Ridiculopathy",
+        "title": "Table mountain 1 – Panorama (Greg Zaal and Rico Cilliers via Poly Haven)",
+        "author": "Greg Zaal (Panorama) Rico Cilliers (Backplates)",
         "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cop%C3%A1n_archaeological_site%2C_Honduras_22.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Cop%C3%A1n_archaeological_site%2C_Honduras_22.jpg/500px-Cop%C3%A1n_archaeological_site%2C_Honduras_22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4608×2592"
+        "url": "https://commons.wikimedia.org/wiki/File:Table_mountain_1_%E2%80%93_Panorama_(Greg_Zaal_and_Rico_Cilliers_via_Poly_Haven).jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Table_mountain_1_%E2%80%93_Panorama_%28Greg_Zaal_and_Rico_Cilliers_via_Poly_Haven%29.jpg/500px-Table_mountain_1_%E2%80%93_Panorama_%28Greg_Zaal_and_Rico_Cilliers_via_Poly_Haven%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "16384×8192"
       },
       {
-        "target": "sight:HND:Копан",
+        "target": "cover:ZAF",
         "id": "",
-        "title": "Copán archaeological site, Honduras 20",
-        "author": "Ridiculopathy",
+        "title": "Table mountain 2 – HDR-Panorama (Greg Zaal and Rico Cilliers via Poly Haven)",
+        "author": "Greg Zaal (Panorama) Rico Cilliers (Backplates)",
         "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cop%C3%A1n_archaeological_site%2C_Honduras_20.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Cop%C3%A1n_archaeological_site%2C_Honduras_20.jpg/500px-Cop%C3%A1n_archaeological_site%2C_Honduras_20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4608×2592"
+        "url": "https://commons.wikimedia.org/wiki/File:Table_mountain_2_%E2%80%93_HDR-Panorama_(Greg_Zaal_and_Rico_Cilliers_via_Poly_Haven).jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Table_mountain_2_%E2%80%93_HDR-Panorama_%28Greg_Zaal_and_Rico_Cilliers_via_Poly_Haven%29.jpg/500px-Table_mountain_2_%E2%80%93_HDR-Panorama_%28Greg_Zaal_and_Rico_Cilliers_via_Poly_Haven%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "16384×8192"
       },
       {
-        "target": "sight:HND:Копан",
+        "target": "cover:ZAF",
         "id": "",
-        "title": "Copán archaeological site, Honduras 19",
-        "author": "Ridiculopathy",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Cop%C3%A1n_archaeological_site%2C_Honduras_19.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Cop%C3%A1n_archaeological_site%2C_Honduras_19.jpg/500px-Cop%C3%A1n_archaeological_site%2C_Honduras_19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4608×2592"
-      },
-      {
-        "target": "sight:HND:Копан",
-        "id": "",
-        "title": "International cooperation, Copan - UNESCO - PHOTO0000002567 0001",
-        "author": "Yvonne Tabbush",
-        "license": "CC BY-SA 3.0 igo",
-        "url": "https://commons.wikimedia.org/wiki/File:International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002567_0001.tiff",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002567_0001.tiff/lossy-page1-500px-International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002567_0001.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5726×4275"
-      },
-      {
-        "target": "sight:HND:Копан",
-        "id": "",
-        "title": "International cooperation, Copan - UNESCO - PHOTO0000002570 0001",
-        "author": "Yvonne Tabbush",
-        "license": "CC BY-SA 3.0 igo",
-        "url": "https://commons.wikimedia.org/wiki/File:International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002570_0001.tiff",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6a/International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002570_0001.tiff/lossy-page1-500px-International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002570_0001.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5728×4265"
-      },
-      {
-        "target": "sight:HND:Копан",
-        "id": "",
-        "title": "International cooperation, Copan - UNESCO - PHOTO0000002567 0000",
-        "author": "Yvonne Tabbush",
-        "license": "CC BY-SA 3.0 igo",
-        "url": "https://commons.wikimedia.org/wiki/File:International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002567_0000.tiff",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002567_0000.tiff/lossy-page1-500px-International_cooperation%2C_Copan_-_UNESCO_-_PHOTO0000002567_0000.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5756×4293"
-      }
-    ]
-  },
-  {
-    "target": "find:Библия Гутенберга",
-    "label": "Находка: Библия Гутенберга",
-    "candidates": [
-      {
-        "target": "find:Библия Гутенберга",
-        "id": "",
-        "title": "Gutenberg Bible, New York Public Library, USA. Pic 01",
-        "author": "Joshua Keller",
-        "license": "CC BY 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible%2C_New_York_Public_Library%2C_USA._Pic_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Gutenberg_Bible%2C_New_York_Public_Library%2C_USA._Pic_01.jpg/500px-Gutenberg_Bible%2C_New_York_Public_Library%2C_USA._Pic_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3504×2336"
-      },
-      {
-        "target": "find:Библия Гутенберга",
-        "id": "",
-        "title": "Gutenberg Bible, Lenox Copy, New York Public Library, 2009. Pic 01",
-        "author": "NYC Wanderer (Kevin Eng)",
-        "license": "CC BY-SA 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg/500px-Gutenberg_Bible%2C_Lenox_Copy%2C_New_York_Public_Library%2C_2009._Pic_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "1920×1200"
-      },
-      {
-        "target": "find:Библия Гутенберга",
-        "id": "",
-        "title": "Gutenberg Bible in Pelplin, Poland 01",
-        "author": "Krugerr",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible_in_Pelplin%2C_Poland_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Gutenberg_Bible_in_Pelplin%2C_Poland_01.jpg/500px-Gutenberg_Bible_in_Pelplin%2C_Poland_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4032×3024"
-      },
-      {
-        "target": "find:Библия Гутенберга",
-        "id": "",
-        "title": "Bible de Gutenberg, copie de la BNF Res A71-(2)",
-        "author": "Zythème",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Bible_de_Gutenberg%2C_copie_de_la_BNF_Res_A71-(2).jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Bible_de_Gutenberg%2C_copie_de_la_BNF_Res_A71-%282%29.jpg/500px-Bible_de_Gutenberg%2C_copie_de_la_BNF_Res_A71-%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "2400×1245"
-      },
-      {
-        "target": "find:Библия Гутенберга",
-        "id": "",
-        "title": "Gutenberg Bible at Yale",
-        "author": "Karl Thomas Moore",
+        "title": "Wikimania 2018, Cape Town ( 1050280-Pano)",
+        "author": "Matti Blume",
         "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible_at_Yale.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Gutenberg_Bible_at_Yale.jpg/500px-Gutenberg_Bible_at_Yale.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "7360×4912"
-      },
-      {
-        "target": "find:Библия Гутенберга",
-        "id": "",
-        "title": "Gutenberg Bible Mainz Copy",
-        "author": "Antonio Zugaldia from Washington, D.C., United States",
-        "license": "CC BY 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible_Mainz_Copy.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Gutenberg_Bible_Mainz_Copy.jpg/500px-Gutenberg_Bible_Mainz_Copy.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "2551×1573"
-      }
-    ]
-  },
-  {
-    "target": "find:Полёт Гагарина",
-    "label": "Находка: полёт Гагарина",
-    "candidates": [
-      {
-        "target": "find:Полёт Гагарина",
-        "id": "",
-        "title": "Vostok 6 capsule on display, 2016",
-        "author": "Andrew Gray",
-        "license": "CC BY-SA 3.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Vostok_6_capsule_on_display%2C_2016.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Vostok_6_capsule_on_display%2C_2016.jpg/500px-Vostok_6_capsule_on_display%2C_2016.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3264×1836"
-      },
-      {
-        "target": "find:Полёт Гагарина",
-        "id": "",
-        "title": "Vostok 5 reentry capsule 03",
-        "author": "Stolbovsky",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Vostok_5_reentry_capsule_03.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Vostok_5_reentry_capsule_03.jpg/500px-Vostok_5_reentry_capsule_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4474×3323"
-      },
-      {
-        "target": "find:Полёт Гагарина",
-        "id": "",
-        "title": "Vostok return capsule, Cosmo Isle Hakui 1",
-        "author": "Motokoka",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Vostok_return_capsule%2C_Cosmo_Isle_Hakui_1.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Vostok_return_capsule%2C_Cosmo_Isle_Hakui_1.jpg/500px-Vostok_return_capsule%2C_Cosmo_Isle_Hakui_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3648×2736"
-      },
-      {
-        "target": "find:Полёт Гагарина",
-        "id": "",
-        "title": "Full-Size Mock-up of Vostok 1 capsule at Musée de l'air et de l'espace, Le Bourget, France (53431558341)",
-        "author": "Alan Wilson from Peterborough, Cambs, UK",
-        "license": "CC BY-SA 2.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Full-Size_Mock-up_of_Vostok_1_capsule_at_Mus%C3%A9e_de_l'air_et_de_l'espace%2C_Le_Bourget%2C_France_(53431558341).jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Full-Size_Mock-up_of_Vostok_1_capsule_at_Mus%C3%A9e_de_l%27air_et_de_l%27espace%2C_Le_Bourget%2C_France_%2853431558341%29.jpg/500px-Full-Size_Mock-up_of_Vostok_1_capsule_at_Mus%C3%A9e_de_l%27air_et_de_l%27espace%2C_Le_Bourget%2C_France_%2853431558341%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5364×3576"
-      },
-      {
-        "target": "find:Полёт Гагарина",
-        "id": "",
-        "title": "Soyuz 34 reentry capsule 01",
-        "author": "Stolbovsky",
-        "license": "CC BY 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Soyuz_34_reentry_capsule_01.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/82/Soyuz_34_reentry_capsule_01.jpg/500px-Soyuz_34_reentry_capsule_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "5579×3719"
-      },
-      {
-        "target": "find:Полёт Гагарина",
-        "id": "",
-        "title": "Спускаемый аппарат корабля Восток-5 в Государственном музее истории космонавтики (51245960742)",
-        "author": "Денис Носов",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:%D0%A1%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D1%8F_%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA-5_%D0%B2_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%BC%D1%83%D0%B7%D0%B5%D0%B5_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8_(51245960742).jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/%D0%A1%D0%BF%D1%83%D1%81%D0%BA%D0%B0%D0%B5%D0%BC%D1%8B%D0%B9_%D0%B0%D0%BF%D0%BF%D0%B0%D1%80%D0%B0%D1%82_%D0%BA%D0%BE%D1%80%D0%B0%D0%B1%D0%BB%D1%8F_%D0%92%D0%BE%D1%81%D1%82%D0%BE%D0%BA-5_%D0%B2_%D0%93%D0%BE%D1%81%D1%83%D0%B4%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%BC_%D0%BC%D1%83%D0%B7%D0%B5%D0%B5_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D0%B8_%D0%BA%D0%BE%D1%81%D0%BC%D0%BE%D0%BD%D0%B0%D0%B2%D1%82%D0%B8%D0%BA%D0%B8_%2851245960742%29.jpg/500px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4032×2268"
-      }
-    ]
-  },
-  {
-    "target": "find:Смартфон",
-    "label": "Находка: смартфон",
-    "candidates": [
-      {
-        "target": "find:Смартфон",
-        "id": "",
-        "title": "Smartphone display screen",
-        "author": "Skitterphoto",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Smartphone_display_screen.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Smartphone_display_screen.jpg/500px-Smartphone_display_screen.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "3798×2407"
-      },
-      {
-        "target": "find:Смартфон",
-        "id": "",
-        "title": "Smartphone di varie marche",
-        "author": "The Tech Cheat",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Smartphone_di_varie_marche.png",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Smartphone_di_varie_marche.png/500px-Smartphone_di_varie_marche.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "1938×860"
-      },
-      {
-        "target": "find:Смартфон",
-        "id": "",
-        "title": "Leaflet at Narita arrival. Requirement to have a smartphone to enter Japan during COVID-19 pandemic",
-        "author": "Syced",
-        "license": "CC0",
-        "url": "https://commons.wikimedia.org/wiki/File:Leaflet_at_Narita_arrival._Requirement_to_have_a_smartphone_to_enter_Japan_during_COVID-19_pandemic.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Leaflet_at_Narita_arrival._Requirement_to_have_a_smartphone_to_enter_Japan_during_COVID-19_pandemic.jpg/500px-Leaflet_at_Narita_arrival._Requirement_to_have_a_smartphone_to_enter_Japan_during_COVID-19_pandemic.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4032×3024"
-      },
-      {
-        "target": "find:Смартфон",
-        "id": "",
-        "title": "5 different Smartphones",
-        "author": "Kskhh",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:5_different_Smartphones.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/5_different_Smartphones.jpg/500px-5_different_Smartphones.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "6016×4000"
-      },
-      {
-        "target": "find:Смартфон",
-        "id": "",
-        "title": "Blackview A60 Smartphone Android mobile phone and folio case",
-        "author": "Acabashi",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg/500px-Blackview_A60_Smartphone_Android_mobile_phone_and_folio_case.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4656×3492"
-      },
-      {
-        "target": "find:Смартфон",
-        "id": "",
-        "title": "Blackview A60 Smartphone Android mobile phone back face",
-        "author": "Acabashi",
-        "license": "CC BY-SA 4.0",
-        "url": "https://commons.wikimedia.org/wiki/File:Blackview_A60_Smartphone_Android_mobile_phone_back_face.jpg",
-        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Blackview_A60_Smartphone_Android_mobile_phone_back_face.jpg/500px-Blackview_A60_Smartphone_Android_mobile_phone_back_face.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-        "size": "4972×2797"
+        "url": "https://commons.wikimedia.org/wiki/File:Wikimania_2018%2C_Cape_Town_(_1050280-Pano).jpg",
+        "thumb": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Wikimania_2018%2C_Cape_Town_%28_1050280-Pano%29.jpg/500px-Wikimania_2018%2C_Cape_Town_%28_1050280-Pano%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "size": "9096×4829"
       }
     ]
   }
