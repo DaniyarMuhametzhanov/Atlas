@@ -2,7 +2,7 @@ import { useEffect, useRef, useState, type CSSProperties, type KeyboardEvent } f
 import { flushSync } from 'react-dom';
 import { useStore } from '../store/store';
 import { Art } from './art/Art';
-import { getPhoto, loadCountry } from '../content';
+import { COUNTRIES, getPhoto, loadCountry } from '../content';
 import type { Country } from '../content/schema';
 import { REGIONS } from '../content/regions';
 import { navigate } from '../app/router';
@@ -34,6 +34,8 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
   const tabRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const top = useRef<HTMLElement>(null);
   const setRelationsMap = useStore((st) => st.setRelationsMap);
+  const explored = useStore((st) => st.explored.includes(id));
+  const toggleExplored = useStore((st) => st.toggleExplored);
   // обложка и все фото открытой вкладки — одна галерея на весь экран
   useGallery(top, country?.id === id ? id : null);
 
@@ -152,7 +154,18 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
         </div>
         <div className={s.actions}>
           <button type="button" onClick={share}>🔗 Поделиться</button>
-          <button type="button" disabled title="Появится на этапе 9">⚖️ Сравнить</button>
+          <button
+            type="button"
+            className={explored ? s.explored : undefined}
+            aria-pressed={explored}
+            onClick={() => {
+              toggleExplored(id);
+              setToast(explored ? 'Отметка снята' : `Изучено: ${useStore.getState().explored.length} из ${COUNTRIES.length}`);
+            }}
+          >
+            {explored ? '✓ Изучена' : '☆ Отметить изученной'}
+          </button>
+          <button type="button" onClick={() => navigate({ name: 'compare', ids: [id] })}>⚖️ Сравнить</button>
           <button type="button" onClick={() => window.print()}>🖨 Распечатать</button>
           <span className={s.toast} role="status">{toast}</span>
         </div>

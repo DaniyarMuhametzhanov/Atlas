@@ -54,6 +54,8 @@ type State = {
   focusPlace: string | null;
   relationsMap: RelationsMap;
   flyTo: FlyTo | null;
+  /** «Исследователь»: страны, где побывал или о которых прочитал */
+  explored: string[];
   setRoute: (r: Route) => void;
   setTheme: (t: Theme) => void;
   toggleLayer: (id: LayerId) => void;
@@ -72,6 +74,7 @@ type State = {
   setFocusPlace: (id: string | null) => void;
   setRelationsMap: (r: RelationsMap) => void;
   setFlyTo: (f: Omit<FlyTo, 'id'> | null) => void;
+  toggleExplored: (iso: string) => void;
 };
 
 export const useStore = create<State>((set) => ({
@@ -94,6 +97,7 @@ export const useStore = create<State>((set) => ({
   focusPlace: null,
   relationsMap: null,
   flyTo: null,
+  explored: readStored<string[]>('atlas.explored', []),
 
   setRoute: (route) =>
     set((s) => {
@@ -139,5 +143,11 @@ export const useStore = create<State>((set) => ({
   },
   setFocusPlace: (focusPlace) => set({ focusPlace }),
   setRelationsMap: (relationsMap) => set({ relationsMap }),
+  toggleExplored: (iso) =>
+    set((st) => {
+      const explored = st.explored.includes(iso) ? st.explored.filter((x) => x !== iso) : [...st.explored, iso];
+      writeStored('atlas.explored', explored);
+      return { explored };
+    }),
   setFlyTo: (f) => set((st) => ({ flyTo: f ? { ...f, id: (st.flyTo?.id ?? 0) + 1 } : null })),
 }));

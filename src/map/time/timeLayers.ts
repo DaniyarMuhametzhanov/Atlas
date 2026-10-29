@@ -19,7 +19,7 @@ const FILL = { relief: 0.62, regions: 0.85 };
 export const MODERN_LAYERS = [
   'countries-fill', 'countries-selected', 'hit-small', 'cities-dot', 'capitals-big-dot', 'capitals-dot', 'cities', 'capitals-big', 'capitals',
   'cnames-noicon', 'cnames-mid', 'natureRest-cluster', 'natureRest-count', 'nature-rest', 'reserves-cluster', 'reserves-count', 'reserves',
-  'nature-main', 'country-icons-rest', 'country-icons-big', 'wonders', 'pins-z6', 'pins-selected',
+  'nature-main', 'country-icons-rest', 'country-icons-big', 'explored', 'wonders', 'pins-z6', 'pins-selected',
 ];
 const TIME_LAYERS = ['t-land', 't-peoples', 't-peoples-label', 't-a-fill', 't-a-line', 't-b-fill', 't-b-line', 't-links', 't-sel', 't-flash', 't-labels'];
 

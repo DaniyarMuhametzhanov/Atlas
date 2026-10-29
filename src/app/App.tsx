@@ -10,6 +10,7 @@ import { BottomSheet } from '../ui/BottomSheet';
 import { SourcesPage } from '../ui/SourcesPage';
 import { EpochPanel } from '../booklet/EpochPanel';
 import { HistoryBooklet } from '../booklet/HistoryBooklet';
+import { Compare } from '../compare/Compare';
 import { COUNTRY_BY_ID } from '../content';
 import s from './App.module.css';
 
@@ -29,8 +30,8 @@ export function App() {
   }, [route]);
   // на телефоне при выборе страны панель поднимается до половины экрана
   useEffect(() => {
-    if (countryId) setSheet('half');
-  }, [countryId, setSheet]);
+    if (countryId || route.name === 'compare') setSheet('half');
+  }, [countryId, route.name, setSheet]);
 
   useEffect(() => {
     const c = countryId ? COUNTRY_BY_ID.get(countryId) : null;
@@ -40,7 +41,9 @@ export function App() {
         ? 'Источники — Атлас-путеводитель'
         : route.name === 'time'
           ? 'Машина времени — Атлас-путеводитель'
-          : 'Атлас-путеводитель';
+          : route.name === 'compare'
+            ? 'Сравнение стран — Атлас-путеводитель'
+            : 'Атлас-путеводитель';
   }, [countryId, route.name]);
 
   const panel =
@@ -48,10 +51,18 @@ export function App() {
       <Booklet id={route.id} tab={route.tab} />
     ) : route.name === 'time' ? (
       route.polity ? <HistoryBooklet en={route.polity} /> : <EpochPanel />
+    ) : route.name === 'compare' ? (
+      <Compare ids={route.ids} />
     ) : (
       <Welcome />
     );
-  const sheetTitle = countryId ? COUNTRY_BY_ID.get(countryId)?.name : route.name === 'time' ? 'Машина времени' : 'Атлас-путеводитель';
+  const sheetTitle = countryId
+    ? COUNTRY_BY_ID.get(countryId)?.name
+    : route.name === 'time'
+      ? 'Машина времени'
+      : route.name === 'compare'
+        ? 'Сравнение стран'
+        : 'Атлас-путеводитель';
 
   return (
     <div className={s.app}>

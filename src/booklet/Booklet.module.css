@@ -29,6 +29,7 @@
 }
 .actions button:hover:not(:disabled) { border-color: var(--rk); }
 .actions button:disabled { opacity: 0.55; cursor: not-allowed; }
+.actions button.explored { background: color-mix(in oklab, var(--nat) 16%, var(--paper)); border-color: var(--nat); color: var(--ink); font-weight: 600; }
 .toast { align-self: center; font-size: 13px; color: var(--rk); font-weight: 600; }
 .printTitle { display: none; }
 

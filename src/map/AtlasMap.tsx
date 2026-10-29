@@ -19,6 +19,29 @@ const REL_CLASS = { союз: 'alliance', дружба: 'friend', нейтрал
 const WORLD: [[number, number], [number, number]] = [[-170, -58], [190, 78]];
 const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+/** Зелёный кружок с белой галочкой — «страна изучена» */
+function checkBadge(): ImageData {
+  const c = document.createElement('canvas');
+  c.width = c.height = 36;
+  const g = c.getContext('2d')!;
+  g.beginPath();
+  g.arc(18, 18, 15, 0, Math.PI * 2);
+  g.fillStyle = '#1f7a4d';
+  g.fill();
+  g.lineWidth = 3.5;
+  g.strokeStyle = '#fff';
+  g.stroke();
+  g.beginPath();
+  g.moveTo(10.5, 18.5);
+  g.lineTo(16, 24);
+  g.lineTo(25.5, 12.5);
+  g.lineWidth = 4;
+  g.lineCap = 'round';
+  g.lineJoin = 'round';
+  g.stroke();
+  return g.getImageData(0, 0, 36, 36);
+}
+
 /** Значки грузим по требованию: MapLibre сообщает, какой картинки не хватает */
 function setupImages(map: MlMap) {
   const pending = new Set<string>();
@@ -38,6 +61,10 @@ function setupImages(map: MlMap) {
   };
   map.on('styleimagemissing', (e) => {
     const id = e.id;
+    if (id === 'explored-check') {
+      if (!map.hasImage(id)) map.addImage(id, checkBadge(), { pixelRatio: 2 });
+      return;
+    }
     if (id.startsWith('dot-')) {
       const color = id === 'dot-wonder' ? '#c9a227' : id === 'dot-reserve' ? '#1b5e20' : '#1f7a4d';
       if (!map.hasImage(id)) map.addImage(id, dot(color), { pixelRatio: 1 });
@@ -73,6 +100,8 @@ export default function AtlasMap() {
   const relationsMap = useStore((st) => st.relationsMap);
   const setRelationsMap = useStore((st) => st.setRelationsMap);
   const flyTo = useStore((st) => st.flyTo);
+  const explored = useStore((st) => st.explored);
+  const compareIds = route.name === 'compare' ? route.ids.join(',') : '';
   const selected = route.name === 'country' ? route.id : '';
   const timeMachine = route.name === 'time';
   const timePolity = route.name === 'time' ? route.polity : undefined;
@@ -158,6 +187,39 @@ export default function AtlasMap() {
       },
     );
   }, [selected, ready]);
+
+  // ---------- «Исследователь»: галочки у изученных стран ----------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready) return;
+    map.setFilter('explored', ['in', ['get', 'iso'], ['literal', explored]]);
+  }, [explored, ready]);
+
+  // ---------- сравнение: обводка у всех сравниваемых стран, карта показывает их вместе ----------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready || !compareIds) return;
+    const ids = compareIds.split(',');
+    map.setFilter('countries-selected', ['in', ['get', 'iso'], ['literal', ids]]);
+    const boxes = ids.flatMap((id) => {
+      const p = dataRef.current?.points.features.find((f) => f.properties.iso === id);
+      if (!p) return [];
+      const [w, so, e, n] = p.properties.bbox;
+      // страна через линию перемены дат (Россия) — вместо рамки берём окрестность её значка
+      if (e < w || e - w > 200) {
+        const [x, y] = p.geometry.coordinates;
+        return [[x - 30, y - 12, x + 30, y + 12]];
+      }
+      return [[w, so, e, n]];
+    });
+    if (boxes.length) {
+      const box = boxes.reduce((b, x) => [Math.min(b[0], x[0]), Math.min(b[1], x[1]), Math.max(b[2], x[2]), Math.max(b[3], x[3])]);
+      map.fitBounds([[box[0], box[1]], [box[2], box[3]]], { padding: 50, maxZoom: 5, duration: reducedMotion() ? 0 : 1200 });
+    }
+    return () => {
+      map.setFilter('countries-selected', ['==', ['get', 'iso'], '']);
+    };
+  }, [compareIds, ready]);
 
   // ---------- перелёт по запросу (поиск, экскурсия) ----------
   useEffect(() => {

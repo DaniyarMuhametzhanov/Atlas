@@ -28,3 +28,12 @@ describe('роутер: машина времени', () => {
     expect(parseHash('#/time/9999')).toEqual({ name: 'time', year: 2024 });
   });
 });
+
+describe('роутер: сравнение', () => {
+  it('до трёх стран, без повторов', () => {
+    expect(parseHash('#/compare/kaz/RUS')).toEqual({ name: 'compare', ids: ['KAZ', 'RUS'] });
+    expect(parseHash('#/compare/KAZ/KAZ/x/CHN/JPN/USA')).toEqual({ name: 'compare', ids: ['KAZ', 'CHN', 'JPN'] });
+    expect(formatHash({ name: 'compare', ids: ['KAZ', 'RUS'] })).toBe('#/compare/KAZ/RUS');
+    expect(formatHash({ name: 'compare', ids: [] })).toBe('#/compare');
+  });
+});

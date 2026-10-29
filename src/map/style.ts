@@ -47,8 +47,8 @@ const regionMatch = (map: Record<string, string>, fallback: string): ExpressionS
 
 // Слои, которыми управляют флажки панели «Слои»
 export const LAYER_GROUPS: Record<LayerId, string[]> = {
-  countries: ['country-icons-big', 'country-icons-rest', 'cnames-mid', 'cnames-noicon'],
-  nature: ['nature-main', 'nature-rest', 'nature-rest-cluster', 'nature-rest-count'],
+  countries: ['country-icons-big', 'country-icons-rest', 'cnames-mid', 'cnames-noicon', 'explored'],
+  nature: ['nature-main', 'nature-rest', 'natureRest-cluster', 'natureRest-count'],
   reserves: ['reserves', 'reserves-cluster', 'reserves-count'],
   wonders: ['wonders'],
   capitals: ['capitals-big-dot', 'capitals-big', 'capitals-dot', 'capitals'],
@@ -60,7 +60,7 @@ export const KIND_BY_LAYER: Partial<Record<LayerId, string>> = { nature: 'nature
 /** Слои, по которым можно нажать: сверху вниз */
 export const INTERACTIVE = [
   'pins-selected', 'pins-z6', 'wonders', 'country-icons-big', 'country-icons-rest', 'nature-main',
-  'reserves', 'reserves-cluster', 'nature-rest', 'nature-rest-cluster', 'cnames-noicon', 'cnames-mid', 'capitals', 'capitals-big',
+  'reserves', 'reserves-cluster', 'nature-rest', 'natureRest-cluster', 'cnames-noicon', 'cnames-mid', 'capitals', 'capitals-big',
   'hit-small', 'countries-fill',
 ];
 
@@ -158,6 +158,16 @@ export function buildStyle(data: MapData, c: Colors, mode: MapMode): StyleSpecif
       // 2 — значки стран: крупные сразу, остальные с zoom 1.5
       countryIcons('country-icons-rest', c, { minzoom: 1.5, filter: ['all', ['!=', ['get', 'icon'], ''], ['>', ['get', 'rank'], 40]] }),
       countryIcons('country-icons-big', c, { filter: ['all', ['!=', ['get', 'icon'], ''], ['<=', ['get', 'rank'], 40]] }),
+      // «Исследователь»: зелёная галочка в правом верхнем углу значка изученной страны (список — фильтром)
+      {
+        id: 'explored', type: 'symbol', source: 'points', filter: ['in', ['get', 'iso'], ['literal', []]],
+        layout: {
+          'icon-image': 'explored-check',
+          'icon-offset': ['interpolate', ['linear'], ['zoom'], 0, ['literal', [11, -11]], 3, ['literal', [16, -16]], 6, ['literal', [20, -20]]],
+          'icon-allow-overlap': true,
+          'icon-ignore-placement': true,
+        },
+      },
       // 1 — чудеса света
       pinLayer('wonders', 'wonders', c, { maxzoom: 6, layout: { 'icon-size': ['interpolate', ['linear'], ['zoom'], 0, 0.42, 4, 0.52, 8, 0.6], 'symbol-sort-key': 0 } }, c.wonder),
       // zoom 6+: «никто не пропадает» — все булавки видны, подписи по возможности
@@ -243,7 +253,7 @@ export function applyTheme(map: MlMap, c: Colors, mode: MapMode) {
   for (const [k, v] of Object.entries(linePaint(c, mode))) map.setPaintProperty('countries-line', k, v);
   map.setPaintProperty('countries-selected', 'line-color', c.accent);
   for (const l of map.getStyle().layers) {
-    if (l.type === 'symbol' && l.id !== 'nature-rest-count' && l.id !== 'reserves-count') map.setPaintProperty(l.id, 'text-halo-color', c.paper);
+    if (l.type === 'symbol' && l.id !== 'natureRest-count' && l.id !== 'reserves-count') map.setPaintProperty(l.id, 'text-halo-color', c.paper);
   }
   for (const id of ['cities', 'capitals', 'capitals-big']) map.setPaintProperty(id, 'text-color', c.ink);
   for (const id of ['cities-dot', 'capitals-dot', 'capitals-big-dot']) {

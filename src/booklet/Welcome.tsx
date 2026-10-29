@@ -1,5 +1,6 @@
 import { COUNTRIES, photoCount } from '../content';
 import { navigate } from '../app/router';
+import { useStore } from '../store/store';
 import s from './Welcome.module.css';
 
 const KEYS: [string, string][] = [
@@ -15,6 +16,9 @@ const KEYS: [string, string][] = [
 // Что показывает буклет, пока страна не выбрана
 export function Welcome() {
   const picks = ['KAZ', 'JPN', 'PER', 'EGY', 'ISL', 'NZL'].map((id) => COUNTRIES.find((c) => c.id === id)!).filter(Boolean);
+  const explored = useStore((st) => st.explored);
+  // считаем только страны с буклетом (отметка могла остаться от старой версии)
+  const done = explored.filter((id) => COUNTRIES.some((c) => c.id === id)).length;
   return (
     <div className={s.welcome}>
       <h2>Атлас-путеводитель</h2>
@@ -31,6 +35,26 @@ export function Welcome() {
             {c.name}
           </button>
         ))}
+      </div>
+      <h3>Исследователь</h3>
+      <div className={s.progress}>
+        <p>
+          Изучено <b>{done}</b> из {COUNTRIES.length}
+        </p>
+        <span className={s.track} role="progressbar" aria-valuemin={0} aria-valuemax={COUNTRIES.length} aria-valuenow={done} aria-label="Изучено стран">
+          <i style={{ width: `${(done / COUNTRIES.length) * 100}%` }} />
+        </span>
+        <p className={s.muted}>
+          {done
+            ? 'Изученные страны отмечены на карте зелёной галочкой.'
+            : 'Откройте страну и нажмите «☆ Отметить изученной» — где побывали или о которой прочитали.'}
+        </p>
+      </div>
+      <h3>Поиграть и сравнить</h3>
+      <div className={s.picks}>
+        <button type="button" onClick={() => navigate({ name: 'compare', ids: [] })}>
+          ⚖️ Сравнить страны
+        </button>
       </div>
       <h3>Клавиатура</h3>
       <dl className={s.keys}>

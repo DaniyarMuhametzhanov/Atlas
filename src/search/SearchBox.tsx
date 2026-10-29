@@ -3,6 +3,7 @@
 import { useEffect, useId, useMemo, useRef, useState, type KeyboardEvent } from 'react';
 import { countryItems, KIND_ICON, loadSearchItems, search, type SearchItem } from './searchIndex';
 import { openItem } from './openItem';
+import { PHONE, useMedia } from '../app/useMedia';
 import s from './SearchBox.module.css';
 
 export function SearchBox() {
@@ -14,6 +15,7 @@ export function SearchBox() {
   // пока не догрузились города, места и история — ищем по странам
   const [items, setItems] = useState<SearchItem[]>(countryItems);
   const [failed, setFailed] = useState(false);
+  const phone = useMedia(PHONE);
 
   const warmUp = () => {
     loadSearchItems()
@@ -75,7 +77,7 @@ export function SearchBox() {
         }}
         onBlur={() => setOpen(false)}
         onKeyDown={onKey}
-        placeholder="Страна, город, место, история…"
+        placeholder={phone ? 'Найти…' : 'Страна, город, место, история…'}
         aria-label="Поиск: страны, города, природа, исторические государства. Клавиша F"
         role="combobox"
         aria-autocomplete="list"
