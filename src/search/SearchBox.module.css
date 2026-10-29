@@ -1,0 +1,31 @@
+.box { position: relative; flex: 1; min-width: 0; max-width: 420px; }
+.box input {
+  width: 100%; padding: 8px 40px 8px 14px; border-radius: 999px; border: 1px solid var(--line); background: var(--paper);
+}
+.key {
+  position: absolute; right: 12px; top: 50%; transform: translateY(-50%); pointer-events: none;
+  font: 600 11px/1 var(--body); color: var(--muted); border: 1px solid var(--line); border-radius: 5px; padding: 3px 5px;
+}
+.box input:focus + .key { display: none; }
+
+.pop {
+  position: absolute; top: calc(100% + 6px); left: 0; width: max(100%, 360px); max-height: min(70vh, 520px); overflow-y: auto;
+  background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); box-shadow: var(--shadow);
+  padding: 6px; z-index: 30; overscroll-behavior: contain;
+}
+.group + .group { margin-top: 4px; border-top: 1px solid var(--line); padding-top: 4px; }
+.groupTitle { font-size: 12px; font-weight: 600; color: var(--muted); padding: 6px 10px 4px; text-transform: uppercase; letter-spacing: 0.03em; }
+.option { display: flex; align-items: center; gap: 10px; padding: 7px 10px; border-radius: 10px; cursor: pointer; }
+.option[aria-selected='true'] { background: var(--paper-2); outline: 2px solid var(--focus); outline-offset: -2px; }
+.icon { width: 22px; text-align: center; flex-shrink: 0; font-size: 16px; }
+.text { display: flex; flex-direction: column; min-width: 0; }
+.title { font-weight: 500; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sub { font-size: 13px; color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.empty { margin: 0; padding: 10px; color: var(--muted); font-size: 14px; }
+
+/* телефон: список во всю ширину экрана под шапкой */
+@media (max-width: 699px) {
+  .key { display: none; }
+  .box input { padding-right: 14px; }
+  .pop { position: fixed; top: calc(var(--header-h) + 4px); left: 8px; right: 8px; width: auto; max-height: calc(100dvh - var(--header-h) - 16px); }
+}

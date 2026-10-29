@@ -220,7 +220,7 @@ const bigCities = cities
   .sort((a, b) => b.population - a.population)
   .map((x) => ({
     type: 'Feature',
-    properties: { name: cityRu[x.cityId] ?? x.name, en: x.name, pop: x.population },
+    properties: { name: cityRu[x.cityId] ?? x.name, en: x.name, pop: x.population, iso: isoLib.alpha2ToAlpha3(x.country) ?? '' },
     geometry: { type: 'Point', coordinates: x.loc.coordinates },
   }));
 writeJson(path.join(OUT, 'cities.json'), { type: 'FeatureCollection', features: bigCities });

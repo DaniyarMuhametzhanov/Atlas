@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import maplibregl, { type ExpressionSpecification, type GeoJSONSource, type Map as MlMap, type MapGeoJSONFeature } from 'maplibre-gl';
 import 'maplibre-gl/dist/maplibre-gl.css';
-import { useStore, type LayerId } from '../store/store';
+import { useStore, type FlyTo, type LayerId } from '../store/store';
 import { navigate } from '../app/router';
 import { PHONE } from '../app/useMedia';
 import { loadDetailedBorders, loadMapData, type MapData, type PointProps } from './data';
@@ -72,6 +72,7 @@ export default function AtlasMap() {
   const theme = useStore((st) => st.theme);
   const relationsMap = useStore((st) => st.relationsMap);
   const setRelationsMap = useStore((st) => st.setRelationsMap);
+  const flyTo = useStore((st) => st.flyTo);
   const selected = route.name === 'country' ? route.id : '';
   const timeMachine = route.name === 'time';
   const timePolity = route.name === 'time' ? route.polity : undefined;
@@ -132,6 +133,13 @@ export default function AtlasMap() {
     map.setFilter('countries-selected', ['==', ['get', 'iso'], selected]);
     applyPlaceFilters(map, selected, useStore.getState().layers);
     if (!selected) return;
+    // из поиска выбрали город или место этой страны — летим прямо к нему
+    const ft = useStore.getState().flyTo;
+    if (ft?.iso === selected) {
+      flyCamera(map, ft);
+      useStore.getState().setFlyTo(null);
+      return;
+    }
     const p = dataRef.current?.points.features.find((f) => f.properties.iso === selected);
     if (!p) return;
     const [, so, , n] = p.properties.bbox;
@@ -150,6 +158,15 @@ export default function AtlasMap() {
       },
     );
   }, [selected, ready]);
+
+  // ---------- перелёт по запросу (поиск, экскурсия) ----------
+  useEffect(() => {
+    const map = mapRef.current;
+    if (!map || !ready || !flyTo) return;
+    if (flyTo.iso && flyTo.iso !== selected) return; // дождёмся выбора страны (эффект выше)
+    flyCamera(map, flyTo);
+    useStore.getState().setFlyTo(null);
+  }, [flyTo, ready, selected]);
 
   // ---------- флажки слоёв ----------
   useEffect(() => {
@@ -300,6 +317,20 @@ export default function AtlasMap() {
       />
     </div>
   );
+}
+
+/** Плавный перелёт к точке или рамке; на телефоне нижнюю половину закрывает буклет */
+function flyCamera(map: MlMap, ft: FlyTo) {
+  const phone = matchMedia(PHONE).matches;
+  const h = map.getContainer().clientHeight;
+  const padding = phone ? { top: 40, bottom: Math.round(h * 0.52) + 20, left: 30, right: 30 } : { top: 50, bottom: 50, left: 50, right: 50 };
+  const duration = reducedMotion() ? 0 : 1600;
+  if (ft.bbox) {
+    const [w, so, e, n] = ft.bbox;
+    map.fitBounds([[w, so], [e, n]], { padding, maxZoom: ft.zoom ?? 5, duration, essential: false });
+  } else if (ft.center) {
+    map.flyTo({ center: ft.center, zoom: ft.zoom ?? 6, padding, duration, essential: false });
+  }
 }
 
 /** Места выбранной страны рисует верхний слой; из обычных слоёв их убираем, чтобы не было двойных значков */
