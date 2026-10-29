@@ -161,8 +161,11 @@ export default function AtlasMap() {
       .catch((e: Error) => setError(e.message));
     return () => {
       cancelled = true;
-      map?.remove();
       mapRef.current = null;
+      // React закрывает эффекты по порядку: этот — первый, а машина времени, сравнение и другие ещё снимают
+      // свои слои с карты. Удаляем карту после них, иначе они обращаются к удалённой карте и роняют страницу.
+      const m = map;
+      queueMicrotask(() => m?.remove());
     };
   }, []);
 

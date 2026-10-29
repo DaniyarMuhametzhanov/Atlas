@@ -171,3 +171,15 @@ test('викторина, сравнение и экскурсия открыв�
   await expect(page.getByText(/Остановка 1 из 5/)).toBeVisible();
   expectClean(errors);
 });
+
+test('переходы между разделами не роняют страницу (карта закрывается и открывается заново)', async ({ page }) => {
+  const errors = await open(page, '#/time/1700');
+  await page.waitForFunction(() => window.__atlasMap?.getLayer('t-a-fill'));
+  for (const hash of ['#/sources', '#/compare/KAZ/RUS', '#/sources', '#/quiz', '#/sources', '#/country/KAZ/overview']) {
+    await page.goto(hash);
+    await page.waitForTimeout(800);
+  }
+  await page.waitForFunction(() => window.__atlasMap?.loaded(), null, { timeout: 60_000 });
+  await expect(page.getByRole('heading', { name: 'Казахстан', level: 2 })).toBeVisible();
+  expectClean(errors);
+});

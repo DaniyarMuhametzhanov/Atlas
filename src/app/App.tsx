@@ -34,6 +34,13 @@ export function App() {
   useEffect(() => {
     if (countryId || route.name === 'compare' || route.name === 'quiz' || route.name === 'tour') setSheet('half');
   }, [countryId, route.name, setSheet]);
+  // машина времени на телефоне: проигрыватель стоит внизу карты — панель сворачиваем, чтобы его не закрыть;
+  // выбрали государство — поднимаем панель с его буклетом
+  const timePolity = route.name === 'time' ? (route.polity ?? '') : null;
+  useEffect(() => {
+    if (timePolity === null) return;
+    setSheet(timePolity ? 'half' : 'collapsed');
+  }, [timePolity, setSheet]);
 
   useEffect(() => {
     const c = countryId ? COUNTRY_BY_ID.get(countryId) : null;

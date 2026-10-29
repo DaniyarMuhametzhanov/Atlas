@@ -30,17 +30,17 @@ export function MapControls({ onZoom, onReset }: { onZoom: (d: number) => void; 
           <button type="button" aria-pressed={mapMode === 'relief'} onClick={() => setMapMode('relief')}>Рельеф</button>
           <button type="button" aria-pressed={mapMode === 'regions'} onClick={() => setMapMode('regions')}>Регионы</button>
         </div>
-        <button type="button" className={s.chip} aria-pressed={globe} onClick={() => setGlobe(!globe)} title="Глобус (G)">
+        <button type="button" className={s.chip} aria-pressed={globe} onClick={() => setGlobe(!globe)} title="Глобус (G)" aria-label="Глобус (G)">
           🌐 <span className={s.wide}>Глобус</span>
         </button>
         {timeMachine ? null : (
-          <button type="button" className={s.chip} onClick={() => navigate({ name: 'time', year: useStore.getState().year })} title="Машина времени: границы с 3000 г. до н.э.">
+          <button type="button" className={s.chip} onClick={() => navigate({ name: 'time', year: useStore.getState().year })} title="Машина времени: границы с 3000 г. до н.э." aria-label="Машина времени">
             ⏳ <span className={s.wide}>Машина времени</span>
           </button>
         )}
         {timeMachine ? null : (
         <div className={s.layersWrap}>
-          <button type="button" className={s.chip} aria-expanded={open} aria-controls="map-layers" onClick={() => setOpen(!open)}>
+          <button type="button" className={s.chip} aria-expanded={open} aria-controls="map-layers" onClick={() => setOpen(!open)} aria-label="Слои карты">
             ☰ <span className={s.wide}>Слои</span>
           </button>
           {open ? (
