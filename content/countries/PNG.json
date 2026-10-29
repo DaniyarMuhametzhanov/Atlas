@@ -181,7 +181,8 @@
       },
       {
         "name": "Кофе",
-        "text": "Высокогорный кофе."
+        "text": "Высокогорный кофе.",
+        "photo": "food-a-small-cup-of-coffee"
       }
     ],
     "etiquette": {

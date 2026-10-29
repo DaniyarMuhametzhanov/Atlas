@@ -98,11 +98,13 @@
     "food": [
       {
         "name": "Слинг",
-        "text": "Рыба в кокосовом молоке."
+        "text": "Рыба в кокосовом молоке.",
+        "photo": "food-singapore-sling"
       },
       {
         "name": "Таро и батат",
-        "text": "Основа еды."
+        "text": "Основа еды.",
+        "photo": "food-songe-reunion"
       },
       {
         "name": "Рыба на углях",

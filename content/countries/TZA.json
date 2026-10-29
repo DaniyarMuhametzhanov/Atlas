@@ -182,11 +182,13 @@
     "food": [
       {
         "name": "Угали",
-        "text": "Кукурузная каша."
+        "text": "Кукурузная каша.",
+        "photo": "food-ugali-and-cabbage"
       },
       {
         "name": "Ньяма чома",
-        "text": "Жареное мясо."
+        "text": "Жареное мясо.",
+        "photo": "food-goat-meat-being-roasted"
       },
       {
         "name": "Плов (пилау) Занзибара",
@@ -194,7 +196,8 @@
       },
       {
         "name": "Чипси майаи",
-        "text": "Омлет с картофелем фри."
+        "text": "Омлет с картофелем фри.",
+        "photo": "food-chipsi-mayai-zege"
       }
     ],
     "etiquette": {

@@ -170,19 +170,23 @@
     "food": [
       {
         "name": "Аки и солёная рыба",
-        "text": "Национальное блюдо: фрукт аки с треской."
+        "text": "Национальное блюдо: фрукт аки с треской.",
+        "photo": "food-ackee-saltfish"
       },
       {
         "name": "Джерк",
-        "text": "Курица или свинина в остром маринаде на углях."
+        "text": "Курица или свинина в остром маринаде на углях.",
+        "photo": "food-beef-jerky"
       },
       {
         "name": "Пирожки (patties)",
-        "text": "Пирожки с острым мясом."
+        "text": "Пирожки с острым мясом.",
+        "photo": "food-jamaican-patties-and-redstripe"
       },
       {
         "name": "Кофе Blue Mountain",
-        "text": "Один из самых дорогих сортов кофе в мире."
+        "text": "Один из самых дорогих сортов кофе в мире.",
+        "photo": "food-papua-new-guinea-raw-arabica-coffee-bean"
       }
     ],
     "etiquette": {

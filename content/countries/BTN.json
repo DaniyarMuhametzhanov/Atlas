@@ -173,15 +173,18 @@
     "food": [
       {
         "name": "Эма датши",
-        "text": "Острый перец в сырном соусе — национальное блюдо."
+        "text": "Острый перец в сырном соусе — национальное блюдо.",
+        "photo": "food-ema-datshi-dry-red-chilli-version"
       },
       {
         "name": "Красный рис",
-        "text": "Горный красный рис."
+        "text": "Горный красный рис.",
+        "photo": "food-bhutanese-red-rice-with-chicken-and-spin"
       },
       {
         "name": "Момо",
-        "text": "Пельмени по-тибетски."
+        "text": "Пельмени по-тибетски.",
+        "photo": "food-momo101"
       },
       {
         "name": "Суджа",

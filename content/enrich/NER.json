@@ -97,7 +97,8 @@
     "food": [
       {
         "name": "Дамбу",
-        "text": "Кускус из проса с зеленью."
+        "text": "Кускус из проса с зеленью.",
+        "photo": "food-dambu"
       },
       {
         "name": "Туо",
@@ -109,7 +110,8 @@
       },
       {
         "name": "Чай",
-        "text": "Сладкий зелёный чай."
+        "text": "Сладкий зелёный чай.",
+        "photo": "food-longjing-steeping-tallglass"
       }
     ],
     "etiquette": {

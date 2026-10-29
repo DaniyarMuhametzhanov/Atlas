@@ -96,19 +96,23 @@
     "food": [
       {
         "name": "Фондю",
-        "text": "Расплавленный сыр, в который макают хлеб."
+        "text": "Расплавленный сыр, в который макают хлеб.",
+        "photo": "food-swiss-fondue-2"
       },
       {
         "name": "Раклет",
-        "text": "Расплавленный сыр с картофелем и огурцами."
+        "text": "Расплавленный сыр с картофелем и огурцами.",
+        "photo": "food-raclette-20040817-140816"
       },
       {
         "name": "Рёшти",
-        "text": "Жареная картофельная лепёшка."
+        "text": "Жареная картофельная лепёшка.",
+        "photo": "food-roesti"
       },
       {
         "name": "Шоколад",
-        "text": "Известные марки: Lindt, Toblerone."
+        "text": "Известные марки: Lindt, Toblerone.",
+        "photo": "food-cocoa-powder-and-chocolate-on-marble-bac"
       }
     ],
     "etiquette": {

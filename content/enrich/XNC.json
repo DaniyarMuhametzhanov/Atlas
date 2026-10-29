@@ -103,11 +103,13 @@
       },
       {
         "name": "Мезе",
-        "text": "Набор закусок."
+        "text": "Набор закусок.",
+        "photo": "food-petra-metzes"
       },
       {
         "name": "Турецкий кофе",
-        "text": "С лукумом."
+        "text": "С лукумом.",
+        "photo": "food-turkish-coffee-in-istanbul"
       }
     ],
     "etiquette": {

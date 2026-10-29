@@ -9,3 +9,6 @@ assets-src/commons/
 assets-src/cliopatria/
 assets-src/basemaps/
 assets-src/img/
+assets-src/food/
+test-results/
+playwright-report/

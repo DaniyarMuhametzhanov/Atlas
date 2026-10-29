@@ -173,11 +173,13 @@
       },
       {
         "name": "Чай со сконами",
-        "text": "Британская традиция."
+        "text": "Британская традиция.",
+        "photo": "food-longjing-steeping-tallglass"
       },
       {
         "name": "Кальмары",
-        "text": "Главная статья экспорта."
+        "text": "Главная статья экспорта.",
+        "photo": "food-apilamiento-calamares"
       }
     ],
     "etiquette": {

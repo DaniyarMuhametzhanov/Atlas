@@ -178,11 +178,13 @@
       },
       {
         "name": "Вигорон",
-        "text": "Юкка с хрустящей свиной кожей и капустой."
+        "text": "Юкка с хрустящей свиной кожей и капустой.",
+        "photo": "food-vigoron"
       },
       {
         "name": "Ром Flor de Caña",
-        "text": "Известный ром."
+        "text": "Известный ром.",
+        "photo": "food-government-house-rum"
       }
     ],
     "etiquette": {

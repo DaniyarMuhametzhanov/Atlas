@@ -179,7 +179,8 @@
       },
       {
         "name": "Папа",
-        "text": "Кукурузная каша."
+        "text": "Кукурузная каша.",
+        "photo": "food-peru-papasrellenas2"
       },
       {
         "name": "Мопане",
@@ -187,7 +188,8 @@
       },
       {
         "name": "Морого",
-        "text": "Тушёный шпинат."
+        "text": "Тушёный шпинат.",
+        "photo": "food-amaranthus-thunbergii-1ds-ii-1-5841"
       }
     ],
     "etiquette": {

@@ -99,11 +99,13 @@
       },
       {
         "name": "Кимчхи",
-        "text": "Квашеные овощи."
+        "text": "Квашеные овощи.",
+        "photo": "food-gimchi"
       },
       {
         "name": "Пибимпап",
-        "text": "Рис с овощами."
+        "text": "Рис с овощами.",
+        "photo": "food-korean-food-bibimbap-02"
       },
       {
         "name": "Тэдонган",

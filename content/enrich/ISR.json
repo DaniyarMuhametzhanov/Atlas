@@ -98,19 +98,23 @@
     "food": [
       {
         "name": "Хумус",
-        "text": "Паста из нута с тхиной, подаётся с питой."
+        "text": "Паста из нута с тхиной, подаётся с питой.",
+        "photo": "food-lebanon-baalbek-lebanese-hummus"
       },
       {
         "name": "Фалафель",
-        "text": "Шарики из нута во фритюре."
+        "text": "Шарики из нута во фритюре.",
+        "photo": "food-falafel-beim-isarinselfest-munchen-2"
       },
       {
         "name": "Шакшука",
-        "text": "Яйца в томатном соусе с перцем."
+        "text": "Яйца в томатном соусе с перцем.",
+        "photo": "food-shakshuka1"
       },
       {
         "name": "Хала",
-        "text": "Субботний хлеб."
+        "text": "Субботний хлеб.",
+        "photo": "food-haleem"
       }
     ],
     "etiquette": {
