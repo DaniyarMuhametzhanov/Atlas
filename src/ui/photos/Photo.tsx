@@ -1,4 +1,5 @@
 import type { PhotoSource } from '../../content/schema';
+import { assetUrl } from '../../lib/asset';
 import { photoFull, photoSrcset } from '../../content';
 import s from './Photo.module.css';
 
@@ -39,7 +40,7 @@ export function Photo({ p, alt, sizes, country, width, height, lazy = true, clas
       <picture>
         {p.avif ? <source type="image/avif" srcSet={photoSrcset(p.avif)} sizes={sizes} /> : null}
         <img
-          src={import.meta.env.BASE_URL + p.files[String(small)]}
+          src={assetUrl(p.files[String(small)])}
           srcSet={photoSrcset(p.files)}
           sizes={sizes}
           alt={alt}

@@ -10,11 +10,12 @@ import type {
   SymbolLayerSpecification,
 } from 'maplibre-gl';
 import type { MapData } from './data';
+import { OFFLINE } from '../lib/asset';
 import type { LayerId, MapMode } from '../store/store';
 
-const BASE = import.meta.env.BASE_URL;
-// MapLibre требует абсолютный адрес для шрифтов и плиток
-const abs = (p: string) => new URL(BASE + p, location.href).href.replace(/%7B/g, '{').replace(/%7D/g, '}');
+// MapLibre требует абсолютный адрес для шрифтов и плиток; в версии без интернета — свой адрес embed://
+const abs = (p: string) =>
+  OFFLINE ? `embed://${p}` : new URL(import.meta.env.BASE_URL + p, location.href).href.replace(/%7B/g, '{').replace(/%7D/g, '}');
 
 export const FONT = ['Noto Sans Medium'];
 export const FONT_REGULAR = ['Noto Sans Regular'];

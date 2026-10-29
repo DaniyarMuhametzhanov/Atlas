@@ -18,6 +18,12 @@ const EVENTS = eventsJson.events as Ev[];
 const LANES = eventsJson.lanes as Record<string, string>;
 const FINDS = findsJson as Find[];
 
+// форматировщики чисел создаём один раз: toLocaleString с настройками каждый раз строит новый,
+// а при проигрывании панель перерисовывается каждый год — это давало долгие кадры
+const MLN = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 1 });
+const THOUSANDS = new Intl.NumberFormat('ru-RU');
+const fmt = (n: number) => (n >= 1e6 ? `${MLN.format(n / 1e6)} млн км²` : `${THOUSANDS.format(Math.round(n / 1000))} тыс. км²`);
+
 export function EpochPanel() {
   const year = useDeferredValue(useStore((st) => st.year));
   const active = useDeferredValue(useStore((st) => st.timeActive));
@@ -55,7 +61,6 @@ export function EpochPanel() {
   useGallery(box, `${y0}`);
 
   const name = (n: number) => polities[n]?.ru || polities[n]?.en || '…';
-  const fmt = (n: number) => (n >= 1e6 ? `${(n / 1e6).toLocaleString('ru-RU', { maximumFractionDigits: 1 })} млн км²` : `${Math.round(n / 1000).toLocaleString('ru-RU')} тыс. км²`);
 
   return (
     <div className={s.panel} ref={box}>

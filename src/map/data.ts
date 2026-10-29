@@ -4,9 +4,9 @@ import type { Topology, GeometryCollection } from 'topojson-specification';
 import type { FeatureCollection, Point } from 'geojson';
 import { loadPlaces } from '../content/places';
 
-const BASE = import.meta.env.BASE_URL;
+import { fetchAsset } from '../lib/asset';
 export const getJson = async <T,>(file: string): Promise<T> => {
-  const res = await fetch(`${BASE}data/map/${file}`);
+  const res = await fetchAsset(`data/map/${file}`);
   if (!res.ok) throw new Error(`Не загрузился ${file}: ${res.status}`);
   return res.json() as Promise<T>;
 };

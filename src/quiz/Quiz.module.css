@@ -35,12 +35,12 @@
 .feedback { padding: 10px 14px; border-radius: 12px; border-left: 4px solid; }
 .okBox { border-color: var(--nat); background: color-mix(in oklab, var(--nat) 12%, var(--paper)); }
 .badBox { border-color: var(--danger-4); background: color-mix(in oklab, var(--danger-4) 10%, var(--paper)); }
-.bad { color: var(--danger-4); }
+.bad { color: var(--bad-ink); }
 
 .review { margin: 0; padding: 0; list-style: none; display: grid; gap: 8px; font-size: 14.5px; }
 .review li { display: grid; grid-template-columns: 20px 1fr; gap: 6px; }
 .okLine > span:first-child { color: var(--nat); font-weight: 700; }
-.badLine > span:first-child { color: var(--danger-4); font-weight: 700; }
+.badLine > span:first-child { color: var(--bad-ink); font-weight: 700; }
 
 @media (max-width: 699px) {
   .quiz { padding: 12px 16px 20px; gap: 10px; }

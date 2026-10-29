@@ -26,6 +26,25 @@ const PANELS: Record<TabId, (p: { c: Country }) => JSX.Element> = {
   stereotypes: Stereotypes,
 };
 
+/** Фото грузятся лениво (по мере прокрутки); для печати нужны все сразу */
+function eagerImages(root: HTMLElement | null): HTMLImageElement[] {
+  const imgs = [...(root?.querySelectorAll('img') ?? [])];
+  for (const i of imgs) i.loading = 'eager';
+  return imgs;
+}
+/** Дождаться загрузки фото, но не дольше ms — медленная сеть не должна держать печать */
+function waitImages(imgs: HTMLImageElement[], ms: number): Promise<unknown> {
+  const one = (i: HTMLImageElement) =>
+    i.complete
+      ? null
+      : new Promise((ok) => {
+          i.addEventListener('load', ok, { once: true });
+          i.addEventListener('error', ok, { once: true });
+        });
+  const all = Promise.all(imgs.map(one));
+  return Promise.race([all, new Promise((ok) => setTimeout(ok, ms))]);
+}
+
 export function Booklet({ id, tab }: { id: string; tab: TabId }) {
   const [country, setCountry] = useState<Country | null>(null);
   const [error, setError] = useState<string | null>(null);
@@ -41,7 +60,10 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
 
   // при печати (кнопкой или Ctrl+P) печатаем все вкладки сразу
   useEffect(() => {
-    const before = () => flushSync(() => setPrintAll(true));
+    const before = () => {
+      flushSync(() => setPrintAll(true));
+      eagerImages(top.current);
+    };
     const after = () => setPrintAll(false);
     window.addEventListener('beforeprint', before);
     window.addEventListener('afterprint', after);
@@ -166,7 +188,19 @@ export function Booklet({ id, tab }: { id: string; tab: TabId }) {
             {explored ? '✓ Изучена' : '☆ Отметить изученной'}
           </button>
           <button type="button" onClick={() => navigate({ name: 'compare', ids: [id] })}>⚖️ Сравнить</button>
-          <button type="button" onClick={() => window.print()}>🖨 Распечатать</button>
+          <button
+            type="button"
+            onClick={async () => {
+              // сначала все вкладки и все фото, потом окно печати — иначе фото ниже экрана печатаются пустыми
+              flushSync(() => setPrintAll(true));
+              // места природы и заповедники подгружаются отдельно — даём им появиться
+              await new Promise((ok) => setTimeout(ok, 300));
+              await waitImages(eagerImages(top.current), 4000);
+              window.print();
+            }}
+          >
+            🖨 Распечатать
+          </button>
           <span className={s.toast} role="status">{toast}</span>
         </div>
       </header>

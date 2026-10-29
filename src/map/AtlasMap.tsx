@@ -12,9 +12,9 @@ import { MapControls } from './MapControls';
 import { TimeLayers } from './time/timeLayers';
 import { TimeBar } from './time/TimeBar';
 import { loadPolities, type Polity } from './time/data';
+import { assetUrl, embeddedBytes, OFFLINE } from '../lib/asset';
 import s from './MapView.module.css';
 
-const BASE = import.meta.env.BASE_URL;
 const REL_CLASS = { союз: 'alliance', дружба: 'friend', нейтрально: 'neutral', напряжённость: 'tension', конфликт: 'conflict' } as const;
 const WORLD: [[number, number], [number, number]] = [[-170, -58], [190, 78]];
 const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -74,13 +74,22 @@ function setupImages(map: MlMap) {
     pending.add(id);
     // картинка добавляется, когда загрузится; MapLibre сам перерисует значки
     map
-      .loadImage(`${BASE}img/badges/${id}.png`)
+      .loadImage(assetUrl(`img/badges/${id}.png`))
       .then((img) => {
         if (!map.hasImage(id)) map.addImage(id, img.data, { pixelRatio: 1 });
       })
       .catch(() => {
         /* значка нет — останется подпись */
       });
+  });
+}
+
+// версия без интернета: рельеф и шрифты подписей берутся из встроенных данных по адресу embed://
+if (OFFLINE) {
+  maplibregl.addProtocol('embed', async (params) => {
+    const data = embeddedBytes(params.url.slice('embed://'.length));
+    if (!data) throw new Error(`Нет файла ${params.url}`);
+    return { data };
   });
 }
 

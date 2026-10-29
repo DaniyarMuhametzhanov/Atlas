@@ -73,7 +73,10 @@ export class TimeLayers {
     for (const id of MODERN_LAYERS) if (m.getLayer(id)) m.setLayoutProperty(id, 'visibility', 'none');
     m.setPaintProperty('countries-line', 'line-opacity', 0.18);
     // все государства века — в одном источнике; год выбирается фильтром (данные не пересылаются при каждой смене года)
-    for (const id of ['t-poly', 't-labels', 't-sel', 't-flash', 't-peoples', 't-links']) if (!m.getSource(id)) m.addSource(id, { type: 'geojson', data: EMPTY });
+    // границы Cliopatria и так упрощены: дробить их на плитки глубже zoom 8 незачем — меньше работы при смене века
+    for (const id of ['t-poly', 't-labels', 't-sel', 't-flash', 't-peoples', 't-links']) {
+      if (!m.getSource(id)) m.addSource(id, { type: 'geojson', data: EMPTY, maxzoom: 8, tolerance: 0.8 });
+    }
     const fade = { duration: this.reduced() ? 0 : 300, delay: 0 };
     const ink = dark ? '#ffffff' : '#5a1010';
     const halo = dark ? '#3a0a0a' : '#ffffff';

@@ -3,6 +3,7 @@
 // Полный файл страны подгружается, только когда её открывают.
 import type { Country, PhotoSource, RegionId } from './schema';
 import sourcesJson from '../../content/sources.json';
+import { assetUrl, hasAsset } from '../lib/asset';
 
 export type CountryIndexItem = { id: string; name: string; nameEn: string; region: RegionId; capital: string };
 
@@ -44,7 +45,8 @@ export function photoSrcset(files: Record<string, string>): string {
     .map(Number)
     .filter((w, _, all) => w <= BOOKLET_MAX || all.every((x) => x > BOOKLET_MAX))
     .sort((a, b) => a - b)
-    .map((w) => `${import.meta.env.BASE_URL}${files[String(w)]} ${w}w`)
+    .filter((w) => hasAsset(files[String(w)]))
+    .map((w) => `${assetUrl(files[String(w)])} ${w}w`)
     .join(', ');
 }
 
@@ -53,10 +55,15 @@ export function photoSrcset(files: Record<string, string>): string {
  * Старые фото маленькие (224–560 px) — объявляем их вдвое крупнее, чтобы они заняли больше экрана (будут мягче).
  */
 export function photoFull(p: PhotoSource): { src: string; w: number; h: number } {
-  const big = Math.max(...Object.keys(p.files).map(Number));
-  const w = p.w ?? big;
-  const h = p.h ?? Math.round(w / 2);
-  const k = p.files[String(big)].startsWith('img/legacy/') ? 2 : 1;
-  return { src: import.meta.env.BASE_URL + p.files[String(big)], w: w * k, h: h * k };
+  const sizes = Object.keys(p.files).map(Number);
+  const big = Math.max(...sizes);
+  // версия без интернета везёт только 480 и 1200 px — берём самый большой из встроенных
+  const use = Math.max(...sizes.filter((x) => hasAsset(p.files[String(x)])), Math.min(...sizes));
+  const w0 = p.w ?? big;
+  const scale = use / big;
+  const w = Math.round(w0 * scale);
+  const h = Math.round((p.h ?? Math.round(w0 / 2)) * scale);
+  const k = p.files[String(use)].startsWith('img/legacy/') ? 2 : 1;
+  return { src: assetUrl(p.files[String(use)]), w: w * k, h: h * k };
 }
 

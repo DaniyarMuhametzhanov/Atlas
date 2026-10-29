@@ -26,6 +26,9 @@
   --nat: #1f7a4d;
   --reserve: #1b5e20;
   --wonder: #a8851a;
+  /* те же цвета для текста — темнее, чтобы контраст был не ниже 4,5 (WCAG AA) */
+  --wonder-ink: #7a5c0a;
+  --bad-ink: #b42318;
 
   /* графики: категориальная палитра (порядок фиксирован, проверена на цветовую слепоту) */
   --series-1: #2a78d6; --series-2: #eb6834; --series-3: #1baf7a; --series-4: #eda100;
@@ -57,7 +60,7 @@
     --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 35%);
     --r-eu: #7a3f55; --k-eu: #f39ab9; --r-me: #7a6230; --k-me: #f0c461; --r-as: #7d4f33; --k-as: #f6a374;
     --r-af: #3f6a3a; --k-af: #8fd47e; --r-am: #3e4b80; --k-am: #9eb0ff; --r-oc: #2c6660; --k-oc: #78d6ca;
-    --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a;
+    --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a; --wonder-ink: #e6c25a; --bad-ink: #ff8a78;
     --sunc: #f1e6c2; --bloom: #e58aab; --aur: #5ff0a8;
     --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
     --series-5: #d55181; --series-6: #008300; --series-7: #9085e9; --series-8: #e66767;
@@ -72,7 +75,7 @@
   --shadow: 0 1px 2px rgb(0 0 0 / 30%), 0 6px 20px rgb(0 0 0 / 35%);
   --r-eu: #7a3f55; --k-eu: #f39ab9; --r-me: #7a6230; --k-me: #f0c461; --r-as: #7d4f33; --k-as: #f6a374;
   --r-af: #3f6a3a; --k-af: #8fd47e; --r-am: #3e4b80; --k-am: #9eb0ff; --r-oc: #2c6660; --k-oc: #78d6ca;
-  --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a;
+  --nat: #5fd39a; --reserve: #7fcf86; --wonder: #e6c25a; --wonder-ink: #e6c25a; --bad-ink: #ff8a78;
   --sunc: #f1e6c2; --bloom: #e58aab; --aur: #5ff0a8;
   --series-1: #3987e5; --series-2: #d95926; --series-3: #199e70; --series-4: #c98500;
   --series-5: #d55181; --series-6: #008300; --series-7: #9085e9; --series-8: #e66767;

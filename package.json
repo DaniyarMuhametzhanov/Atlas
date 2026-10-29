@@ -1,6 +1,6 @@
 {
   "name": "atlas",
-  "version": "2.0.0-alpha",
+  "version": "2.0.0",
   "private": true,
   "type": "module",
   "description": "Атлас-путеводитель 2.0",
@@ -9,8 +9,10 @@
     "typecheck": "tsc --noEmit",
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
+    "build:offline": "tsc --noEmit && tsx scripts/build-offline.ts",
     "preview": "vite preview",
     "test": "vitest run",
+    "test:e2e": "playwright test",
     "lint": "eslint .",
     "format": "prettier --write .",
     "build:map": "tsx scripts/build-map.ts",
@@ -20,12 +22,14 @@
     "data": "npm run extract && npm run fetch:glyphs && npm run build:map && npm run build:history",
     "build:history": "tsx scripts/build-history.ts",
     "build:booklets": "tsx scripts/build-booklets.ts",
-    "fetch:cities-ru": "tsx scripts/fetch-city-names.ts"
+    "fetch:cities-ru": "tsx scripts/fetch-city-names.ts",
+    "fetch:food": "tsx scripts/fetch-food-photos.ts"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.5",
     "@fontsource/golos-text": "^5.3.0",
     "@fontsource/unbounded": "^5.3.0",
+    "@playwright/test": "^1.64.1",
     "@types/d3-geo": "^3.1.1",
     "@types/geojson": "^7946.0.16",
     "@types/node": "^26.6.5",
@@ -50,6 +54,7 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.72.1",
     "vite": "^5.4.21",
+    "vite-plugin-singlefile": "^2.3.4",
     "vitest": "^2.1.9",
     "world-atlas": "^2.0.2",
     "zod": "^3.25.76"

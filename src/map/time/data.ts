@@ -5,7 +5,7 @@ import type { Topology, GeometryCollection } from 'topojson-specification';
 import type { Feature, FeatureCollection, MultiPolygon, Polygon } from 'geojson';
 import epochsJson from '../../../content/epochs/epochs.json';
 
-const BASE = import.meta.env.BASE_URL;
+import { fetchAsset } from '../../lib/asset';
 export const MIN_YEAR = -3000;
 export const MAX_YEAR = 2024;
 /** Годы эпох: панель эпохи, клавиши [ ], шкала проигрывателя */
@@ -36,7 +36,7 @@ export type Polity = {
 };
 
 const getJson = async <T,>(file: string): Promise<T> => {
-  const res = await fetch(`${BASE}data/history/${file}`);
+  const res = await fetchAsset(`data/history/${file}`);
   if (!res.ok) throw new Error(`Не загрузился ${file}: ${res.status}`);
   return res.json() as Promise<T>;
 };
